@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_courthouse" default="compile.module.courthouse">
+  <dirname property="module.courthouse.basedir" file="${ant.file.module_courthouse}"/>
+  
+  <property name="module.jdk.home.courthouse" value="${jdk.home.1.8}"/>
+  <property name="module.jdk.bin.courthouse" value="${jdk.bin.1.8}"/>
+  <property name="module.jdk.classpath.courthouse" value="jdk.classpath.1.8"/>
+  
+  <property name="compiler.args.courthouse" value="-encoding UTF-8 -source 8 -target 1.8 ${compiler.args}"/>
+  
+  <property name="courthouse.output.dir" value="${module.courthouse.basedir}/target/classes"/>
+  <property name="courthouse.testoutput.dir" value="${module.courthouse.basedir}/target/test-classes"/>
+  
+  <path id="courthouse.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="courthouse.module.production.classpath">
+    <path refid="${module.jdk.classpath.courthouse}"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-java:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-api:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-chrome-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-edge-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-firefox-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-ie-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-opera-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-remote-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-safari-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-support:3.14.0.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.8.15.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-exec:1.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:25.0-jre.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_org.checkerframework:checker-compat-qual:2.0.0.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.1.3.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.5.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.9.classpath"/>
+    <path refid="library.maven:_com.squareup.okhttp3:okhttp:3.10.0.classpath"/>
+    <path refid="library.maven:_com.squareup.okio:okio:1.14.1.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.14.3.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.72.classpath"/>
+    <path refid="library.maven:_org.apache-extras.beanshell:bsh:2.0b6.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-server:3.11.0.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-text:1.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:3.6.classpath"/>
+    <path refid="library.maven:_org.w3c.css:sac:1.3.classpath"/>
+    <path refid="library.maven:_net.sourceforge.cssparser:cssparser:0.9.24.classpath"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.2.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit:2.29.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit-core-js:2.28.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:neko-htmlunit:2.28.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.3.classpath"/>
+    <path refid="library.maven:_net.jcip:jcip-annotations:1.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:jetty-repacked:9.4.7.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-http:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-io:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-util:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-xml:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:htmlunit-driver:2.29.0.classpath"/>
+    <path refid="library.maven:_javax.servlet:javax.servlet-api:3.1.0.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-api:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-common:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_xalan:serializer:2.7.2.classpath"/>
+    <path refid="library.maven:_xalan:xalan:2.7.2.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.11.0.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.4.01.classpath"/>
+    <path refid="library.maven:_org.yaml:snakeyaml:1.19.classpath"/>
+    <path refid="library.maven:_io.github.bonigarcia:webdrivermanager:2.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.24.classpath"/>
+    <path refid="library.maven:_org.rauschig:jarchivelib:0.7.1.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-compress:1.9.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.10.2.classpath"/>
+  </path>
+  
+  <path id="courthouse.runtime.production.module.classpath">
+    <pathelement location="${courthouse.output.dir}"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-java:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-api:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-chrome-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-edge-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-firefox-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-ie-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-opera-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-remote-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-safari-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-support:3.14.0.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.8.15.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-exec:1.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:25.0-jre.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_org.checkerframework:checker-compat-qual:2.0.0.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.1.3.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.5.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.9.classpath"/>
+    <path refid="library.maven:_com.squareup.okhttp3:okhttp:3.10.0.classpath"/>
+    <path refid="library.maven:_com.squareup.okio:okio:1.14.1.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.14.3.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.72.classpath"/>
+    <path refid="library.maven:_org.apache-extras.beanshell:bsh:2.0b6.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-server:3.11.0.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-text:1.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:3.6.classpath"/>
+    <path refid="library.maven:_org.w3c.css:sac:1.3.classpath"/>
+    <path refid="library.maven:_net.sourceforge.cssparser:cssparser:0.9.24.classpath"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.2.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit:2.29.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit-core-js:2.28.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:neko-htmlunit:2.28.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.3.classpath"/>
+    <path refid="library.maven:_net.jcip:jcip-annotations:1.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:jetty-repacked:9.4.7.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-http:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-io:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-util:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-xml:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:htmlunit-driver:2.29.0.classpath"/>
+    <path refid="library.maven:_javax.servlet:javax.servlet-api:3.1.0.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-api:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-common:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_xalan:serializer:2.7.2.classpath"/>
+    <path refid="library.maven:_xalan:xalan:2.7.2.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.11.0.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.4.01.classpath"/>
+    <path refid="library.maven:_org.yaml:snakeyaml:1.19.classpath"/>
+    <path refid="library.maven:_io.github.bonigarcia:webdrivermanager:2.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.24.classpath"/>
+    <path refid="library.maven:_org.rauschig:jarchivelib:0.7.1.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-compress:1.9.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.10.2.classpath"/>
+  </path>
+  
+  <path id="courthouse.module.classpath">
+    <path refid="${module.jdk.classpath.courthouse}"/>
+    <pathelement location="${courthouse.output.dir}"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-java:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-api:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-chrome-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-edge-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-firefox-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-ie-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-opera-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-remote-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-safari-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-support:3.14.0.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.8.15.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-exec:1.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:25.0-jre.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_org.checkerframework:checker-compat-qual:2.0.0.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.1.3.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.5.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.9.classpath"/>
+    <path refid="library.maven:_com.squareup.okhttp3:okhttp:3.10.0.classpath"/>
+    <path refid="library.maven:_com.squareup.okio:okio:1.14.1.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.14.3.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.72.classpath"/>
+    <path refid="library.maven:_org.apache-extras.beanshell:bsh:2.0b6.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-server:3.11.0.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-text:1.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:3.6.classpath"/>
+    <path refid="library.maven:_org.w3c.css:sac:1.3.classpath"/>
+    <path refid="library.maven:_net.sourceforge.cssparser:cssparser:0.9.24.classpath"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.2.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit:2.29.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit-core-js:2.28.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:neko-htmlunit:2.28.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.3.classpath"/>
+    <path refid="library.maven:_net.jcip:jcip-annotations:1.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:jetty-repacked:9.4.7.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-http:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-io:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-util:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-xml:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:htmlunit-driver:2.29.0.classpath"/>
+    <path refid="library.maven:_javax.servlet:javax.servlet-api:3.1.0.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-api:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-common:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_xalan:serializer:2.7.2.classpath"/>
+    <path refid="library.maven:_xalan:xalan:2.7.2.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.11.0.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.4.01.classpath"/>
+    <path refid="library.maven:_org.yaml:snakeyaml:1.19.classpath"/>
+    <path refid="library.maven:_io.github.bonigarcia:webdrivermanager:2.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.24.classpath"/>
+    <path refid="library.maven:_org.rauschig:jarchivelib:0.7.1.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-compress:1.9.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.10.2.classpath"/>
+  </path>
+  
+  <path id="courthouse.runtime.module.classpath">
+    <pathelement location="${courthouse.testoutput.dir}"/>
+    <pathelement location="${courthouse.output.dir}"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-java:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-api:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-chrome-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-edge-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-firefox-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-ie-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-opera-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-remote-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-safari-driver:3.14.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-support:3.14.0.classpath"/>
+    <path refid="library.maven:_net.bytebuddy:byte-buddy:1.8.15.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-exec:1.3.classpath"/>
+    <path refid="library.maven:_commons-codec:commons-codec:1.10.classpath"/>
+    <path refid="library.maven:_commons-logging:commons-logging:1.2.classpath"/>
+    <path refid="library.maven:_com.google.guava:guava:25.0-jre.classpath"/>
+    <path refid="library.maven:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.maven:_org.checkerframework:checker-compat-qual:2.0.0.classpath"/>
+    <path refid="library.maven:_com.google.errorprone:error_prone_annotations:2.1.3.classpath"/>
+    <path refid="library.maven:_com.google.j2objc:j2objc-annotations:1.1.classpath"/>
+    <path refid="library.maven:_org.codehaus.mojo:animal-sniffer-annotations:1.14.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpclient:4.5.5.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpcore:4.4.9.classpath"/>
+    <path refid="library.maven:_com.squareup.okhttp3:okhttp:3.10.0.classpath"/>
+    <path refid="library.maven:_com.squareup.okio:okio:1.14.1.classpath"/>
+    <path refid="library.maven:_org.testng:testng:6.14.3.classpath"/>
+    <path refid="library.maven:_com.beust:jcommander:1.72.classpath"/>
+    <path refid="library.maven:_org.apache-extras.beanshell:bsh:2.0b6.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:selenium-server:3.11.0.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-lang3:3.7.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-text:1.1.classpath"/>
+    <path refid="library.maven:_commons-io:commons-io:2.6.classpath"/>
+    <path refid="library.maven:_commons-net:commons-net:3.6.classpath"/>
+    <path refid="library.maven:_org.w3c.css:sac:1.3.classpath"/>
+    <path refid="library.maven:_net.sourceforge.cssparser:cssparser:0.9.24.classpath"/>
+    <path refid="library.maven:_com.google.code.gson:gson:2.8.2.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit:2.29.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:htmlunit-core-js:2.28.classpath"/>
+    <path refid="library.maven:_net.sourceforge.htmlunit:neko-htmlunit:2.28.classpath"/>
+    <path refid="library.maven:_org.apache.httpcomponents:httpmime:4.5.3.classpath"/>
+    <path refid="library.maven:_net.jcip:jcip-annotations:1.0.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:jetty-repacked:9.4.7.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-http:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-io:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-util:9.4.8.v20171121.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty:jetty-xml:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.seleniumhq.selenium:htmlunit-driver:2.29.0.classpath"/>
+    <path refid="library.maven:_javax.servlet:javax.servlet-api:3.1.0.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-api:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-client:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_org.eclipse.jetty.websocket:websocket-common:9.4.7.v20170914.classpath"/>
+    <path refid="library.maven:_xalan:serializer:2.7.2.classpath"/>
+    <path refid="library.maven:_xalan:xalan:2.7.2.classpath"/>
+    <path refid="library.maven:_xerces:xercesimpl:2.11.0.classpath"/>
+    <path refid="library.maven:_xml-apis:xml-apis:1.4.01.classpath"/>
+    <path refid="library.maven:_org.yaml:snakeyaml:1.19.classpath"/>
+    <path refid="library.maven:_io.github.bonigarcia:webdrivermanager:2.1.0.classpath"/>
+    <path refid="library.maven:_org.slf4j:slf4j-api:1.7.24.classpath"/>
+    <path refid="library.maven:_org.rauschig:jarchivelib:0.7.1.classpath"/>
+    <path refid="library.maven:_org.apache.commons:commons-compress:1.9.classpath"/>
+    <path refid="library.maven:_org.jsoup:jsoup:1.10.2.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.courthouse">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.courthouse">
+    <patternset refid="excluded.from.module.courthouse"/>
+  </patternset>
+  
+  <path id="courthouse.module.sourcepath">
+    <dirset dir="${module.courthouse.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.courthouse" depends="compile.module.courthouse.production,compile.module.courthouse.tests" description="Compile module Courthouse"/>
+  
+  <target name="compile.module.courthouse.production" depends="register.custom.compilers" description="Compile module Courthouse; production classes">
+    <mkdir dir="${courthouse.output.dir}"/>
+    <javac2 destdir="${courthouse.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.courthouse}/javac">
+      <compilerarg line="${compiler.args.courthouse}"/>
+      <bootclasspath refid="courthouse.module.bootclasspath"/>
+      <classpath refid="courthouse.module.production.classpath"/>
+      <src refid="courthouse.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.courthouse"/>
+    </javac2>
+    
+    <copy todir="${courthouse.output.dir}">
+      <fileset dir="${module.courthouse.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.courthouse.tests" depends="register.custom.compilers,compile.module.courthouse.production" description="compile module Courthouse; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.courthouse" description="cleanup module">
+    <delete dir="${courthouse.output.dir}"/>
+    <delete dir="${courthouse.testoutput.dir}"/>
+  </target>
+</project>
