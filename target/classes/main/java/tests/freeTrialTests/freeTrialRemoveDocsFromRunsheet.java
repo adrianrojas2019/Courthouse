@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class freeTrialRemoveDocsFromRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword"})
-    @Test(groups = "CH_FreeTrial_Del_Docs_From_Runsheet")
+    @Test(groups = {"CH_FreeTrial_Del_Docs_From_Runsheet", "Regression"})
 
     public void freeTrialRemoveDocsFromRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 

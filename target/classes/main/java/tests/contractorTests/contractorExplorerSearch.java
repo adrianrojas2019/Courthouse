@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
  */
 public class contractorExplorerSearch extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
-    @Test(groups = "CH_Contractor_Explorer_Search")
+    @Test(groups = {"CH_Contractor_Explorer_Search", "Regression"})
 
     public void contractorExplorerSearch(String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
