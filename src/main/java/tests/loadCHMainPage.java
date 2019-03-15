@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  */
 public class loadCHMainPage extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn"})
-    @Test(groups = "CH_Login_Load_CH_Main_Page")
+    @Test(groups = {"CH_Login_Load_CH_Main_Page", "Regression"})
     public void loadCHMainPage(String environment, String usernameToLogIn, String passwordToLogIn) throws InterruptedException {
 
         //Login into Gallery

@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class priorReferenceSearch extends SeleniumInitializer {
     @Parameters({"standardUserName","standardUserPassword","standardUserCounty","standardUserVolume","standardUserPage","standardUserRecordNumber"})
-    @Test(groups = "CH_Standard_Prior_Reference_Search")
+    @Test(groups = {"CH_Standard_Prior_Reference_Search", "Regression"})
 
     public void priorReferenceSearch(String standardUserName, String standardUserPassword,String standardUserCounty, String standardUserVolume,String standardUserPage,String standardUserRecordNumber) throws InterruptedException {
 

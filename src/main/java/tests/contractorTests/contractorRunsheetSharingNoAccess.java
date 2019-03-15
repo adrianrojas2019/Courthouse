@@ -18,7 +18,7 @@ import java.util.Calendar;
  */
 public class contractorRunsheetSharingNoAccess extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","contractorName","myCompanyRunsheetName"})
-    @Test(groups = "CH_Contractor_Request_Runsheet_No_Access")
+    @Test(groups = {"CH_Contractor_Request_Runsheet_No_Access", "Regression"})
 
     public void contractorRunsheetSharingNoAccess(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String contractorName, String myCompanyRunsheetName) throws InterruptedException {
 

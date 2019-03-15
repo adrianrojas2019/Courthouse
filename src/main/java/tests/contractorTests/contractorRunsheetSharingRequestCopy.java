@@ -17,7 +17,7 @@ import java.util.Calendar;
  */
 public class contractorRunsheetSharingRequestCopy extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","contractorName","myCompanyRunsheetName"})
-    @Test(groups = "CH_Contractor_Request_Runsheet_Request_Copy")
+    @Test(groups = {"CH_Contractor_Request_Runsheet_Request_Copy", "Regression"})
 
     public void contractorRunsheetSharingRequestCopy(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String contractorName, String myCompanyRunsheetName) throws InterruptedException {
 

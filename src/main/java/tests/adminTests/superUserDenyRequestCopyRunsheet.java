@@ -17,7 +17,7 @@ import java.util.Calendar;
  */
 public class superUserDenyRequestCopyRunsheet extends SeleniumInitializer {
     @Parameters({"superUserName","superUserPassword","myCompanyRunsheetName"})
-    @Test(groups = "CH_Super_User_Deny_Request_Copy_Runsheet")
+    @Test(groups = {"CH_Super_User_Deny_Request_Copy_Runsheet", "Regression"})
 
     public void superAdminDenyRequestCopyRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName) throws InterruptedException {
 

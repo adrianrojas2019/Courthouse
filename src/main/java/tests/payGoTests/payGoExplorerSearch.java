@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  */
 public class payGoExplorerSearch extends SeleniumInitializer {
     @Parameters({"environment","userNamePayGo","payGoPassword","payGoCounty","payGoGrantor","totalSearches"})
-    @Test(groups = "CH_PayGo_Explorer_Search")
+    @Test(groups = {"CH_PayGo_Explorer_Search", "Regression"})
 
     public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String payGoGrantor,int totalSearches) throws InterruptedException {
 
