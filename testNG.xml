@@ -81,7 +81,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheetA"/>
+        <parameter name="runsheetName" value="Automated_RunSheet"/>
         <parameter name="contractorName" value="Test Contract"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
@@ -114,6 +114,15 @@
         <parameter name="totalSearchesByTypePriorReference" value="3.00"/>
         <parameter name="firstNameStandard" value="Di Plus"/>
         <parameter name="lastNameStandard" value="Test User Eight"/>
+
+        <!-- Broker Box Info -->
+        <parameter name="brokerBoxCounty" value="Cooke"/>
+        <parameter name="brokerBoxBookType" value="abstract of judgment"/>
+        <parameter name="brokerBoxIndexBook" value="0001"/>
+        <parameter name="brokerBoxBookmarks" value="A"/>
+
+        <parameter name="brokerBoxVolume" value="1"/>
+        <parameter name="brokerBoxPage" value="265"/>
 
         <!-- Runsheet Sharing Access -->
 
@@ -159,13 +168,14 @@
                 <include name="CH_Admin_Metrics_By_PayGo"/>
                 <include name="CH_Contractor_PDF_Viewer"/>
                 <include name="CH_PayGo_CH1089"/>
+                <include name="CH_Contractor_Broker_Box_Search"/>
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.loadCHMainPage"/>
-            <!--<class name="main.java.tests.adminTests.addContractor"/>
+            <!--<class name="main.java.tests.loadCHMainPage"/>
+            <class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
-            <class name="main.java.tests.adminTests.addPayGo"/>-->
+            <class name="main.java.tests.adminTests.addPayGo"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -200,7 +210,8 @@
             <class name="main.java.tests.adminTests.validateMetricsByFreeTrial"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
-            <class name="main.java.tests.payGoTests.payGoCH1089"/>
+            <class name="main.java.tests.payGoTests.payGoCH1089"/>-->
+            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
         </classes>
     </test>
 </suite>

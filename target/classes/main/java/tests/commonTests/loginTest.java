@@ -1,5 +1,6 @@
 package main.java.tests.commonTests;
 
+import main.java.pageObjects.BookSearchPage;
 import main.java.pageObjects.ExplorerPage;
 import main.java.pageObjects.LoginPage;
 import main.java.pageObjects.CHMainPage;
@@ -51,6 +52,20 @@ public class loginTest extends SeleniumInitializer {
         ExplorerPage newExplorerPage = loginPage.clickOnHomeButton();
         Assert.assertTrue(newExplorerPage.isExplorerMainPageDisplayed(), "Cannot access the Home Administration Page. (Search Results)");
         return newExplorerPage ;
+    }
+
+    public BookSearchPage loginSuccessfullyBrokerBox(String environment, String usernameToLogIn, String passwordToLogIn, WebDriver driver) throws InterruptedException{
+        LoginPage loginPage = new LoginPage(driver);
+        Assert.assertTrue(loginPage.waitForElementVisible(300), "Cannot login the Standard Login Page");
+        loginPage.clickOnStandaloneSignInButton(environment);
+        Assert.assertTrue(loginPage.isLoginStandaloneTitleDisplayed(), "Cannot access the StandAlone Page. Standalone Title not displayed");
+        loginPage.with(usernameToLogIn, passwordToLogIn);
+        loginPage.clickOnSignInButton();
+
+        ExplorerPage newExplorerPage = loginPage.clickOnHomeButton();
+        Assert.assertTrue(newExplorerPage.isExplorerMainPageDisplayed(), "Cannot access the Home Administration Page. (Search Results)");
+        BookSearchPage newBookSearchPage = newExplorerPage.clickOnBookSearch();
+        return newBookSearchPage ;
     }
 
 }

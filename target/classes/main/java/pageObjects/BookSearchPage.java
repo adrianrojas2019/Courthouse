@@ -1,45 +1,48 @@
 package main.java.pageObjects;
 
-import net.sourceforge.htmlunit.corejs.javascript.regexp.SubString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 
 /**
  * Created by Adrian on 11/30/2018.
  */
-public class ExplorerPage extends PageObjects {
+public class BookSearchPage extends PageObjects {
     /**
      *Web elements for UserPage
      */
 
     private final By FREE_TRIAL_TITLE = By.xpath("//h2[text()='Save time and gas money by accessing court documents online.']");
     private final By EXPLORER_SEARCH_BUTTON = By.xpath("//i[@class='fa fa-search fa-flip-horizontal']");
-    private final By BOOK_SEARCH_BUTTON = By.xpath("//a[@ng-click='activateBookSearchFilter()']");
     private final By PRIOR_REFERENCE_SEARCH_BUTTON = By.xpath("//a[@ng-click='activateVolPageFilter()']");
     //private final By COUNTY_COMBO = By.xpath("//select[@class='form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required county-select']");
-    private final By COUNTY_COMBO = By.xpath("//div[@class='filter-input-container col-xs-8']//select");
+    private final By COUNTY_COMBO = By.xpath("//form[@name='brokerBoxForm']//div[@class='filter-input-container col-xs-8']//select");
+    private final By BOOK_TYPE_COMBO = By.xpath("//select[@name='bookType']");
+    private final By INDEX_BOOK_COMBO= By.xpath("//select[@name='indexBook']");
+    private final By BOOKMARKS_COMBO = By.xpath("//select[@name='bookmarks']");
     private final By PR_COUNTY_COMBO = By.xpath("//form[@ng-submit='applyFilterVolPage($event)']//div[@class='filter-input-container col-xs-8']//select");
     private final By CONTRACTOR_MAIN_PAGE = By.xpath("//h5[@name='Search Results']");
-    private final By EXPLORE_TITLE = By.xpath("//h4[text()='EXPLORE']");
+    private final By BROKER_BOX_TITLE = By.xpath("//h4[text()='Broker Box']");
     private final By PRIOR_REFERENCE_TITLE = By.xpath("//h4[text()='PRIOR REFERENCE']");
     private final By GRANTOR_LABEL = By.xpath("//label[@for='grantor']");
     private final By GRANTOR = By.xpath("//input[@name='grantor']");
-    private final By VOLUME = By.xpath("//input[@name='volume'][@class='form-control di-input-std ng-pristine ng-untouched ng-valid ng-scope']");
-    private final By PAGE = By.xpath("//input[@name='page'][@class='form-control di-input-std ng-pristine ng-untouched ng-valid ng-scope']");
+    private final By VOLUME = By.xpath("//input[@ng-model='diPdfViewer.volume']");
+    private final By PAGE = By.xpath("//input[@ng-model='diPdfViewer.page']");
     private final By RECORD_NUMBER = By.xpath("//input[@name='instNumber']");
-    private final By APPLY_BUTTON = By.xpath("//aside[@ui-view='filters']//button[@class='btn btn-primary'][@type='submit']");
+    private final By SPINNER_POPUP = By.xpath("//span[@spinner-key='di-spinner-pdf']//div");
+    private final By TOASTER_POPUP = By.xpath("//div[@class='toast toast-warning']");
+    private final By APPLY_BUTTON = By.xpath("//aside[@ui-view='filtersBookSearch']//button[@class='btn btn-primary'][@type='submit']");
+    private final By GO_BUTTON = By.cssSelector("span.btn.btn-di.pull-right");
     private final By PRIOR_REFERENCE_APPLY_BUTTON = By.xpath("//div[@class='form-group pull-right filter-buttons']//button[@class='btn btn-primary'][@ng-disabled='isRequired || disabledButton']");
     private final By FIRST_CHECKBOX = By.cssSelector("div.ngCell.col0.colt0");
     private final By NEW_RUNSHEET_BUTTON = By.xpath("//button[@class='btn btn-success btn-sm inline-block'][@ng-click='newRunsheetBtn()']");
     private final By OLD_RUNSHEET = By.xpath("//select[@ng-show='!runsheetTypeSelected || runsheetTypeSelected && runsheetTypeSelected.id === indexMyRunsheets']");
     private final By SAVE_RUNSHEET_BUTTON = By.xpath("//button[@class='btn btn-primary btn-sm ng-binding']");
-    private final By ADD_TO_RUNSHEET_BUTTON = By.xpath("//button[@ng-click='addToRunsheet(selectedItems)']");
-    private final By ENTER_RUNSHEET_NAME  = By.xpath("//input[@class='form-control input-sm ng-pristine ng-untouched ng-valid ng-isolate-scope ng-valid-pattern ng-valid-minlength']");
+    private final By ADD_TO_RUNSHEET_BUTTON = By.cssSelector("button.btn.btn-success.ng-scope");
+    private final By ENTER_RUNSHEET_NAME  = By.xpath("//select[@class='form-control input-sm ng-pristine ng-untouched ng-valid']");
     private final By REMOVE_BUTTON = By.xpath("//button[@class='btn btn-danger btn-sm remove_border ng-binding']");
     private final By REMOVE_POP_UP_DIALOG = By.xpath("//form[@class='form-horizontal alignForm ng-pristine ng-valid']");
     private final By REMOVE_POP_UP_BUTTON = By.xpath("//button[@ng-bind='modalDeleteOptions.deleteButtonText']");
@@ -53,7 +56,7 @@ public class ExplorerPage extends PageObjects {
     private final By DOWNLOADS_PRINTS_POP_UP_DIALOG = By.xpath("//div[@ng-if='modalAlertOptions.displayImg']");
     private final By TOTAL_DOWNLOADS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.downloadsUsed | number']");
     private final By TOTAL_PRINTS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.printsUsed | number']");
-    private final By OK_BUTTON = By.xpath("//button[@ng-bind='modalAlertOptions.okButtonText']");
+    private final By OK_BUTTON = By.xpath("//button[@ng-bind='modalNormalOptions.okButtonText']");
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.xpath("//button[@class='btn btn-success ng-binding']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
     private final By CLOSE_STANDALONE_PDF = By.xpath("//button[@class='toolbarButton closePdf']");
@@ -107,7 +110,7 @@ public class ExplorerPage extends PageObjects {
     String checkbox = "//*[@id='sectionHomeGridContainerAlign']/article[1]/div[2]/div/div[2]/div/div[%s]/div[1]";
     String find_County = "//span[text()='%s']";
 
-    public ExplorerPage(WebDriver driver) {
+    public BookSearchPage(WebDriver driver) {
         super(driver);
     }
 
@@ -154,10 +157,28 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
     }
 
-    public void clickOnCountyCombo(String contractorCounty){
-        webDriverCommands.waitSomeSeconds(5);
-        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
-        webDriverCommands.waitSomeSeconds(5);
+    public void clickOnCountyCombo(String brokerBoxCounty){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.type(COUNTY_COMBO,brokerBoxCounty);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnBookType(String brokerBoxBookType){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.type(BOOK_TYPE_COMBO,brokerBoxBookType);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnIndexBook(String brokerBoxIndexBook){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.type(INDEX_BOOK_COMBO,brokerBoxIndexBook);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnBookmarks(String brokerBoxBookmarks){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.type(BOOKMARKS_COMBO,brokerBoxBookmarks);
+        webDriverCommands.waitSomeSeconds(3);
     }
 
     public void clickOnCountyComboPriorReference(String contractorCounty){
@@ -174,21 +195,13 @@ public class ExplorerPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(CONTRACTOR_MAIN_PAGE,30);
     }
 
-    public BookSearchPage clickOnBookSearch(){
-
-        webDriverCommands.click(BOOK_SEARCH_BUTTON);
-        webDriverCommands.waitSomeSeconds(7);
-
-        return PageFactory.initElements(getDriver(), BookSearchPage.class);
-    }
-
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
      *  @return boolean
      */
-    public boolean isExploreTitleDisplayed(){
-        return webDriverCommands.waitForElementPresent(EXPLORE_TITLE,30);
+    public boolean isBrokerBoxTitleDisplayed(){
+        return webDriverCommands.waitForElementPresent(BROKER_BOX_TITLE,30);
     }
 
     /**
@@ -284,7 +297,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.type(PAGE, standardUserPage);
     }
 
-    public void insertNewRunsheetName(String runSheetName){
+    public void selectRunsheetName(String runSheetName){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(ENTER_RUNSHEET_NAME, runSheetName);
     }
@@ -299,6 +312,20 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(APPLY_BUTTON);
         webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnGoButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(GO_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
+    public void isProgressBarDone() {
+        webDriverCommands.waitForElementInVisible(SPINNER_POPUP, 120);
+    }
+
+    public void isToasterDone() {
+        webDriverCommands.waitForElementInVisible(TOASTER_POPUP, 120);
     }
 
     public void clickOnPRApplyButton(){
@@ -559,6 +586,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitForElementClickable(USER_MENU, 300);
         webDriverCommands.click(USER_MENU);
     }
+
 
     /**
      *this method calls the click method in webDriverCommands class.
