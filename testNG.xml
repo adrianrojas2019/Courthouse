@@ -172,10 +172,10 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.loadCHMainPage"/>
-            <class name="main.java.tests.adminTests.addContractor"/>
+            <class name="main.java.tests.loadCHMainPage"/>
+            <!--<class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
-            <class name="main.java.tests.adminTests.addPayGo"/>
+            <class name="main.java.tests.adminTests.addPayGo"/>-->
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -210,7 +210,7 @@
             <class name="main.java.tests.adminTests.validateMetricsByFreeTrial"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
-            <class name="main.java.tests.payGoTests.payGoCH1089"/>-->
+            <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
         </classes>
     </test>
