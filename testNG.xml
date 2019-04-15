@@ -216,7 +216,7 @@
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
+            <!--<class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>-->
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
         </classes>
     </test>
