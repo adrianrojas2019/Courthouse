@@ -43,8 +43,11 @@ public class UserAdministrationPage extends PageObjects {
     private final By DOCUMENTS_RENAMED_FROM_RUNSHEET = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Runsheet edits made']/following-sibling::td");
     private final By TOTAL_SEARCHES_BY_COUNTY = By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByCounty']//td[2]");
     private final By TOTAL_SEARCHES_BY_TYPE =  By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByType']//td[2]");
+    private final By TOTAL_SEARCHES_BY_TYPE_BB_INDEX_BOOK =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='BB Index Book']/following-sibling::div");
+    private final By TOTAL_SEARCHES_BY_TYPE_BB_VOLUME_PAGE =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='BB Volume Page']/following-sibling::div");
     private final By TOTAL_SEARCHES_BY_TYPE_PR =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='Prior Reference']/following-sibling::div");
     private final By PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE = By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByType']//i[@class='fa fa-plus-square-o']");
+    private final By PLUS_SQUARE_TOTAL_SEARCHES_BY_COUNTY = By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByCounty']//i[@class='fa fa-plus-square-o']");
     private final By DURATION = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Duration']/following-sibling::td");
 
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
@@ -71,6 +74,7 @@ public class UserAdministrationPage extends PageObjects {
 
     String find_County = "//span[text()='%s']";
     String contractor_Name = "//span[text()='%s']";
+    String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
 
     public UserAdministrationPage(WebDriver driver) {
         super(driver);
@@ -276,8 +280,27 @@ public class UserAdministrationPage extends PageObjects {
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_COUNTY);
     }
 
+    public String isTotalSearchesByCountyBB(String brokerBoxCounty){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_COUNTY);
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(By.xpath(String.format(find_Broker_Box_County, brokerBoxCounty)));
+    }
+
     public String isTotalSearchesByType(){
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE);
+    }
+
+    public String isTotalSearchesByTypeBBIndexBook(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE);
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_BB_INDEX_BOOK);
+    }
+
+    public String isTotalSearchesByTypeBBVolumePage(){
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_BB_VOLUME_PAGE);
     }
 
     public String isTotalSearchesByTypePR(){

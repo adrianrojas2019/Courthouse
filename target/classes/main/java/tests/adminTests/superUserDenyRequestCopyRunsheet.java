@@ -19,7 +19,7 @@ public class superUserDenyRequestCopyRunsheet extends SeleniumInitializer {
     @Parameters({"superUserName","superUserPassword","myCompanyRunsheetName"})
     @Test(groups = {"CH_Super_User_Deny_Request_Copy_Runsheet", "Regression"})
 
-    public void superAdminDenyRequestCopyRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName) throws InterruptedException {
+    public void superUserDenyRequestCopyRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName) throws InterruptedException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
