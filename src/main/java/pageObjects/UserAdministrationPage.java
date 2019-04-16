@@ -74,6 +74,7 @@ public class UserAdministrationPage extends PageObjects {
 
     String find_County = "//span[text()='%s']";
     String contractor_Name = "//span[text()='%s']";
+    String my_Company_Name = "//span[text()='%s']";
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
 
     public UserAdministrationPage(WebDriver driver) {
@@ -135,9 +136,8 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(5);
     }
 
-    public void clickOnContractorName(String findUserName){
-        webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.click(By.xpath(String.format(contractor_Name,findUserName)));
+    public void clickOnContractorName(String findMyCompanyName){
+        webDriverCommands.click(By.xpath(String.format(my_Company_Name, findMyCompanyName)));
     }
 
     /**

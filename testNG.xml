@@ -83,6 +83,7 @@
         <parameter name="contractorGrantor" value="James"/>
         <parameter name="runsheetName" value="Automated_RunSheet"/>
         <parameter name="contractorName" value="Test Contract"/>
+        <parameter name="myCompanyNameName" value="Gap"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -216,7 +217,7 @@
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <!--<class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>-->
+            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
         </classes>
     </test>
