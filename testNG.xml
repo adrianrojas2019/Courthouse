@@ -83,7 +83,7 @@
         <parameter name="contractorGrantor" value="James"/>
         <parameter name="runsheetName" value="Automated_RunSheet"/>
         <parameter name="contractorName" value="Test Contract"/>
-        <parameter name="myCompanyNameName" value="Gap"/>
+        <parameter name="myCompanyName" value="Gap"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>

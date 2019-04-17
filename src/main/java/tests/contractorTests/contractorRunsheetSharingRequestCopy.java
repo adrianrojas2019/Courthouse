@@ -16,10 +16,10 @@ import java.util.Calendar;
  * Created by Adrian on 12/10/2018.
  */
 public class contractorRunsheetSharingRequestCopy extends SeleniumInitializer {
-    @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","myCompanyNameName","myCompanyRunsheetName"})
+    @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","myCompanyName","myCompanyRunsheetName"})
     @Test(groups = {"CH_Contractor_Request_Runsheet_Request_Copy", "Regression"})
 
-    public void contractorRunsheetSharingRequestCopy(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String myCompanyNameName, String myCompanyRunsheetName) throws InterruptedException {
+    public void contractorRunsheetSharingRequestCopy(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String myCompanyName, String myCompanyRunsheetName) throws InterruptedException {
 
 
         //Already logged in as DI Admin
@@ -41,7 +41,7 @@ public class contractorRunsheetSharingRequestCopy extends SeleniumInitializer {
         //Validate that user has been found
         Assert.assertEquals(1, NumberUtils.toInt(newUserAdminPage.isUserFound()), "Cannot find the Contract User.");
         //Click on Contractor User Name
-        newUserAdminPage.clickOnContractorName(myCompanyNameName);
+        newUserAdminPage.clickOnContractorName(myCompanyName);
         //click on Runsheet Sharing Access Combo
         newUserAdminPage.clickOnRunsheetSharingAccess("Request Copy");
         //click on Save button
