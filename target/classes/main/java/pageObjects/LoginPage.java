@@ -79,7 +79,7 @@ public class LoginPage extends PageObjects {
 
         webDriverCommands.waitForElementPresent(COURTHOUSE_NAME_APP,300);
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.waitForElementPresent(COURTHOUSE_THUMBNAIL,30);
+        webDriverCommands.waitForElementPresent(COURTHOUSE_THUMBNAIL,100);
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(COURTHOUSE_THUMBNAIL);
         webDriverCommands.waitSomeSeconds(5);
