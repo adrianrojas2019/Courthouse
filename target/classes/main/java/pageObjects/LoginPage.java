@@ -50,7 +50,7 @@ public class LoginPage extends PageObjects {
     public boolean isLoginTitleDisplayed(){
         webDriverCommands.waitForElementInVisible(SPINNER_POPUP, 120);
         webDriverCommands.waitSomeSeconds(5);
-        return webDriverCommands.waitForElementPresent(COURTHOUSE_THUMBNAIL,30);
+        return webDriverCommands.waitForElementPresent(COURTHOUSE_THUMBNAIL,60);
     }
 
     /**
