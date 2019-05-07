@@ -17,7 +17,8 @@ public class LoginPage extends PageObjects {
     //Courthouse 2.0 Thumbnail
     private final By COURTHOUSE_THUMBNAIL = By.xpath("//img[@class='di_county_scans_20']");
     private final By COURTHOUSE_NAME_APP= By.xpath("//span[@title='DI Courthouse 2.0']");
-    private final By SPINNER_POPUP = By.xpath("//span[@class='loading-bar']");
+    //private final By SPINNER_POPUP = By.xpath("//span[@class='loading-bar']");
+    private final By SPINNER_POPUP = By.xpath("//div[@class='di-app-loading-message']");
     private final By LOGGING_OUT = By.xpath("//p[text()='Logging out from COURTHOUSE...']");
     private final By USER_FIELD = By.id("username");
     private final By PASSWORD_FIELD = By.id("password");
