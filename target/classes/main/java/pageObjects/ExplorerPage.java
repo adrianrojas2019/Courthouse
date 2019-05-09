@@ -55,6 +55,7 @@ public class ExplorerPage extends PageObjects {
     private final By TOTAL_PRINTS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.printsUsed | number']");
     private final By OK_BUTTON = By.xpath("//button[@ng-bind='modalAlertOptions.okButtonText']");
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.xpath("//button[@class='btn btn-success ng-binding']");
+    private final By SPINNER = By.xpath("//div[@class='spinner']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
     private final By CLOSE_STANDALONE_PDF = By.xpath("//button[@class='toolbarButton closePdf']");
     private final By CLOSE_EMBEDDED_PDF = By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//button[@class='toolbarButton closePdf']");
@@ -433,7 +434,8 @@ public class ExplorerPage extends PageObjects {
     public void clickOnPurchaseConfirmationButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_PURCHASE_CONFIRMATION_BUTTON);
-        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitForElementInVisible(SPINNER,20);
     }
 
     public void clickOnRenameButton(){

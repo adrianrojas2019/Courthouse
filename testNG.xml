@@ -81,7 +81,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheet"/>
+        <parameter name="runsheetName" value="Automated_RunSheetB"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -102,7 +102,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheetA"/>
+        <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheet"/>
         <parameter name="superUserCounty" value="Bandera"/>
 
         <!-- Standard User Credentials -->
@@ -181,13 +181,13 @@
             <class name="main.java.tests.loadCHMainPage"/>
             <!--<class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
-            <class name="main.java.tests.adminTests.addPayGo"/>
+            <class name="main.java.tests.adminTests.addPayGo"/>-->
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>-->
+            <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
