@@ -27,6 +27,10 @@ public class UserAdministrationPage extends PageObjects {
     private final By USAGE_METRICS_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Usage Metrics']");
     private final By METRICS_TAB = By.xpath("//div[@class='tab-container ng-scope']//li//a[text()='Metrics']");
 
+    private final By COUNTY_TYPE = By.xpath("//select[@name='countyType']");
+    private final By ARROW_RIGHT = By.xpath("//div[@class='arrowIcon arrowRight activeArrowRight']");
+    private final By ARROW_LEFT = By.xpath("//div[@class='arrowIcon arrowLeft activeArrowLeft']");
+
     private final By USER_METRICS_GRID = By.xpath("//article[@ui-view='user-metrics']");
     private final By USER_METRICS_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics']//h5[@name='Select County for details']");
     private final By USER_METRICS_TAB_TITLE = By.xpath("//article[@ui-view='user-metrics']//label[text()='Usage & Activity']");
@@ -66,16 +70,27 @@ public class UserAdministrationPage extends PageObjects {
     private final By FIND_NEW_USERNAME = By.xpath("//input[@class='form-control ng-pristine ng-untouched ng-valid']");
     private final By SELECT_NEW_USERNAME = By.xpath("//div[@class='ngCanvas']");
     private final By NEW_USER_EXISTS = By.xpath("//label[@ng-bind='userSelected.userName']");
-    private final By SUCCESS_ALERT_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully saved.')]");
+    //private final By SUCCESS_ALERT_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully saved.')]");
     private final By SUCCESS_USER_UPDATE_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully edited.')]");
 
     private final By TOTAL_ITEMS = By.xpath("//div[@class='ngFooterTotalItems']//span");
     private final By TOTAL_ITEMS_BY_ADMIN = By.xpath("//div[@class='ngFooterTotalItems ngNoMultiSelect']//span");
 
+    private final By SEARCH_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
+    private final By REMOVE_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItemAssign.name']");
+
     String find_County = "//span[text()='%s']";
+    String find_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
+    String find_Assigned_County = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
+    String find_County_Type = "//option[text()='%s']";
     String contractor_Name = "//span[text()='%s']";
     String my_Company_Name = "//span[text()='%s']";
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
+
+    String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
+    String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
+
+    String successAlertMessage= "//div[contains(text(),'%s')]";
 
     public UserAdministrationPage(WebDriver driver) {
         super(driver);
@@ -138,6 +153,27 @@ public class UserAdministrationPage extends PageObjects {
 
     public void clickOnContractorName(String findMyCompanyName){
         webDriverCommands.click(By.xpath(String.format(my_Company_Name, findMyCompanyName)));
+    }
+
+    public void clickOnCountyMidlandMaps(String findCountyMidlandMap){
+        webDriverCommands.click(By.xpath(String.format(my_County_Midland_Maps_Name, findCountyMidlandMap)));
+        webDriverCommands.waitSomeSeconds(2);
+    }
+
+    public void clickOnAssignedCountyMidlandMaps(String findCountyMidlandMap){
+        webDriverCommands.click(By.xpath(String.format(my_Assigned_County_Midland_Maps_Name, findCountyMidlandMap)));
+        webDriverCommands.waitSomeSeconds(2);
+    }
+
+
+    public void addMidlandMapsCounty(String midlandMapCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(SEARCH_MIDLAND_MAP_COUNTY,midlandMapCounty);
+    }
+
+    public void removeMidlandMapsCounty(String midlandMapCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(REMOVE_MIDLAND_MAP_COUNTY,midlandMapCounty);
     }
 
     /**
@@ -212,6 +248,26 @@ public class UserAdministrationPage extends PageObjects {
 
     public boolean isCountyDisplayed(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County, county)),30);
+    }
+
+    public boolean isUnassignedCountyDisplayed(String county){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),30);
+    }
+
+    public boolean isAssignedCountyDisplayed(String county){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Assigned_County, county)),30);
+    }
+
+    public boolean isCountyAssigned(String county){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Assigned_County, county)),30);
+    }
+
+    public boolean isCountyUnassigned(String county){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),30);
+    }
+
+    public boolean isCountyTypeSelected(String countyType){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County_Type, countyType)),30);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -320,9 +376,35 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(By.xpath(String.format(find_County, county)));
     }
 
+    public void selectUnassignedCounty(String county){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(By.xpath(String.format(find_Unassigned_County, county)));
+    }
+
+    public void selectAssignedCounty(String county){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(By.xpath(String.format(find_Assigned_County, county)));
+    }
+
     public void clickOnUsageMetricsTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(USAGE_METRICS_TAB);
+    }
+
+    public void clickOnCountyTypeCombo(String countyType){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(COUNTY_TYPE, countyType);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnArrowRight(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(ARROW_RIGHT);
+    }
+
+    public void clickOnArrowLeft(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(ARROW_LEFT);
     }
 
     public void clickOnMetricsTab(){
@@ -334,9 +416,14 @@ public class UserAdministrationPage extends PageObjects {
      *
      *  @return boolean
      */
-    public boolean isSuccessMessageDisplayed(){
+    /*public boolean isSuccessMessageDisplayed(){
         return webDriverCommands.waitForElementPresent(SUCCESS_ALERT_MESSAGE,30);
+    }*/
+
+    public boolean isSuccessMessageDisplayed(String successMessage){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),15);
     }
+
 
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.

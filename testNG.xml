@@ -129,6 +129,10 @@
         <parameter name="totalSearchesByTypeBBIndexBook" value="1.00"/>
         <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
 
+        <!-- Midland Maps Feature-->
+        <parameter name="countyType" value="Midland maps"/>
+        <parameter name="countyMidlandMaps" value="Andrews Midland Maps"/>
+
         <!-- Runsheet Sharing Access -->
 
 
@@ -175,6 +179,11 @@
                 <include name="CH_PayGo_CH1089"/>
                 <include name="CH_Contractor_Broker_Box_Search"/>
                 <include name="CH_Admin_Metrics_By_Contractor_By_Broker_Box"/>
+                <include name="CH_Admin_Assign_Midland_Maps_County"/>
+                <include name="CH_Contractor_Midland_Maps_Assign"/>
+                <include name="CH_Contractor_Midland_Maps_Search"/>
+                <include name="CH_Contractor_Midland_Maps_Unassign"/>
+                <include name="CH_Admin_Unassign_Midland_Maps_County"/>
             </run>
         </groups>
         <classes>
@@ -219,6 +228,11 @@
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
+            <!--<class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
+            <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>-->
         </classes>
     </test>
 </suite>

@@ -20,6 +20,7 @@ public class ExplorerPage extends PageObjects {
     private final By FREE_TRIAL_TITLE = By.xpath("//h2[text()='Save time and gas money by accessing court documents online.']");
     private final By EXPLORER_SEARCH_BUTTON = By.xpath("//i[@class='fa fa-search fa-flip-horizontal']");
     private final By BOOK_SEARCH_BUTTON = By.xpath("//a[@ng-click='activateBookSearchFilter()']");
+    private final By MIDLAND_MAPS_SEARCH_BUTTON = By.xpath("//a[@ng-click='activateMidlandFilter()']");
     private final By PRIOR_REFERENCE_SEARCH_BUTTON = By.xpath("//a[@ng-click='activateVolPageFilter()']");
     //private final By COUNTY_COMBO = By.xpath("//select[@class='form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required county-select']");
     private final By COUNTY_COMBO = By.xpath("//div[@class='filter-input-container col-xs-8']//select");
@@ -181,6 +182,14 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(7);
 
         return PageFactory.initElements(getDriver(), BookSearchPage.class);
+    }
+
+    public MidlandMapsPage clickOnMidlandMapsSearch(){
+
+        webDriverCommands.click(MIDLAND_MAPS_SEARCH_BUTTON);
+        webDriverCommands.waitSomeSeconds(7);
+
+        return PageFactory.initElements(getDriver(), MidlandMapsPage.class);
     }
 
     /**

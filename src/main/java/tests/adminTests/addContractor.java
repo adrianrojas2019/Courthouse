@@ -48,7 +48,7 @@ public class addContractor extends SeleniumInitializer {
             newAdministrationPage.insertRunsheetSharingAccess(runsheetSharingAccess);
             newAdministrationPage.insertEmailUserName(String.format(emailUserName,numberOfUser));
             newAdministrationPage.clickSaveButton();
-            Assert.assertTrue(newAdministrationPage.isSuccessMessageDisplayed(), "The new users could not be added");
+            Assert.assertTrue(newAdministrationPage.isSuccessMessageDisplayed("User has been successfully saved."), "The new users could not be added");
             //Find and Select previous user on user grid
             newAdministrationPage.selectNewUserName(String.format(userName,numberOfUser));
             Assert.assertTrue(newAdministrationPage.isNewUserFound(String.format(userName,numberOfUser)), "The new user has not been found into grid");
