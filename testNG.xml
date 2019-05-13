@@ -228,11 +228,11 @@
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
-            <!--<class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
+            <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
-            <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>-->
+            <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
         </classes>
     </test>
 </suite>
