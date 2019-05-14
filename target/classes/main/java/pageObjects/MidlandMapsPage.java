@@ -16,6 +16,7 @@ public class MidlandMapsPage extends PageObjects  {
 
     String findMidlandMapsCounty = "//div[@class='filter-input-container col-xs-8']//option[text()='%s']";
     String findMidlandMapsCountyYear = "//option[text()='%s']";
+    String successAlertMessage= "//div[contains(text(),'%s')]";
 
     public MidlandMapsPage(WebDriver driver) {
         super(driver);
@@ -49,6 +50,15 @@ public class MidlandMapsPage extends PageObjects  {
     public boolean isMidlandMapCountyDisplayed(String countyMidlandMaps){
         webDriverCommands.waitSomeSeconds(2);
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(findMidlandMapsCounty, countyMidlandMaps)));
+    }
+
+    /**
+     *this method calls the waitForElementVisible method in webn.DriverCommands class.
+     *@param successMessage message to be displayed
+     *  @return boolean
+     */
+    public boolean isSuccessMessageDisplayed(String successMessage){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),15);
     }
 
     public boolean isMidlandMapCountyYearDisplayed(String countyYearMidlandMaps){

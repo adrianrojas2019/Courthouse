@@ -187,8 +187,7 @@ public class ExplorerPage extends PageObjects {
     public MidlandMapsPage clickOnMidlandMapsSearch(){
 
         webDriverCommands.click(MIDLAND_MAPS_SEARCH_BUTTON);
-        webDriverCommands.waitSomeSeconds(7);
-
+        webDriverCommands.waitSomeSeconds(3);
         return PageFactory.initElements(getDriver(), MidlandMapsPage.class);
     }
 

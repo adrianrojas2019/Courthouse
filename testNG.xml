@@ -236,6 +236,8 @@
             <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
         </classes>
     </test>
 </suite>
