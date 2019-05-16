@@ -48,6 +48,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By TOTAL_SEARCHES_BY_COUNTY = By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByCounty']//td[2]");
     private final By TOTAL_SEARCHES_BY_TYPE =  By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByType']//td[2]");
     private final By TOTAL_SEARCHES_BY_TYPE_BB_INDEX_BOOK =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='BB Index Book']/following-sibling::div");
+    private final By TOTAL_SEARCHES_BY_TYPE_MIDLAND_MAP = By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='Midland Map']/following-sibling::div");
     private final By TOTAL_SEARCHES_BY_TYPE_BB_VOLUME_PAGE =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='BB Volume Page']/following-sibling::div");
     private final By TOTAL_SEARCHES_BY_TYPE_PR =  By.xpath("//tr[@items='userMetrics.searchesByType']//div[text()='Prior Reference']/following-sibling::div");
     private final By PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE = By.xpath("//article[@ui-view='user-metrics']//tr[@items='userMetrics.searchesByType']//i[@class='fa fa-plus-square-o']");
@@ -86,6 +87,7 @@ public class UserAdministrationPage extends PageObjects {
     String contractor_Name = "//span[text()='%s']";
     String my_Company_Name = "//span[text()='%s']";
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
+    String find_Midland_Map_County = "//div[text()='%s']//following-sibling::div";
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
@@ -343,6 +345,13 @@ public class UserAdministrationPage extends PageObjects {
         return webDriverCommands.getText(By.xpath(String.format(find_Broker_Box_County, brokerBoxCounty)));
     }
 
+    public String isTotalSearchesByCountyMidlandMaps(String midlandMapCounty){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_COUNTY);
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(By.xpath(String.format(find_Midland_Map_County, midlandMapCounty)));
+    }
+
     public String isTotalSearchesByType(){
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE);
     }
@@ -352,6 +361,14 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE);
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_BB_INDEX_BOOK);
+    }
+
+
+    public String isTotalSearchesByTypeMidlandMap(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE);
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_MIDLAND_MAP);
     }
 
     public String isTotalSearchesByTypeBBVolumePage(){

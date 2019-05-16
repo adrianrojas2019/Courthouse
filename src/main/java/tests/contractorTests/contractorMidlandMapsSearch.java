@@ -28,28 +28,39 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
 
         MidlandMapsPage newMidlandMapsPage = newExplorerPage.clickOnMidlandMapsSearch();
 
-        //Make sure that current contract user is able to see the previous assigned midland maps county
-        newMidlandMapsPage.clickOnCountyCombo(searchMidlandMapsCountyName);
-        Assert.assertTrue(newMidlandMapsPage.isMidlandMapCountyDisplayed(searchMidlandMapsCountyName),"Midland Map County has not been displayed." + searchMidlandMapsCountyName);
+        String[]searchMidlandMapsCountyNames = searchMidlandMapsCountyName.split(",");
 
-        //Make sure that current contract user is able to see the previous assigned midland maps county
-        newMidlandMapsPage.clickOnYearCombo(searchMidlandMapsCountyYear);
-        Assert.assertTrue(newMidlandMapsPage.isMidlandMapCountyYearDisplayed(searchMidlandMapsCountyYear),"Midland Map County Year has not been displayed." +searchMidlandMapsCountyName + " " + searchMidlandMapsCountyYear);
+        for(String countyName : searchMidlandMapsCountyNames) {
+            //Make sure that current contract user is able to see the previous assigned midland maps county
+            newMidlandMapsPage.clickOnCountyCombo(countyName);
+            Assert.assertTrue(newMidlandMapsPage.isMidlandMapCountyDisplayed(countyName), "Midland Map County has not been displayed." + countyName);
 
-        //Click on Apply button
-        newMidlandMapsPage.clickOnApplyButton();
-        //Make sure that image (pdf file) has beed loaded/displayed successfully
-        //Wait until Progress Bar is gone
-        newMidlandMapsPage.isProgressBarDone();
-        //Wait until Search Results retrieves documents
-        Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
-        //Click on next map icon
-        newMidlandMapsPage.clickOnNextMapIcon();
-        //Wait until Progress Bar is gone
-        newMidlandMapsPage.isProgressBarDone();
-        //Wait until Search Results retrieves documents
-        Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
+            //Make sure that current contract user is able to see the previous assigned midland maps county
+            newMidlandMapsPage.clickOnYearCombo(searchMidlandMapsCountyYear);
+            Assert.assertTrue(newMidlandMapsPage.isMidlandMapCountyYearDisplayed(searchMidlandMapsCountyYear), "Midland Map County Year has not been displayed." + countyName);
 
+            //Click on Apply button
+            newMidlandMapsPage.clickOnApplyButton();
+            //Make sure that warning message is being displayed
+            Assert.assertTrue(newMidlandMapsPage.isNewWarningDisplayed(), "Add warning message for Midland Map viewing is not being displayed.");
+
+            //Make sure that image (pdf file) has beed loaded/displayed successfully
+            //Wait until Progress Bar is gone
+            newMidlandMapsPage.isProgressBarDone();
+            //Wait until Search Results retrieves documents
+            Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
+
+            while (!newMidlandMapsPage.isNotLatestMap()) {
+                //Click on next map icon
+                newMidlandMapsPage.clickOnNextMapIcon();
+                //Make sure that warning message is being displayed
+                Assert.assertTrue(newMidlandMapsPage.isNewWarningDisplayed(), "Add warning message for Midland Map viewing is not being displayed.");
+
+                //Wait until Progress Bar is gone
+                newMidlandMapsPage.isProgressBarDone();
+                //Wait until Search Results retrieves documents
+                Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
+            }
+        }
     }
-
 }

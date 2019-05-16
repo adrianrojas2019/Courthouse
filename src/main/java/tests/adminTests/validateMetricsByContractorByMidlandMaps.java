@@ -52,11 +52,11 @@ public class validateMetricsByContractorByMidlandMaps extends SeleniumInitialize
         newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
 
         //Proceed to validate some metrics
-        //Make sure that at least 2 searches have been executed by Broker Box County
-        Assert.assertEquals(totalDownloadMidlandMaps,newAdministrationPage.isTotalSearchesByCountyBB(searchMidlandMapsCountyName), "Cannot math Total Searches By County. (Total Searches by County)");
-
         //Make sure that at least 1 search have been executed by Type
-        Assert.assertEquals(totalSearchesByCountyMidlandMaps,newAdministrationPage.isTotalSearchesByTypeBBIndexBook(), "Cannot math Total Searches By County/Year.");
+        Assert.assertEquals(totalDownloadMidlandMaps,newAdministrationPage.isTotalSearchesByTypeMidlandMap(), "Cannot math Total Searches By Type. (Midland Map)");
+
+        //Make sure that at least 2 searches have been executed by Broker Box County
+        Assert.assertEquals(totalSearchesByCountyMidlandMaps,newAdministrationPage.isTotalSearchesByCountyMidlandMaps(searchMidlandMapsCountyName), "Cannot math Total Searches By County. (Total Searches by County Midland Map)");
 
     }
 }

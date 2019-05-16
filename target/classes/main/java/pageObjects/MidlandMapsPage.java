@@ -14,6 +14,8 @@ public class MidlandMapsPage extends PageObjects  {
     private final By NEXT_MAP = By.xpath("//button[@class='toolbarButton nextDocument']");
     private final By SPINNER_POPUP = By.xpath("//section[@ng-show='searchFilterMidlandSearchOpen']//article[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//canvas[@width=856][@height=1108]");
+    private final By LATEST_ONE_MAP = By.xpath("//button[@class='toolbarButton nextDocument'][@disabled='disabled']");
+    private final By NEW_WARNING_MESSAGE = By.xpath("//span[text()='Due to the large file size please expect longer wait times when loading an ownership map.']");
 
     String findMidlandMapsCounty = "//div[@class='filter-input-container col-xs-8']//option[text()='%s']";
     String findMidlandMapsCountyYear = "//option[text()='%s']";
@@ -52,6 +54,14 @@ public class MidlandMapsPage extends PageObjects  {
 
     public boolean isDocumentNotAvailable(){
         return webDriverCommands.waitForElementPresent(DOCUMENT_NOT_AVAILABLE,3);
+    }
+
+    public boolean isNotLatestMap(){
+        return webDriverCommands.waitForElementPresent(LATEST_ONE_MAP,3);
+    }
+
+    public boolean isNewWarningDisplayed(){
+        return webDriverCommands.waitForElementPresent(NEW_WARNING_MESSAGE,3);
     }
 
     public boolean isMidlandMapCountyDisplayed(String countyMidlandMaps){
