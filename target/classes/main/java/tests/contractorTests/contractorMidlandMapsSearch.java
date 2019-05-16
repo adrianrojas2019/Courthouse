@@ -43,6 +43,12 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
         newMidlandMapsPage.isProgressBarDone();
         //Wait until Search Results retrieves documents
         Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
+        //Click on next map icon
+        newMidlandMapsPage.clickOnNextMapIcon();
+        //Wait until Progress Bar is gone
+        newMidlandMapsPage.isProgressBarDone();
+        //Wait until Search Results retrieves documents
+        Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
 
     }
 

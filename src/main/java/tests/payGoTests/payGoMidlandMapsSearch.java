@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  */
 public class payGoMidlandMapsSearch extends SeleniumInitializer {
     @Parameters({"environment","userNamePayGo","payGoPassword"})
-    @Test(groups = {"CH_PayGo_Explorer_Search", "Regression","Midland_Maps_Feature"})
+    @Test(groups = {"CH_PayGo_Midland_Maps_Search", "Regression","Midland_Maps_Feature"})
 
     public void payGoMidlandMapsSearch(String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 

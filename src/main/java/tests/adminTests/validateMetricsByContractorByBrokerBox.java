@@ -17,7 +17,7 @@ import java.util.Date;
  */
 public class validateMetricsByContractorByBrokerBox extends SeleniumInitializer {
     @Parameters({"contractorName","contractorUserName","environment","usernameToLogIn","passwordToLogIn","brokerBoxCounty","totalDownloadBrokerBox","totalSearchesByTypeBBIndexBook","totalSearchesByTypeBBVolumePage"})
-    @Test(groups = {"CH_Admin_Metrics_By_Contractor_By_Broker_Box", "Regression","MidLand_New_Company"})
+    @Test(groups = {"CH_Admin_Metrics_By_Contractor_By_Broker_Box", "Regression"})
 
     public void validateMetricsByContractorByBrokerBox(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String brokerBoxCounty,String totalDownloadBrokerBox, String totalSearchesByTypeBBIndexBook, String totalSearchesByTypeBBVolumePage) throws InterruptedException {
 

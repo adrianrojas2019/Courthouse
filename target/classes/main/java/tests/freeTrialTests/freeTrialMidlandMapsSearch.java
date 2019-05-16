@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
  */
 public class freeTrialMidlandMapsSearch extends SeleniumInitializer {
     @Parameters({"environment","userNameFreeTrial","freeTrialPassword"})
-    @Test(groups = {"CH_FreeTrial_Explorer_Search", "Regression"})
+    @Test(groups = {"CH_FreeTrial_Midland_Maps_Search", "Regression","Midland_Maps_Feature"})
 
     public void freeTrialMidlandMapsSearch(String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 

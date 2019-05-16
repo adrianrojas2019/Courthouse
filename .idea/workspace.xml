@@ -7,26 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsSearch.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/MidlandMapsPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/MidlandMapsPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/MidlandMapsPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/MidlandMapsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -53,8 +54,28 @@
       <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
+            <state relative-caret-position="119">
+              <caret line="243" column="92" lean-forward="false" selection-start-line="243" selection-start-column="52" selection-end-line="243" selection-end-column="92" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validateMetricsByContractorByMidlandMaps.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Invoker.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" />
         <option value="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addPayGo.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/assingMidlandMapsCounty.java" />
@@ -131,19 +151,22 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/unassignMidlandMapsCounty.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/BookSearchPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="1380" />
-    <option name="height" value="735" />
+    <option name="x" value="1358" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -160,6 +183,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -253,36 +278,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Courthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Courthouse" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="freeTrialTests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,10 +290,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="main.java.tests.adminTests" />
       <recent name="main.java.tests.freeTrialTests" />
       <recent name="main.java.tests.payGoTests" />
       <recent name="main.java.tests.contractorTests" />
-      <recent name="main.java.tests.adminTests" />
       <recent name="main.java.pageObjects" />
     </key>
   </component>
@@ -556,12 +553,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.14 at 06h 33m 31s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.14 at 06h 37m 52s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.14 at 06h 49m 58s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -586,10 +577,16 @@
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.14 at 14h 04m 31s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.15 at 09h 44m 16s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.05.16 at 05h 46m 30s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1380" height="735" extended-state="0" />
-    <editor active="false" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -600,19 +597,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44479495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22140762" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20863836" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4416" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4400631" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,7 +680,7 @@
           <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -692,13 +689,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/PayGoPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-522">
@@ -787,14 +777,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="72" column="90" lean-forward="false" selection-start-line="72" selection-start-column="90" selection-end-line="72" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,14 +954,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -995,33 +969,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="22" column="127" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="626" column="0" lean-forward="false" selection-start-line="626" selection-start-column="0" selection-end-line="626" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="158">
           <caret line="189" column="43" lean-forward="false" selection-start-line="189" selection-start-column="43" selection-end-line="189" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="24" column="73" lean-forward="false" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
           <folding />
         </state>
       </provider>
@@ -1033,25 +984,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="127" lean-forward="true" selection-start-line="22" selection-start-column="97" selection-end-line="22" selection-end-column="127" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="19" column="80" lean-forward="false" selection-start-line="19" selection-start-column="80" selection-end-line="19" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="59" column="19" lean-forward="false" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="238">
+          <caret line="15" column="90" lean-forward="false" selection-start-line="15" selection-start-column="90" selection-end-line="15" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="55" lean-forward="false" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
+        <state relative-caret-position="112">
+          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="83" column="68" lean-forward="false" selection-start-line="83" selection-start-column="68" selection-end-line="83" selection-end-column="68" />
+        <state relative-caret-position="119">
+          <caret line="243" column="92" lean-forward="false" selection-start-line="243" selection-start-column="52" selection-end-line="243" selection-end-column="92" />
           <folding />
         </state>
       </provider>
