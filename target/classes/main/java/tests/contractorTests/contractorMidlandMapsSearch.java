@@ -41,6 +41,7 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
 
             //Click on Apply button
             newMidlandMapsPage.clickOnApplyButton();
+
             //Make sure that warning message is being displayed
             Assert.assertTrue(newMidlandMapsPage.isNewWarningDisplayed(), "Add warning message for Midland Map viewing is not being displayed.");
 
@@ -61,6 +62,8 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
                 //Wait until Search Results retrieves documents
                 Assert.assertFalse(newMidlandMapsPage.isDocumentNotAvailable(), "Document not available. (PDF Viewer: Document is empty)");
             }
+            //click on clear all button
+            newMidlandMapsPage.clickOnClearAllButton();
         }
     }
 }

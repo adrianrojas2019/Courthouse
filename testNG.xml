@@ -197,10 +197,10 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.loadCHMainPage"/>
-            <!--<class name="main.java.tests.adminTests.addContractor"/>
+            <!--<class name="main.java.tests.loadCHMainPage"/>
+            <class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
-            <class name="main.java.tests.adminTests.addPayGo"/>-->
+            <class name="main.java.tests.adminTests.addPayGo"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -239,13 +239,13 @@
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>-->
             <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
+            <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
-            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>-->
         </classes>
     </test>
 </suite>

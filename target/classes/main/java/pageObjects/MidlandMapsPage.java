@@ -11,6 +11,7 @@ public class MidlandMapsPage extends PageObjects  {
     private final By COUNTY_COMBO = By.xpath("//form[@name='midlandForm']//div[@class='filter-input-container col-xs-8']//select");
     private final By COUNTY_YEAR_COMBO = By.xpath("//form[@name='midlandForm']//select[@class='form-control ng-pristine ng-untouched ng-scope ng-invalid ng-invalid-required']");
     private final By APPLY_BUTTON = By.xpath("//aside[@ui-view='filtersMidland']//button[@class='btn btn-primary'][@type='submit']");
+    private final By CLEAR_ALL_BUTTON = By.xpath("//button[@ng-click='cleanFilterMidlandSearch()']");
     private final By NEXT_MAP = By.xpath("//button[@class='toolbarButton nextDocument']");
     private final By SPINNER_POPUP = By.xpath("//section[@ng-show='searchFilterMidlandSearchOpen']//article[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//canvas[@width=856][@height=1108]");
@@ -40,6 +41,12 @@ public class MidlandMapsPage extends PageObjects  {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(APPLY_BUTTON);
         webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void clickOnClearAllButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(CLEAR_ALL_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
     }
 
     public void isProgressBarDone() {
