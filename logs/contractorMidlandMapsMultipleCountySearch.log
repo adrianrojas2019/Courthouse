@@ -767,15 +767,3 @@
 [1558098710.397][INFO]: Done waiting for pending navigations. Status: ok
 [1558098710.397][INFO]: [c822c68db44f7f0da2a48ddf6b4f0052] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"xpath","selector":"//option[text()='1956']"}
   (Session info: chrome=74.0.3729.131)
-[1558098710.559][INFO]: [c822c68db44f7f0da2a48ddf6b4f0052] COMMAND Screenshot {
-
-}
-[1558098710.559][INFO]: Waiting for pending navigations...
-[1558098710.561][INFO]: Done waiting for pending navigations. Status: ok
-[1558098710.935][INFO]: Waiting for pending navigations...
-[1558098710.936][INFO]: Done waiting for pending navigations. Status: ok
-[1558098710.936][INFO]: [c822c68db44f7f0da2a48ddf6b4f0052] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABVYAAAJlCAYAAAAxcKmfAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3Xl4VOX99/H3OTOTjUAmJEBYhCAIyFICWixqWAWLokAtSCllKVZtlQJatZVasHWp1YoYfdr6k0KVUhQtoihVBBIiolQhyKJBWQIIARJIQkK2mXOeP2bJHpKYs..."
-[1558098710.962][INFO]: [c822c68db44f7f0da2a48ddf6b4f0052] COMMAND Quit {
-
-}
-[1558098711.047][INFO]: [c822c68db44f7f0da2a48ddf6b4f0052] RESPONSE Quit

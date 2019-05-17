@@ -133,8 +133,9 @@
         <parameter name="countyType" value="Midland maps"/>
         <parameter name="countyMidlandMaps" value="Andrews Midland Maps"/>
 
-        <parameter name="searchMidlandMapsCountyName" value="Irion Midland Maps,Martin Midland Maps"/>
-        <parameter name="searchMidlandMapsCountyYear" value="1956"/>
+        <parameter name="searchMidlandMapsCountyName" value="Irion Midland Maps"/>
+        <parameter name="multipleCountySearchMidlandMapsCountyName" value="Howard Midland Maps,Eddy E. Midland Maps,Glasscock Midland Maps,Reagan Midland Maps,Midland Midland Maps,Martin Midland Maps"/>
+        <parameter name="searchMidlandMapsCountyYear" value="1957"/>
         <!-- Metrics by Contractor per Midland Maps Search (County/Year)-->
         <parameter name="totalDownloadMidlandMaps" value="41.00"/>
         <parameter name="totalSearchesByCountyMidlandMaps" value="2.00"/>
@@ -189,6 +190,7 @@
                 <include name="CH_Admin_Assign_Midland_Maps_County"/>
                 <include name="CH_Contractor_Midland_Maps_Assign"/>
                 <include name="CH_Contractor_Midland_Maps_Search"/>
+                <include name="CH_Contractor_Midland_Maps_Multiple_County_Search"/>
                 <include name="CH_Admin_Metrics_By_Contractor_By_Midland_Maps"/>
                 <include name="CH_Contractor_Midland_Maps_Unassign"/>
                 <include name="CH_Admin_Unassign_Midland_Maps_County"/>
@@ -239,8 +241,9 @@
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>-->
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
             <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
