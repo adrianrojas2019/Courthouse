@@ -311,7 +311,6 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(USER_DEMO_MANAGEMENT_GRID);
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.click(USER_DEMO_MANAGEMENT_GRID_TITLE);
         return webDriverCommands.waitForElementPresent(USER_DEMO_MANAGEMENT_GRID_TITLE,30);
     }
     /**
@@ -485,7 +484,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     public void selectCounty(String county){
-        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(By.xpath(String.format(find_County, county)));
     }
 
