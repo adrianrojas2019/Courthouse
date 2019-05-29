@@ -309,8 +309,6 @@ public class UserAdministrationPage extends PageObjects {
      */
     public boolean isUserDemoManamentGridDisplayed(){
         webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.click(USER_DEMO_MANAGEMENT_GRID);
-        webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.waitForElementPresent(USER_DEMO_MANAGEMENT_GRID_TITLE,30);
     }
     /**
