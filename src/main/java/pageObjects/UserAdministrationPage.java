@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.Keys;
 
 import java.text.DecimalFormat;
 
@@ -13,6 +14,8 @@ import java.text.DecimalFormat;
 public class UserAdministrationPage extends PageObjects {
 
     private final By ADD_CONTRACTOR_BUTTON = By.id("addContractorBulk");
+    private final By BULK_ACTIONS_BUTTON = By.id("editBulk");
+    private final By CHANGE_COMPANY_BUTTON = By.id("changeCompany");
     private final By USER_MENU = By.xpath("//span[@class='caret']");
     private final By USER_ADMIN_ITEM = By.xpath("//a[@href='/users']");
     private final By RUNSHEET_MANAGEMENT_ITEM = By.xpath("//a[@href='/runsheet'][@role='menuitem']");
@@ -22,9 +25,12 @@ public class UserAdministrationPage extends PageObjects {
 
     private final By USER_COMPANY_GRID= By.xpath("//div[@class='user-grid-company-mgt ng-scope']");
     private final By CONTRACT_PAGE = By.xpath("//h3[text()='Add New Contractor User']");
+    private final By COMPANY_ACCT_POP_UP = By.xpath("//div[@class='modal-dialog']");
+    private final By EDIT_EXPIRATION_DATE_DIALOG = By.xpath("//div[text()='EDIT EXPIRATION DATE']");
     private final By SEARCH_USER_FIELD_CONTRACT = By.xpath("//div[@class='row topSpace usersBulkGridActionStyle di-arrow-grid-top ng-scope']//div//input[2]");
     private final By SEARCH_USER_FIELD = By.xpath("//input[@ng-model='gridOptions.filterOptions.filterText']");
     private final By USAGE_METRICS_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Usage Metrics']");
+    private final By DEMO_MANAGEMENT_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Demo Management']");
     private final By METRICS_TAB = By.xpath("//div[@class='tab-container ng-scope']//li//a[text()='Metrics']");
 
     private final By COUNTY_TYPE = By.xpath("//select[@name='countyType']");
@@ -34,6 +40,10 @@ public class UserAdministrationPage extends PageObjects {
     private final By USER_METRICS_GRID = By.xpath("//article[@ui-view='user-metrics']");
     private final By USER_METRICS_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics']//h5[@name='Select County for details']");
     private final By USER_METRICS_TAB_TITLE = By.xpath("//article[@ui-view='user-metrics']//label[text()='Usage & Activity']");
+
+    private final By USER_DEMO_MANAGEMENT_GRID = By.xpath("//article[@ui-view='user-metrics-bulk']");
+    private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics-bulk']//h5[@name='Select County for details']");
+
     private final By FROM_DATE = By.xpath("//p[@class='input-group calendar-left']//input");
     private final By ACTIVITY_ROW = By.xpath("//th[@class='metrics-date-range-section col-md-12']//div[@class='diDateRangePickerContainer']");
     private final By DOCUMENTS_DOWNLOADED = By.xpath("//td[text()='Documents Downloaded']/following-sibling::td");
@@ -56,6 +66,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By DURATION = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Duration']/following-sibling::td");
 
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
+    private final By NEW_EXPIRATION_DATE = By.xpath("//input[@name='datePicker']");
 
     private final By FIRST_NAME = By.xpath("//input[@name='firstName']");
     private final By LAST_NAME = By.xpath("//input[@name='lastName']");
@@ -63,11 +74,16 @@ public class UserAdministrationPage extends PageObjects {
     private final By EMAIL_USERNAME_FIELD = By.xpath("//input[@name='email']");
 
     private final By COMPANY_ACCT = By.xpath("//input[@name='companyAccount']");
+    private final By SELECT_COMPANY_ACCT = By.xpath("//input[@name='companyAccount'][@ng-model='modalAlertOptions.companyAccount']");
     private final By COMPANY_ID = By.xpath("//div[@class='ngCellText ng-scope col1 colt1 centerCellHeader']//span");
     private final By FIND_COMPANY_ACCT = By.xpath("//strong['DI Internal Acct']");
+    private final By OK_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
+    private final By CANCEL_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showCancelButton']");
+    private final By PAGE_FORWARD = By.xpath("//div[@class='ngPagerContainer']//button[@ng-click='pageForward()']");
     private final By MY_COMPANY = By.xpath("//input[@name='myCompany']");
     private final By RUN_SHEET_SHARING_ACCESS = By.xpath("//select[@name='runsheetSharing']");
     private final By SAVE_BUTTON = By.xpath("//button[@ng-click='save()']");
+    private final By EXPIRATION_DATE_SAVE_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
     private final By FIND_NEW_USERNAME = By.xpath("//input[@class='form-control ng-pristine ng-untouched ng-valid']");
     private final By SELECT_NEW_USERNAME = By.xpath("//div[@class='ngCanvas']");
     private final By NEW_USER_EXISTS = By.xpath("//label[@ng-bind='userSelected.userName']");
@@ -75,12 +91,14 @@ public class UserAdministrationPage extends PageObjects {
     private final By SUCCESS_USER_UPDATE_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully edited.')]");
 
     private final By TOTAL_ITEMS = By.xpath("//div[@class='ngFooterTotalItems']//span");
+    private final By TOTAL_USERS = By.xpath("//div[@class='ngFooterTotalItems']//span[@class='ngLabel ng-binding']");
     private final By TOTAL_ITEMS_BY_ADMIN = By.xpath("//div[@class='ngFooterTotalItems ngNoMultiSelect']//span");
 
     private final By SEARCH_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
     private final By REMOVE_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItemAssign.name']");
 
     String find_County = "//span[text()='%s']";
+    String find_County_Name = "//b[text()='%s']";
     String find_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String find_Assigned_County = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
     String find_County_Type = "//option[text()='%s']";
@@ -89,10 +107,20 @@ public class UserAdministrationPage extends PageObjects {
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
     String find_Midland_Map_County = "//div[text()='%s']//following-sibling::div";
 
+    String find_Edit_Button = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText text-center edit-btn ng-scope']";
+
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
 
     String successAlertMessage= "//div[contains(text(),'%s')]";
+
+    public UserAdministrationPage clickOnUserAdministrationPage(){
+
+        webDriverCommands.waitForElementClickable(USER_MENU, 300);
+        webDriverCommands.click(USER_MENU);
+
+        return PageFactory.initElements(getDriver(), UserAdministrationPage.class);
+    }
 
     public UserAdministrationPage(WebDriver driver) {
         super(driver);
@@ -102,6 +130,24 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(ADD_CONTRACTOR_BUTTON);
     }
 
+    public void clickOnBulkActionsButton(){
+        webDriverCommands.click(BULK_ACTIONS_BUTTON);
+    }
+
+    public void clickOnCancelButton(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(CANCEL_BUTTON);
+    }
+
+    public void clickOnNextPage(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(PAGE_FORWARD);
+        webDriverCommands.waitSomeSeconds(2);
+    }
+
+    public void clickOnChangeCompanyButton(){
+        webDriverCommands.click(CHANGE_COMPANY_BUTTON);
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *  @return boolean
@@ -195,6 +241,11 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(SAVE_BUTTON);
     }
+
+    public void clickOnExpirationDateSaveButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(EXPIRATION_DATE_SAVE_BUTTON);
+    }
     /**
      *this method calls the click method in webDriverCommands class.
      */
@@ -202,6 +253,21 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.type(SEARCH_USER_FIELD,searchUser);
         webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public String getTotalItems(){
+        webDriverCommands.waitSomeSeconds(2);
+        String [] array = webDriverCommands.getText(TOTAL_USERS).split(":");
+        return array[1].trim();
+    }
+
+    public void selectCompanyAcct(String companyID){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(SELECT_COMPANY_ACCT,companyID);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(FIND_COMPANY_ACCT);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(OK_BUTTON);
     }
 
     /**
@@ -235,6 +301,19 @@ public class UserAdministrationPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(USER_METRICS_GRID_TITLE,30);
     }
 
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isUserDemoManamentGridDisplayed(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(USER_DEMO_MANAGEMENT_GRID);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(USER_DEMO_MANAGEMENT_GRID_TITLE);
+        return webDriverCommands.waitForElementPresent(USER_DEMO_MANAGEMENT_GRID_TITLE,30);
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -279,7 +358,24 @@ public class UserAdministrationPage extends PageObjects {
     public boolean isContractPageDisplayed(){
         return webDriverCommands.waitForElementPresent(CONTRACT_PAGE,30);
     }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isCompanyAcctPopUpDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(COMPANY_ACCT_POP_UP,30);
+    }
 
+    public boolean isEditExpirationDateDialogDisplayed(){
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.waitForElementPresent(EDIT_EXPIRATION_DATE_DIALOG,10);
+    }
+
+    public boolean isCountyNameDisplayed(String countyOnDemoMode){
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County_Name, countyOnDemoMode)),30);
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -408,6 +504,16 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(USAGE_METRICS_TAB);
     }
 
+    public void clickOnDemoManagementTab(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(DEMO_MANAGEMENT_TAB);
+    }
+
+    public void clickOnEditButton(String countyDemoMode){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(By.xpath(String.format(find_Edit_Button, countyDemoMode)));
+    }
+
     public void clickOnCountyTypeCombo(String countyType){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(COUNTY_TYPE, countyType);
@@ -488,6 +594,14 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
+
+    public void addNewExpirationDate(String currentDate){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.clear(NEW_EXPIRATION_DATE);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(NEW_EXPIRATION_DATE, currentDate);
+    }
+
     public void addFromDateByMetric(String currentDate){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);

@@ -134,15 +134,14 @@
         <parameter name="countyMidlandMaps" value="Andrews Midland Maps"/>
 
         <parameter name="searchMidlandMapsCountyName" value="Irion Midland Maps"/>
-        <parameter name="multipleCountySearchMidlandMapsCountyName" value="Howard Midland Maps,Eddy E. Midland Maps,Glasscock Midland Maps,Reagan Midland Maps,Midland Midland Maps,Martin Midland Maps"/>
-        <parameter name="searchMidlandMapsCountyYear" value="1957"/>
+        <parameter name="multipleCountySearchMidlandMapsCountyName" value="Andrews Midland Maps,Crane Midland Maps,Eddy E. Midland Maps,Eddy W. Midland Maps,Glasscock Midland Maps,Howard Midland Maps,Irion Midland Maps,Loving Reeves N. Midland Maps,Midland Midland Maps,Reagan Midland Maps,Reeves C. Midland Maps,Reeves S. Midland Maps,Ward Midland Maps"/>
+        <parameter name="searchMidlandMapsCountyYear" value="1959"/>
         <!-- Metrics by Contractor per Midland Maps Search (County/Year)-->
         <parameter name="totalDownloadMidlandMaps" value="41.00"/>
         <parameter name="totalSearchesByCountyMidlandMaps" value="2.00"/>
 
-
-        <!-- Runsheet Sharing Access -->
-
+        <!-- Validate County on Demo Mode -->
+        <parameter name="countyOnDemoMode" value="Burleson"/>
 
         <groups>
             <run>
@@ -196,13 +195,15 @@
                 <include name="CH_Admin_Unassign_Midland_Maps_County"/>
                 <include name="CH_FreeTrial_Midland_Maps_Search"/>
                 <include name="CH_PayGo_Midland_Maps_Search"/>
+                <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
+                <include name="CH_Admin_County_On_Demo_Mode"/>
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.loadCHMainPage"/>
-            <class name="main.java.tests.adminTests.addContractor"/>
+            <class name="main.java.tests.loadCHMainPage"/>
+            <!--<class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
-            <class name="main.java.tests.adminTests.addPayGo"/>
+            <class name="main.java.tests.adminTests.addPayGo"/>-->
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -242,13 +243,15 @@
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
-            <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
-            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>-->
+            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+            <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
         </classes>
     </test>
 </suite>

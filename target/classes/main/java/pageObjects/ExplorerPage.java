@@ -109,6 +109,8 @@ public class ExplorerPage extends PageObjects {
     String checkbox = "//*[@id='sectionHomeGridContainerAlign']/article[1]/div[2]/div/div[2]/div/div[%s]/div[1]";
     String find_County = "//span[text()='%s']";
 
+    String demo_Message = "//span[text()='%s is in Demo mode for the next 3 days.']";
+
     public ExplorerPage(WebDriver driver) {
         super(driver);
     }
@@ -174,6 +176,10 @@ public class ExplorerPage extends PageObjects {
      */
     public boolean isExplorerMainPageDisplayed(){
         return webDriverCommands.waitForElementPresent(CONTRACTOR_MAIN_PAGE,30);
+    }
+
+    public boolean isDemoMessageDisplayed(String countyDemoMode){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(demo_Message, countyDemoMode)),30);
     }
 
     public BookSearchPage clickOnBookSearch(){
