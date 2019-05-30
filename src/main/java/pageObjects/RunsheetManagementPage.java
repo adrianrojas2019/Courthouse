@@ -65,6 +65,8 @@ public class RunsheetManagementPage extends PageObjects {
      *  @return boolean
      */
     public boolean isMessageDisplayed(String myCompanyRunsheetName){
+        //wait until toast msg is displayed
+        webDriverCommands.waitSomeSeconds(2);
         String messageSuccess = webDriverCommands.getText(SUCCESS_MESSAGE);
         return messageSuccess.equals(String.format(confirmationRequestCopySuccessMessage,myCompanyRunsheetName));
     }

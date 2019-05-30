@@ -244,7 +244,7 @@
             <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
             <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>

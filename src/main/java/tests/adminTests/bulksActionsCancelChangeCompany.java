@@ -39,6 +39,9 @@ public class bulksActionsCancelChangeCompany extends SeleniumInitializer {
         //Validate that Company Acct: Dialog has been loaded
         Assert.assertTrue(newAdministrationPage.isCompanyAcctPopUpDialogDisplayed(), "Cannot open Company Acct: Pop Up Dialog.");
         newAdministrationPage.selectCompanyAcct(companyID);
+        Assert.assertTrue(newAdministrationPage.isCompanyAcctNameDisplayed()," cannot display Company Acct. Name.");
+        //Click on Company Acct. Name
+        newAdministrationPage.clickOnCompanyAcctName();
         //Get the current Total Items: ##
         String totalItems;
         totalItems = newAdministrationPage.getTotalItems();

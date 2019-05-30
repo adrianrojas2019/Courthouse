@@ -264,12 +264,17 @@ public class UserAdministrationPage extends PageObjects {
     public void selectCompanyAcct(String companyID){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SELECT_COMPANY_ACCT,companyID);
+        //webDriverCommands.waitSomeSeconds(1);
+        //webDriverCommands.click(FIND_COMPANY_ACCT);
+        //webDriverCommands.waitSomeSeconds(1);
+        //webDriverCommands.click(OK_BUTTON);
+    }
+    public void clickOnCompanyAcctName(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(FIND_COMPANY_ACCT);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_BUTTON);
     }
-
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -362,6 +367,10 @@ public class UserAdministrationPage extends PageObjects {
      */
     public boolean isCompanyAcctPopUpDialogDisplayed(){
         return webDriverCommands.waitForElementPresent(COMPANY_ACCT_POP_UP,30);
+    }
+
+    public boolean isCompanyAcctNameDisplayed(){
+        return webDriverCommands.waitForElementPresent(FIND_COMPANY_ACCT,30);
     }
 
     public boolean isEditExpirationDateDialogDisplayed(){
