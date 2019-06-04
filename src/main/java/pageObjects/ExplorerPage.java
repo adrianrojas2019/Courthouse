@@ -27,6 +27,10 @@ public class ExplorerPage extends PageObjects {
     private final By PR_COUNTY_COMBO = By.xpath("//form[@ng-submit='applyFilterVolPage($event)']//div[@class='filter-input-container col-xs-8']//select");
     private final By CONTRACTOR_MAIN_PAGE = By.xpath("//h5[@name='Search Results']");
     private final By EXPLORE_TITLE = By.xpath("//h4[text()='EXPLORE']");
+    private final By USAGE_PROGRESS_BAR = By.xpath("//div[@value='diHeaderMeterGraphOptions.county.usage']//div[@class='progress-bar progress-bar-danger']");
+    private final By COMPANY_USAGE_DIALOG = By.xpath("//div[@class='slideOut']");
+    private final By CLOSE_COMPANY_USAGE_DIALOG = By.xpath("//label[@class='slideOutClose']");
+
     private final By PRIOR_REFERENCE_TITLE = By.xpath("//h4[text()='PRIOR REFERENCE']");
     private final By GRANTOR_LABEL = By.xpath("//label[@for='grantor']");
     private final By GRANTOR = By.xpath("//input[@name='grantor']");
@@ -52,6 +56,7 @@ public class ExplorerPage extends PageObjects {
     private final By INDEX_WITH_IMAGES = By.xpath("//select[@class='form-control input-sm inline-block ng-pristine ng-untouched ng-valid']");
     private final By DOWNLOAD_ALL_BUTTON = By.xpath("//button[@class='btn btn-success btn-sm inline-block'][@ng-click='downloadRunsheet()']");
     private final By DOWNLOADS_PRINTS_POP_UP_DIALOG = By.xpath("//div[@ng-if='modalAlertOptions.displayImg']");
+    private final By MAX_USAGE_REACHED_MESSAGE_DISPLAYED = By.xpath("//di-meter-graph[@di-meter-graph-options='modalAlertOptions.usageMeterOptions']//div[@class='dangerIconSpace']");
     private final By TOTAL_DOWNLOADS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.downloadsUsed | number']");
     private final By TOTAL_PRINTS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.printsUsed | number']");
     private final By OK_BUTTON = By.xpath("//button[@ng-bind='modalAlertOptions.okButtonText']");
@@ -125,7 +130,16 @@ public class ExplorerPage extends PageObjects {
     }
 
     public void clickOnExplorerSearch(){
+        webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(EXPLORER_SEARCH_BUTTON);
+    }
+
+    public void clickOnUsageProgressBar(){
+        webDriverCommands.click(USAGE_PROGRESS_BAR);
+    }
+
+    public void closeCompanyUsageDialog(){
+        webDriverCommands.click(CLOSE_COMPANY_USAGE_DIALOG);
     }
 
     public void clickOnUpdateInfoButton(){
@@ -206,6 +220,14 @@ public class ExplorerPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(EXPLORE_TITLE,30);
     }
 
+    public boolean isUsageProgressBarDisplayed(){
+        return webDriverCommands.waitForElementPresent(USAGE_PROGRESS_BAR,30);
+    }
+
+    public boolean isCompanyUsageDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(COMPANY_USAGE_DIALOG,30);
+    }
+
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -275,6 +297,19 @@ public class ExplorerPage extends PageObjects {
 
     public boolean isDownloadsPrintsDialogDisplayed(){
         return webDriverCommands.waitForElementPresent(DOWNLOADS_PRINTS_POP_UP_DIALOG,30);
+    }
+
+    public boolean isMaxUsageReachedMessageDisplayed(){
+
+        String max_Usage_Reached_Message = webDriverCommands.getText(MAX_USAGE_REACHED_MESSAGE_DISPLAYED);
+
+        if (max_Usage_Reached_Message.equals("Max Usage Reached: Downloads & Printing Suspended")) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
     }
     /**
      * this method calls the click method in webDriverCommands class.

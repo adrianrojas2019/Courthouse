@@ -41,6 +41,12 @@ public class UserAdministrationPage extends PageObjects {
     private final By USER_METRICS_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics']//h5[@name='Select County for details']");
     private final By USER_METRICS_TAB_TITLE = By.xpath("//article[@ui-view='user-metrics']//label[text()='Usage & Activity']");
 
+    private final By EDIT_DOWNLOADS_PRINTS_DIALOG = By.xpath("//div[@class='modal-content']");
+    private final By EDIT_DOWNLOADS_PRINTS_TITLE = By.xpath("//div[text()='EDIT DOWNLOADS/PRINTS']");
+    private final By NEW_LIMIT_NUMBER = By.xpath("//input[@name='newLimit']");
+    private final By BURGER_MENU = By.xpath("//article[@ui-view='user-metrics']//div[@class='ngHeaderButtonBurgerMenu']");
+    private final By DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX = By.xpath("//span[text()='Downloads/Prints Available']//..//label");
+
     private final By USER_DEMO_MANAGEMENT_GRID = By.xpath("//article[@ui-view='user-metrics-bulk']");
     private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics-bulk']//h5[@name='Select County for details']");
 
@@ -108,10 +114,14 @@ public class UserAdministrationPage extends PageObjects {
     String find_Midland_Map_County = "//div[text()='%s']//following-sibling::div";
 
     String find_Edit_Button = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText text-center edit-btn ng-scope']";
+    String downloads_Used = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText ng-scope col3 colt3 centerCellHeader']";
+    String prints_Used = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText ng-scope col4 colt4 centerCellHeader']";
+    String edit_Limit = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText text-center edit-btn ng-scope']";
+    String limit_Reached_Message = "//span[text()='%s']//..//..//..//..//span[text()='Limit Reached']";
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
-    String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
-
+    String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][//input[@name='newLimit']text()='%s']";
+    //div[text()='EDIT DOWNLOADS/PRINTS']
     String successAlertMessage= "//div[contains(text(),'%s')]";
 
     public UserAdministrationPage clickOnUserAdministrationPage(){
@@ -260,6 +270,12 @@ public class UserAdministrationPage extends PageObjects {
         String [] array = webDriverCommands.getText(TOTAL_USERS).split(":");
         return array[1].trim();
     }
+    public String getTotalDownloadsUsed(String limitReachedCounty){
+        return webDriverCommands.getText(By.xpath(String.format(downloads_Used, limitReachedCounty)));
+    }
+    public String getTotalPrintsUsed(String limitReachedCounty){
+        return webDriverCommands.getText(By.xpath(String.format(prints_Used, limitReachedCounty)));
+    }
 
     public void selectCompanyAcct(String companyID){
         webDriverCommands.waitSomeSeconds(1);
@@ -392,6 +408,19 @@ public class UserAdministrationPage extends PageObjects {
         return webDriverCommands.getText(COMPANY_ID);
     }
 
+    public boolean isLimitReachedMessageDisplayed(String limitReachedCounty){
+        webDriverCommands.waitSomeSeconds(2);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(limit_Reached_Message, limitReachedCounty)),30);
+    }
+
+    public boolean isDownloadsPrintsDialogDisplayed(String limitReachedCounty){
+        webDriverCommands.waitSomeSeconds(2);
+        if (webDriverCommands.waitForElementPresent(EDIT_DOWNLOADS_PRINTS_DIALOG,10)){
+            return webDriverCommands.waitForElementPresent(EDIT_DOWNLOADS_PRINTS_TITLE,10);
+        }else {
+            return false;
+        }
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -490,9 +519,35 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(COMPANY_ID);
     }
 
+    public void clickOnChangeLimitButton(String limitReachedCounty){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(By.xpath(String.format(edit_Limit,limitReachedCounty)));
+    }
+
     public void selectCounty(String county){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(By.xpath(String.format(find_County, county)));
+    }
+
+    public void clickOnBurgerMenu(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(BURGER_MENU);
+    }
+
+    public void clickOnDownloadsAndPrintsAvailableCheckBox(){
+        webDriverCommands.waitSomeSeconds(2);
+        //if (webDriverCommands.waitForElementPresent(DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX)) {
+        webDriverCommands.click(DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX);
+        //}
+    }
+
+    public void addNewLimitNumber(int total){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.clear(NEW_LIMIT_NUMBER);
+        total = total + 1;
+        webDriverCommands.type(NEW_LIMIT_NUMBER, Integer.toString(total));
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(OK_BUTTON);
     }
 
     public void selectUnassignedCounty(String county){
