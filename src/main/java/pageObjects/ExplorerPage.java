@@ -463,10 +463,11 @@ public class ExplorerPage extends PageObjects {
     }
 
     public void clickOnPrintButton(){
+        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.waitForElementInVisible(PRINT_SPINNER);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.waitForElementInVisible(PRINT_BUTTON_ENABLED);
-        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(PRINT_BUTTON);
         webDriverCommands.waitSomeSeconds(1);
     }

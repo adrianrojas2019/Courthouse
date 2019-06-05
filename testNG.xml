@@ -27,7 +27,7 @@
 		<parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
 		<parameter name="myCompany" value="Gap_Tester"/>
         <!-- No Access/Request Copy/Full Access -->
-        <parameter name="runsheetSharingAccess" value="Full Acess"/>
+        <parameter name="runsheetSharingAccess" value="Full Access"/>
         <parameter name="emailUserName" value="test_%d@wearegap.com"/>
         <parameter name="numberOfUserToCreate" value="1"/>
         <parameter name="setPreference" value="false"/>
@@ -81,7 +81,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheetB"/>
+        <parameter name="runsheetName" value="Automated_RunSheet"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -204,6 +204,7 @@
                 <include name="CH_Admin_County_Mode_Expires_Today"/>
                 <include name="CH_Admin_County_Mode_Has_Expired"/>
                 <include name="CH_Admin_Max_Usage_Reached"/>
+                <include name="CH_Contractor_Cancel_Download_Midland_Map"/>
 
             </run>
         </groups>
@@ -264,6 +265,7 @@
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
+            <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
         </classes>
     </test>
 </suite>

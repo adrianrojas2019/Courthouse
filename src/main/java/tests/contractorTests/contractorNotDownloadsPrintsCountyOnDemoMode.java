@@ -16,10 +16,10 @@ import java.util.Calendar;
  * Created by Adrian on 11/28/2018.
  */
 public class contractorNotDownloadsPrintsCountyOnDemoMode extends SeleniumInitializer {
-    @Parameters({"environment","countyOnDemoMode","contractorUserName","contractorPassword","contractorGrantor"})
+    @Parameters({"runsheetName","environment","countyOnDemoMode","contractorUserName","contractorPassword","contractorGrantor"})
     @Test(groups = {"CH_Contractor_County_On_Demo_Mode", "Regression"})
 
-    public void contractorNotDownloadsPrintsCountyOnDemoMode(String environment, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
+    public void contractorNotDownloadsPrintsCountyOnDemoMode(String runsheetName,String environment, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
 
 
         //Already logged in as DI Admin
@@ -43,7 +43,7 @@ public class contractorNotDownloadsPrintsCountyOnDemoMode extends SeleniumInitia
         newExplorerPage.clickOnNewRunsheetButton();
         //Create Runsheet Name
         Calendar now = Calendar.getInstance();
-        newExplorerPage.insertNewRunsheetName("Not DownloadsPrints "+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+        newExplorerPage.insertNewRunsheetName( runsheetName +(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
         newExplorerPage.clickOnSaveRunsheetButton();
         //Success Message
         Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Runsheet has been successfully saved."), "The new runsheet could not be added");
