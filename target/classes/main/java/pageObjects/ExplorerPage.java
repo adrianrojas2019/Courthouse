@@ -27,8 +27,8 @@ public class ExplorerPage extends PageObjects {
     private final By PR_COUNTY_COMBO = By.xpath("//form[@ng-submit='applyFilterVolPage($event)']//div[@class='filter-input-container col-xs-8']//select");
     private final By CONTRACTOR_MAIN_PAGE = By.xpath("//h5[@name='Search Results']");
     private final By EXPLORE_TITLE = By.xpath("//h4[text()='EXPLORE']");
-    private final By USAGE_PROGRESS_BAR = By.xpath("//div[@value='diHeaderMeterGraphOptions.county.usage']//div[@class='progress-bar progress-bar-danger']");
     private final By COMPANY_USAGE_DIALOG = By.xpath("//div[@class='slideOut']");
+    private final By USAGE_PROGRESS_BAR = By.xpath("//div[@value='diHeaderMeterGraphOptions.county.usage']");
     private final By CLOSE_COMPANY_USAGE_DIALOG = By.xpath("//label[@class='slideOutClose']");
 
     private final By PRIOR_REFERENCE_TITLE = By.xpath("//h4[text()='PRIOR REFERENCE']");
