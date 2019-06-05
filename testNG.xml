@@ -200,7 +200,11 @@
                 <include name="CH_PayGo_Midland_Maps_Search"/>
                 <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
                 <include name="CH_Admin_County_On_Demo_Mode"/>
+                <include name="CH_Contractor_County_On_Demo_Mode"/>
+                <include name="CH_Admin_County_Mode_Expires_Today"/>
+                <include name="CH_Admin_County_Mode_Has_Expired"/>
                 <include name="CH_Admin_Max_Usage_Reached"/>
+
             </run>
         </groups>
         <classes>
@@ -256,6 +260,9 @@
             <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
+            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
+            <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
         </classes>
     </test>

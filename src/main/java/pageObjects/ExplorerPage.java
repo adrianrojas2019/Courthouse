@@ -56,12 +56,15 @@ public class ExplorerPage extends PageObjects {
     private final By INDEX_WITH_IMAGES = By.xpath("//select[@class='form-control input-sm inline-block ng-pristine ng-untouched ng-valid']");
     private final By DOWNLOAD_ALL_BUTTON = By.xpath("//button[@class='btn btn-success btn-sm inline-block'][@ng-click='downloadRunsheet()']");
     private final By DOWNLOADS_PRINTS_POP_UP_DIALOG = By.xpath("//div[@ng-if='modalAlertOptions.displayImg']");
+
     private final By MAX_USAGE_REACHED_MESSAGE_DISPLAYED = By.xpath("//di-meter-graph[@di-meter-graph-options='modalAlertOptions.usageMeterOptions']//div[@class='dangerIconSpace']");
     private final By TOTAL_DOWNLOADS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.downloadsUsed | number']");
     private final By TOTAL_PRINTS = By.xpath("//span[@ng-bind='diMeterGraphOptions.county.printsUsed | number']");
     private final By OK_BUTTON = By.xpath("//button[@ng-bind='modalAlertOptions.okButtonText']");
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.xpath("//button[@class='btn btn-success ng-binding']");
     private final By SPINNER = By.xpath("//div[@class='spinner']");
+    private final By PRINT_SPINNER= By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
+    private final By PRINT_BUTTON_ENABLED = By.xpath("//button[@class='toolbarButton printPdf'][@disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
     private final By CLOSE_STANDALONE_PDF = By.xpath("//button[@class='toolbarButton closePdf']");
     private final By CLOSE_EMBEDDED_PDF = By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//button[@class='toolbarButton closePdf']");
@@ -94,6 +97,7 @@ public class ExplorerPage extends PageObjects {
     private final By RUNSHEET_IS_NOT_PRESENT = By.xpath("//input[@class='form-control input-sm inline-block runsheet-select-type-ahead ng-dirty ng-touched ng-valid-editable ng-valid']");
     private final By CONFIRMATION_ALERT_CANCEL_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showCancelButton']");
     private final By CONFIRMATION_ALERT_REQUEST_A_COPY_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
+    private final By CLOSE_POP_UP_DIALOG = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
     private final By SUCCESS_MESSAGE = By.xpath("//div[@class='toast-message']");
 
     private final By PURCHASE_CONFIRMATION_DIALOG = By.xpath("//div[@class='modal-dialog']");
@@ -115,6 +119,10 @@ public class ExplorerPage extends PageObjects {
     String find_County = "//span[text()='%s']";
 
     String demo_Message = "//span[text()='%s is in Demo mode for the next 3 days.']";
+    String demo_Expires_Today_Message = "//span[text()='Your Demo of %s expires today.']";
+    String county_On_Demo_Mode_Message = "//div[text()='%s is a Demo County. You are not able to print or download documents for a Demo County.']";
+
+    String county_Not_Displayed = "//div[@class='filter-input-container col-xs-8']//select//option[text()='%s']";
 
     public ExplorerPage(WebDriver driver) {
         super(driver);
@@ -196,6 +204,11 @@ public class ExplorerPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(demo_Message, countyDemoMode)),30);
     }
 
+    public boolean isDemoExpiresTodayMessageDisplayed(String countyDemoMode){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(demo_Expires_Today_Message, countyDemoMode)),30);
+    }
+
+
     public BookSearchPage clickOnBookSearch(){
 
         webDriverCommands.click(BOOK_SEARCH_BUTTON);
@@ -218,6 +231,10 @@ public class ExplorerPage extends PageObjects {
      */
     public boolean isExploreTitleDisplayed(){
         return webDriverCommands.waitForElementPresent(EXPLORE_TITLE,30);
+    }
+
+    public boolean isNotCountyDisplayed(String countyDemoMode){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(county_Not_Displayed,countyDemoMode)),10);
     }
 
     public boolean isUsageProgressBarDisplayed(){
@@ -297,6 +314,10 @@ public class ExplorerPage extends PageObjects {
 
     public boolean isDownloadsPrintsDialogDisplayed(){
         return webDriverCommands.waitForElementPresent(DOWNLOADS_PRINTS_POP_UP_DIALOG,30);
+    }
+
+    public boolean isCountyOnDemoModeDialogDisplayed(String CountyDemoMode){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(county_On_Demo_Mode_Message,CountyDemoMode)),30);
     }
 
     public boolean isMaxUsageReachedMessageDisplayed(){
@@ -442,7 +463,10 @@ public class ExplorerPage extends PageObjects {
     }
 
     public void clickOnPrintButton(){
+        webDriverCommands.waitForElementInVisible(PRINT_SPINNER);
         webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitForElementInVisible(PRINT_BUTTON_ENABLED);
+        webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(PRINT_BUTTON);
         webDriverCommands.waitSomeSeconds(1);
     }
@@ -478,6 +502,12 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_BUTTON);
         webDriverCommands.waitSomeSeconds(5);
+    }
+
+    public void closePopUpDialog(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(CLOSE_POP_UP_DIALOG);
+        webDriverCommands.waitSomeSeconds(1);
     }
 
     public void clickOnPurchaseConfirmationButton(){
