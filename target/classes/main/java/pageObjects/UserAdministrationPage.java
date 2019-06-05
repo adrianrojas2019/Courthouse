@@ -120,7 +120,7 @@ public class UserAdministrationPage extends PageObjects {
     String limit_Reached_Message = "//span[text()='%s']//..//..//..//..//span[text()='Limit Reached']";
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
-    String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][//input[@name='newLimit']text()='%s']";
+    String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
     //div[text()='EDIT DOWNLOADS/PRINTS']
     String successAlertMessage= "//div[contains(text(),'%s')]";
 
@@ -219,6 +219,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     public void clickOnAssignedCountyMidlandMaps(String findCountyMidlandMap){
+        webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(By.xpath(String.format(my_Assigned_County_Midland_Maps_Name, findCountyMidlandMap)));
         webDriverCommands.waitSomeSeconds(2);
     }
