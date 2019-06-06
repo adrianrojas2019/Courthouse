@@ -196,6 +196,7 @@
                 <include name="CH_Admin_Metrics_By_Contractor_By_Midland_Maps"/>
                 <include name="CH_Contractor_Midland_Maps_Unassign"/>
                 <include name="CH_Admin_Unassign_Midland_Maps_County"/>
+				<include name="CH_PayGo_Midland_Maps_Search"/>
                 <include name="CH_FreeTrial_Midland_Maps_Search"/>
                 <include name="CH_PayGo_Midland_Maps_Search"/>
                 <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
