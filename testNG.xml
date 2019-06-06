@@ -75,9 +75,6 @@
 
         <!-- New Contractor Search -->
         <parameter name="contractorUserName" value="adrojascontract"/>
-        <!--Preprod adrojascontract pwd
-        <parameter name="contractorPassword" value="L2mwmlgE"/>-->
-        <!--Dev adrojascontract pwd (DSCI7lsc1)-->
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
