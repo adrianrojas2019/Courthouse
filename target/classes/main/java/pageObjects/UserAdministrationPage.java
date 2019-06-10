@@ -101,6 +101,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By TOTAL_ITEMS_BY_ADMIN = By.xpath("//div[@class='ngFooterTotalItems ngNoMultiSelect']//span");
 
     private final By SEARCH_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
+    private final By SEARCH_UNASSIGNED_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
     private final By REMOVE_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItemAssign.name']");
 
     String find_County = "//span[text()='%s']";
@@ -120,6 +121,7 @@ public class UserAdministrationPage extends PageObjects {
     String limit_Reached_Message = "//span[text()='%s']//..//..//..//..//span[text()='Limit Reached']";
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
+    String my_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
     //div[text()='EDIT DOWNLOADS/PRINTS']
     String successAlertMessage= "//div[contains(text(),'%s')]";
@@ -166,6 +168,13 @@ public class UserAdministrationPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(USER_MENU, secondsToWait);
     }
 
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnUserAdministrationMenu(){
+        webDriverCommands.waitForElementClickable(USER_MENU, 300);
+        webDriverCommands.click(USER_MENU);
+    }
     /**
      *this method calls the click method in webDriverCommands class.
      */
@@ -218,6 +227,11 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
     }
 
+    public void clickOnUnassignedCounty(String findCounty){
+        webDriverCommands.click(By.xpath(String.format(my_Unassigned_County, findCounty)));
+        webDriverCommands.waitSomeSeconds(2);
+    }
+
     public void clickOnAssignedCountyMidlandMaps(String findCountyMidlandMap){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(By.xpath(String.format(my_Assigned_County_Midland_Maps_Name, findCountyMidlandMap)));
@@ -228,6 +242,11 @@ public class UserAdministrationPage extends PageObjects {
     public void addMidlandMapsCounty(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SEARCH_MIDLAND_MAP_COUNTY,midlandMapCounty);
+    }
+
+    public void searchUnAssignedCounty(String searchCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(SEARCH_UNASSIGNED_COUNTY,searchCounty);
     }
 
     public void removeMidlandMapsCounty(String midlandMapCounty){
@@ -256,6 +275,7 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnExpirationDateSaveButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(EXPIRATION_DATE_SAVE_BUTTON);
+        webDriverCommands.waitSomeSeconds(5);
     }
     /**
      *this method calls the click method in webDriverCommands class.
@@ -351,7 +371,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     public boolean isUnassignedCountyDisplayed(String county){
-        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),30);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),5);
     }
 
     public boolean isAssignedCountyDisplayed(String county){
