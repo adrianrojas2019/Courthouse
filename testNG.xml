@@ -66,7 +66,7 @@
         <parameter name="yearExpirationDate" value="2020"/>
         <parameter name="numberOfUserPayGoToCreate" value="1"/>
 
-        <!-- Below parameter must be changed for each a new pay go has been created
+        <!-- Below parameter must be changed for each new pay go has been created
         get the password from the gmail account and paste it -->
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
