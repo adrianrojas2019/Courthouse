@@ -203,6 +203,7 @@
                 <include name="CH_Admin_County_Mode_Has_Expired"/>
                 <include name="CH_Admin_Max_Usage_Reached"/>
                 <include name="CH_Contractor_Cancel_Download_Midland_Map"/>
+                <include name="CH_Contractor_Midland_Map_Show_Coverage"/>
 
             </run>
         </groups>
@@ -264,6 +265,7 @@
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>
         </classes>
     </test>
 </suite>

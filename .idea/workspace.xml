@@ -7,15 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorNotDownloadsPrintsCountyOnDemoMode.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorNotDownloadsPrintsCountyOnDemoMode.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpired.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpired.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpiresToday.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpiresToday.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyOnDemoMode.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyOnDemoMode.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,28 +38,28 @@
       <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="265" column="94" lean-forward="false" selection-start-line="265" selection-start-column="94" selection-end-line="265" selection-end-column="94" />
+            <state relative-caret-position="444">
+              <caret line="266" column="94" lean-forward="false" selection-start-line="266" selection-start-column="94" selection-end-line="266" selection-end-column="94" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validateCountyOnDemoMode.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
+      <file leaf-file-name="contractorMidlandMapShowCoverage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
+            <state relative-caret-position="142">
+              <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserAdministrationPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java">
+      <file leaf-file-name="MidlandMapsPage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="372" column="19" lean-forward="false" selection-start-line="372" selection-start-column="19" selection-end-line="372" selection-end-column="19" />
+            <state relative-caret-position="97">
+              <caret line="23" column="114" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -104,12 +100,12 @@
       <find>userNamePayGo</find>
       <find>payGoCounty</find>
       <find>brokerBoxIndexBook</find>
-      <find>adrojasc</find>
       <find>runsheetName</find>
       <find>searchContractUserName</find>
       <find>SEARCH_USER_FIELD</find>
       <find>clickOnSearchUser</find>
       <find>contractorName</find>
+      <find>adrojasc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -153,19 +149,20 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCountyOnDemoMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
@@ -185,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,7 +277,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
@@ -555,9 +552,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.10 at 08h 48m 49s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.10 at 08h 54m 32s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -585,9 +579,12 @@
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.10 at 09h 55m 27s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.11 at 12h 19m 39s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="1358" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -605,7 +602,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21961933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30380672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -765,8 +762,14 @@
           <properties />
           <option name="timeStamp" value="137" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="139" />
+      <option name="time" value="141" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -779,35 +782,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="257" column="19" lean-forward="false" selection-start-line="257" selection-start-column="19" selection-end-line="257" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -828,14 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="14" column="131" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="131" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -878,7 +844,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="18" column="54" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,7 +851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="15" column="116" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="116" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -902,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="18" column="78" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,7 +980,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-527">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1025,7 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="18" column="325" lean-forward="false" selection-start-line="18" selection-start-column="301" selection-end-line="18" selection-end-column="325" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1033,7 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1073,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="36" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1097,7 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="26" column="61" lean-forward="false" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1105,7 +1063,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="61" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1113,7 +1070,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
           <caret line="40" column="41" lean-forward="false" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1121,7 +1077,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1129,38 +1084,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="30" column="126" lean-forward="false" selection-start-line="30" selection-start-column="112" selection-end-line="30" selection-end-column="126" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="49" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="1479">
           <caret line="99" column="47" lean-forward="false" selection-start-line="99" selection-start-column="47" selection-end-line="99" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="17">
           <caret line="372" column="19" lean-forward="false" selection-start-line="372" selection-start-column="19" selection-end-line="372" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="45" selection-start-column="7" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="23" column="114" lean-forward="false" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="114" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="265" column="94" lean-forward="false" selection-start-line="265" selection-start-column="94" selection-end-line="265" selection-end-column="94" />
+        <state relative-caret-position="444">
+          <caret line="266" column="94" lean-forward="false" selection-start-line="266" selection-start-column="94" selection-end-line="266" selection-end-column="94" />
           <folding />
         </state>
       </provider>

@@ -18,6 +18,13 @@ public class MidlandMapsPage extends PageObjects  {
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//canvas[@width=856][@height=1108]");
     private final By LATEST_ONE_MAP = By.xpath("//button[@class='toolbarButton nextDocument'][@disabled='disabled']");
     private final By NEW_WARNING_MESSAGE = By.xpath("//span[text()='Due to the large file size please expect longer wait times when loading an ownership map.']");
+    private final By MIDLAND_MAP_TITLE = By.xpath("//h4[text()='Midland Map']");
+    private final By SHOW_COVERAGE_LINK = By.xpath("//form[@name='midlandForm']//a[@popover-label='show coverage']");
+    private final By HIDE_COVERAGE_LINK = By.xpath("//a[text()=' hide coverage']");
+    private final By SHOW_COVERAGE_LOADING = By.xpath("//form[@name='midlandForm']//a[@popover-label='loading...']");
+    private final By MIDLAND_MAP_COUNTY_BORDEN = By.xpath("//div[text()='Borden Midland Maps']");
+    private final By MIDLAND_MAP_COUNTY_YOAKUM = By.xpath("//div[text()='Yoakum Midland Maps']");
+    private final By MIDLAND_MAP_COUNTY_LAMB = By.xpath("//div[text()='Lamb Midland Maps']");
 
     String findMidlandMapsCounty = "//div[@class='filter-input-container col-xs-8']//option[text()='%s']";
     String findMidlandMapsCountyYear = "//option[text()='%s']";
@@ -49,6 +56,19 @@ public class MidlandMapsPage extends PageObjects  {
         webDriverCommands.waitSomeSeconds(1);
     }
 
+    public void clickOnShowCoverageLink(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(SHOW_COVERAGE_LINK);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitForElementInVisible(SHOW_COVERAGE_LOADING);
+    }
+
+    public void clickOnHideCoverageLink(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(HIDE_COVERAGE_LINK);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
     public void clickOnClearAllButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(CLEAR_ALL_BUTTON);
@@ -77,8 +97,18 @@ public class MidlandMapsPage extends PageObjects  {
         return webDriverCommands.waitForElementPresent(NEW_WARNING_MESSAGE,3);
     }
 
-    public boolean isDocumentCancelledMessageDisplayed(String successMessage){
-        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),15);
+    public boolean isMidlandMapTitleDisplayed(){
+        return webDriverCommands.waitForElementPresent(MIDLAND_MAP_TITLE,3);
+    }
+
+    public boolean CountyLambHasBeenDisplayed(){
+        return webDriverCommands.waitForElementPresent(MIDLAND_MAP_COUNTY_LAMB,3);
+    }
+    public boolean CountyYoakumHasBeenDisplayed(){
+        return webDriverCommands.waitForElementPresent(MIDLAND_MAP_COUNTY_YOAKUM,3);
+    }
+    public boolean CountyBordenHasBeenDisplayed() {
+        return webDriverCommands.waitForElementPresent(MIDLAND_MAP_COUNTY_BORDEN, 3);
     }
 
     public boolean isMidlandMapCountyDisplayed(String countyMidlandMaps){
