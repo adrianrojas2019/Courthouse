@@ -19,7 +19,7 @@ import java.util.Date;
  */
 public class validateLimitReached extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","limitReachedCounty","contractorUserName","contractorPassword","contractorGrantor"})
-    @Test(groups = {"CH_Admin_Max_Usage_Reached", "Regression"})
+    @Test(groups = {"CH_Admin_Max_Usage_Reached", "Regression","Company_Management"})
 
     public void validateLimitReached(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
 
@@ -53,18 +53,18 @@ public class validateLimitReached extends SeleniumInitializer {
         newAdministrationPage.selectCounty(limitReachedCounty);
         Assert.assertTrue(newAdministrationPage.isCountyDisplayed(limitReachedCounty), "Cannot find County: " + limitReachedCounty);
         //get total Downloads Used
-        int totalDownloadsUsed = Integer.parseInt(newAdministrationPage.getTotalDownloadsUsed(limitReachedCounty));
+        int totalDownloadsUsed = Integer.parseInt(newAdministrationPage.getTotalDownloadsUsed());
         //get total Prints Used
-        int totalPrintsUsed = Integer.parseInt(newAdministrationPage.getTotalPrintsUsed(limitReachedCounty));
+        int totalPrintsUsed = Integer.parseInt(newAdministrationPage.getTotalPrintsUsed());
 
         //Assert validate that current County Abstract Plant has been reached the limit
-        Assert.assertTrue(newAdministrationPage.isLimitReachedMessageDisplayed(limitReachedCounty), "Current County: " + limitReachedCounty + " has not reached the limit.");
+        Assert.assertTrue(newAdministrationPage.isLimitReachedMessageDisplayed(), "Current County: " + limitReachedCounty + " has not reached the limit.");
 
         newAdministrationPage.clickOnBurgerMenu();
         newAdministrationPage.clickOnDownloadsAndPrintsAvailableCheckBox();
         newAdministrationPage.clickOnBurgerMenu();
         //Proceed to click on edit button in order to change or increase the current limit one more
-        newAdministrationPage.clickOnChangeLimitButton(limitReachedCounty);
+        newAdministrationPage.clickOnChangeLimitButton();
         Assert.assertTrue(newAdministrationPage.isDownloadsPrintsDialogDisplayed(limitReachedCounty), "Edit Downloads/Prints Dialog has not been displayed.");
         //Proceed to change the current limit. Increase fixed number with more one
         newAdministrationPage.addNewLimitNumber(totalDownloadsUsed + totalPrintsUsed);

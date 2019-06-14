@@ -16,7 +16,7 @@ import java.util.Date;
  */
 public class bulksActionsCancelChangeCompany extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID"})
-    @Test(groups = {"CH_Admin_BulksAction_Cancel_ChangeCompany", "Regression"})
+    @Test(groups = {"CH_Admin_BulksAction_Cancel_ChangeCompany", "Regression","Company_Management"})
 
     public void bulksActionsCancelChangeCompany(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID) throws InterruptedException {
 

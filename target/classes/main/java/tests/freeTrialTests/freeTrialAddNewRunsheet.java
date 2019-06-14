@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class freeTrialAddNewRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword","freeTrialCounty","freeTrialGrantor"})
-    @Test(groups = {"CH_FreeTrial_Add_New_Runsheet", "Regression"})
+    @Test(groups = {"CH_FreeTrial_Add_New_Runsheet", "Regression","FreeTrial"})
 
     public void freeTrialAddNewRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword, String freeTrialCounty, String freeTrialGrantor) throws InterruptedException {
 

@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  */
 public class addFreeTrial extends SeleniumInitializer {
     @Parameters({"environment","freeTrialURL","firstNameFreeTrial","lastNameFreeTrial","emailUserNameFreeTrial","phoneNumberFreeTrial","organizationFreeTrial","userNameFreeTrial","numberOfUserFreeTrialToCreate"})
-    @Test(groups = "CH_Add_FreeTrial")
+    @Test(groups = {"CH_Add_FreeTrial","Adding_Users"})
 
     public void addFreeTrial(String environment, String freeTrialURL, String firstNameFreeTrial, String lastNameFreeTrial, String emailUserNameFreeTrial, String phoneNumberFreeTrial, String organizationFreeTrial,String userNameFreeTrial, int numberOfUserFreeTrialToCreate) throws InterruptedException {
 

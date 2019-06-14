@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class payGoRemoveDocsFromRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword"})
-    @Test(groups = {"CH_PayGo_Del_Docs_From_Runsheet", "Regression"})
+    @Test(groups = {"CH_PayGo_Del_Docs_From_Runsheet", "Regression", "PayGo"})
 
     public void payGoRemoveDocsFromRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 

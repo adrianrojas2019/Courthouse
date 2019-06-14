@@ -17,7 +17,7 @@ import java.util.Date;
  */
 public class validateMetricsByFreeTrial extends SeleniumInitializer {
     @Parameters({"firstNameFreeTrial","lastNameFreeTrial","userNameFreeTrial","environment","usernameToLogIn","passwordToLogIn","county","totalDownloads","totalPrints","totalAddedToRunsheet","totalDocumentsViewed","totalRemovedFromRunsheet","totalSearchesByCounty","totalSearchesByTypeExplorerPanel","totalRenamedFromRunsheet"})
-    @Test(groups = {"CH_Admin_Metrics_By_FreeTrial", "Regression"})
+    @Test(groups = {"CH_Admin_Metrics_By_FreeTrial", "Regression","FreeTrial"})
 
     public void validateMetricsByFreeTrial(String firstNameFreeTrial, String lastNameFreeTrial, String userNameFreeTrial, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel, String totalRenamedFromRunsheet) throws InterruptedException {
 

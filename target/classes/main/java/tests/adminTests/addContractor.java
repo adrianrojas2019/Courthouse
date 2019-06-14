@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
  */
 public class addContractor extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","lastName","firstName","userName","companyAcct","myCompany","runsheetSharingAccess","emailUserName","numberOfUserToCreate"})
-    @Test(groups = "CH_Add_Contractor")
+    @Test(groups = {"CH_Add_Contractor","Adding_Users"})
 
     public void addContractor(String environment, String usernameToLogIn, String passwordToLogIn, String lastName, String firstName, String userName, String companyAcct, String myCompany,String runsheetSharingAccess, String emailUserName, int numberOfUserToCreate) throws InterruptedException {
 

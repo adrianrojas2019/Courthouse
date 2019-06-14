@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class payGoPrintRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword","setPreference"})
-    @Test(groups = {"CH_PayGo_Print_Runsheet", "Regression"})
+    @Test(groups = {"CH_PayGo_Print_Runsheet", "Regression", "PayGo"})
 
     public void payGoPrintRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword, String setPreference) throws InterruptedException {
 

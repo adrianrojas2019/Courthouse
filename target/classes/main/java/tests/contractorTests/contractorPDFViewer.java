@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class contractorPDFViewer extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
-    @Test(groups = {"CH_Contractor_PDF_Viewer", "Regression"})
+    @Test(groups = {"CH_Contractor_PDF_Viewer", "Regression","Contractor_Test"})
 
     public void contractorPDFViewer(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 

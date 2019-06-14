@@ -14,7 +14,7 @@ import java.util.Calendar;
  */
 public class contractorBrokerBoxSearch extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword","brokerBoxCounty","brokerBoxBookType","brokerBoxIndexBook","brokerBoxBookmarks","brokerBoxVolume","brokerBoxPage","runsheetName"})
-    @Test(groups = {"CH_Contractor_Broker_Box_Search", "Regression","MidLand_New_Company"})
+    @Test(groups = {"CH_Contractor_Broker_Box_Search", "Regression","Broker_Box"})
 
     public void contractorBrokerBoxSearch(String environment, String contractorUserName, String contractorPassword, String brokerBoxCounty, String brokerBoxBookType, String brokerBoxIndexBook, String brokerBoxBookmarks, String brokerBoxVolume, String brokerBoxPage, String runsheetName) throws InterruptedException {
 

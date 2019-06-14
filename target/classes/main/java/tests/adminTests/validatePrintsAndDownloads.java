@@ -17,7 +17,7 @@ import java.util.TimeZone;
  */
 public class validatePrintsAndDownloads extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","county","totalDownloads","totalPrints"})
-    @Test(groups = {"CH_Admin_Validate_Prints_Downloads", "Regression"})
+    @Test(groups = {"CH_Admin_Validate_Prints_Downloads", "Regression","Contractor_Test"})
 
     public void validatePrintsAndDownloads(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String county,String totalDownloads, String totalPrints) throws InterruptedException {
 

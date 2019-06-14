@@ -20,15 +20,7 @@ public class CHMainPage extends PageObjects {
     public CHMainPage(WebDriver driver) {
         super(driver);
     }
-    /**
-     *this method calls the click method in webDriverCommands class.
-     * This method uses the PageFactory desing pattern, to direct to another pageObject.
-     *  @return SettingsPage
-     */
 
-    /**
-     *this method calls the click method in webDriverCommands class.
-     */
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -38,11 +30,18 @@ public class CHMainPage extends PageObjects {
         return webDriverCommands.waitForElementPresent(USER_ADMIN_GRID,30);
     }
 
+    /**
+     * This method uses the PageFactory desing pattern, to direct to another pageObject.
+     *  @return UserAdministrationPage
+     */
     public UserAdministrationPage LoginMenu(){
         clickOnUserAdministrationMenu();
         return PageFactory.initElements(getDriver(), UserAdministrationPage.class);
     }
-
+    /**
+     * This method uses the PageFactory desing pattern, to direct to another pageObject.
+     *  @return ExplorerPage
+     */
     public ExplorerPage HomeButton(){
 
         webDriverCommands.waitForElementPresent(HOME_BUTTON,300);

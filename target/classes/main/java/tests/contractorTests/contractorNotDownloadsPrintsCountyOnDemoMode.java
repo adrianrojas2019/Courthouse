@@ -17,7 +17,7 @@ import java.util.Calendar;
  */
 public class contractorNotDownloadsPrintsCountyOnDemoMode extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","countyOnDemoMode","contractorUserName","contractorPassword","contractorGrantor"})
-    @Test(groups = {"CH_Contractor_County_On_Demo_Mode", "Regression"})
+    @Test(groups = {"CH_Contractor_County_On_Demo_Mode", "Regression","Company_Management"})
 
     public void contractorNotDownloadsPrintsCountyOnDemoMode(String runsheetName,String environment, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
 

@@ -17,7 +17,7 @@ import java.util.Calendar;
  */
 public class validateCountyDemoModeExpiresToday extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","countyOnDemoMode","contractorUserName","contractorPassword"})
-    @Test(groups = {"CH_Admin_County_Mode_Expires_Today", "Regression"})
+    @Test(groups = {"CH_Admin_County_Mode_Expires_Today", "Regression","Company_Management"})
 
     public void validateCountyDemoModeExpiresToday(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String countyOnDemoMode, String contractorUserName, String contractorPassword) throws InterruptedException {
 
@@ -49,7 +49,7 @@ public class validateCountyDemoModeExpiresToday extends SeleniumInitializer {
         newAdministrationPage.selectCounty(countyOnDemoMode);
         Assert.assertTrue(newAdministrationPage.isCountyDisplayed(countyOnDemoMode), "Cannot find County: " + countyOnDemoMode);
         //Edit Expiration Date: current date + 2 days
-        newAdministrationPage.clickOnEditButton(countyOnDemoMode);
+        newAdministrationPage.clickOnEditButton();
         Assert.assertTrue(newAdministrationPage.isEditExpirationDateDialogDisplayed(), "Cannot display Edit Expiration Date Dialog.");
         Assert.assertTrue(newAdministrationPage.isCountyNameDisplayed(countyOnDemoMode), "Cannot display County Name: " + countyOnDemoMode + " on the County Name Field. [Edit Expiration Date Dialog]");
         //Click on calendar icon

@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class addPayGo extends SeleniumInitializer {
     @Parameters({"environment","payGoURL","firstNamePayGo","lastNamePayGo","emailUserNamePayGo","phoneNumberPayGo","organizationPayGo","userNamePayGo","numberOfUserPayGoToCreate",
             "address1","city","state","zipCode","legalNameCC","creditCardNumber","cvv","monthExpirationDate","yearExpirationDate"})
-    @Test(groups = "CH_Add_PayGo")
+    @Test(groups = {"CH_Add_PayGo","Adding_Users"})
 
     public void addPayGo(String environment, String payGoURL, String firstNamePayGo, String lastNamePayGo, String emailUserNamePayGo, String phoneNumberPayGo, String organizationPayGo,String userNamePayGo, int numberOfUserPayGoToCreate,
                          String address1, String city, String state, String zipCode, String legalNameCC, String creditCardNumber, String cvv, String monthExpirationDate, String yearExpirationDate) throws InterruptedException {

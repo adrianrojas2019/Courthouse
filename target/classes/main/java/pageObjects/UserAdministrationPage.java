@@ -16,42 +16,39 @@ public class UserAdministrationPage extends PageObjects {
     private final By ADD_CONTRACTOR_BUTTON = By.id("addContractorBulk");
     private final By BULK_ACTIONS_BUTTON = By.id("editBulk");
     private final By CHANGE_COMPANY_BUTTON = By.id("changeCompany");
-    private final By USER_MENU = By.xpath("//span[@class='caret']");
-    private final By USER_ADMIN_ITEM = By.xpath("//a[@href='/users']");
-    private final By RUNSHEET_MANAGEMENT_ITEM = By.xpath("//a[@href='/runsheet'][@role='menuitem']");
+    private final By USER_MENU = By.cssSelector(".caret");
+    private final By USER_ADMIN_ITEM = By.cssSelector("a[href='/users']");
+    private final By RUNSHEET_MANAGEMENT_ITEM = By.cssSelector("a[href='/runsheet'][role='menuitem']");
     private final By LOGOUT_ADMIN_ITEM = By.xpath("//a[@href='#']");
-    private final By COMPANY_MANAGEMENT_ADMIN_ITEM = By.xpath("//a[@href='/users/management']");
-    private final By USER_ADMIN_GRID = By.xpath("//section[@class='row user-container ng-scope']");
-
-    private final By USER_COMPANY_GRID= By.xpath("//div[@class='user-grid-company-mgt ng-scope']");
+    private final By COMPANY_MANAGEMENT_ADMIN_ITEM = By.cssSelector("a[href*='users/management']");
+    private final By USER_ADMIN_GRID = By.cssSelector("section[class='row user-container ng-scope']");
+    private final By USER_COMPANY_GRID= By.cssSelector(".user-grid-company-mgt.ng-scope");
     private final By CONTRACT_PAGE = By.xpath("//h3[text()='Add New Contractor User']");
-    private final By COMPANY_ACCT_POP_UP = By.xpath("//div[@class='modal-dialog']");
-    private final By EDIT_EXPIRATION_DATE_DIALOG = By.xpath("//div[text()='EDIT EXPIRATION DATE']");
-    private final By SEARCH_USER_FIELD_CONTRACT = By.xpath("//div[@class='row topSpace usersBulkGridActionStyle di-arrow-grid-top ng-scope']//div//input[2]");
-    private final By SEARCH_USER_FIELD = By.xpath("//input[@ng-model='gridOptions.filterOptions.filterText']");
-    private final By USAGE_METRICS_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Usage Metrics']");
+    private final By COMPANY_ACCT_POP_UP = By.cssSelector("div[class='modal-dialog']");
+    private final By EDIT_EXPIRATION_DATE_DIALOG = By.cssSelector(".headerTitle");
+    private final By SEARCH_USER_FIELD_CONTRACT = By.cssSelector("input[ng-model='gridOptionsMirror.filterOptions.filterText']");
+    private final By SEARCH_USER_FIELD = By.cssSelector("input[ng-model='gridOptions.filterOptions.filterText']");
+    private final By USAGE_METRICS_TAB = By.cssSelector("div[class='diTabNav'] li:nth-child(2) > a");
     private final By DEMO_MANAGEMENT_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Demo Management']");
     private final By METRICS_TAB = By.xpath("//div[@class='tab-container ng-scope']//li//a[text()='Metrics']");
+    private final By COUNTY_TYPE = By.cssSelector("select[name='countyType']");
+    private final By ARROW_RIGHT = By.cssSelector("div[class='arrowIcon arrowRight activeArrowRight']");
+    private final By ARROW_LEFT = By.cssSelector("div[class='arrowIcon arrowLeft activeArrowLeft']");
 
-    private final By COUNTY_TYPE = By.xpath("//select[@name='countyType']");
-    private final By ARROW_RIGHT = By.xpath("//div[@class='arrowIcon arrowRight activeArrowRight']");
-    private final By ARROW_LEFT = By.xpath("//div[@class='arrowIcon arrowLeft activeArrowLeft']");
-
-    private final By USER_METRICS_GRID = By.xpath("//article[@ui-view='user-metrics']");
-    private final By USER_METRICS_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics']//h5[@name='Select County for details']");
+    private final By USER_METRICS_GRID = By.cssSelector("article[ui-view='user-metrics']");
+    private final By USER_METRICS_GRID_TITLE = By.cssSelector("article[ui-view='user-metrics'] h5[name='Select County for details']");
     private final By USER_METRICS_TAB_TITLE = By.xpath("//article[@ui-view='user-metrics']//label[text()='Usage & Activity']");
 
-    private final By EDIT_DOWNLOADS_PRINTS_DIALOG = By.xpath("//div[@class='modal-content']");
+    private final By EDIT_DOWNLOADS_PRINTS_DIALOG = By.cssSelector("div[class='modal-content']");
     private final By EDIT_DOWNLOADS_PRINTS_TITLE = By.xpath("//div[text()='EDIT DOWNLOADS/PRINTS']");
-    private final By NEW_LIMIT_NUMBER = By.xpath("//input[@name='newLimit']");
-    private final By BURGER_MENU = By.xpath("//article[@ui-view='user-metrics']//div[@class='ngHeaderButtonBurgerMenu']");
+    private final By NEW_LIMIT_NUMBER = By.cssSelector("input[name='newLimit']");
+    private final By BURGER_MENU = By.cssSelector("article[ui-view='user-metrics'] div[class='ngHeaderButtonBurgerMenu']");
     private final By DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX = By.xpath("//span[text()='Downloads/Prints Available']//..//label");
 
-    private final By USER_DEMO_MANAGEMENT_GRID = By.xpath("//article[@ui-view='user-metrics-bulk']");
-    private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.xpath("//article[@ui-view='user-metrics-bulk']//h5[@name='Select County for details']");
+    private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.cssSelector("article[ui-view='user-metrics-bulk'] h5[name='Select County for details']");
 
-    private final By FROM_DATE = By.xpath("//p[@class='input-group calendar-left']//input");
-    private final By ACTIVITY_ROW = By.xpath("//th[@class='metrics-date-range-section col-md-12']//div[@class='diDateRangePickerContainer']");
+    private final By FROM_DATE = By.cssSelector("p[class='input-group calendar-left']");
+    private final By ACTIVITY_ROW = By.cssSelector("div[class='diDateRangePickerContainer']");
     private final By DOCUMENTS_DOWNLOADED = By.xpath("//td[text()='Documents Downloaded']/following-sibling::td");
     private final By DOCUMENTS_PRINTED = By.xpath("//td[text()='Documents Printed']/following-sibling::td");
 
@@ -72,28 +69,27 @@ public class UserAdministrationPage extends PageObjects {
     private final By DURATION = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Duration']/following-sibling::td");
 
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
-    private final By NEW_EXPIRATION_DATE = By.xpath("//input[@name='datePicker']");
+    private final By NEW_EXPIRATION_DATE = By.cssSelector("input[name='datePicker']");
 
-    private final By FIRST_NAME = By.xpath("//input[@name='firstName']");
-    private final By LAST_NAME = By.xpath("//input[@name='lastName']");
-    private final By USER_NAME = By.xpath("//input[@name='userName']");
-    private final By EMAIL_USERNAME_FIELD = By.xpath("//input[@name='email']");
+    private final By FIRST_NAME = By.cssSelector("input[name='firstName']");
+    private final By LAST_NAME = By.cssSelector("input[name='lastName']");
+    private final By USER_NAME = By.cssSelector("input[name='userName']");
+    private final By EMAIL_USERNAME_FIELD = By.cssSelector("input[name='email']");
 
     private final By COMPANY_ACCT = By.xpath("//input[@name='companyAccount']");
-    private final By SELECT_COMPANY_ACCT = By.xpath("//input[@name='companyAccount'][@ng-model='modalAlertOptions.companyAccount']");
-    private final By COMPANY_ID = By.xpath("//div[@class='ngCellText ng-scope col1 colt1 centerCellHeader']//span");
+    private final By SELECT_COMPANY_ACCT = By.cssSelector("input[name='companyAccount'][ng-model='modalAlertOptions.companyAccount']");
+    private final By COMPANY_ID = By.cssSelector("div[class='ngCellText ng-scope col1 colt1 centerCellHeader']");
     private final By FIND_COMPANY_ACCT = By.xpath("//strong['DI Internal Acct']");
-    private final By OK_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
-    private final By CANCEL_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showCancelButton']");
-    private final By PAGE_FORWARD = By.xpath("//div[@class='ngPagerContainer']//button[@ng-click='pageForward()']");
-    private final By MY_COMPANY = By.xpath("//input[@name='myCompany']");
-    private final By RUN_SHEET_SHARING_ACCESS = By.xpath("//select[@name='runsheetSharing']");
-    private final By SAVE_BUTTON = By.xpath("//button[@ng-click='save()']");
-    private final By EXPIRATION_DATE_SAVE_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
-    private final By FIND_NEW_USERNAME = By.xpath("//input[@class='form-control ng-pristine ng-untouched ng-valid']");
-    private final By SELECT_NEW_USERNAME = By.xpath("//div[@class='ngCanvas']");
-    private final By NEW_USER_EXISTS = By.xpath("//label[@ng-bind='userSelected.userName']");
-    //private final By SUCCESS_ALERT_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully saved.')]");
+    private final By OK_BUTTON = By.cssSelector("button[ng-show='modalAlertOptions.showOkButton']");
+    private final By CANCEL_BUTTON = By.cssSelector("button[ng-show='modalAlertOptions.showCancelButton']");
+    private final By PAGE_FORWARD = By.cssSelector("div[class='ngPagerContainer'] button[ng-click='pageForward()']");
+    private final By MY_COMPANY = By.cssSelector("input[name='myCompany']");
+    private final By RUN_SHEET_SHARING_ACCESS = By.cssSelector("select[name='runsheetSharing']");
+    private final By SAVE_BUTTON = By.cssSelector("button[ng-click='save()']");
+    private final By EXPIRATION_DATE_SAVE_BUTTON = By.cssSelector("button[ng-show='modalAlertOptions.showOkButton']");
+    private final By FIND_NEW_USERNAME = By.cssSelector("article[ui-view='user-grid'] input[class='form-control ng-pristine ng-untouched ng-valid']");
+    private final By SELECT_NEW_USERNAME = By.cssSelector("div[di-grid='gridOptions'] div[class='ngCanvas']");
+    private final By NEW_USER_EXISTS = By.cssSelector("label[ng-bind='userSelected.userName']");
     private final By SUCCESS_USER_UPDATE_MESSAGE = By.xpath("//div[contains(text(),'User has been successfully edited.')]");
 
     private final By TOTAL_ITEMS = By.xpath("//div[@class='ngFooterTotalItems']//span");
@@ -103,6 +99,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By SEARCH_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
     private final By SEARCH_UNASSIGNED_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
     private final By REMOVE_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItemAssign.name']");
+    private final By EDIT_BUTTON= By.cssSelector("div.ng-scope.ngRow.even.selected div[ng-click='diGrid.onEditRow(row, $event)']");
 
     String find_County = "//span[text()='%s']";
     String find_County_Name = "//b[text()='%s']";
@@ -114,18 +111,20 @@ public class UserAdministrationPage extends PageObjects {
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
     String find_Midland_Map_County = "//div[text()='%s']//following-sibling::div";
 
-    String find_Edit_Button = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText text-center edit-btn ng-scope']";
-    String downloads_Used = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText ng-scope col3 colt3 centerCellHeader']";
-    String prints_Used = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText ng-scope col4 colt4 centerCellHeader']";
-    String edit_Limit = "//span[text()='%s']//..//..//..//..//div[@class='ngCellText text-center edit-btn ng-scope']";
-    String limit_Reached_Message = "//span[text()='%s']//..//..//..//..//span[text()='Limit Reached']";
+    private final By DOWNLOADS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col3 colt3 centerCellHeader']");
+    private final By PRINTS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col4 colt4 centerCellHeader']");
+    private final By EDIT_LIMIT_BUTTON = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText text-center edit-btn ng-scope']");
+    private final By LIMIT_REACHED_MESSAGE = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col5 colt5 centerCellHeader']");
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
-    //div[text()='EDIT DOWNLOADS/PRINTS']
     String successAlertMessage= "//div[contains(text(),'%s')]";
 
+    /**
+     * This method uses the PageFactory desing pattern, to direct to another pageObject.
+     *  @return UserAdministrationPage
+     */
     public UserAdministrationPage clickOnUserAdministrationPage(){
 
         webDriverCommands.waitForElementClickable(USER_MENU, 300);
@@ -137,26 +136,36 @@ public class UserAdministrationPage extends PageObjects {
     public UserAdministrationPage(WebDriver driver) {
         super(driver);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnAddContractorButton(){
         webDriverCommands.click(ADD_CONTRACTOR_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnBulkActionsButton(){
         webDriverCommands.click(BULK_ACTIONS_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnCancelButton(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(CANCEL_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnNextPage(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(PAGE_FORWARD);
         webDriverCommands.waitSomeSeconds(2);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnChangeCompanyButton(){
         webDriverCommands.click(CHANGE_COMPANY_BUTTON);
     }
@@ -169,7 +178,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the waitForElementPresent and click method in webDriverCommands class.
      */
     public void clickOnUserAdministrationMenu(){
         webDriverCommands.waitForElementClickable(USER_MENU, 300);
@@ -184,7 +193,8 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     * This method uses the PageFactory desing pattern, to direct to another pageObject.
+     *  @return RunsheetManagementPage
      */
     public RunsheetManagementPage clickOnRunsheetManagementItem(){
         webDriverCommands.waitSomeSeconds(3);
@@ -193,7 +203,8 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     * This method uses the PageFactory desing pattern, to direct to another pageObject.
+     *  @return LoginPage
      */
     public LoginPage clickOnLogoutItem(){
         webDriverCommands.waitSomeSeconds(3);
@@ -210,75 +221,95 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
      */
     public void clickOnSearchFieldAsSuperUser(String searchContractUserName){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.type(SEARCH_USER_FIELD_CONTRACT,searchContractUserName);
         webDriverCommands.waitSomeSeconds(5);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnContractorName(String findMyCompanyName){
         webDriverCommands.click(By.xpath(String.format(my_Company_Name, findMyCompanyName)));
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnCountyMidlandMaps(String findCountyMidlandMap){
         webDriverCommands.click(By.xpath(String.format(my_County_Midland_Maps_Name, findCountyMidlandMap)));
         webDriverCommands.waitSomeSeconds(2);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnUnassignedCounty(String findCounty){
         webDriverCommands.click(By.xpath(String.format(my_Unassigned_County, findCounty)));
         webDriverCommands.waitSomeSeconds(2);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnAssignedCountyMidlandMaps(String findCountyMidlandMap){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(By.xpath(String.format(my_Assigned_County_Midland_Maps_Name, findCountyMidlandMap)));
         webDriverCommands.waitSomeSeconds(2);
     }
-
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void addMidlandMapsCounty(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SEARCH_MIDLAND_MAP_COUNTY,midlandMapCounty);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void searchUnAssignedCounty(String searchCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SEARCH_UNASSIGNED_COUNTY,searchCounty);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void removeMidlandMapsCounty(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(REMOVE_MIDLAND_MAP_COUNTY,midlandMapCounty);
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
      */
     public void clickOnSearchFieldAsContractor(String searchContractUserName){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.type(SEARCH_USER_FIELD_CONTRACT,searchContractUserName);
         webDriverCommands.waitSomeSeconds(5);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void clickOnRunsheetSharingAccess(String option){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(RUN_SHEET_SHARING_ACCESS,option);
     }
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnSaveButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(SAVE_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnExpirationDateSaveButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(EXPIRATION_DATE_SAVE_BUTTON);
         webDriverCommands.waitSomeSeconds(5);
     }
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
      */
     public void clickOnSearchUser(String searchUser){
         webDriverCommands.waitSomeSeconds(3);
@@ -291,21 +322,30 @@ public class UserAdministrationPage extends PageObjects {
         String [] array = webDriverCommands.getText(TOTAL_USERS).split(":");
         return array[1].trim();
     }
-    public String getTotalDownloadsUsed(String limitReachedCounty){
-        return webDriverCommands.getText(By.xpath(String.format(downloads_Used, limitReachedCounty)));
+    /**
+     *this method calls the getText method in webDriverCommands class.
+     * return String with the total of downloads used
+     */
+    public String getTotalDownloadsUsed(){
+        return webDriverCommands.getText(DOWNLOADS_USED);
     }
-    public String getTotalPrintsUsed(String limitReachedCounty){
-        return webDriverCommands.getText(By.xpath(String.format(prints_Used, limitReachedCounty)));
+    /**
+     *this method calls the getText method in webDriverCommands class.
+     * return String with the total of prints used
+     */
+    public String getTotalPrintsUsed(){
+        return webDriverCommands.getText(PRINTS_USED);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void selectCompanyAcct(String companyID){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SELECT_COMPANY_ACCT,companyID);
-        //webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.click(FIND_COMPANY_ACCT);
-        //webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.click(OK_BUTTON);
     }
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnCompanyAcctName(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(FIND_COMPANY_ACCT);
@@ -365,27 +405,51 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(USER_METRICS_TAB_TITLE);
         return webDriverCommands.waitForElementPresent(USER_METRICS_TAB_TITLE,30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCountyDisplayed(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County, county)),30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isUnassignedCountyDisplayed(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),5);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isAssignedCountyDisplayed(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Assigned_County, county)),30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCountyAssigned(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Assigned_County, county)),30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCountyUnassigned(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCountyTypeSelected(String countyType){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County_Type, countyType)),30);
     }
@@ -405,16 +469,28 @@ public class UserAdministrationPage extends PageObjects {
     public boolean isCompanyAcctPopUpDialogDisplayed(){
         return webDriverCommands.waitForElementPresent(COMPANY_ACCT_POP_UP,30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCompanyAcctNameDisplayed(){
         return webDriverCommands.waitForElementPresent(FIND_COMPANY_ACCT,30);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isEditExpirationDateDialogDisplayed(){
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.waitForElementPresent(EDIT_EXPIRATION_DATE_DIALOG,10);
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isCountyNameDisplayed(String countyOnDemoMode){
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_County_Name, countyOnDemoMode)),30);
@@ -428,12 +504,20 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         return webDriverCommands.getText(COMPANY_ID);
     }
-
-    public boolean isLimitReachedMessageDisplayed(String limitReachedCounty){
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return boolean if the getText() returns the same value than "Limit Reached"
+     */
+    public boolean isLimitReachedMessageDisplayed(){
         webDriverCommands.waitSomeSeconds(2);
-        return webDriverCommands.waitForElementPresent(By.xpath(String.format(limit_Reached_Message, limitReachedCounty)),30);
+        return webDriverCommands.getText(LIMIT_REACHED_MESSAGE).equals("Limit Reached");
     }
-
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isDownloadsPrintsDialogDisplayed(String limitReachedCounty){
         webDriverCommands.waitSomeSeconds(2);
         if (webDriverCommands.waitForElementPresent(EDIT_DOWNLOADS_PRINTS_DIALOG,10)){
@@ -443,7 +527,7 @@ public class UserAdministrationPage extends PageObjects {
         }
     }
     /**
-     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *this method calls the getText() method in webDriverCommands class.
      *
      *  @return String
      */
@@ -453,15 +537,27 @@ public class UserAdministrationPage extends PageObjects {
         DecimalFormat format = new DecimalFormat("0.00");
         return format.format(value);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isDocumentDownloadByMetrics(){
         return webDriverCommands.getText(DOCUMENTS_DOWNLOADED_BY_METRICS);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isPrints(){
         return webDriverCommands.getText(DOCUMENTS_PRINTED_BY_METRICS);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isDocumentPrinted(){
         //return webDriverCommands.getText(DOCUMENTS_PRINTED);
         //workaround in the meantime CH-1077 is fixed
@@ -469,52 +565,92 @@ public class UserAdministrationPage extends PageObjects {
         DecimalFormat format = new DecimalFormat("0.00");
         return format.format(value);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isAddedToRunsheet(){
         return webDriverCommands.getText(DOCUMENTS_ADDED_TO_RUNSHEET);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isDocumentViewed(){
         return webDriverCommands.getText(DOCUMENTS_VIEWED);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isRemovedFromRunsheet(){
         return webDriverCommands.getText(DOCUMENTS_REMOVED_FROM_RUNSHEET);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isRenamedFromRunsheet(){
         return webDriverCommands.getText(DOCUMENTS_RENAMED_FROM_RUNSHEET);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByCounty(){
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_COUNTY);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByCountyBB(String brokerBoxCounty){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_COUNTY);
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(By.xpath(String.format(find_Broker_Box_County, brokerBoxCounty)));
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByCountyMidlandMaps(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_COUNTY);
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(By.xpath(String.format(find_Midland_Map_County, midlandMapCounty)));
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByType(){
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByTypeBBIndexBook(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE);
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_BB_INDEX_BOOK);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
 
     public String isTotalSearchesByTypeMidlandMap(){
         webDriverCommands.waitSomeSeconds(2);
@@ -522,46 +658,76 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_MIDLAND_MAP);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByTypeBBVolumePage(){
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_BB_VOLUME_PAGE);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public String isTotalSearchesByTypePR(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(PLUS_SQUARE_TOTAL_SEARCHES_BY_TYPE);
         webDriverCommands.waitSomeSeconds(1);
         return webDriverCommands.getText(TOTAL_SEARCHES_BY_TYPE_PR);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnCompanyRow(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(COMPANY_ID);
     }
-
-    public void clickOnChangeLimitButton(String limitReachedCounty){
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
+    public void clickOnChangeLimitButton(){
         webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.click(By.xpath(String.format(edit_Limit,limitReachedCounty)));
+        webDriverCommands.click(EDIT_LIMIT_BUTTON);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void selectCounty(String county){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(By.xpath(String.format(find_County, county)));
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnBurgerMenu(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(BURGER_MENU);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnDownloadsAndPrintsAvailableCheckBox(){
         webDriverCommands.waitSomeSeconds(2);
-        //if (webDriverCommands.waitForElementPresent(DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX)) {
         webDriverCommands.click(DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX);
-        //}
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void addNewLimitNumber(int total){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(NEW_LIMIT_NUMBER);
@@ -570,48 +736,84 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(OK_BUTTON);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void selectUnassignedCounty(String county){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(By.xpath(String.format(find_Unassigned_County, county)));
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void selectAssignedCounty(String county){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(By.xpath(String.format(find_Assigned_County, county)));
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnUsageMetricsTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(USAGE_METRICS_TAB);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnDemoManagementTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DEMO_MANAGEMENT_TAB);
     }
-
-    public void clickOnEditButton(String countyDemoMode){
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
+    public void clickOnEditButton(){
         webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.click(By.xpath(String.format(find_Edit_Button, countyDemoMode)));
+        webDriverCommands.click(EDIT_BUTTON);
     }
-
+    /**
+     *this method calls the type() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnCountyTypeCombo(String countyType){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(COUNTY_TYPE, countyType);
         webDriverCommands.waitSomeSeconds(3);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnArrowRight(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(ARROW_RIGHT);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnArrowLeft(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(ARROW_LEFT);
     }
-
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
     public void clickOnMetricsTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(METRICS_TAB);
@@ -640,7 +842,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *this method calls the getText() method in webDriverCommands class.
      *
      *  @return boolean
      */
@@ -650,7 +852,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
      */
     public void insertName(String firstName, String lastName){
         webDriverCommands.type(FIRST_NAME,firstName);
@@ -666,6 +868,9 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.type(EMAIL_USERNAME_FIELD, emailUserName);
         webDriverCommands.waitSomeSeconds(1);
     }
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void addFromDate(String currentDate){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
@@ -676,14 +881,18 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void addNewExpirationDate(String currentDate){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(NEW_EXPIRATION_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(NEW_EXPIRATION_DATE, currentDate);
     }
-
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
     public void addFromDateByMetric(String currentDate){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
@@ -733,14 +942,20 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(RUN_SHEET_SHARING_ACCESS, runsheetSharingAccess);
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     * return the total of items for the specified user
+     */
     public String isUserFound(){
         webDriverCommands.waitSomeSeconds(2);
         String [] array = webDriverCommands.getText(TOTAL_ITEMS).split(":");
 
         return array[1].trim();
     }
-
+    /**
+     *this method calls the getText() method in webDriverCommands class.
+     * return the total of items for the specified user
+     */
     public String isUserFoundByAdmin(){
         webDriverCommands.waitSomeSeconds(3);
         String [] array = webDriverCommands.getText(TOTAL_ITEMS_BY_ADMIN).split(":");
@@ -752,7 +967,6 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the click method in webDriverCommands class.
      */
     public void clickSaveButton(){
-
 
         /*JavascriptExecutor js = (JavascriptExecutor) driver;
         //This will scroll the page till the element is found

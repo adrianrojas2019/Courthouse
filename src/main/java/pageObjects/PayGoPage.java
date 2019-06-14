@@ -8,30 +8,30 @@ import org.openqa.selenium.WebDriver;
  */
 public class PayGoPage extends PageObjects {
     /**
-     *Web elements for UserPage
+     *Web elements for PayGoPage
      */
 
     private final By FREE_TRIAL_TITLE = By.xpath("//h2[text()='Save time and gas money by accessing court documents online.']");
-    private final By FIRST_NAME = By.xpath("//input[@name='first-name']");
-    private final By LAST_NAME = By.xpath("//input[@name='last-name']");
-    private final By EMAIL_USERNAME_FIELD = By.xpath("//input[@name='email']");
-    private final By PHONE_NUMBER = By.xpath("//input[@name='phone']");
-    private final By ORGANIZATION = By.xpath("//input[@name='organization']");
+    private final By FIRST_NAME = By.cssSelector("input[name='first-name']");
+    private final By LAST_NAME = By.cssSelector("input[name='last-name']");
+    private final By EMAIL_USERNAME_FIELD = By.cssSelector("input[name='email']");
+    private final By PHONE_NUMBER = By.cssSelector("input[name='phone']");
+    private final By ORGANIZATION = By.cssSelector("input[name='organization']");
     private final By ADDRESS_1 = By.name("address1");
     private final By CITY = By.name("city");
-    private final By STATE = By.xpath("//select[@name='state']");
+    private final By STATE = By.cssSelector("select[name='state']");
     private final By ZIP_CODE = By.name("zipcode");
     private final By LEGAL_NAME_CC = By.name("name-on-card");
-    private final By CREDIT_CARD_NUMBER = By.xpath("//input[@name='credit-card-number']");
-    private final By CVV = By.xpath("//input[@name='cvv']");
-    private final By MONTH_EXPIRATION_DATE = By.xpath("//input[@name='expiration-month']");
-    private final By YEAR_EXPIRATION_DATE = By.xpath("//input[@name='expiration-year']");
-    private final By USER_NAME = By.xpath("//input[@name='username']");
-    private final By GET_ACCESS_BUTTON = By.xpath("//button[@id='submit-payment']");
+    private final By CREDIT_CARD_NUMBER = By.cssSelector("input[name='credit-card-number']");
+    private final By CVV = By.cssSelector("input[name='cvv']");
+    private final By MONTH_EXPIRATION_DATE = By.cssSelector("input[name='expiration-month']");
+    private final By YEAR_EXPIRATION_DATE = By.cssSelector("input[name='expiration-year']");
+    private final By USER_NAME = By.cssSelector("input[name='username']");
+    private final By GET_ACCESS_BUTTON = By.cssSelector("button[id='submit-payment']");
     private final By CONFIRM_PAYGO_POP_UP = By.xpath("//div[contains(text(),'Confirm Subscription Purchase')]");
-    private final By CONTINUE_BUTTON = By.xpath("//button[@ng-show='modalAlertOptions.showOkButton']");
-    private final By LOGIN_BUTTON = By.xpath("//a[@class='btn btn-success big-link-btn']");
-    private final By SUCCESS= By.xpath("//div[@class='success-confirm']");
+    private final By CONTINUE_BUTTON = By.cssSelector("button[ng-show='modalAlertOptions.showOkButton']");
+    private final By LOGIN_BUTTON = By.cssSelector("a[class='btn btn-success big-link-btn']");
+    private final By SUCCESS= By.cssSelector("div[class='success-confirm']");
 
     //Name conditions
     private final By CHECK_CONDITIONS = By.name("customDiCheck");
@@ -39,7 +39,11 @@ public class PayGoPage extends PageObjects {
     public PayGoPage(WebDriver driver) {
         super(driver);
     }
-
+    /**
+     *this method calls the waitForElementVisible method in webn.DriverCommands class.
+     *@param newURL new url in order to access the standalone site
+     *  @return boolean
+     */
     public void LoadNewURL(String newURL){
         webDriverCommands.openUrl(newURL);
     }
@@ -73,7 +77,7 @@ public class PayGoPage extends PageObjects {
 
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
      */
     public void insertName(String firstName, String lastName){
         webDriverCommands.type(FIRST_NAME,firstName);
@@ -90,14 +94,16 @@ public class PayGoPage extends PageObjects {
     }
 
     /**
-     *this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param phoneNumber info to enter in the username's field
      */
     public void insertPhoneNumber(String phoneNumber){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(PHONE_NUMBER, phoneNumber);
     }
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param organization info to enter in the username's field
      */
     public void insertOrganization(String organization){
         webDriverCommands.waitSomeSeconds(1);
@@ -105,7 +111,8 @@ public class PayGoPage extends PageObjects {
     }
 
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param address1 info to enter in the username's field
      */
     public void insertAddress1(String address1){
         webDriverCommands.waitSomeSeconds(1);
@@ -113,28 +120,32 @@ public class PayGoPage extends PageObjects {
     }
 
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param city info to enter in the username's field
      */
     public void insertCity(String city){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(CITY, city);
     }
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param state info to enter in the username's field
      */
     public void insertState(String state){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(STATE, state);
     }
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@param zipCode info to enter in the username's field
      */
     public void insertZipCode(String zipCode){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(ZIP_CODE, zipCode);
     }
     /**
-     * this method calls the click method in webDriverCommands class.
+     *this method calls the type method in webDriverCommands class.
+     *@params legalNameCC creditCardNumber cvv monthExpirationDate yearExpirationDate info to enter in the username's field
      */
     public void insertCardInfo(String legalNameCC, String creditCardNumber, String cvv, String monthExpirationDate, String yearExpirationDate){
         webDriverCommands.waitSomeSeconds(1);
@@ -158,7 +169,6 @@ public class PayGoPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
     }
 
-
     /**
      *this method calls the type method in webDriverCommands class.
      *@param userName info to enter in the username's field
@@ -167,20 +177,28 @@ public class PayGoPage extends PageObjects {
         webDriverCommands.type(USER_NAME, userName);
     }
 
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void checkConditions(){
         webDriverCommands.click(CHECK_CONDITIONS);
         //webDriverCommands.clickJs(CHECK_CONDITIONS);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnGetAccessButton(){
         webDriverCommands.click(GET_ACCESS_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnContinueButton(){
         webDriverCommands.click(CONTINUE_BUTTON);
     }
-
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
     public void clickOnLoginButton(){
         webDriverCommands.click(LOGIN_BUTTON);
     }
