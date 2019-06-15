@@ -47,7 +47,7 @@ public class UserAdministrationPage extends PageObjects {
 
     private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.cssSelector("article[ui-view='user-metrics-bulk'] h5[name='Select County for details']");
 
-    private final By FROM_DATE = By.cssSelector("p[class='input-group calendar-left']");
+    private final By FROM_DATE = By.cssSelector("input[ng-model='diDateRangePicker.dateFrom']");
     private final By ACTIVITY_ROW = By.cssSelector("div[class='diDateRangePickerContainer']");
     private final By DOCUMENTS_DOWNLOADED = By.xpath("//td[text()='Documents Downloaded']/following-sibling::td");
     private final By DOCUMENTS_PRINTED = By.xpath("//td[text()='Documents Printed']/following-sibling::td");

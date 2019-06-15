@@ -50,8 +50,6 @@ public class validateMetricsByContractor extends SeleniumInitializer {
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
         newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
-        //newAdministrationPage.addFromDateByMetric((cal.get(Calendar.MONTH)+1) + "." + cal.get(Calendar.DAY_OF_MONTH) + "." + cal.get(Calendar.YEAR));
-        //newAdministrationPage.addFromDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
 
         //Proceed to validate some metrics
         // Added To Runsheet - Documents Viewed - Documents Downloaded - Removed from Runsheet

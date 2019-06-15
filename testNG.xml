@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="7" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
 
     <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
     <parameter name="browser" value="Chrome"/>
@@ -26,12 +26,15 @@
     <parameter name="myCompany" value="Gap_Tester"/>
     <parameter name="totalDownloads" value="1.00"/>
     <parameter name="totalPrints" value="1.00"/>
+    <parameter name="totalSearchesByCounty" value="4.00"/>
+    <parameter name="totalSearchesByTypeExplorerPanel" value="4.00"/>
+
     <!-- Validate Metrics: By User (Contract/Free Trial/PayGo -->
     <parameter name="totalAddedToRunsheet" value="3.00"/>
     <parameter name="totalDocumentsViewed" value="1.00"/>
     <parameter name="totalRemovedFromRunsheet" value="2.00"/>
     <parameter name="totalRenamedFromRunsheet" value="1.00"/>
-    <parameter name="runsheetName" value="Automated_RunSheet"/>
+    <parameter name="runsheetName" value="utomated_RunSheet"/>
 
     <parameter name="setPreference" value="false"/>
     <parameter name="totalSearches" value="3"/>
@@ -58,7 +61,7 @@
     <parameter name="superUserName" value="diplus1"/>
     <parameter name="superUserPassword" value="diplus1"/>
     <parameter name="superUserCounty" value="Bandera"/>
-    <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheet"/>
+    <parameter name="myCompanyRunsheetName" value="yCompanyRunsheet"/>
 
     <test name="Contractor_Test">
         <groups>
@@ -94,7 +97,7 @@
     <test name="FreeTrial_Test">
         <parameter name="freeTrialCounty" value="Atascosa"/>
         <parameter name="freeTrialGrantor" value="James"/>
-        <parameter name="runsheetNameFreeTrial" value="Automated_FT_RunSheet"/>
+        <parameter name="runsheetNameFreeTrial" value="utomated_FT_RunSheet"/>
 
         <groups>
             <run>
@@ -121,7 +124,7 @@
     <!-- Add Pay Go-->
     <parameter name="payGoCounty" value="Liberty"/>
     <parameter name="payGoGrantor" value="Smith"/>
-    <parameter name="runsheetNamePayGo" value="Automated_PG_RunSheet"/>
+    <parameter name="runsheetNamePayGo" value="utomated_PG_RunSheet"/>
 
         <groups>
             <run>

@@ -64,7 +64,9 @@ public class ExplorerPage extends PageObjects {
     private final By PRINT_SPINNER= By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By PRINT_BUTTON_ENABLED = By.cssSelector("button[class='toolbarButton printPdf'][disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
-    private final By CLOSE_STANDALONE_PDF = By.xpath("//button[@class='toolbarButton closePdf']");
+    private final By CLOSE_STANDALONE_PDF = By.cssSelector("button[class='toolbarButton closePdf']");
+    private final By CANVAS_LOADED = By.cssSelector("canvas[class=rotate0][height]");
+    private final By PDF_SPINNER = By.cssSelector("spinner[class='medium-spinner']");
     private final By CLOSE_EMBEDDED_PDF = By.cssSelector("section[di-pdf-viewer='pdfViewerOptions'] button[class='toolbarButton closePdf']");
     private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//div[text()='Document not available']");
@@ -100,7 +102,7 @@ public class ExplorerPage extends PageObjects {
     private final By PURCHASE_CONFIRMATION_DIALOG = By.cssSelector("div[class='modal-dialog']");
 
     private final By ACTIVITY_ROW = By.xpath("//th[@class='metrics-date-range-section col-md-12']//div[@class='diDateRangePickerContainer']");
-    private final By FROM_DATE = By.cssSelector("p[class='input-group calendar-left']");
+    private final By FROM_DATE = By.cssSelector("input[ng-model='diDateRangePicker.dateFrom']");
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
     private final By DOCUMENTS_DOWNLOADED = By.cssSelector("tr:nth-child(1) > td.col-md-2.ng-binding");
     private final By DOCUMENTS_PRINTED = By.cssSelector("tr:nth-child(2) > td.col-md-2.ng-binding");
@@ -524,17 +526,21 @@ public class ExplorerPage extends PageObjects {
      */
     public void closePDF(String pdfType){
         if (pdfType.equals("Standalone")) {
-            webDriverCommands.waitSomeSeconds(12);
-
+            webDriverCommands.waitSomeSeconds(5);
+            //wait for element visible
             //Move to another one tab
             ArrayList<String> tabs2 = new ArrayList<String>(driver.getWindowHandles());
             driver.switchTo().window(tabs2.get(1)); //Tab number
-
+            webDriverCommands.waitForElementPresent(CANVAS_LOADED,60);
+            webDriverCommands.waitSomeSeconds(1);
+            //webDriverCommands.waitForElementInVisible(PDF_SPINNER,60);
             webDriverCommands.click(CLOSE_STANDALONE_PDF);
             webDriverCommands.waitSomeSeconds(1);
             driver.switchTo().window(tabs2.get(0));
         }else{
-            webDriverCommands.waitSomeSeconds(3);
+            webDriverCommands.waitForElementPresent(CANVAS_LOADED,60);
+            webDriverCommands.waitSomeSeconds(1);
+            //wait for element visible
             webDriverCommands.click(CLOSE_EMBEDDED_PDF);
             webDriverCommands.waitSomeSeconds(1);
         }
@@ -570,7 +576,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitForElementInVisible(PRINT_SPINNER);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.waitForElementInVisible(PRINT_BUTTON_ENABLED);
-        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.waitSomeSeconds(10);
         webDriverCommands.click(PRINT_BUTTON);
         webDriverCommands.waitSomeSeconds(1);
     }
