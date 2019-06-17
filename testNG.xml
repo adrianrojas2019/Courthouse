@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="3" verbose="10"  parallel="tests">
 
     <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
     <parameter name="browser" value="Chrome"/>
@@ -34,7 +34,7 @@
     <parameter name="totalDocumentsViewed" value="1.00"/>
     <parameter name="totalRemovedFromRunsheet" value="2.00"/>
     <parameter name="totalRenamedFromRunsheet" value="1.00"/>
-    <parameter name="runsheetName" value="Automated_RunSheetB"/>
+    <parameter name="runsheetName" value="Automated_RunSheetF"/>
 
     <parameter name="setPreference" value="false"/>
     <parameter name="totalSearches" value="3"/>
@@ -61,7 +61,7 @@
     <parameter name="superUserName" value="diplus1"/>
     <parameter name="superUserPassword" value="diplus1"/>
     <parameter name="superUserCounty" value="Bandera"/>
-    <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheetB"/>
+    <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheetF"/>
 
     <test name="Contractor_Test">
         <groups>
@@ -80,7 +80,7 @@
             </run>
         </groups>
         <classes>
-        <!--<class name="main.java.tests.loadCHMainPage"/>
+        <class name="main.java.tests.loadCHMainPage"/>
         <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
         <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
         <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -90,14 +90,14 @@
         <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
         <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
         <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
-        <class name="main.java.tests.contractorTests.contractorPDFViewer"/>-->
+        <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
     </classes>
 </test>
 
 <test name="FreeTrial_Test">
     <parameter name="freeTrialCounty" value="Atascosa"/>
     <parameter name="freeTrialGrantor" value="James"/>
-    <parameter name="runsheetNameFreeTrial" value="Automated_FT_RunSheetB"/>
+    <parameter name="runsheetNameFreeTrial" value="Automated_FT_RunSheetF"/>
 
     <groups>
         <run>
@@ -111,20 +111,20 @@
         </run>
     </groups>
     <classes>
-        <!--<class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
+        <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
         <class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
         <class name="main.java.tests.freeTrialTests.freeTrialRemoveDocsFromRunsheet"/>
         <class name="main.java.tests.freeTrialTests.freeTrialRenameRunsheet"/>
         <class name="main.java.tests.freeTrialTests.freeTrialDownloadRunsheet"/>
         <class name="main.java.tests.freeTrialTests.freeTrialPrintRunsheet"/>
-        <class name="main.java.tests.adminTests.validateMetricsByFreeTrial"/>-->
+        <class name="main.java.tests.adminTests.validateMetricsByFreeTrial"/>
     </classes>
 </test>
 <test name="PayGo_Test">
 <!-- Add Pay Go-->
     <parameter name="payGoCounty" value="Liberty"/>
     <parameter name="payGoGrantor" value="Smith"/>
-    <parameter name="runsheetNamePayGo" value="Automated_PG_RunSheetB"/>
+    <parameter name="runsheetNamePayGo" value="Automated_PG_RunSheetF"/>
 
         <groups>
             <run>
@@ -139,14 +139,144 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
+            <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
             <class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
-            <class name="main.java.tests.payGoTests.payGoCH1089"/>-->
+            <class name="main.java.tests.payGoTests.payGoCH1089"/>
+        </classes>
+    </test>
+    <test name="Runsheet_Management_Test">
+        <groups>
+            <run>
+                <include name="CH_Super_User_Create_New_Runsheet"/>
+                <include name="CH_Super_User_Create_Second_Runsheet"/>
+                <include name="CH_Contractor_Request_Runsheet_Request_Copy"/>
+                <include name="CH_Contractor_Request_Runsheet_New_Request_Copy"/>
+                <include name="CH_Super_User_Deny_Request_Copy_Runsheet"/>
+                <include name="CH_Contractor_Request_Runsheet_No_Access"/>
+                <include name="CH_Super_User_Approve_Request_Copy_Runsheet"/>
+                <include name="CH_Contractor_Request_Runsheet_Full_Access"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
+            <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
+            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
+        </classes>
+    </test>
+    <test name="Midland_Maps_Test">
+        <!-- Midland Maps Feature-->
+        <parameter name="countyType" value="Midland maps"/>
+        <parameter name="countyMidlandMaps" value="Andrews Midland Maps"/>
+        <parameter name="searchMidlandMapsCountyName" value="Irion Midland Maps"/>
+        <parameter name="multipleCountySearchMidlandMapsCountyName" value="Andrews Midland Maps,Crane Midland Maps,Eddy E. Midland Maps,Eddy W. Midland Maps,Glasscock Midland Maps,Howard Midland Maps,Irion Midland Maps,Loving Reeves N. Midland Maps,Midland Midland Maps,Reagan Midland Maps,Reeves C. Midland Maps,Reeves S. Midland Maps,Ward Midland Maps"/>
+        <parameter name="searchMidlandMapsCountyYear" value="1959"/>
+        <!-- Metrics by Contractor per Midland Maps Search (County/Year)-->
+        <parameter name="totalDownloadMidlandMaps" value="2.00"/>
+        <parameter name="totalSearchesByCountyMidlandMaps" value="2.00"/>
+
+        <groups>
+            <run>
+                <include name="CH_Admin_Assign_Midland_Maps_County"/>
+                <include name="CH_Contractor_Midland_Maps_Assign"/>
+                <include name="CH_Contractor_Midland_Maps_Search"/>
+                <include name="CH_Contractor_Midland_Maps_Multiple_County_Search"/>
+                <include name="CH_Admin_Metrics_By_Contractor_By_Midland_Maps"/>
+                <include name="CH_Contractor_Midland_Maps_Unassign"/>
+                <include name="CH_Admin_Unassign_Midland_Maps_County"/>
+                <include name="CH_PayGo_Midland_Maps_Search"/>
+                <include name="CH_FreeTrial_Midland_Maps_Search"/>
+                <include name="CH_PayGo_Midland_Maps_Search"/>
+                <include name="CH_Contractor_Cancel_Download_Midland_Map"/>
+                <include name="CH_Contractor_Midland_Map_Show_Coverage"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
+            <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
+            <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>
+        </classes>
+    </test>
+    <test name="Company_Management_Test">
+        <!-- Validate County on Demo Mode -->
+        <parameter name="countyOnDemoMode" value="Burleson"/>
+        <!-- Validate Limit for County Abstract Plant -->
+        <parameter name="limitReachedCounty" value="Burleson Abstract Plant"/>
+
+        <groups>
+            <run>
+                <include name="CH_Admin_County_On_Demo_Mode"/>
+                <include name="CH_Contractor_County_On_Demo_Mode"/>
+                <include name="CH_Admin_County_Mode_Expires_Today"/>
+                <include name="CH_Admin_County_Mode_Has_Expired"/>
+                <include name="CH_Admin_Max_Usage_Reached"/>
+                <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
+            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
+            <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
+            <class name="main.java.tests.adminTests.validateLimitReached"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+        </classes>
+    </test>
+    <test name="Standard_Test">
+        <!-- Standard User Credentials -->
+        <parameter name="standardUserName" value="diplus8"/>
+        <parameter name="standardUserPassword" value="diplus8"/>
+        <parameter name="standardUserCounty" value="Grimes Abstract Plant"/>
+        <parameter name="standardUserVolume" value="1438"/>
+        <parameter name="standardUserPage" value="390"/>
+        <parameter name="standardUserRecordNumber" value="00253448"/>
+        <parameter name="totalSearchesByTypePriorReference" value="3.00"/>
+        <parameter name="firstNameStandard" value="Di Plus"/>
+        <parameter name="lastNameStandard" value="Test User Eight"/>
+
+        <!-- Broker Box Info -->
+        <parameter name="brokerBoxCounty" value="Cooke"/>
+        <parameter name="brokerBoxBookType" value="abstract of judgment"/>
+        <parameter name="brokerBoxIndexBook" value="0001"/>
+        <parameter name="brokerBoxBookmarks" value="A"/>
+
+        <parameter name="brokerBoxVolume" value="1"/>
+        <parameter name="brokerBoxPage" value="265"/>
+        <!-- Metrics by Contractor per Broker Box Search (Volume/Page)-->
+        <parameter name="totalDownloadBrokerBox" value="2.00"/>
+        <parameter name="totalSearchesByTypeBBIndexBook" value="1.00"/>
+        <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
+
+        <groups>
+            <run>
+                <include name="CH_Standard_Prior_Reference_Search"/>
+                <include name="CH_Admin_Metrics_By_Standard"/>
+                <include name="CH_Contractor_Broker_Box_Search"/>
+                <include name="CH_Admin_Metrics_By_Contractor_By_Broker_Box"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="main.java.tests.standardTests.priorReferenceSearch"/>
+            <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
+            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
         </classes>
     </test>
     <test name="Adding_Users">
@@ -191,136 +321,6 @@
             <!--<class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
             <class name="main.java.tests.adminTests.addPayGo"/>-->
-        </classes>
-    </test>
-    <test name="Runsheet_Management_Test">
-        <groups>
-            <run>
-                <include name="CH_Super_User_Create_New_Runsheet"/>
-                <include name="CH_Super_User_Create_Second_Runsheet"/>
-                <include name="CH_Contractor_Request_Runsheet_Request_Copy"/>
-                <include name="CH_Contractor_Request_Runsheet_New_Request_Copy"/>
-                <include name="CH_Super_User_Deny_Request_Copy_Runsheet"/>
-                <include name="CH_Contractor_Request_Runsheet_No_Access"/>
-                <include name="CH_Super_User_Approve_Request_Copy_Runsheet"/>
-                <include name="CH_Contractor_Request_Runsheet_Full_Access"/>
-            </run>
-        </groups>
-        <classes>
-            <!--<class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>-->
-        </classes>
-    </test>
-    <test name="Midland_Maps_Test">
-        <!-- Midland Maps Feature-->
-        <parameter name="countyType" value="Midland maps"/>
-        <parameter name="countyMidlandMaps" value="Andrews Midland Maps"/>
-        <parameter name="searchMidlandMapsCountyName" value="Irion Midland Maps"/>
-        <parameter name="multipleCountySearchMidlandMapsCountyName" value="Andrews Midland Maps,Crane Midland Maps,Eddy E. Midland Maps,Eddy W. Midland Maps,Glasscock Midland Maps,Howard Midland Maps,Irion Midland Maps,Loving Reeves N. Midland Maps,Midland Midland Maps,Reagan Midland Maps,Reeves C. Midland Maps,Reeves S. Midland Maps,Ward Midland Maps"/>
-        <parameter name="searchMidlandMapsCountyYear" value="1959"/>
-        <!-- Metrics by Contractor per Midland Maps Search (County/Year)-->
-        <parameter name="totalDownloadMidlandMaps" value="2.00"/>
-        <parameter name="totalSearchesByCountyMidlandMaps" value="2.00"/>
-
-        <groups>
-            <run>
-                <include name="CH_Admin_Assign_Midland_Maps_County"/>
-                <include name="CH_Contractor_Midland_Maps_Assign"/>
-                <include name="CH_Contractor_Midland_Maps_Search"/>
-                <include name="CH_Contractor_Midland_Maps_Multiple_County_Search"/>
-                <include name="CH_Admin_Metrics_By_Contractor_By_Midland_Maps"/>
-                <include name="CH_Contractor_Midland_Maps_Unassign"/>
-                <include name="CH_Admin_Unassign_Midland_Maps_County"/>
-                <include name="CH_PayGo_Midland_Maps_Search"/>
-                <include name="CH_FreeTrial_Midland_Maps_Search"/>
-                <include name="CH_PayGo_Midland_Maps_Search"/>
-                <include name="CH_Contractor_Cancel_Download_Midland_Map"/>
-                <include name="CH_Contractor_Midland_Map_Show_Coverage"/>
-            </run>
-        </groups>
-        <classes>
-            <!--<class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
-            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-            <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
-            <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
-            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
-            <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>-->
-        </classes>
-    </test>
-    <test name="Company_Management_Test">
-        <!-- Validate County on Demo Mode -->
-        <parameter name="countyOnDemoMode" value="Burleson"/>
-        <!-- Validate Limit for County Abstract Plant -->
-        <parameter name="limitReachedCounty" value="Burleson Abstract Plant"/>
-
-        <groups>
-            <run>
-                <include name="CH_Admin_County_On_Demo_Mode"/>
-                <include name="CH_Contractor_County_On_Demo_Mode"/>
-                <include name="CH_Admin_County_Mode_Expires_Today"/>
-                <include name="CH_Admin_County_Mode_Has_Expired"/>
-                <include name="CH_Admin_Max_Usage_Reached"/>
-                <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
-            </run>
-        </groups>
-        <classes>
-            <!--<class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
-            <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
-            <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
-            <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
-        </classes>
-    </test>
-    <test name="Standard_Test">
-        <!-- Standard User Credentials -->
-        <parameter name="standardUserName" value="diplus8"/>
-        <parameter name="standardUserPassword" value="diplus8"/>
-        <parameter name="standardUserCounty" value="Grimes Abstract Plant"/>
-        <parameter name="standardUserVolume" value="1438"/>
-        <parameter name="standardUserPage" value="390"/>
-        <parameter name="standardUserRecordNumber" value="00253448"/>
-        <parameter name="totalSearchesByTypePriorReference" value="3.00"/>
-        <parameter name="firstNameStandard" value="Di Plus"/>
-        <parameter name="lastNameStandard" value="Test User Eight"/>
-
-        <!-- Broker Box Info -->
-        <parameter name="brokerBoxCounty" value="Cooke"/>
-        <parameter name="brokerBoxBookType" value="abstract of judgment"/>
-        <parameter name="brokerBoxIndexBook" value="0001"/>
-        <parameter name="brokerBoxBookmarks" value="A"/>
-
-        <parameter name="brokerBoxVolume" value="1"/>
-        <parameter name="brokerBoxPage" value="265"/>
-        <!-- Metrics by Contractor per Broker Box Search (Volume/Page)-->
-        <parameter name="totalDownloadBrokerBox" value="2.00"/>
-        <parameter name="totalSearchesByTypeBBIndexBook" value="1.00"/>
-        <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
-
-        <groups>
-            <run>
-                <include name="CH_Standard_Prior_Reference_Search"/>
-                <include name="CH_Admin_Metrics_By_Standard"/>
-                <include name="CH_Contractor_Broker_Box_Search"/>
-                <include name="CH_Admin_Metrics_By_Contractor_By_Broker_Box"/>
-            </run>
-        </groups>
-        <classes>
-            <!--<class name="main.java.tests.standardTests.priorReferenceSearch"/>
-            <class name="main.java.tests.adminTests.validateMetricsByStandard"/>-->
-            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
-            <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>-->
         </classes>
     </test>
 </suite>

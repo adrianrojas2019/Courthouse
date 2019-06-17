@@ -66,6 +66,5 @@ public class contractorBrokerBoxSearch extends SeleniumInitializer {
         newBookSearchPage.clickOnOKButton();
         //Success Message
         Assert.assertTrue(newBookSearchPage.isSuccessMessageDisplayed("Document(s) have been successfully added."), "The new document(s) could not be added into new runsheet");
-
     }
 }
