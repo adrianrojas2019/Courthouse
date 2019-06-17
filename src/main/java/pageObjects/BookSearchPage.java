@@ -27,7 +27,7 @@ public class BookSearchPage extends PageObjects {
     private final By GRANTOR = By.cssSelector("input[name='grantor']");
     private final By VOLUME = By.cssSelector("input[ng-model='diPdfViewer.volume']");
     private final By PAGE = By.xpath("//input[@ng-model='diPdfViewer.page']");
-    private final By SPINNER_POPUP = By.xpath("//span[spinner-key='di-spinner-pdf']//div");
+    private final By SPINNER_POPUP = By.xpath("//span[@spinner-key='di-spinner-pdf']//div");
     private final By TOASTER_POPUP = By.xpath("//div[@class='toast toast-warning']");
     private final By APPLY_BUTTON = By.xpath("//aside[@ui-view='filtersBookSearch']//button[@class='btn btn-primary'][@type='submit']");
     private final By GO_BUTTON = By.cssSelector("span.btn.btn-di.pull-right");
