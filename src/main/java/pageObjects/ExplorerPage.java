@@ -66,7 +66,7 @@ public class ExplorerPage extends PageObjects {
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
     private final By CLOSE_STANDALONE_PDF = By.cssSelector("button[class='toolbarButton closePdf']");
     private final By CANVAS_LOADED = By.cssSelector("canvas[class=rotate0][height]");
-    private final By PDF_SPINNER = By.cssSelector("spinner[class='medium-spinner']");
+    //private final By PDF_SPINNER = By.cssSelector("spinner[class='medium-spinner']");
     private final By CLOSE_EMBEDDED_PDF = By.cssSelector("section[di-pdf-viewer='pdfViewerOptions'] button[class='toolbarButton closePdf']");
     private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//div[text()='Document not available']");
