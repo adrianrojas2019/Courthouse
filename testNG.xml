@@ -36,7 +36,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheetM"/>
+        <parameter name="runsheetName" value="AR"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -120,7 +120,7 @@
         <parameter name="freeTrialCounty" value="Atascosa"/>
         <parameter name="freeTrialGrantor" value="James"/>
         <parameter name="totalSearches" value="3"/>
-        <parameter name="runsheetNameFreeTrial" value="Automated_FT_RunSheet"/>
+        <parameter name="runsheetNameFreeTrial" value="AFTR"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -204,7 +204,7 @@
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
         <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="Automated_PG_RunSheet"/>
+        <parameter name="runsheetNamePayGo" value="APGR"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -270,7 +270,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheetB"/>
+        <parameter name="runsheetName" value="AR"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -291,7 +291,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="MyCompanyRunsheet"/>
+        <parameter name="myCompanyRunsheetName" value="MyCR"/>
         <parameter name="superUserCounty" value="Bandera"/>
 
         <groups>
@@ -367,7 +367,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="Automated_RunSheetB"/>
+        <parameter name="runsheetName" value="AR"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -468,14 +468,14 @@
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
         <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="Automated_PG_RunSheet"/>
+        <parameter name="runsheetNamePayGo" value="APGR"/>
 
         <!-- New Contractor Search -->
         <parameter name="contractorUserName" value="adrojascontract"/>
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="demoRunsheetName" value="Demo_Automated_RunSheetA"/>
+        <parameter name="demoRunsheetName" value="Demo_AR"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -520,7 +520,8 @@
 		<!-- New Contractor Search -->
         <parameter name="contractorUserName" value="adrojascontract"/>
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
-        <parameter name="runsheetName" value="Automated_RunSheetB"/>
+        <parameter name="contractorName" value="Test Contract"/>
+        <parameter name="runsheetName" value="AR"/>
 		<parameter name="county" value="Andrews Abstract Plant"/>
 		<parameter name="totalDownloads" value="1.00"/>
         <parameter name="totalPrints" value="1.00"/>

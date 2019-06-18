@@ -100,6 +100,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By SEARCH_UNASSIGNED_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItem.name']");
     private final By REMOVE_MIDLAND_MAP_COUNTY = By.xpath("//div[@di-data-assigned='assignedCounties']//input[@type='text'][@ng-model='searchItemAssign.name']");
     private final By EDIT_BUTTON= By.cssSelector("div.ng-scope.ngRow.even.selected div[ng-click='diGrid.onEditRow(row, $event)']");
+    private final By SPINNER = By.cssSelector("div[class='spinner'][role='progressbar']");
 
     String find_County = "//span[text()='%s']";
     String find_County_Name = "//b[text()='%s']";
@@ -314,7 +315,8 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnSearchUser(String searchUser){
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.type(SEARCH_USER_FIELD,searchUser);
-        webDriverCommands.waitSomeSeconds(3);
+        //wait until spinner is gone
+        webDriverCommands.waitForElementInVisible(SPINNER);
     }
 
     public String getTotalItems(){
