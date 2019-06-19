@@ -26,7 +26,7 @@ public class payGoDownloadRunsheet extends SeleniumInitializer {
         ExplorerPage newExplorerPage = loginIntoCHMainPageTest.loginSuccessfullyTest(environment, String.format(userNamePayGo,1), payGoPassword, getDriverInstance());
         //Find-Select previous created runsheet
         Calendar now = Calendar.getInstance();
-        newExplorerPage.clickOnRunsheetList(runsheetNamePayGo+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+        newExplorerPage.clickOnRunsheetList(runsheetNamePayGo+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR))+"Renamed");
 
         //Wait until Search Results retrieves documents
         Assert.assertTrue(newExplorerPage.isRunsheetGridWithDocuments(), "Runsheet Grid with not documents. (Runsheet Grid is empty)");

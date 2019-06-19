@@ -35,7 +35,9 @@ public class superUserAddSecondRunsheet extends SeleniumInitializer {
         newExplorerPage.isGrantorEnabled();
         newExplorerPage.insertGrantor(contractorGrantor);
         newExplorerPage.clickOnApplyButton();
+        newExplorerPage.WaitUntilSpinnerEnds();
         //Wait until Search Results retrieves documents
+        //Improve: Wait until spinner is gone
         Assert.assertTrue(newExplorerPage.isSearchResultsWithDocuments(), "Explorer Search Filter didn't get documents. (Search Results is empty)");
         //Add at least 3 documents into a new Runsheet
         for (int numberOfDocs = 1; numberOfDocs <= 3; numberOfDocs++) {

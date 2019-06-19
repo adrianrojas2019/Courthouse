@@ -62,6 +62,7 @@ public class ExplorerPage extends PageObjects {
     private final By OK_BUTTON = By.cssSelector("button[ng-bind='modalAlertOptions.okButtonText']");
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.cssSelector("button[class='btn btn-success ng-binding']");
     private final By SPINNER = By.xpath("//div[@class='spinner']");
+    private final By SPINNER_PROGRESS = By.cssSelector("div[class='spinner'][role='progressbar']");
     private final By PRINT_SPINNER= By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By PRINT_BUTTON_ENABLED = By.cssSelector("button[class='toolbarButton printPdf'][disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
@@ -449,6 +450,13 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(APPLY_BUTTON);
         webDriverCommands.waitSomeSeconds(3);
+    }
+
+    /**
+     * this method calls the waitForElementInVisible method in webDriverCommands class.
+     */
+    public void WaitUntilSpinnerEnds(){
+        webDriverCommands.waitForElementInVisible(SPINNER_PROGRESS);
     }
     /**
      * this method calls the click method in webDriverCommands class.

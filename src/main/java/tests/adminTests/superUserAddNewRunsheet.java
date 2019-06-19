@@ -38,6 +38,7 @@ public class superUserAddNewRunsheet extends SeleniumInitializer {
         newExplorerPage.isGrantorEnabled();
         newExplorerPage.insertGrantor(contractorGrantor);
         newExplorerPage.clickOnApplyButton();
+        newExplorerPage.WaitUntilSpinnerEnds();
         //Wait until Search Results retrieves documents
         Assert.assertTrue(newExplorerPage.isSearchResultsWithDocuments(), "Explorer Search Filter didn't get documents. (Search Results is empty)");
         //Add at least 3 documents into a new Runsheet
