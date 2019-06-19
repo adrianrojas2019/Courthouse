@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 public class freeTrialMidlandMapsSearch extends SeleniumInitializer {
     @Parameters({"environment","userNameFreeTrial","freeTrialPassword"})
     @Test(groups = {"CH_FreeTrial_Midland_Maps_Search", "Regression","Midland_Maps_Feature"})
+    /**
+     * This test script validates that as Free Trial user is not able to access the new one Midland Map feature
+     * */
 
     public void freeTrialMidlandMapsSearch(String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 

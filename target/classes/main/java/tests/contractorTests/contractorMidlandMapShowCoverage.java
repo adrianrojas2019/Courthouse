@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 public class contractorMidlandMapShowCoverage extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword"})
     @Test(groups = {"CH_Contractor_Midland_Map_Show_Coverage", "Regression","Midland_Maps_Feature"})
+    /**
+     * This test script verifies that show coverage link is working for the Midland Map Feature
+     * */
 
     public void contractorMidlandMapShowCoverage(String environment,String contractorUserName, String contractorPassword) throws InterruptedException {
 

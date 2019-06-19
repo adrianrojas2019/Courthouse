@@ -19,7 +19,9 @@ import java.util.Calendar;
 public class contractorRunsheetSharingNoAccess extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","contractorName","myCompanyRunsheetName"})
     @Test(groups = {"CH_Contractor_Request_Runsheet_No_Access", "Regression","Runsheet_Management"})
-
+/**
+ * This test script verifies that specified contractor with no access is not able to see runsheet company
+ * */
     public void contractorRunsheetSharingNoAccess(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String contractorName, String myCompanyRunsheetName) throws InterruptedException {
 
 

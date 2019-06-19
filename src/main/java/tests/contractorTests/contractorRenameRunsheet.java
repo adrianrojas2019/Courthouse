@@ -16,6 +16,9 @@ public class contractorRenameRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
     @Test(groups = {"CH_Contractor_Rename_Runsheet", "Regression","Contractor_Test"})
 
+    /* This method renames the new one runsheet for the specified contractor
+     *@params contractor username/password, county and grantor values for the specified contractor.
+    */
     public void contractorRenameRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
 

@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class freeTrialRenameRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword"})
     @Test(groups = {"CH_FreeTrial_Rename_Runsheet", "Regression","FreeTrial"})
-
+    /* This method renames the new one runsheet for the specified free Trial
+     *@params free trial username/password
+    */
     public void freeTrialRenameRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 
 

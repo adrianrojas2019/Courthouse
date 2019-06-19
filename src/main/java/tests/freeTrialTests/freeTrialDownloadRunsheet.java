@@ -16,7 +16,9 @@ import java.util.Calendar;
 public class freeTrialDownloadRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword"})
     @Test(groups = {"CH_FreeTrial_Download_Runsheet", "Regression","FreeTrial"})
-
+    /* This method download the documents for the already existing one runsheet for the specified free Trial
+     *@params Free Trial username/password
+    */
     public void freeTrialDownloadRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 
         //Already logged in as DI Admin

@@ -13,6 +13,10 @@ import org.testng.annotations.Test;
 public class loadCHMainPage extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn"})
     @Test(groups = {"CH_Login_Load_CH_Main_Page", "Regression"})
+
+    /* Make sure that the application is loading as expected
+     *@params admin credentials
+     */
     public void loadCHMainPage(String environment, String usernameToLogIn, String passwordToLogIn) throws InterruptedException {
 
         //Login into Gallery

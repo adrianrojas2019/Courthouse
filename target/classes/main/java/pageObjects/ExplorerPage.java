@@ -41,6 +41,7 @@ public class ExplorerPage extends PageObjects {
     private final By FIRST_CHECKBOX = By.cssSelector("div.ngCell.col0.colt0");
     private final By NEW_RUNSHEET_BUTTON = By.cssSelector("button[ng-click='newRunsheetBtn()']");
     private final By OLD_RUNSHEET = By.cssSelector("select[class='form-control input-sm inline-block runsheet-select ng-pristine ng-untouched ng-valid']");
+    private final By NEW_RUNSHEET = By.cssSelector("select[class='form-control input-sm inline-block runsheet-select ng-valid ng-dirty ng-valid-parse ng-touched']");
     private final By SAVE_RUNSHEET_BUTTON = By.cssSelector("button[ng-bind='runsheetCreateEditBtnTxt']");
     private final By ADD_TO_RUNSHEET_BUTTON = By.cssSelector("button[ng-click='addToRunsheet(selectedItems)']");
     private final By ENTER_RUNSHEET_NAME  = By.cssSelector("input[ng-model='newRunsheet.name']");
@@ -123,6 +124,7 @@ public class ExplorerPage extends PageObjects {
     String county_On_Demo_Mode_Message = "//div[text()='%s is a Demo County. You are not able to print or download documents for a Demo County.']";
 
     String county_Not_Displayed = "//div[@class='filter-input-container col-xs-8']//select//option[text()='%s']";
+    String find_Runsheet = "option[label='%s']";
 
     public ExplorerPage(WebDriver driver) {
         super(driver);
@@ -585,7 +587,10 @@ public class ExplorerPage extends PageObjects {
      */
     public void clickOnRunsheetList(String oldRunsheet){
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.type(OLD_RUNSHEET,oldRunsheet);
+        webDriverCommands.click(OLD_RUNSHEET);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(By.cssSelector(String.format(find_Runsheet, oldRunsheet)));
+        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      * this method calls the type method in webDriverCommands class.

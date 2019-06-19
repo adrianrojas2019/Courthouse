@@ -1,0 +1,1404 @@
+[1560907498.832][INFO]: Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
+[1560907498.832][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1560907499.163][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1560907499.177][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1560907499.178][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1560907499.192][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\Adrian\AppData\Local\Temp\scoped_dir21804_4946\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Adrian\AppData\Local\Temp\scoped_dir21804_12952" data:,
+[1560907500.993][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1560907502.159][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})",
+      "userDataDir": "C:\\Users\\Adrian\\AppData\\Local\\Temp\\scoped_dir21804_12952"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:57421"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1560907502.175][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND MaximizeWindow {
+   "handle": "current",
+   "windowHandle": "current"
+}
+[1560907502.175][INFO]: Waiting for pending navigations...
+[1560907502.206][INFO]: Done waiting for pending navigations. Status: ok
+[1560907502.210][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1560907503.407][INFO]: Waiting for pending navigations...
+[1560907503.409][INFO]: Done waiting for pending navigations. Status: ok
+[1560907503.409][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE MaximizeWindow {
+   "height": 744,
+   "width": 1382,
+   "x": -8,
+   "y": -8
+}
+[1560907503.413][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND SetTimeouts {
+   "ms": 5000,
+   "type": "implicit"
+}
+[1560907503.413][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE SetTimeouts
+[1560907503.416][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND Navigate {
+   "url": "https://app.dev.drillinginfo.com/courthouse/"
+}
+[1560907503.416][INFO]: Waiting for pending navigations...
+[1560907503.419][INFO]: Done waiting for pending navigations. Status: ok
+[1560907511.701][INFO]: Waiting for pending navigations...
+[1560907609.263][INFO]: Done waiting for pending navigations. Status: ok
+[1560907609.263][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE Navigate
+[1560907609.272][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p[@class='signInText-login']"
+}
+[1560907609.272][INFO]: Waiting for pending navigations...
+[1560907609.274][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.353][INFO]: Waiting for pending navigations...
+[1560907634.446][INFO]: Done waiting for pending navigations. Status: ok
+[1560907634.446][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE FindElements [  ]
+[1560907634.977][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p[@class='signInText-login']"
+}
+[1560907634.977][INFO]: Waiting for pending navigations...
+[1560907635.000][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.039][INFO]: Waiting for pending navigations...
+[1560907635.041][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.041][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE FindElements [ {
+   "ELEMENT": "0.7509281041291287-1"
+} ]
+[1560907635.056][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND IsElementDisplayed {
+   "id": "0.7509281041291287-1"
+}
+[1560907635.056][INFO]: Waiting for pending navigations...
+[1560907635.057][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.084][INFO]: Waiting for pending navigations...
+[1560907635.093][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.093][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE IsElementDisplayed true
+[1560907635.096][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//a[@href='https://app.dev.drillinginfo.com/courthouse/login']"
+}
+[1560907635.096][INFO]: Waiting for pending navigations...
+[1560907635.099][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.131][INFO]: Waiting for pending navigations...
+[1560907635.133][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.133][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] RESPONSE FindElements [ {
+   "ELEMENT": "0.7509281041291287-2"
+} ]
+[1560907635.141][INFO]: [ff9ccd397b92f65ed2bc466ef7f568ff] COMMAND ClickElement {
+   "id": "0.7509281041291287-2"
+}
+[1560907635.141][INFO]: Waiting for pending navigations...
+[1560907635.145][INFO]: Done waiting for pending navigations. Status: ok
+[1560907635.345][INFO]: Waiting for pending navigations...
+60907614.508][INFO]: Done waiting for pending navigations. Status: ok
+[1560907614.508][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE ClickElement
+[1560907614.517][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907614.517][INFO]: Waiting for pending navigations...
+[1560907614.575][INFO]: Done waiting for pending navigations. Status: ok
+[1560907619.600][INFO]: Waiting for pending navigations...
+[1560907619.601][INFO]: Done waiting for pending navigations. Status: ok
+[1560907619.601][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElements [  ]
+[1560907620.606][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907620.606][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE SetTimeouts
+[1560907620.616][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p[text()='DI Courthouse Contractor/PayGo/Free Trial']"
+}
+[1560907620.616][INFO]: Waiting for pending navigations...
+[1560907620.620][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.641][INFO]: Waiting for pending navigations...
+[1560907620.647][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.648][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElement {
+   "ELEMENT": "0.4278820455836261-1"
+}
+[1560907620.651][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907620.651][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE SetTimeouts
+[1560907620.656][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElement {
+   "using": "id",
+   "value": "username"
+}
+[1560907620.656][INFO]: Waiting for pending navigations...
+[1560907620.658][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.680][INFO]: Waiting for pending navigations...
+[1560907620.681][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.681][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElement {
+   "ELEMENT": "0.4278820455836261-2"
+}
+[1560907620.684][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElement {
+   "using": "id",
+   "value": "username"
+}
+[1560907620.684][INFO]: Waiting for pending navigations...
+[1560907620.685][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.698][INFO]: Waiting for pending navigations...
+[1560907620.699][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.699][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElement {
+   "ELEMENT": "0.4278820455836261-2"
+}
+[1560907620.702][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND TypeElement {
+   "id": "0.4278820455836261-2",
+   "value": [ "newfreetrial_1" ]
+}
+[1560907620.702][INFO]: Waiting for pending navigations...
+[1560907620.703][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.957][INFO]: Waiting for pending navigations...
+[1560907620.959][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.959][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE TypeElement
+[1560907620.967][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907620.967][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE SetTimeouts
+[1560907620.970][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElement {
+   "using": "id",
+   "value": "password"
+}
+[1560907620.970][INFO]: Waiting for pending navigations...
+[1560907620.971][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.990][INFO]: Waiting for pending navigations...
+[1560907620.991][INFO]: Done waiting for pending navigations. Status: ok
+[1560907620.991][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElement {
+   "ELEMENT": "0.4278820455836261-3"
+}
+[1560907621.001][1560907671.195][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.195][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE ClickElement
+[1560907671.198][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907671.198][INFO]: Waiting for pending navigations...
+[1560907671.200][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.236][INFO]: Waiting for pending navigations...
+[1560907671.244][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.244][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE FindElements [ {
+   "ELEMENT": "0.8326180927147031-1"
+} ]
+[1560907671.245][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND IsElementDisplayed {
+   "id": "0.8326180927147031-1"
+}
+[1560907671.245][INFO]: Waiting for pending navigations...
+[1560907671.246][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.274][INFO]: Waiting for pending navigations...
+[1560907671.276][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.276][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE IsElementDisplayed true
+[1560907671.779][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907671.779][INFO]: Waiting for pending navigations...
+[1560907671.780][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.796][INFO]: Waiting for pending navigations...
+[1560907671.798][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.798][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE FindElements [ {
+   "ELEMENT": "0.8326180927147031-1"
+} ]
+[1560907671.799][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND IsElementDisplayed {
+   "id": "0.8326180927147031-1"
+}
+[1560907671.799][INFO]: Waiting for pending navigations...
+[1560907671.800][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.825][INFO]: Waiting for pending navigations...
+[1560907671.845][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.845][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE IsElementDisplayed true
+[1560907672.350][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907672.350][INFO]: Waiting for pending navigations...
+[1560907672.351][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.365][INFO]: Waiting for pending navigations...
+[1560907672.366][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.366][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE FindElements [ {
+   "ELEMENT": "0.8326180927147031-1"
+} ]
+[1560907672.367][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND IsElementDisplayed {
+   "id": "0.8326180927147031-1"
+}
+[1560907672.367][INFO]: Waiting for pending navigations...
+[1560907672.369][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.384][INFO]: Waiting for pending navigations...
+[1560907672.385][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.385][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE IsElementDisplayed true
+[1560907672.894][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907672.894][INFO]: Waiting for pending navigations...
+[1560907672.895][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.901][INFO]: Waiting for pending navigations...
+[1560907672.902][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.903][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE FindElements [ {
+   "ELEMENT": "0.8326180927147031-1"
+} ]
+[1560907672.913][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND IsElementDisplayed {
+   "id": "0.8326180927147031-1"
+}
+[1560907672.913][INFO]: Waiting for pending navigations...
+[1560907672.914][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.924][INFO]: Waiting for pending navigations...
+[1560907672.925][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.925][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE IsElementDisplayed true
+[1560907673.465][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907673.465][INFO]: Waiting for pending navigations...
+[1560907673.507][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.540][INFO]: Waiting for pending navigations...
+[1560907673.547][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.547][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE FindElements [ {
+   "ELEMENT": "0.8326180927147031-1"
+} ]
+[1560907673.549][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND IsElementDisplayed {
+   "id": "0.8326180927147031-1"
+}
+[1560907673.549][INFO]: Waiting for pending navigations...
+[1560907673.601][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.675][INFO]: Waiting for pending navigations...
+[1560907673.697][INFO]: Done waiting for pending navigations. Status: ok
+[1560907[1560907674.929][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560907674.929][INFO]: Waiting for pending navigations...
+[1560907674.976][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.022][INFO]: Waiting for pending navigations...
+[1560907675.055][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.055][INFO]: [52906cbc651c839e060461a81c32e312] RESPONSE FindElements [ {
+   "ELEMENT": "0.8563819652898219-1"
+} ]
+[1560907675.076][INFO]: [52906cbc651c839e060461a81c32e312] COMMAND ClickElement {
+   "id": "0.8563819652898219-1"
+}
+[1560907675.076][INFO]: Waiting for pending navigations...
+[1560907675.080][INFO]: Done waiting for pending navigations. Status: ok
+or pending navigations...
+[1560907674.329][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.351][INFO]: Waiting for pending navigations...
+[1560907674.362][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.362][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] RESPONSE IsElementDisplayed true
+[1560907674.887][INFO]: [4c3ab0412a10c91a8c3ab8844f6b9c58] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560907674.887][INFO]: Waiting for pending navigations...
+[1560907674.924][INFO]: Done waiting for pending navigations. Status: ok
+
+[1560907629.254][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".fa-search"
+}
+[1560907629.254][INFO]: Waiting for pending navigations...
+[1560907629.255][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.272][INFO]: Waiting for pending navigations...
+[1560907629.276][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.276][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElements [ {
+   "ELEMENT": "0.18023723328230012-3"
+} ]
+[1560907629.279][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND ClickElement {
+   "id": "0.18023723328230012-3"
+}
+[1560907629.279][INFO]: Waiting for pending navigations...
+[1560907629.280][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.419][INFO]: Waiting for pending navigations...
+[1560907629.485][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.485][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE ClickElement
+[1560907629.491][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907629.491][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907629.493][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//h4[text()='EXPLORE']"
+}
+[1560907629.493][INFO]: Waiting for pending navigations...
+[1560907629.533][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.552][INFO]: Waiting for pending navigations...
+[1560907629.553][INFO]: Done waiting for pending navigations. Status: ok
+[1560907629.553][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-4"
+}
+[1560907634.598][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907634.598][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907634.634][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "aside[ui-view='filters'] select[name='countyParishId']"
+}
+[1560907634.634][INFO]: Waiting for pending navigations...
+[1560907634.668][INFO]: Done waiting for pending navigations. Status: ok
+[1560907634.698][INFO]: Waiting for pending navigations...
+[1560907634.708][INFO]: Done waiting for pending navigations. Status: ok
+[1560907634.708][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-5"
+}
+[1560907634.711][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "aside[ui-view='filters'] select[name='countyParishId']"
+}
+[1560907634.712][INFO]: Waiting for pending navigations...
+[1560907634.713][INFO]: Done waiting for pending navigations. Status: ok
+[1560907634.731][INFO]: Waiting for pending navigations...
+[1560907634.733][INFO]: Done waiting for pending navigations. Status: ok
+[1560907634.733][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-5"
+}
+[1560907634.744][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND TypeElement {
+   "id": "0.18023723328230012-5",
+   "value": [ "Andrews Abstract Plant" ]
+}
+[1560907634.744][INFO]: Waiting for pending navigations...
+[1560907634.752][INFO]: Done waiting for pending navigations. Status: ok
+[1560907636.551][INFO]: Waiting for pending navigations...
+[1560907636.553][INFO]: Done waiting for pending navigations. Status: ok
+[1560907636.553][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE TypeElement
+[1560907641.570][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907641.570][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907641.580][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "label[for='grantor']"
+}
+[1560907641.580][INFO]: Waiting for pending navigations...
+[1560907641.583][INFO]: Done waiting for pending navigations. Status: ok
+[1560907641.610][INFO]: Waiting for pending navigations...
+[1560907641.612][INFO]: Done waiting for pending navigations. Status: ok
+[1560907641.612][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-6"
+}
+[1560907642.615][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907642.615][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907642.622][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='grantor']"
+}
+[1560907642.622][INFO]: Waiting for pending navigations...
+[1560907642.627][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.654][INFO]: Waiting for pending navigations...
+[1560907642.655][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.655][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-7"
+}
+[1560907642.659][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "input[name='grantor']"
+}
+[1560907642.659][INFO]: Waiting for pending navigations...
+[1560907642.660][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.671][INFO]: Waiting for pending navigations...
+[1560907642.672][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.672][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement {
+   "ELEMENT": "0.18023723328230012-7"
+}
+[1560907642.675][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND TypeElement {
+   "id": "0.18023723328230012-7",
+   "value": [ "James" ]
+}
+[1560907642.675][INFO]: Waiting for pending navigations...
+[1560907642.677][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.994][INFO]: Waiting for pending navigations...
+[1560907642.995][INFO]: Done waiting for pending navigations. Status: ok
+[1560907642.995][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE TypeElement
+[1560907645.999][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElements {
+   "using": "css selector",
+   "value": "aside[ui-view='filters'] button[class='btn btn-primary']"
+}
+[1560907645.999][INFO]: Waiting for pending navigations...
+[1560907646.002][INFO]: Done waiting for pending navigations. Status: ok
+[1560907646.014][INFO]: Waiting for pending navigations...
+[1560907646.019][INFO]: Done waiting for pending navigations. Status: ok
+[1560907646.019][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElements [ {
+   "ELEMENT": "0.18023723328230012-8"
+} ]
+[1560907646.020][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND ClickElement {
+   "id": "0.18023723328230012-8"
+}
+[1560907646.020][INFO]: Waiting for pending navigations...
+[1560907646.021][INFO]: Done waiting for pending navigations. Status: ok
+[1560907646.313][INFO]: Waiting for pending navigations...
+[1560907646.589][INFO]: Done waiting for pending navigations. Status: ok
+[1560907646.589][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE ClickElement
+[1560907649.591][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907649.591][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907649.593][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907649.593][INFO]: Waiting for pending navigations...
+[1560907649.594][INFO]: Done waiting for pending navigations. Status: ok
+[1560907649.622][INFO]: Waiting for pending navigations...
+[1560907649.623][INFO]: Done waiting for pending navigations. Status: ok
+[1560907649.623][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907650.125][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907650.125][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907650.129][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907650.130][INFO]: Waiting for pending navigations...
+[1560907650.137][INFO]: Done waiting for pending navigations. Status: ok
+[1560907650.145][INFO]: Waiting for pending navigations...
+[1560907650.150][INFO]: Done waiting for pending navigations. Status: ok
+[1560907650.150][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907650.654][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907650.654][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907650.656][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907650.656][INFO]: Waiting for pending navigations...
+[1560907650.659][INFO]: Done waiting for pending navigations. Status: ok
+[1560907650.673][INFO]: Waiting for pending navigations...
+[1560907650.674][INFO]: Done waiting for pending navigations. Status: ok
+[1560907650.674][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907651.177][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907651.178][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907651.182][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907651.182][INFO]: Waiting for pending navigations...
+[1560907651.184][INFO]: Done waiting for pending navigations. Status: ok
+[1560907651.194][INFO]: Waiting for pending navigations...
+[1560907651.201][INFO]: Done waiting for pending navigations. Status: ok
+[1560907651.201][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907651.705][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907651.705][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907651.707][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907651.707][INFO]: Waiting for pending navigations...
+[1560907651.708][INFO]: Done waiting for pending navigations. Status: ok
+[1560907651.721][INFO]: Waiting for pending navigations...
+[1560907651.722][INFO]: Done waiting for pending navigations. Status: ok
+[1560907651.722][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907652.226][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907652.226][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907652.228][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907652.228][INFO]: Waiting for pending navigations...
+[1560907652.239][INFO]: Done waiting for pending navigations. Status: ok
+[1560907652.285][INFO]: Waiting for pending navigations...
+[1560907652.292][INFO]: Done waiting for pending navigations. Status: ok
+[1560907652.292][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907652.798][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907652.798][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907652.800][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907652.801][INFO]: Waiting for pending navigations...
+[1560907652.802][INFO]: Done waiting for pending navigations. Status: ok
+[1560907652.820][INFO]: Waiting for pending navigations...
+[1560907652.821][INFO]: Done waiting for pending navigations. Status: ok
+[1560907652.821][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907653.324][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907653.324][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907653.326][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907653.326][INFO]: Waiting for pending navigations...
+[1560907653.327][INFO]: Done waiting for pending navigations. Status: ok
+[1560907653.341][INFO]: Waiting for pending navigations...
+[1560907653.342][INFO]: Done waiting for pending navigations. Status: ok
+[1560907653.342][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907653.848][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907653.849][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907653.852][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907653.852][INFO]: Waiting for pending navigations...
+[1560907653.853][INFO]: Done waiting for pending navigations. Status: ok
+[1560907653.859][INFO]: Waiting for pending navigations...
+[1560907653.860][INFO]: Done waiting for pending navigations. Status: ok
+[1560907653.860][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907654.367][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907654.367][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907654.370][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907654.370][INFO]: Waiting for pending navigations...
+[1560907654.371][INFO]: Done waiting for pending navigations. Status: ok
+[1560907654.383][INFO]: Waiting for pending navigations...
+[1560907654.384][INFO]: Done waiting for pending navigations. Status: ok
+[1560907654.384][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907654.887][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907654.887][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907654.898][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907654.898][INFO]: Waiting for pending navigations...
+[1560907654.901][INFO]: Done waiting for pending navigations. Status: ok
+[1560907654.909][INFO]: Waiting for pending navigations...
+[1560907654.910][INFO]: Done waiting for pending navigations. Status: ok
+[1560907654.910][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907655.415][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907655.415][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907655.417][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907655.417][INFO]: Waiting for pending navigations...
+[1560907655.419][INFO]: Done waiting for pending navigations. Status: ok
+[1560907655.436][INFO]: Waiting for pending navigations...
+[1560907655.437][INFO]: Done waiting for pending navigations. Status: ok
+[1560907655.437][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907655.941][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907655.941][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907655.943][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907655.944][INFO]: Waiting for pending navigations...
+[1560907655.956][INFO]: Done waiting for pending navigations. Status: ok
+[1560907655.967][INFO]: Waiting for pending navigations...
+[1560907655.968][INFO]: Done waiting for pending navigations. Status: ok
+[1560907655.968][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907656.471][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907656.471][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907656.482][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907656.482][INFO]: Waiting for pending navigations...
+[1560907656.484][INFO]: Done waiting for pending navigations. Status: ok
+[1560907656.495][INFO]: Waiting for pending navigations...
+[1560907656.497][INFO]: Done waiting for pending navigations. Status: ok
+[1560907656.497][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907657.000][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907657.000][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907657.002][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907657.002][INFO]: Waiting for pending navigations...
+[1560907657.003][INFO]: Done waiting for pending navigations. Status: ok
+[1560907657.019][INFO]: Waiting for pending navigations...
+[1560907657.020][INFO]: Done waiting for pending navigations. Status: ok
+[1560907657.020][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907657.524][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907657.524][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907657.528][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907657.528][INFO]: Waiting for pending navigations...
+[1560907657.529][INFO]: Done waiting for pending navigations. Status: ok
+[1560907657.540][INFO]: Waiting for pending navigations...
+[1560907657.541][INFO]: Done waiting for pending navigations. Status: ok
+[1560907657.541][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907658.049][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907658.049][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907658.051][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907658.051][INFO]: Waiting for pending navigations...
+[1560907658.053][INFO]: Done waiting for pending navigations. Status: ok
+[1560907658.062][INFO]: Waiting for pending navigations...
+[1560907658.063][INFO]: Done waiting for pending navigations. Status: ok
+[1560907658.063][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907658.570][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907658.570][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907658.572][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907658.572][INFO]: Waiting for pending navigations...
+[1560907658.573][INFO]: Done waiting for pending navigations. Status: ok
+[1560907658.585][INFO]: Waiting for pending navigations...
+[1560907658.586][INFO]: Done waiting for pending navigations. Status: ok
+[1560907658.586][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907659.088][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907659.088][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907659.092][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907659.092][INFO]: Waiting for pending navigations...
+[1560907659.099][INFO]: Done waiting for pending navigations. Status: ok
+[1560907659.106][INFO]: Waiting for pending navigations...
+[1560907659.107][INFO]: Done waiting for pending navigations. Status: ok
+[1560907659.107][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907659.613][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907659.613][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907659.616][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907659.616][INFO]: Waiting for pending navigations...
+[1560907659.617][INFO]: Done waiting for pending navigations. Status: ok
+[1560907659.632][INFO]: Waiting for pending navigations...
+[1560907659.633][INFO]: Done waiting for pending navigations. Status: ok
+[1560907659.633][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907660.136][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907660.136][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907660.138][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907660.138][INFO]: Waiting for pending navigations...
+[1560907660.139][INFO]: Done waiting for pending navigations. Status: ok
+[1560907660.154][INFO]: Waiting for pending navigations...
+[1560907660.156][INFO]: Done waiting for pending navigations. Status: ok
+[1560907660.156][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907660.667][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907660.668][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907660.671][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907660.671][INFO]: Waiting for pending navigations...
+[1560907660.672][INFO]: Done waiting for pending navigations. Status: ok
+[1560907660.691][INFO]: Waiting for pending navigations...
+[1560907660.695][INFO]: Done waiting for pending navigations. Status: ok
+[1560907660.695][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907661.199][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907661.199][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907661.201][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907661.201][INFO]: Waiting for pending navigations...
+[1560907661.202][INFO]: Done waiting for pending navigations. Status: ok
+[1560907661.217][INFO]: Waiting for pending navigations...
+[1560907661.219][INFO]: Done waiting for pending navigations. Status: ok
+[1560907661.219][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907661.722][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907661.722][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907661.727][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907661.727][INFO]: Waiting for pending navigations...
+[1560907661.730][INFO]: Done waiting for pending navigations. Status: ok
+[1560907661.736][INFO]: Waiting for pending navigations...
+[1560907661.737][INFO]: Done waiting for pending navigations. Status: ok
+[1560907661.737][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907662.249][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907662.249][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907662.251][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907662.251][INFO]: Waiting for pending navigations...
+[1560907662.252][INFO]: Done waiting for pending navigations. Status: ok
+[1560907662.261][INFO]: Waiting for pending navigations...
+[1560907662.262][INFO]: Done waiting for pending navigations. Status: ok
+[1560907662.262][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907662.766][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907662.766][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907662.769][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907662.769][INFO]: Waiting for pending navigations...
+[1560907662.770][INFO]: Done waiting for pending navigations. Status: ok
+[1560907662.786][INFO]: Waiting for pending navigations...
+[1560907662.787][INFO]: Done waiting for pending navigations. Status: ok
+[1560907662.788][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907663.292][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907663.292][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907663.294][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907663.294][INFO]: Waiting for pending navigations...
+[1560907663.296][INFO]: Done waiting for pending navigations. Status: ok
+[1560907663.313][INFO]: Waiting for pending navigations...
+[1560907663.314][INFO]: Done waiting for pending navigations. Status: ok
+[1560907663.314][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907663.816][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907663.816][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907663.821][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907663.821][INFO]: Waiting for pending navigations...
+[1560907663.822][INFO]: Done waiting for pending navigations. Status: ok
+[1560907663.835][INFO]: Waiting for pending navigations...
+[1560907663.836][INFO]: Done waiting for pending navigations. Status: ok
+[1560907663.836][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907664.338][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907664.338][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907664.345][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907664.346][INFO]: Waiting for pending navigations...
+[1560907664.347][INFO]: Done waiting for pending navigations. Status: ok
+[1560907664.355][INFO]: Waiting for pending navigations...
+[1560907664.365][INFO]: Done waiting for pending navigations. Status: ok
+[1560907664.365][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907664.870][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907664.870][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907664.872][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907664.872][INFO]: Waiting for pending navigations...
+[1560907664.873][INFO]: Done waiting for pending navigations. Status: ok
+[1560907664.882][INFO]: Waiting for pending navigations...
+[1560907664.882][INFO]: Done waiting for pending navigations. Status: ok
+[1560907664.883][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907665.393][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907665.393][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907665.399][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907665.399][INFO]: Waiting for pending navigations...
+[1560907665.400][INFO]: Done waiting for pending navigations. Status: ok
+[1560907665.412][INFO]: Waiting for pending navigations...
+[1560907665.413][INFO]: Done waiting for pending navigations. Status: ok
+[1560907665.413][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907665.917][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907665.917][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907665.919][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907665.919][INFO]: Waiting for pending navigations...
+[1560907665.920][INFO]: Done waiting for pending navigations. Status: ok
+[1560907665.933][INFO]: Waiting for pending navigations...
+[1560907665.934][INFO]: Done waiting for pending navigations. Status: ok
+[1560907665.934][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907666.438][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907666.438][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907666.443][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907666.443][INFO]: Waiting for pending navigations...
+[1560907666.447][INFO]: Done waiting for pending navigations. Status: ok
+[1560907666.454][INFO]: Waiting for pending navigations...
+[1560907666.461][INFO]: Done waiting for pending navigations. Status: ok
+[1560907666.461][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907666.965][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907666.965][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907666.967][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907666.967][INFO]: Waiting for pending navigations...
+[1560907666.968][INFO]: Done waiting for pending navigations. Status: ok
+[1560907666.985][INFO]: Waiting for pending navigations...
+[1560907666.986][INFO]: Done waiting for pending navigations. Status: ok
+[1560907666.986][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907667.492][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907667.492][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907667.494][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907667.494][INFO]: Waiting for pending navigations...
+[1560907667.495][INFO]: Done waiting for pending navigations. Status: ok
+[1560907667.510][INFO]: Waiting for pending navigations...
+[1560907667.512][INFO]: Done waiting for pending navigations. Status: ok
+[1560907667.512][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907668.020][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907668.020][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907668.041][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907668.042][INFO]: Waiting for pending navigations...
+[1560907668.049][INFO]: Done waiting for pending navigations. Status: ok
+[1560907668.066][INFO]: Waiting for pending navigations...
+[1560907668.067][INFO]: Done waiting for pending navigations. Status: ok
+[1560907668.067][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907668.580][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907668.580][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907668.600][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907668.601][INFO]: Waiting for pending navigations...
+[1560907668.609][INFO]: Done waiting for pending navigations. Status: ok
+[1560907668.678][INFO]: Waiting for pending navigations...
+[1560907668.680][INFO]: Done waiting for pending navigations. Status: ok
+[1560907668.680][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907669.185][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907669.185][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907669.194][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907669.194][INFO]: Waiting for pending navigations...
+[1560907669.195][INFO]: Done waiting for pending navigations. Status: ok
+[1560907669.203][INFO]: Waiting for pending navigations...
+[1560907669.209][INFO]: Done waiting for pending navigations. Status: ok
+[1560907669.209][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907669.720][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907669.720][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907669.746][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907669.747][INFO]: Waiting for pending navigations...
+[1560907669.758][INFO]: Done waiting for pending navigations. Status: ok
+[1560907669.780][INFO]: Waiting for pending navigations...
+[1560907669.787][INFO]: Done waiting for pending navigations. Status: ok
+[1560907669.787][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907670.296][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907670.296][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907670.302][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907670.302][INFO]: Waiting for pending navigations...
+[1560907670.309][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.326][INFO]: Waiting for pending navigations...
+[1560907670.327][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.327][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907670.852][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907670.852][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907670.862][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907670.862][INFO]: Waiting for pending navigations...
+[1560907670.868][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.896][INFO]: Waiting for pending navigations...
+[1560907670.897][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.897][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907671.401][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907671.401][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907671.402][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907671.402][INFO]: Waiting for pending navigations...
+[1560907671.406][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.415][INFO]: Waiting for pending navigations...
+[1560907671.417][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.417][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907671.925][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907671.925][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907671.930][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907671.930][INFO]: Waiting for pending navigations...
+[1560907671.931][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.951][INFO]: Waiting for pending navigations...
+[1560907671.952][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.952][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907672.461][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907672.461][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907672.464][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907672.464][INFO]: Waiting for pending navigations...
+[1560907672.465][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.480][INFO]: Waiting for pending navigations...
+[1560907672.481][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.481][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907672.985][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907672.985][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907672.990][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907672.990][INFO]: Waiting for pending navigations...
+[1560907672.991][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.007][INFO]: Waiting for pending navigations...
+[1560907673.009][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.009][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907673.517][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907673.517][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907673.543][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907673.543][INFO]: Waiting for pending navigations...
+[1560907673.549][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.667][INFO]: Waiting for pending navigations...
+[1560907673.692][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.693][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907674.215][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907674.215][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907674.227][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907674.227][INFO]: Waiting for pending navigations...
+[1560907674.244][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.310][INFO]: Waiting for pending navigations...
+[1560907674.333][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.333][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907674.874][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907674.874][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE SetTimeouts
+[1560907674.891][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907674.891][INFO]: Waiting for pending navigations...
+[1560907674.944][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.024][INFO]: Waiting for pending navigations...
+[1560907675.063][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.063][INFO]: [85ec53a14dbdc4103ecd84589d6f42ff] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+le to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907670.056][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907670.056][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907670.062][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907670.062][INFO]: Waiting for pending navigations...
+[1560907670.063][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.077][INFO]: Waiting for pending navigations...
+[1560907670.079][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.079][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907670.583][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907670.583][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907670.591][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907670.591][INFO]: Waiting for pending navigations...
+[1560907670.594][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.608][INFO]: Waiting for pending navigations...
+[1560907670.609][INFO]: Done waiting for pending navigations. Status: ok
+[1560907670.609][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907671.115][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907671.115][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907671.119][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907671.119][INFO]: Waiting for pending navigations...
+[1560907671.126][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.157][INFO]: Waiting for pending navigations...
+[1560907671.160][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.160][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907671.663][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907671.663][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907671.666][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907671.666][INFO]: Waiting for pending navigations...
+[1560907671.667][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.684][INFO]: Waiting for pending navigations...
+[1560907671.685][INFO]: Done waiting for pending navigations. Status: ok
+[1560907671.686][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907672.195][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907672.195][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907672.198][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907672.198][INFO]: Waiting for pending navigations...
+[1560907672.199][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.211][INFO]: Waiting for pending navigations...
+[1560907672.212][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.212][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907672.722][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907672.722][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907672.731][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907672.731][INFO]: Waiting for pending navigations...
+[1560907672.733][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.765][INFO]: Waiting for pending navigations...
+[1560907672.777][INFO]: Done waiting for pending navigations. Status: ok
+[1560907672.777][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907673.284][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907673.284][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907673.294][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907673.294][INFO]: Waiting for pending navigations...
+[1560907673.312][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.349][INFO]: Waiting for pending navigations...
+[1560907673.359][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.359][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907673.871][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907673.871][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907673.878][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907673.878][INFO]: Waiting for pending navigations...
+[1560907673.880][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.894][INFO]: Waiting for pending navigations...
+[1560907673.897][INFO]: Done waiting for pending navigations. Status: ok
+[1560907673.897][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907674.401][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907674.401][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907674.412][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907674.412][INFO]: Waiting for pending navigations...
+[1560907674.413][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.431][INFO]: Waiting for pending navigations...
+[1560907674.432][INFO]: Done waiting for pending navigations. Status: ok
+[1560907674.432][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)
+[1560907674.949][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907674.949][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE SetTimeouts
+[1560907674.970][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] COMMAND FindElement {
+   "using": "css selector",
+   "value": "div.ngCell.col0.colt0"
+}
+[1560907674.970][INFO]: Waiting for pending navigations...
+[1560907674.992][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.067][INFO]: Waiting for pending navigations...
+[1560907675.080][INFO]: Done waiting for pending navigations. Status: ok
+[1560907675.081][INFO]: [c5eb80ab7b36dbf86c88e0ad54412a1b] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":"div.ngCell.col0.colt0"}
+  (Session info: chrome=74.0.3729.169)

@@ -13,6 +13,7 @@ public class Main {
         TestNG testng = new TestNG();
         List<String> suites = Lists.newArrayList();
         suites.add("./resources/testNG.xml");//path to xml..
+        //try with 2 test ngs files and with 4 threads
         testng.setTestSuites(suites);
         testng.run();
     }

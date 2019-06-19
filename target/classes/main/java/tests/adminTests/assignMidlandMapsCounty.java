@@ -17,7 +17,9 @@ import java.util.Date;
 public class assignMidlandMapsCounty extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","countyMidlandMaps","countyType"})
     @Test(groups = {"CH_Admin_Assign_Midland_Maps_County", "Regression","Midland_Maps_Feature"})
-
+/**
+ * This test script assign one specified county for the specified companyID
+ * */
     public void assignMidlandMapsCounty(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String countyMidlandMaps,String countyType) throws InterruptedException {
 
         //Already logged in as DI Admin

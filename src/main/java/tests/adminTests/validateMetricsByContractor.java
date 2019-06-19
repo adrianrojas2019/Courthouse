@@ -19,6 +19,11 @@ public class validateMetricsByContractor extends SeleniumInitializer {
     @Parameters({"contractorName","contractorUserName","environment","usernameToLogIn","passwordToLogIn","county","totalDownloads","totalPrints","totalAddedToRunsheet","totalDocumentsViewed","totalRemovedFromRunsheet","totalRenamedFromRunsheet"})
     @Test(groups = {"CH_Admin_Metrics_By_Contractor", "Regression","Contractor_Test"})
 
+    /* This method validates the metrics for the specified contractor.
+     *@params contractor username/password values for the specified contractor.
+     * All the following params: totalDownloads,totalPrints,totalAddedToRunsheet,totalDocumentsViewed,totalRemovedFromRunsheet,totalRenamedFromRunsheet
+     * are used in order to match and verify that metric/piwik service is working as expected
+    */
     public void validateMetricsByContractor(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalRenamedFromRunsheet) throws InterruptedException {
 
         //Already logged in as DI Admin

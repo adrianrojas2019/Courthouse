@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class payGoDownloadRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword"})
     @Test(groups = {"CH_PayGo_Download_Runsheet", "Regression", "PayGo"})
-
+    /* This method download the documents for the already existing one runsheet for the specified Pay Go
+     *@params Pay Go username/password
+    */
     public void payGoDownloadRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 
         //Already logged in as DI Admin

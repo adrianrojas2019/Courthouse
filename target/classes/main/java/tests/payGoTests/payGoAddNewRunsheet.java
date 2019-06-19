@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class payGoAddNewRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword","payGoCounty","payGoGrantor"})
     @Test(groups = {"CH_PayGo_Add_New_Runsheet", "Regression", "PayGo"})
-
+    /* This method Creates a new runsheet with at least three documents for the specified PayGo
+     *@params PayGo username/password, county and grantor values for the specified free trial.
+     */
     public void payGoAddNewRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String payGoGrantor) throws InterruptedException {
 
         //Already logged in as DI Admin

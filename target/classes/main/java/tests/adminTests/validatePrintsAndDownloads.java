@@ -19,6 +19,9 @@ public class validatePrintsAndDownloads extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","county","totalDownloads","totalPrints"})
     @Test(groups = {"CH_Admin_Validate_Prints_Downloads", "Regression","Contractor_Test"})
 
+    /* This method validates the total of prints and downloads for the specified contractor/companyID matching with the totalDownloads/Prints params from the admin perspective.
+     *@params Admin credentials.
+    */
     public void validatePrintsAndDownloads(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String county,String totalDownloads, String totalPrints) throws InterruptedException {
 
         //Already logged in as DI Admin

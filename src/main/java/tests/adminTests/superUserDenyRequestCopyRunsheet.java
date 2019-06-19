@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class superUserDenyRequestCopyRunsheet extends SeleniumInitializer {
     @Parameters({"superUserName","superUserPassword","myCompanyRunsheetName"})
     @Test(groups = {"CH_Super_User_Deny_Request_Copy_Runsheet", "Regression"})
-
+    /**
+     * This test script Deny the previous one runsheet. New email will be sent to the contractor's email.
+     * */
     public void superUserDenyRequestCopyRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName) throws InterruptedException {
 
         //Already logged in as DI Admin

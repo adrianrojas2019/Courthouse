@@ -17,7 +17,9 @@ import org.testng.annotations.Test;
 public class contractorMidlandMapsSearch extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword","searchMidlandMapsCountyName","searchMidlandMapsCountyYear"})
     @Test(groups = {"CH_Contractor_Midland_Maps_Search", "Regression","Midland_Maps_Feature"})
-
+/**
+ * This test script validates that one specified contrator is able to search for one specified contractor
+ * */
     public void contractorMidlandMapsSearch(String environment,String contractorUserName, String contractorPassword,String searchMidlandMapsCountyName, String searchMidlandMapsCountyYear) throws InterruptedException {
 
 

@@ -14,6 +14,9 @@ import org.testng.annotations.Test;
 public class contractorCancelDownloadMidlandMap extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword","searchMidlandMapsCountyName","searchMidlandMapsCountyYear"})
     @Test(groups = {"CH_Contractor_Cancel_Download_Midland_Map", "Regression","Midland_Maps_Feature"})
+    /**
+     * This test script validates that as cancel download map button is working
+     * */
 
     public void contractorCancelDownloadMidlandMap(String environment,String contractorUserName, String contractorPassword,String searchMidlandMapsCountyName, String searchMidlandMapsCountyYear) throws InterruptedException {
 

@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class validateCountyDemoModeExpired extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","countyOnDemoMode","contractorUserName","contractorPassword"})
     @Test(groups = {"CH_Admin_County_Mode_Has_Expired", "Regression","Company_Management"})
-
+/**
+ * This test script validates the correct info message for one specified county on demo mode has already expired
+ * */
     public void validateCountyDemoModeExpired(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String countyOnDemoMode, String contractorUserName, String contractorPassword) throws InterruptedException {
 
         //Already logged in as DI Admin

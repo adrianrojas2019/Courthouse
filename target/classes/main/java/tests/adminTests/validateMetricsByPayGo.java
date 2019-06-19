@@ -18,7 +18,11 @@ import java.util.Date;
 public class validateMetricsByPayGo extends SeleniumInitializer {
     @Parameters({"firstNamePayGo","lastNamePayGo","userNamePayGo","environment","usernameToLogIn","passwordToLogIn","county","totalDownloads","totalPrints","totalAddedToRunsheet","totalDocumentsViewed","totalRemovedFromRunsheet","totalSearchesByCounty","totalSearchesByTypeExplorerPanel","totalRenamedFromRunsheet"})
     @Test(groups = {"CH_Admin_Metrics_By_PayGo", "Regression","PayGo"})
-
+    /* This method validates the metrics for the specified PayGo.
+     *@params PayGo username/password.
+     * All the following params: totalDownloads,totalPrints,totalAddedToRunsheet,totalDocumentsViewed,totalRemovedFromRunsheet,totalRenamedFromRunsheet
+     * are used in order to match and verify that metric/piwik service is working as expected
+    */
     public void validateMetricsByPayGo(String firstNamePayGo, String lastNamePayGo, String userNamePayGo, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel, String totalRenamedFromRunsheet) throws InterruptedException {
 
         //Already logged in as DI Admin

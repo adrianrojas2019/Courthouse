@@ -14,7 +14,9 @@ import org.testng.annotations.Test;
 public class payGoMidlandMapsSearch extends SeleniumInitializer {
     @Parameters({"environment","userNamePayGo","payGoPassword"})
     @Test(groups = {"CH_PayGo_Midland_Maps_Search", "Regression","Midland_Maps_Feature"})
-
+    /**
+        * This test script validates that as paygo user is not able to access the new one Midland Map feature
+    * */
     public void payGoMidlandMapsSearch(String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 
 //Already logged in as DI Admin

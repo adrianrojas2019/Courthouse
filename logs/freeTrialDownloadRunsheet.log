@@ -1,0 +1,971 @@
+[1560907940.960][INFO]: Starting ChromeDriver 74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})
+[1560907940.961][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1560907941.308][INFO]: [804e2b6550f1519108d7f2011fb5b78b] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1560907941.316][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1560907941.318][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1560907941.330][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\Adrian\AppData\Local\Temp\scoped_dir26488_14188\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Adrian\AppData\Local\Temp\scoped_dir26488_29887" data:,
+[1560907944.068][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1560907945.381][INFO]: [804e2b6550f1519108d7f2011fb5b78b] RESPONSE InitSession {
+   "acceptInsecureCerts": false,
+   "acceptSslCerts": false,
+   "applicationCacheEnabled": false,
+   "browserConnectionEnabled": false,
+   "browserName": "chrome",
+   "chrome": {
+      "chromedriverVersion": "74.0.3729.6 (255758eccf3d244491b8a1317aa76e1ce10d57e9-refs/branch-heads/3729@{#29})",
+      "userDataDir": "C:\\Users\\Adrian\\AppData\\Local\\Temp\\scoped_dir26488_29887"
+   },
+   "cssSelectorsEnabled": true,
+   "databaseEnabled": false,
+   "goog:chromeOptions": {
+      "debuggerAddress": "localhost:58554"
+   },
+   "handlesAlerts": true,
+   "hasTouchScreen": false,
+   "javascriptEnabled": true,
+   "locationContextEnabled": true,
+   "mobileEmulationEnabled": false,
+   "nativeEvents": true,
+   "networkConnectionEnabled": false,
+   "pageLoadStrategy": "normal",
+   "platform": "Windows NT",
+   "proxy": {
+
+   },
+   "~~~": "..."
+}
+[1560907945.389][INFO]: [804e2b6550f1519108d7f2011fb5b78b] COMMAND MaximizeWindow {
+   "handle": "current",
+   "windowHandle": "current"
+}
+[1560907945.389][INFO]: Waiting for pending navigations...
+[1560907945.408][INFO]: Done waiting for pending navigations. Status: ok
+[1560907945.417][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1560907946.588][INFO]: Waiting for pending navigations...
+[1560907946.589][INFO]: Done waiting for pending navigations. Status: ok
+[1560907946.590][INFO]: [804e2b6550f1519108d7f2011fb5b78b] RESPONSE MaximizeWindow {
+   "height": 744,
+   "width": 1382,
+   "x": -8,
+   "y": -8
+}
+[1560907946.592][INFO]: [804e2b6550f1519108d7f2011fb5b78b] COMMAND SetTimeouts {
+   "ms": 5000,
+   "type": "implicit"
+}
+[1560907946.592][INFO]: [804e2b6550f1519108d7f2011fb5b78b] RESPONSE SetTimeouts
+[1560907946.598][INFO]: [804e2b6550f1519108d7f2011fb5b78b] COMMAND Navigate {
+   "url": "https://app.dev.drillinginfo.com/courthouse/"
+}
+[1560907946.598][INFO]: Waiting for pending navigations...
+[1560907946.600][INFO]: Done waiting for pending navigations. Status: ok
+[1560907953.152][INFO]: Waiting for pending navigations...[1560907962.829][INFO]: Done waiting for pending navigations. Status: ok
+[1560907962.830][INFO]: [afb39d8439d8e591d713c45e1678c4c4] RESPONSE Navigate
+[1560907962.843][INFO]: [afb39d8439d8e591d713c45e1678c4c4] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p[@class='signInText-login']"
+}
+[1560907962.843][INFO]: Waiting for pending navigations...
+[1560907962.952][INFO]: Done waiting for pending navigations. Status: ok
+[1560907967.963][INFO]: Waiting for pending navigations...[1560907969.765][INFO]: Done waiting for pending navigations. Status: ok
+[1560907969.765][INFO]: [077bfbc4d67873d3b6d946c4b02d5c68] RESPONSE FindElements [  ]
+[1560907970.267][INFO]: [077bfbc4d67873d3b6d946c4b02d5c68] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p[@class='signInText-login']"
+}
+[1560907970.267][INFO]: Waiting for pending navigations...
+[1560907970.268][INFO]: Done waiting for pending navigations. Status: ok
+[1[1560907982.650][INFO]: Waiting for pending navigations...
+[1560908013.674][INFO]: Done waiting for pending navigations. Status: ok
+[1560908013.675][INFO]: [afb39d8439d8e591d713c45e1678c4c4] RESPONSE FindElements [  ]
+[1560908014.179][INFO]: [afb39d8439d8e591d713c45e1678c4c4] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//p[@class='signInText-login']"
+}
+[1560908014.179][INFO]: Waiting for pending navigations...
+[1560908014.184][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.210][INFO]: Waiting for pending navigations...
+[1560908014.216][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.216][INFO]: [afb39d8439d8e591d713c45e1678c4c4] RESPONSE FindElements [ {
+   "ELEMENT": "0.1307599231405583-1"
+} ]
+[1560908014.218][INFO]: [afb39d8439d8e591d713c45e1678c4c4] COMMAND IsElementDisplayed {
+   "id": "0.1307599231405583-1"
+}
+[1560908014.218][INFO]: Waiting for pending navigations...
+[1560908014.220][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.241][INFO]: Waiting for pending navigations...
+[1560908014.243][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.243][INFO]: [afb39d8439d8e591d713c45e1678c4c4] RESPONSE IsElementDisplayed true
+[1560908014.246][INFO]: [afb39d8439d8e591d713c45e1678c4c4] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//a[@href='https://app.dev.drillinginfo.com/courthouse/login']"
+}
+[1560908014.246][INFO]: Waiting for pending navigations...
+[1560908014.252][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.275][INFO]: Waiting for pending navigations...
+[1560[1560908019.103][INFO]: Done waiting for pending navigations. Status: ok
+[1560908019.103][INFO]: [077bfbc4d67873d3b6d946c4b02d5c68] RESPONSE ClickElement
+[1560908019.119][INFO]: [077bfbc4d67873d3b6d946c4b02d5c68] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//div[@class='di-app-loading-message']"
+}
+[1560908019.119][INFO]: Waiting for pending navigations...
+[1560908019.157][INFO]: Done waiting for pending navigations. Status: ok
+1560908014.409][INFO]: Waiting for pending navigations...
+..
+[1560907997.319][INFO]: Done waiting for pending navigations. Status: ok
+[1560907997.319][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElements [  ]
+[1560907998.323][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907998.324][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560907998.331][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//p[text()='DI Courthouse Contractor/PayGo/Free Trial']"
+}
+[1560907998.331][INFO]: Waiting for pending navigations...
+[1560907998.332][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.353][INFO]: Waiting for pending navigations...
+[1560907998.355][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.355][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement {
+   "ELEMENT": "0.43358669428698793-1"
+}
+[1560907998.358][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907998.358][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560907998.360][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "id",
+   "value": "username"
+}
+[1560907998.360][INFO]: Waiting for pending navigations...
+[1560907998.362][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.378][INFO]: Waiting for pending navigations...
+[1560907998.379][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.379][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement {
+   "ELEMENT": "0.43358669428698793-2"
+}
+[1560907998.381][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "id",
+   "value": "username"
+}
+[1560907998.381][INFO]: Waiting for pending navigations...
+[1560907998.382][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.388][INFO]: Waiting for pending navigations...
+[1560907998.395][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.395][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement {
+   "ELEMENT": "0.43358669428698793-2"
+}
+[1560907998.398][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND TypeElement {
+   "id": "0.43358669428698793-2",
+   "value": [ "adrojascontract" ]
+}
+[1560907998.398][INFO]: Waiting for pending navigations...
+[1560907998.399][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.568][INFO]: Waiting for pending navigations...
+[1560907998.569][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.569][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE TypeElement
+[1560907998.570][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907998.570][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560907998.579][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "id",
+   "value": "password"
+}
+[1560907998.579][INFO]: Waiting for pending navigations...
+[1560907998.582][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.599][INFO]: Waiting for pending navigations...
+[1560907998.600][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.600][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement {
+   "ELEMENT": "0.43358669428698793-3"
+}
+[1560907998.601][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "id",
+   "value": "password"
+}
+[1560907998.601][INFO]: Waiting for pending navigations...
+[1560907998.603][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.614][INFO]: Waiting for pending navigations...
+[1560907998.615][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.615][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement {
+   "ELEMENT": "0.43358669428698793-3"
+}
+[1560907998.616][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND TypeElement {
+   "id": "0.43358669428698793-3",
+   "value": [ "DSCI7lsc1" ]
+}
+[1560907998.616][INFO]: Waiting for pending navigations...
+[1560907998.617][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.783][INFO]: Waiting for pending navigations...
+[1560907998.784][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.784][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE TypeElement
+[1560907999.786][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElements {
+   "using": "id",
+   "value": "login"
+}
+[1560907999.786][INFO]: Waiting for pending navigations...
+[1560907999.792][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.812][INFO]: Waiting for pending navigations...
+[1560907999.813][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.813][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElements [ {
+   "ELEMENT": "0.43358669428698793-4"
+} ]
+[1560907999.815][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND ClickElement {
+   "id": "0.43358669428698793-4"
+}
+[1560907999.815][INFO]: Waiting for pending navigations...
+[1560907999.817][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.936][INFO]: Waiting for pending navigations...
+[1560907999.943][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.943][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE ClickElement
+[1560907999.948][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560907999.948][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560907999.951][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560907999.951][INFO]: Waiting for pending navigations...
+[1560907999.952][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.978][INFO]: Waiting for pending navigations...
+[1560907999.979][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.979][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908000.482][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908000.482][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908000.483][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908000.483][INFO]: Waiting for pending navigations...
+[1560908000.484][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.493][INFO]: Waiting for pending navigations...
+[1560908000.494][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.494][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908000.997][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908000.997][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908000.999][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908000.999][INFO]: Waiting for pending navigations...
+[1560908001.001][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.011][INFO]: Waiting for pending navigations...
+[1560908001.013][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.013][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908001.516][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908001.516][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908001.518][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908001.518][INFO]: Waiting for pending navigations...
+[1560908001.520][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.530][INFO]: Waiting for pending navigations...
+[1560908001.531][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.531][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908002.034][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908002.035][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908002.039][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908002.039][INFO]: Waiting for pending navigations...
+[1560908002.041][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.056][INFO]: Waiting for pending navigations...
+[1560908002.057][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.058][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908002.561][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908002.561][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908002.563][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908002.563][INFO]: Waiting for pending navigations...
+[1560908002.565][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.573][INFO]: Waiting for pending navigations...
+[1560908002.573][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.574][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908003.077][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908003.077][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908003.079][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908003.080][INFO]: Waiting for pending navigations...
+[1560908003.081][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.090][INFO]: Waiting for pending navigations...
+[1560908003.091][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.091][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908003.594][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908003.594][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908003.596][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908003.596][INFO]: Waiting for pending navigations...
+[1560908003.597][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.611][INFO]: Waiting for pending navigations...
+[1560908003.613][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.613][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908004.116][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908004.116][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908004.121][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908004.122][INFO]: Waiting for pending navigations...
+[1560908004.124][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.138][INFO]: Waiting for pending navigations...
+[1560908004.140][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.140][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908004.642][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908004.642][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908004.645][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908004.645][INFO]: Waiting for pending navigations...
+[1560908004.647][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.659][INFO]: Waiting for pending navigations...
+[1560908004.660][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.660][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908005.165][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908005.165][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908005.170][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908005.170][INFO]: Waiting for pending navigations...
+[1560908005.171][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.179][INFO]: Waiting for pending navigations...
+[1560908005.180][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.180][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908005.683][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908005.683][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908005.689][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908005.689][INFO]: Waiting for pending navigations...
+[1560908005.696][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.703][INFO]: Waiting for pending navigations...
+[1560908005.704][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.704][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908006.208][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908006.208][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908006.210][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908006.210][INFO]: Waiting for pending navigations...
+[1560908006.211][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.221][INFO]: Waiting for pending navigations...
+[1560908006.222][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.222][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908006.726][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908006.726][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908006.728][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908006.728][INFO]: Waiting for pending navigations...
+[1560908006.729][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.740][INFO]: Waiting for pending navigations...
+[1560908006.741][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.741][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908007.244][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908007.244][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908007.246][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908007.246][INFO]: Waiting for pending navigations...
+[1560908007.248][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.259][INFO]: Waiting for pending navigations...
+[1560908007.261][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.261][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908007.764][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908007.764][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908007.766][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908007.766][INFO]: Waiting for pending navigations...
+[1560908007.769][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.779][INFO]: Waiting for pending navigations...
+[1560908007.780][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.780][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE FindElement ERROR no such element: Unable to locate element: {"method":"css selector","selector":".home-btn.active-item"}
+  (Session info: chrome=74.0.3729.169)
+[1560908008.286][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND SetTimeouts {
+   "ms": 0,
+   "type": "implicit"
+}
+[1560908008.286][INFO]: [b066ede066a44b87ca45a5c23d785baa] RESPONSE SetTimeouts
+[1560908008.289][INFO]: [b066ede066a44b87ca45a5c23d785baa] COMMAND FindElement {
+   "using": "css selector",
+   "value": ".home-btn.active-item"
+}
+[1560908008.289][INFO]: Waiting for pending navigations...
+560907996.971][INFO]: Done waiting for pending navigations. Status: ok
+[1560907996.979][INFO]: Waiting for pending navigations...
+[1560907996.980][INFO]: Done waiting for pending navigations. Status: ok
+[1560907996.981][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560907997.482][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560907997.482][INFO]: Waiting for pending navigations...
+[1560907997.483][INFO]: Done waiting for pending navigations. Status: ok
+[1560907997.495][INFO]: Waiting for pending navigations...
+[1560907997.499][INFO]: Done waiting for pending navigations. Status: ok
+[1560907997.499][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560907998.003][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560907998.003][INFO]: Waiting for pending navigations...
+[1560907998.004][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.012][INFO]: Waiting for pending navigations...
+[1560907998.013][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.013][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560907998.518][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560907998.518][INFO]: Waiting for pending navigations...
+[1560907998.520][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.535][INFO]: Waiting for pending navigations...
+[1560907998.537][INFO]: Done waiting for pending navigations. Status: ok
+[1560907998.537][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560907999.042][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560907999.042][INFO]: Waiting for pending navigations...
+[1560907999.045][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.051][INFO]: Waiting for pending navigations...
+[1560907999.052][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.052][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560907999.555][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560907999.556][INFO]: Waiting for pending navigations...
+[1560907999.560][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.573][INFO]: Waiting for pending navigations...
+[1560907999.575][INFO]: Done waiting for pending navigations. Status: ok
+[1560907999.575][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908000.077][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908000.077][INFO]: Waiting for pending navigations...
+[1560908000.078][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.085][INFO]: Waiting for pending navigations...
+[1560908000.086][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.086][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908000.589][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908000.589][INFO]: Waiting for pending navigations...
+[1560908000.592][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.603][INFO]: Waiting for pending navigations...
+[1560908000.604][INFO]: Done waiting for pending navigations. Status: ok
+[1560908000.604][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908001.109][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908001.109][INFO]: Waiting for pending navigations...
+[1560908001.110][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.119][INFO]: Waiting for pending navigations...
+[1560908001.120][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.120][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908001.625][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908001.625][INFO]: Waiting for pending navigations...
+[1560908001.626][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.632][INFO]: Waiting for pending navigations...
+[1560908001.633][INFO]: Done waiting for pending navigations. Status: ok
+[1560908001.633][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908002.135][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908002.135][INFO]: Waiting for pending navigations...
+[1560908002.136][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.148][INFO]: Waiting for pending navigations...
+[1560908002.150][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.150][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908002.652][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908002.653][INFO]: Waiting for pending navigations...
+[1560908002.655][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.663][INFO]: Waiting for pending navigations...
+[1560908002.665][INFO]: Done waiting for pending navigations. Status: ok
+[1560908002.665][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908003.167][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908003.167][INFO]: Waiting for pending navigations...
+[1560908003.168][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.179][INFO]: Waiting for pending navigations...
+[1560908003.180][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.181][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908003.683][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908003.683][INFO]: Waiting for pending navigations...
+[1560908003.684][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.692][INFO]: Waiting for pending navigations...
+[1560908003.693][INFO]: Done waiting for pending navigations. Status: ok
+[1560908003.693][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908004.199][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908004.199][INFO]: Waiting for pending navigations...
+[1560908004.202][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.209][INFO]: Waiting for pending navigations...
+[1560908004.210][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.210][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908004.713][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908004.713][INFO]: Waiting for pending navigations...
+[1560908004.714][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.730][INFO]: Waiting for pending navigations...
+[1560908004.732][INFO]: Done waiting for pending navigations. Status: ok
+[1560908004.732][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908005.235][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908005.235][INFO]: Waiting for pending navigations...
+[1560908005.239][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.248][INFO]: Waiting for pending navigations...
+[1560908005.249][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.249][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908005.757][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908005.757][INFO]: Waiting for pending navigations...
+[1560908005.759][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.764][INFO]: Waiting for pending navigations...
+[1560908005.765][INFO]: Done waiting for pending navigations. Status: ok
+[1560908005.765][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908006.270][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908006.270][INFO]: Waiting for pending navigations...
+[1560908006.273][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.282][INFO]: Waiting for pending navigations...
+[1560908006.283][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.283][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908006.787][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908006.787][INFO]: Waiting for pending navigations...
+[1560908006.789][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.797][INFO]: Waiting for pending navigations...
+[1560908006.799][INFO]: Done waiting for pending navigations. Status: ok
+[1560908006.799][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908007.305][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908007.305][INFO]: Waiting for pending navigations...
+[1560908007.308][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.314][INFO]: Waiting for pending navigations...
+[1560908007.315][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.315][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908007.819][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908007.819][INFO]: Waiting for pending navigations...
+[1560908007.820][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.826][INFO]: Waiting for pending navigations...
+[1560908007.827][INFO]: Done waiting for pending navigations. Status: ok
+[1560908007.827][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908008.330][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908008.330][INFO]: Waiting for pending navigations...
+[1560908008.332][INFO]: Done waiting for pending navigations. Status: ok
+[1560908008.342][INFO]: Waiting for pending navigations...
+[1560908008.344][INFO]: Done waiting for pending navigations. Status: ok
+[1560908008.344][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908008.846][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908008.846][INFO]: Waiting for pending navigations...
+[1560908008.847][INFO]: Done waiting for pending navigations. Status: ok
+[1560908008.856][INFO]: Waiting for pending navigations...
+[1560908008.857][INFO]: Done waiting for pending navigations. Status: ok
+[1560908008.857][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908009.360][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908009.360][INFO]: Waiting for pending navigations...
+[1560908009.362][INFO]: Done waiting for pending navigations. Status: ok
+[1560908009.372][INFO]: Waiting for pending navigations...
+[1560908009.374][INFO]: Done waiting for pending navigations. Status: ok
+[1560908009.374][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908009.876][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908009.876][INFO]: Waiting for pending navigations...
+[1560908009.878][INFO]: Done waiting for pending navigations. Status: ok
+[1560908009.894][INFO]: Waiting for pending navigations...
+[1560908009.896][INFO]: Done waiting for pending navigations. Status: ok
+[1560908009.896][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908010.399][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908010.399][INFO]: Waiting for pending navigations...
+[1560908010.403][INFO]: Done waiting for pending navigations. Status: ok
+[1560908010.413][INFO]: Waiting for pending navigations...
+[1560908010.416][INFO]: Done waiting for pending navigations. Status: ok
+[1560908010.416][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908010.921][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908010.921][INFO]: Waiting for pending navigations...
+[1560908010.922][INFO]: Done waiting for pending navigations. Status: ok
+[1560908010.928][INFO]: Waiting for pending navigations...
+[1560908010.929][INFO]: Done waiting for pending navigations. Status: ok
+[1560908010.929][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908011.431][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908011.431][INFO]: Waiting for pending navigations...
+[1560908011.440][INFO]: Done waiting for pending navigations. Status: ok
+[1560908011.448][INFO]: Waiting for pending navigations...
+[1560908011.449][INFO]: Done waiting for pending navigations. Status: ok
+[1560908011.449][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908011.953][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908011.953][INFO]: Waiting for pending navigations...
+[1560908011.955][INFO]: Done waiting for pending navigations. Status: ok
+[1560908011.971][INFO]: Waiting for pending navigations...
+[1560908011.973][INFO]: Done waiting for pending navigations. Status: ok
+[1560908011.974][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908012.502][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908012.502][INFO]: Waiting for pending navigations...
+[1560908012.508][INFO]: Done waiting for pending navigations. Status: ok
+[1560908012.540][INFO]: Waiting for pending navigations...
+[1560908012.554][INFO]: Done waiting for pending navigations. Status: ok
+[1560908012.554][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908013.058][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908013.058][INFO]: Waiting for pending navigations...
+[1560908013.059][INFO]: Done waiting for pending navigations. Status: ok
+[1560908013.065][INFO]: Waiting for pending navigations...
+[1560908013.069][INFO]: Done waiting for pending navigations. Status: ok
+[1560908013.069][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908013.573][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908013.573][INFO]: Waiting for pending navigations...
+[1560908013.576][INFO]: Done waiting for pending navigations. Status: ok
+[1560908013.599][INFO]: Waiting for pending navigations...
+[1560908013.605][INFO]: Done waiting for pending navigations. Status: ok
+[1560908013.605][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908014.107][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908014.107][INFO]: Waiting for pending navigations...
+[1560908014.109][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.122][INFO]: Waiting for pending navigations...
+[1560908014.125][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.125][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908014.629][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908014.629][INFO]: Waiting for pending navigations...
+[1560908014.630][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.652][INFO]: Waiting for pending navigations...
+[1560908014.654][INFO]: Done waiting for pending navigations. Status: ok
+[1560908014.654][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908015.159][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908015.159][INFO]: Waiting for pending navigations...
+[1560908015.164][INFO]: Done waiting for pending navigations. Status: ok
+[1560908015.178][INFO]: Waiting for pending navigations...
+[1560908015.186][INFO]: Done waiting for pending navigations. Status: ok
+[1560908015.186][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908015.690][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908015.690][INFO]: Waiting for pending navigations...
+[1560908015.691][INFO]: Done waiting for pending navigations. Status: ok
+[1560908015.701][INFO]: Waiting for pending navigations...
+[1560908015.703][INFO]: Done waiting for pending navigations. Status: ok
+[1560908015.703][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908016.206][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908016.206][INFO]: Waiting for pending navigations...
+[1560908016.207][INFO]: Done waiting for pending navigations. Status: ok
+[1560908016.226][INFO]: Waiting for pending navigations...
+[1560908016.238][INFO]: Done waiting for pending navigations. Status: ok
+[1560908016.238][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908016.743][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908016.743][INFO]: Waiting for pending navigations...
+[1560908016.745][INFO]: Done waiting for pending navigations. Status: ok
+[1560908016.753][INFO]: Waiting for pending navigations...
+[1560908016.756][INFO]: Done waiting for pending navigations. Status: ok
+[1560908016.756][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908017.260][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908017.260][INFO]: Waiting for pending navigations...
+[1560908017.261][INFO]: Done waiting for pending navigations. Status: ok
+[1560908017.269][INFO]: Waiting for pending navigations...
+[1560908017.272][INFO]: Done waiting for pending navigations. Status: ok
+[1560908017.272][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908017.775][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908017.775][INFO]: Waiting for pending navigations...
+[1560908017.776][INFO]: Done waiting for pending navigations. Status: ok
+[1560908017.803][INFO]: Waiting for pending navigations...
+[1560908017.805][INFO]: Done waiting for pending navigations. Status: ok
+[1560908017.805][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908018.310][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908018.310][INFO]: Waiting for pending navigations...
+[1560908018.314][INFO]: Done waiting for pending navigations. Status: ok
+[1560908018.329][INFO]: Waiting for pending navigations...
+[1560908018.335][INFO]: Done waiting for pending navigations. Status: ok
+[1560908018.335][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908018.859][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908018.859][INFO]: Waiting for pending navigations...
+[1560908018.921][INFO]: Done waiting for pending navigations. Status: ok
+[1560908018.953][INFO]: Waiting for pending navigations...
+[1560908018.967][INFO]: Done waiting for pending navigations. Status: ok
+[1560908018.968][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908019.472][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908019.472][INFO]: Waiting for pending navigations...
+[1560908019.475][INFO]: Done waiting for pending navigations. Status: ok
+[1560908019.484][INFO]: Waiting for pending navigations...
+[1560908019.486][INFO]: Done waiting for pending navigations. Status: ok
+[1560908019.486][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908019.988][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908019.989][INFO]: Waiting for pending navigations...
+[1560908019.990][INFO]: Done waiting for pending navigations. Status: ok
+[1560908020.005][INFO]: Waiting for pending navigations...
+[1560908020.009][INFO]: Done waiting for pending navigations. Status: ok
+[1560908020.009][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908020.513][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908020.513][INFO]: Waiting for pending navigations...
+[1560908020.515][INFO]: Done waiting for pending navigations. Status: ok
+[1560908020.522][INFO]: Waiting for pending navigations...
+[1560908020.523][INFO]: Done waiting for pending navigations. Status: ok
+[1560908020.523][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]
+[1560908021.025][INFO]: [d49b6bc099e76753a7d22223fb159316] COMMAND FindElements {
+   "using": "css selector",
+   "value": "option[label='New_RunsheetFT6 18 2019']"
+}
+[1560908021.025][INFO]: Waiting for pending navigations...
+[1560908021.027][INFO]: Done waiting for pending navigations. Status: ok
+[1560908021.038][INFO]: Waiting for pending navigations...
+[1560908021.040][INFO]: Done waiting for pending navigations. Status: ok
+[1560908021.040][INFO]: [d49b6bc099e76753a7d22223fb159316] RESPONSE FindElements [  ]

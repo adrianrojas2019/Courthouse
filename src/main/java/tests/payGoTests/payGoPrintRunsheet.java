@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class payGoPrintRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword","setPreference"})
     @Test(groups = {"CH_PayGo_Print_Runsheet", "Regression", "PayGo"})
-
+    /* This method prints one document (open it using the PDV Viewer) for the specified Pay Go
+    *@params Pay Go username/password. SetPreference is used in order to know what is the PDF Viewer option.
+    */
     public void payGoPrintRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword, String setPreference) throws InterruptedException {
 
         //Already logged in as DI Admin

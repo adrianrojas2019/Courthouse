@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class contractorNotDownloadsPrintsCountyOnDemoMode extends SeleniumInitializer {
     @Parameters({"demoRunsheetName","environment","countyOnDemoMode","contractorUserName","contractorPassword","contractorGrantor"})
     @Test(groups = {"CH_Contractor_County_On_Demo_Mode", "Regression","Company_Management"})
-
+/**
+ * This test script validates that for one specified county on demo mode is not possible download/print docs
+ * */
     public void contractorNotDownloadsPrintsCountyOnDemoMode(String demoRunsheetName,String environment, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
 
 

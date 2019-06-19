@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class payGoRenameRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword"})
     @Test(groups = {"CH_PayGo_Rename_Runsheet", "Regression", "PayGo"})
-
+    /* This method renames the new one runsheet for the specified Pay Go
+     *@params Pay Go username/password
+    */
     public void payGoRenameRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 
 

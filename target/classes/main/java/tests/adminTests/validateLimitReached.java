@@ -20,7 +20,9 @@ import java.util.Date;
 public class validateLimitReached extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","limitReachedCounty","contractorUserName","contractorPassword","contractorGrantor"})
     @Test(groups = {"CH_Admin_Max_Usage_Reached", "Regression","Company_Management"})
-
+/**
+ * This test script validates the correct info message (usage max reach progress bar) for one specified county. Abstract Plants.
+ * */
     public void validateLimitReached(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
 
         //Already logged in as DI Admin

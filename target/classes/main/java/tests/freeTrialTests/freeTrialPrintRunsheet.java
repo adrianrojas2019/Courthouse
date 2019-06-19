@@ -16,7 +16,9 @@ import java.util.Calendar;
 public class freeTrialPrintRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword","setPreference"})
     @Test(groups = {"CH_FreeTrial_Print_Runsheet", "Regression","FreeTrial"})
-
+    /* This method prints one document (open it using the PDV Viewer) for the specified Free Trial
+     *@params Free Trial username/password. SetPreference is used in order to know what is the PDF Viewer option
+    */
     public void freeTrialPrintRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword, String setPreference) throws InterruptedException {
 
         //Already logged in as DI Admin

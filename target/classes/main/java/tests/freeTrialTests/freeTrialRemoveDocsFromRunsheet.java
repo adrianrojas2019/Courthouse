@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class freeTrialRemoveDocsFromRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNameFreeTrial","environment","userNameFreeTrial","freeTrialPassword"})
     @Test(groups = {"CH_FreeTrial_Del_Docs_From_Runsheet", "Regression","FreeTrial"})
-
+    /* This method removes a couple docs from the already existing one runsheet for the specified Free Trial.
+    *@params free Trial username/password
+    */
     public void freeTrialRemoveDocsFromRunsheet(String runsheetNameFreeTrial,String environment, String userNameFreeTrial, String freeTrialPassword) throws InterruptedException {
 
         //Already logged in as DI Admin

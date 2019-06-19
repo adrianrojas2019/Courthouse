@@ -14,6 +14,12 @@ public class freeTrialExplorerSearch extends SeleniumInitializer {
     @Parameters({"environment","userNameFreeTrial","freeTrialPassword","freeTrialCounty","freeTrialGrantor","totalSearches"})
     @Test(groups = {"CH_FreeTrial_Explorer_Search", "Regression","FreeTrial"})
 
+    /**
+     * This method called freeTrialExplorerSearch: basically visit the explorer search section
+     * for the specified freetrial and perform a basic query using the specified county,grantor and total of searches and then
+     * verify that explorer search was able to get documents
+     *@params freeTrial username/password, county and grantor values for the specified Free Trial user. TotalSearches is the amount of searches.
+     */
     public void freeTrialExplorerSearch(String environment, String userNameFreeTrial, String freeTrialPassword, String freeTrialCounty, String freeTrialGrantor,int totalSearches) throws InterruptedException {
 
 

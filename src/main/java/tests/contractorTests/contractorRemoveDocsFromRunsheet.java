@@ -16,6 +16,9 @@ public class contractorRemoveDocsFromRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
     @Test(groups = {"CH_Contractor_Del_Docs_From_Runsheet", "Regression","Contractor_Test"})
 
+    /* This method removes a couple docs from the already existing one runsheet for the specified contractor.
+     *@params contractor username/password, county and grantor values for the specified contractor.
+     */
     public void contractorRemoveDocsFromRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
 

@@ -15,7 +15,9 @@ import java.util.Calendar;
 public class payGoRemoveDocsFromRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo","environment","userNamePayGo","payGoPassword"})
     @Test(groups = {"CH_PayGo_Del_Docs_From_Runsheet", "Regression", "PayGo"})
-
+    /* This method removes a couple docs from the already existing one runsheet for the specified PayGo.
+    *@params PayGo username/password
+    */
     public void payGoRemoveDocsFromRunsheet(String runsheetNamePayGo,String environment, String userNamePayGo, String payGoPassword) throws InterruptedException {
 
         //Already logged in as DI Admin

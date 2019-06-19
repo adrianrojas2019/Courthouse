@@ -20,6 +20,9 @@ import java.util.Date;
 public class validateCountyOnDemoMode extends SeleniumInitializer {
     @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","countyOnDemoMode","contractorUserName","contractorPassword","contractorName"})
     @Test(groups = {"CH_Admin_County_On_Demo_Mode", "Regression","Company_Management"})
+    /**
+     * This test script validates the correct info message for one specified county on demo mode
+     * */
 
     public void validateCountyOnDemoMode(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorName) throws InterruptedException {
 

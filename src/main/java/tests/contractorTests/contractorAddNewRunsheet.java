@@ -16,6 +16,9 @@ public class contractorAddNewRunsheet extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
     @Test(groups = {"CH_Contractor_Add_New_Runsheet", "Regression","Contractor_Test"})
 
+    /* This method Creates a new runsheet with at least three documents for the specified contractor
+     *@params contractor username/password, county and grantor values for the specified contractor.
+     */
     public void contractorAddNewRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
 

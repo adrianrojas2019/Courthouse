@@ -17,7 +17,9 @@ import org.testng.annotations.Test;
 public class contractorMidlandMapsUnassign extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","myCompanyName","countyMidlandMaps"})
     @Test(groups = {"CH_Contractor_Midland_Maps_Unassign", "Regression","Midland_Maps_Feature"})
-
+/**
+ * This test script un assign one specified county for the specified contractor
+ * */
     public void contractorMidlandMapsUnassign(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String myCompanyName, String countyMidlandMaps) throws InterruptedException {
 
 

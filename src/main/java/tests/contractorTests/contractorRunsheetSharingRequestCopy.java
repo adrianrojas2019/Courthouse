@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class contractorRunsheetSharingRequestCopy extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","myCompanyName","myCompanyRunsheetName"})
     @Test(groups = {"CH_Contractor_Request_Runsheet_Request_Copy", "Regression","Runsheet_Management"})
-
+    /**
+     * This test script verifies that specified contractor with no access is able to request a copy for any specific runsheet
+     * */
     public void contractorRunsheetSharingRequestCopy(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String myCompanyName, String myCompanyRunsheetName) throws InterruptedException {
 
 

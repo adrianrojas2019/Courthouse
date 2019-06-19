@@ -15,6 +15,10 @@ import java.util.Calendar;
 public class payGoCH1089 extends SeleniumInitializer {
     @Parameters({"runsheetNamePayGo", "environment", "userNamePayGo", "payGoPassword","payGoCounty","payGoGrantor"})
     @Test(groups = {"CH_PayGo_CH1089", "Regression","PayGo"})
+    /**
+     * This test script validates the issue CH1089 on Jira basically make sure that check box don't show again won't be displayed.
+     * Note: This issue has not fixed yet is on backlog
+     * */
 
     public void payGoCH1089(String runsheetNamePayGo, String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String payGoGrantor) throws InterruptedException {
 

@@ -10,22 +10,166 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/bullet_point.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/collapseall.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/emailable-report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/failed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/navigator-bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/passed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/skipped.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/testng-reports.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/testng-reports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/testng-results.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/test-output/testng.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/assignMidlandMapsCounty.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/assignMidlandMapsCounty.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/bulksActionsCancelChangeCompany.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/bulksActionsCancelChangeCompany.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddNewRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddNewRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddSecondRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddSecondRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpired.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpired.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyOnDemoMode.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyOnDemoMode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateLimitReached.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateLimitReached.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractor.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractor.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByPayGo.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByPayGo.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByStandard.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByStandard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validatePrintsAndDownloads.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validatePrintsAndDownloads.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorAddNewRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorAddNewRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorBrokerBoxSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorBrokerBoxSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorDownloadRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorDownloadRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsAssign.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsAssign.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsUnassign.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsUnassign.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPDFViewer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPDFViewer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPrintRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPrintRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRenameRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRenameRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialExplorerSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialExplorerSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoAddNewRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoAddNewRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoCH1089.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoCH1089.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoDownloadRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoDownloadRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoExplorerSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoExplorerSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoPrintRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoPrintRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRenameRunsheet.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRenameRunsheet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/standardTests/priorReferenceSearch.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/standardTests/priorReferenceSearch.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateLimitReached.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateLimitReached.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByPayGo.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByPayGo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validatePrintsAndDownloads.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validatePrintsAndDownloads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorAddNewRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorDownloadRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoAddNewRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoCH1089.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoCH1089.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoDownloadRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoPrintRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRenameRunsheet.java" afterPath="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java" afterPath="$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/utils/Main.java" afterPath="$PROJECT_DIR$/src/main/java/utils/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/assignMidlandMapsCounty.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/assignMidlandMapsCounty.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddNewRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddSecondRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserAddSecondRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpired.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpired.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyOnDemoMode.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateCountyOnDemoMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateLimitReached.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateLimitReached.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractor.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByPayGo.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByPayGo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByStandard.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByStandard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validatePrintsAndDownloads.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validatePrintsAndDownloads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorAddNewRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorDownloadRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPDFViewer.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPDFViewer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPrintRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRenameRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoAddNewRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoAddNewRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoCH1089.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoCH1089.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoDownloadRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoDownloadRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoExplorerSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoExplorerSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoPrintRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoPrintRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRenameRunsheet.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/payGoTests/payGoRenameRunsheet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/standardTests/priorReferenceSearch.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/standardTests/priorReferenceSearch.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,8 +196,8 @@
       <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="477" column="41" lean-forward="false" selection-start-line="477" selection-start-column="29" selection-end-line="477" selection-end-column="41" />
+            <state relative-caret-position="98">
+              <caret line="516" column="37" lean-forward="false" selection-start-line="516" selection-start-column="25" selection-end-line="516" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -70,8 +214,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>validateMetricsByPayGo</find>
-      <find>SPINNER_POPUP</find>
       <find>brokerBoxCounty</find>
       <find>runsheetn</find>
       <find>userNameFreeTrial</find>
@@ -92,14 +234,16 @@
       <find>contractorName</find>
       <find>totalSearchesByTypePriorReference</find>
       <find>freetrial_test</find>
-      <find>runsheetNameFreeTrial</find>
       <find>runsheetna</find>
       <find>dev.</find>
       <find>preprod.</find>
       <find>contractorn</find>
-      <find>runsheetName</find>
       <find>spinner</find>
       <find>runsheetname</find>
+      <find>runsheetNamePayGo</find>
+      <find>MyNew</find>
+      <find>runsheetNameFreeTrial</find>
+      <find>runsheetName</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -113,56 +257,56 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoAddNewRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNewRequestCopy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorDownloadRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validatePrintsAndDownloads.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByPayGo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoPrintRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoDownloadRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRenameRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoAddNewRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoCH1089.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validatePrintsAndDownloads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorDownloadRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRemoveDocsFromRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorAddNewRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/addFreeTrial.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/addContractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/addPayGo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateLimitReached.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/FreeTrialPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/PayGoPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/RunsheetManagementPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/BookSearchPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
       </list>
     </option>
@@ -188,9 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,6 +397,10 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -275,12 +420,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="selenium" />
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adminTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -554,40 +724,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 14m 13s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 27m 44s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 25m 45s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 29m 33s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 27m 52s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 35m 15s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 30m 52s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 39m 58s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 33m 30s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 43m 39s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 35m 21s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 48m 15s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.17 at 21h 37m 56s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 51m 28s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 10h 05m 15s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 18h 53m 27s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 10h 14m 45s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 19h 14m 31s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 10h 18m 22s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.18 at 20h 04m 34s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -599,18 +769,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40851736" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3785489" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4511041" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21961933" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24304539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14984228" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.362776" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -628,13 +798,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java</url>
-          <line>53</line>
+          <line>55</line>
           <properties />
           <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java</url>
-          <line>39</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="281" />
         </line-breakpoint>
@@ -652,15 +822,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java</url>
-          <line>39</line>
+          <line>41</line>
           <properties />
           <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="292" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="290" />
+      <option name="time" value="293" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -669,384 +845,399 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/PageObjects.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-79">
-          <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/PayGoPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="200" column="7" lean-forward="false" selection-start-line="200" selection-start-column="7" selection-end-line="200" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/RunsheetManagementPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="100" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="647" column="0" lean-forward="false" selection-start-line="647" selection-start-column="0" selection-end-line="647" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/TestMethodWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validatePrintsAndDownloads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorValidatePrintsAndDownloads.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByPayGo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNewRequestCopy.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="28" column="68" lean-forward="false" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/MidlandMapsPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="95" column="33" lean-forward="false" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="134" column="16" lean-forward="false" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="55" column="59" lean-forward="false" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoCH1089.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20" column="39" lean-forward="true" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/BookSearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="29" column="89" lean-forward="false" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="72" column="62" lean-forward="true" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/WebDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="135" column="9" lean-forward="true" selection-start-line="135" selection-start-column="9" selection-end-line="135" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="60" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="1" lean-forward="false" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="e#2454#2455#0" expanded="false" />
-            <element signature="e#2483#2484#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="109" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="109" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorDownloadRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorAddNewRunsheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="187">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="16" column="105" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="105" />
+        <state relative-caret-position="187">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="37" column="21" lean-forward="false" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="25" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialDownloadRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoDownloadRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="45" column="63" lean-forward="false" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="216" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="216" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="299" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="39" />
+        <state relative-caret-position="187">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRenameRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="65" lean-forward="false" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="65" />
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRenameRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="72" lean-forward="false" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoRemoveDocsFromRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="103" lean-forward="false" selection-start-line="17" selection-start-column="103" selection-end-line="17" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialAddNewRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoAddNewRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByPayGo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoCH1089.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="22" column="7" lean-forward="false" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserDenyRequestCopyRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="22" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="108" lean-forward="false" selection-start-line="21" selection-start-column="108" selection-end-line="21" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="22" column="76" lean-forward="false" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="105" lean-forward="false" selection-start-line="20" selection-start-column="105" selection-end-line="20" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="79" lean-forward="false" selection-start-line="20" selection-start-column="79" selection-end-line="20" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="4" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialMidlandMapsSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="53" lean-forward="false" selection-start-line="17" selection-start-column="53" selection-end-line="17" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorCancelDownloadMidlandMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="79" lean-forward="false" selection-start-line="17" selection-start-column="79" selection-end-line="17" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapShowCoverage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="17" column="95" lean-forward="false" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="79" lean-forward="false" selection-start-line="18" selection-start-column="79" selection-end-line="18" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByStandard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="66" lean-forward="false" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorBrokerBoxSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="67" lean-forward="false" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByBrokerBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="106" lean-forward="false" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="54" lean-forward="false" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoPrintRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="28" column="43" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-381">
+          <caret line="19" column="89" lean-forward="false" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/By.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding>
+            <element signature="e#4139#4140#0" expanded="false" />
+            <element signature="e#4186#4187#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateLimitReached.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpired.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorNotDownloadsPrintsCountyOnDemoMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="53" column="21" lean-forward="false" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="96">
+          <caret line="587" column="16" lean-forward="false" selection-start-line="587" selection-start-column="16" selection-end-line="587" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialRemoveDocsFromRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="34" column="32" lean-forward="false" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="721" column="3" lean-forward="true" selection-start-line="721" selection-start-column="3" selection-end-line="721" selection-end-column="3" />
+        <state relative-caret-position="122">
+          <caret line="28" column="65" lean-forward="false" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="319" column="0" lean-forward="false" selection-start-line="319" selection-start-column="0" selection-end-line="319" selection-end-column="0" />
+        <state relative-caret-position="98">
+          <caret line="314" column="16" lean-forward="false" selection-start-line="314" selection-start-column="16" selection-end-line="314" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyDemoModeExpiresToday.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="68">
+          <caret line="41" column="41" lean-forward="true" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="477" column="41" lean-forward="false" selection-start-line="477" selection-start-column="29" selection-end-line="477" selection-end-column="41" />
+        <state relative-caret-position="98">
+          <caret line="516" column="37" lean-forward="false" selection-start-line="516" selection-start-column="25" selection-end-line="516" selection-end-column="37" />
           <folding />
         </state>
       </provider>

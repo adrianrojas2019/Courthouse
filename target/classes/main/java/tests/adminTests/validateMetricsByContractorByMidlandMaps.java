@@ -18,7 +18,9 @@ import java.util.Date;
 public class validateMetricsByContractorByMidlandMaps extends SeleniumInitializer {
     @Parameters({"contractorName","contractorUserName","environment","usernameToLogIn","passwordToLogIn","searchMidlandMapsCountyName","totalDownloadMidlandMaps","totalSearchesByCountyMidlandMaps"})
     @Test(groups = {"CH_Admin_Metrics_By_Contractor_By_Midland_Maps", "Regression","Midland_Maps_Feature"})
-
+/**
+ * This test script validates that metric are being generated for the new Midland Map Feature for specified contractor
+ * */
     public void validateMetricsByContractorByMidlandMaps(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String searchMidlandMapsCountyName,String totalDownloadMidlandMaps, String totalSearchesByCountyMidlandMaps) throws InterruptedException {
 
         //Already logged in as DI Admin

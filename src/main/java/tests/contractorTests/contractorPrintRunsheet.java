@@ -14,10 +14,13 @@ import java.util.Calendar;
  * Created by Adrian on 12/10/2018.
  */
 public class contractorPrintRunsheet extends SeleniumInitializer {
-    @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
+    @Parameters({"runsheetName","environment","contractorUserName","contractorPassword"})
     @Test(groups = {"CH_Contractor_Print_Runsheet", "Regression","Contractor_Test"})
 
-    public void contractorPrintRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
+    /* This method prints one document (open it using the PDV Viewer) for the specified contractor
+     *@params contractor username/password, county and grantor values for the specified contractor.
+    */
+    public void contractorPrintRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword) throws InterruptedException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();

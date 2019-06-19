@@ -14,10 +14,13 @@ import java.util.Calendar;
  * Created by Adrian on 12/10/2018.
  */
 public class contractorDownloadRunsheet extends SeleniumInitializer {
-    @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
+    @Parameters({"runsheetName","environment","contractorUserName","contractorPassword"})
     @Test(groups = {"CH_Contractor_Download_Runsheet", "Regression","Contractor_Test"})
 
-    public void contractorDownloadRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
+    /* This method download the documents for the already existing one runsheet for the specified contractor
+     *@params contractor username/password for the specified contractor.
+    */
+    public void contractorDownloadRunsheet(String runsheetName,String environment, String contractorUserName, String contractorPassword) throws InterruptedException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();

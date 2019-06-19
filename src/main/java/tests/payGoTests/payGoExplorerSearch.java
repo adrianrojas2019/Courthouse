@@ -13,7 +13,12 @@ import org.testng.annotations.Test;
 public class payGoExplorerSearch extends SeleniumInitializer {
     @Parameters({"environment","userNamePayGo","payGoPassword","payGoCounty","payGoGrantor","totalSearches"})
     @Test(groups = {"CH_PayGo_Explorer_Search", "Regression", "PayGo"})
-
+    /**
+     * This method called payGoExplorerSearch: basically visit the explorer search section
+     * for the specified PayGo and perform a basic query using the specified county,grantor and total of searches and then
+     * verify that explorer search was able to get documents
+     *@params PayGo username/password, county and grantor values for the specified Pay Go user. TotalSearches is the amount of searches.
+     */
     public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String payGoGrantor,int totalSearches) throws InterruptedException {
 
 

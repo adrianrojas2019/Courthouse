@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class superUserApproveRequestCopyRunsheet extends SeleniumInitializer {
     @Parameters({"superUserName","superUserPassword","myCompanyRunsheetName"})
     @Test(groups = {"CH_Super_User_Approve_Request_Copy_Runsheet", "Regression","Runsheet_Management"})
-
+    /**
+        * This test script Approves the previous one runsheet. New email will be sent to the contractor's email.
+    * */
     public void superUserApproveRequestCopyRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName) throws InterruptedException {
 
         //Already logged in as DI Admin

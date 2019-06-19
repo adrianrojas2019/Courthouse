@@ -18,7 +18,9 @@ import java.util.Calendar;
 public class contractorRunsheetSharingFullAccess extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","contractorName","myCompanyRunsheetName"})
     @Test(groups = {"CH_Contractor_Request_Runsheet_Full_Access", "Regression","Runsheet_Management"})
-
+/**
+ * This test script verifies that specified contractor with full access is able to copy any company runsheet
+ * */
     public void contractorRunsheetSharingFullAccess(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String contractorName, String myCompanyRunsheetName) throws InterruptedException {
 
 

@@ -16,6 +16,9 @@ public class contractorPDFViewer extends SeleniumInitializer {
     @Parameters({"runsheetName","environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
     @Test(groups = {"CH_Contractor_PDF_Viewer", "Regression","Contractor_Test"})
 
+    /* This method opens one document for the specified contractor first at all as stand alone and then as embedded PDF Viewer option.
+     * @params contractor username/password values for the specified contractor.
+    */
     public void contractorPDFViewer(String runsheetName,String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
 

@@ -15,7 +15,12 @@ import org.testng.annotations.Test;
 public class contractorExplorerSearch extends SeleniumInitializer {
     @Parameters({"environment","contractorUserName","contractorPassword","contractorCounty","contractorGrantor"})
     @Test(groups = {"CH_Contractor_Explorer_Search", "Regression","Contractor_Test"})
-
+    /**
+     * This method called contractorExplorerSearch: basically visit the explorer search section
+     * for the specified contractor and perform a basic query using the specified county and grantor and then
+     * verify that explorer search was able to get documents
+     *@params contractor username/password, county and grantor values for the specified contractor.
+     */
     public void contractorExplorerSearch(String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorGrantor) throws InterruptedException {
 
 

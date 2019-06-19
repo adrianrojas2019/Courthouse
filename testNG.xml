@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="7" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="4" verbose="10"  parallel="tests">
     <test name="Contractor_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
         <parameter name="browser" value="Chrome"/>
@@ -36,7 +36,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="AR"/>
+        <parameter name="runsheetName" value="XP"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -120,7 +120,7 @@
         <parameter name="freeTrialCounty" value="Atascosa"/>
         <parameter name="freeTrialGrantor" value="James"/>
         <parameter name="totalSearches" value="3"/>
-        <parameter name="runsheetNameFreeTrial" value="AFTR"/>
+        <parameter name="runsheetNameFreeTrial" value="XPFT"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -204,7 +204,7 @@
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
         <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="APGR"/>
+        <parameter name="runsheetNamePayGo" value="XPPG"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -270,7 +270,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="AR"/>
+        <parameter name="runsheetName" value="XP"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -291,7 +291,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="MyCR"/>
+        <parameter name="myCompanyRunsheetName" value="MyNRXP"/>
         <parameter name="superUserCounty" value="Bandera"/>
 
         <groups>
@@ -367,7 +367,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="AR"/>
+        <parameter name="runsheetName" value="XP"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -463,19 +463,12 @@
         <parameter name="numberOfUserToCreate" value="1"/>
         <parameter name="setPreference" value="false"/>
 
-        <!-- Below parameter must be changed for each new pay go has been created
-        get the password from the gmail account and paste it -->
-        <parameter name="payGoPassword" value="As123456789"/>
-        <parameter name="payGoCounty" value="Liberty"/>
-        <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="APGR"/>
-
         <!-- New Contractor Search -->
         <parameter name="contractorUserName" value="adrojascontract"/>
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="demoRunsheetName" value="Demo_AR"/>
+        <parameter name="demoRunsheetName" value="Demo_XP"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -521,7 +514,7 @@
         <parameter name="contractorUserName" value="adrojascontract"/>
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorName" value="Test Contract"/>
-        <parameter name="runsheetName" value="AR"/>
+        <parameter name="runsheetName" value="XP"/>
 		<parameter name="county" value="Andrews Abstract Plant"/>
 		<parameter name="totalDownloads" value="1.00"/>
         <parameter name="totalPrints" value="1.00"/>

@@ -17,7 +17,10 @@ import java.util.Calendar;
 public class superUserAddNewRunsheet extends SeleniumInitializer {
     @Parameters({"superUserName","superUserPassword","myCompanyRunsheetName","superUserCounty","contractorGrantor"})
     @Test(groups = {"CH_Super_User_Create_New_Runsheet", "Regression","Runsheet_Management"})
-
+    /**
+     * This test script creates a new runsheet as super user using specified county. This runsheet will be used in order to approve/deny it.
+     *
+     * * */
     public void superUserAddNewRunsheet(String superUserName, String superUserPassword, String myCompanyRunsheetName,String superUserCounty, String contractorGrantor) throws InterruptedException {
 
         //Already logged in as DI Admin

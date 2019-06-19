@@ -19,7 +19,9 @@ import java.util.Calendar;
 public class contractorMidlandMapsAssign extends SeleniumInitializer {
     @Parameters({"environment","superUserName","superUserPassword","contractorUserName","contractorPassword","myCompanyName","countyMidlandMaps"})
     @Test(groups = {"CH_Contractor_Midland_Maps_Assign", "Regression","Midland_Maps_Feature"})
-
+/**
+ * This test script assign one specified county for the specified contractor
+ * */
     public void contractorMidlandMapsAssign(String environment,String superUserName, String superUserPassword, String contractorUserName, String contractorPassword,String myCompanyName, String countyMidlandMaps) throws InterruptedException {
 
 
