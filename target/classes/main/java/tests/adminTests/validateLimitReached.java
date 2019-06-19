@@ -18,22 +18,22 @@ import java.util.Date;
  * Created by Adrian on 11/28/2018.
  */
 public class validateLimitReached extends SeleniumInitializer {
-    @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","limitReachedCounty","contractorUserName","contractorPassword","contractorGrantor"})
+    @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","limitReachedCounty","contractorUserName","contractorPassword","contractorGrantor","LimitNewRunsheetName"})
     @Test(groups = {"CH_Admin_Max_Usage_Reached", "Regression","Company_Management"})
 /**
  * This test script validates the correct info message (usage max reach progress bar) for one specified county. Abstract Plants.
  * */
-    public void validateLimitReached(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor) throws InterruptedException {
+    public void validateLimitReached(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor,String LimitNewRunsheetName) throws InterruptedException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
 
         CHMainPage newCHMainPage = loginIntoCHMainPageTest.loginSuccessfullyGalleryTest(environment,usernameToLogIn, passwordToLogIn, getDriverInstance());
         //UserAdministrationPage newAdministrationPage =
-        ValidatePrintsAndDownloads(newCHMainPage.LoginMenu(),environment,companyID,limitReachedCounty,contractorUserName,contractorPassword, contractorGrantor);
+        ValidatePrintsAndDownloads(newCHMainPage.LoginMenu(),environment,companyID,limitReachedCounty,contractorUserName,contractorPassword, contractorGrantor,LimitNewRunsheetName);
     }
 
-    public void ValidatePrintsAndDownloads(UserAdministrationPage newAdministrationPage, String environment, String companyID,String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor){
+    public void ValidatePrintsAndDownloads(UserAdministrationPage newAdministrationPage, String environment, String companyID,String limitReachedCounty, String contractorUserName, String contractorPassword, String contractorGrantor, String LimitNewRunsheet){
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -99,11 +99,11 @@ public class validateLimitReached extends SeleniumInitializer {
         newExplorerPage1.closeCompanyUsageDialog();
 
         //Perform a new Explore Search and download one runsheet
-        PerformNewExplorerSearch(newExplorerPage1,limitReachedCounty,contractorGrantor);
+        PerformNewExplorerSearch(newExplorerPage1,limitReachedCounty,contractorGrantor,LimitNewRunsheet);
 
     }
 
-    public void PerformNewExplorerSearch(ExplorerPage newExplorerPage1, String CountyName, String GrantorName){
+    public void PerformNewExplorerSearch(ExplorerPage newExplorerPage1, String CountyName, String GrantorName, String LimitNewRunsheet){
 
         newExplorerPage1.isGrantorEnabled();
         newExplorerPage1.insertGrantor(GrantorName);
@@ -116,7 +116,7 @@ public class validateLimitReached extends SeleniumInitializer {
         newExplorerPage1.clickOnNewRunsheetButton();
         //Create Runsheet Name
         Calendar now = Calendar.getInstance();
-        newExplorerPage1.insertNewRunsheetName("Max_Usage_Reached_Downloads "+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+        newExplorerPage1.insertNewRunsheetName(LimitNewRunsheet+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
         newExplorerPage1.clickOnSaveRunsheetButton();
         //Success Message
         Assert.assertTrue(newExplorerPage1.isSuccessMessageDisplayed("Runsheet has been successfully saved."), "The new runsheet could not be added");

@@ -60,7 +60,12 @@
             <artifactId>selenium-server</artifactId>
             <version>3.11.0</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>4.0.9</version>
+            <scope>provided</scope>
+        </dependency>
         <!-- Manage browsers web drivers -->
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
