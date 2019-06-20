@@ -1,52 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="103" total="104" passed="1">
+<testng-results skipped="0" failed="0" ignored="104" total="105" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Regression test" duration-ms="159140" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T19:01:37Z">
+  <suite name="Regression test" duration-ms="106394" started-at="2019-06-20T16:31:45Z" finished-at="2019-06-20T16:33:31Z">
     <groups>
-      <group name="CH_Admin_BulksAction_Cancel_ChangeCompany">
-        <method signature="bulksActionsCancelChangeCompany.bulksActionsCancelChangeCompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="bulksActionsCancelChangeCompany" class="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
-      </group> <!-- CH_Admin_BulksAction_Cancel_ChangeCompany -->
-      <group name="Company_Management">
-        <method signature="bulksActionsCancelChangeCompany.bulksActionsCancelChangeCompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="bulksActionsCancelChangeCompany" class="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
-      </group> <!-- Company_Management -->
+      <group name="Contractor_Test">
+        <method signature="contractorExplorerSearchValidatesFields.contractorExplorerSearchValidatesFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="contractorExplorerSearchValidatesFields" class="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>
+      </group> <!-- Contractor_Test -->
       <group name="Regression">
-        <method signature="bulksActionsCancelChangeCompany.bulksActionsCancelChangeCompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="bulksActionsCancelChangeCompany" class="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+        <method signature="contractorExplorerSearchValidatesFields.contractorExplorerSearchValidatesFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="contractorExplorerSearchValidatesFields" class="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>
       </group> <!-- Regression -->
+      <group name="CH_Contractor_Explorer_Search_Validates_Fields">
+        <method signature="contractorExplorerSearchValidatesFields.contractorExplorerSearchValidatesFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="contractorExplorerSearchValidatesFields" class="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>
+      </group> <!-- CH_Contractor_Explorer_Search_Validates_Fields -->
     </groups>
-    <test name="FreeTrial_Test" duration-ms="319" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
-      <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch">
-        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.freeTrialTests.freeTrialExplorerSearch@1438d26]" name="setUpDirectory" is-config="true" duration-ms="314" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDirectory -->
-      </class> <!-- main.java.tests.freeTrialTests.freeTrialExplorerSearch -->
-    </test> <!-- FreeTrial_Test -->
-    <test name="PayGo_Test" duration-ms="319" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
-      <class name="main.java.tests.payGoTests.payGoExplorerSearch">
-        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.payGoTests.payGoExplorerSearch@43fe0e]" name="setUpDirectory" is-config="true" duration-ms="314" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDirectory -->
-      </class> <!-- main.java.tests.payGoTests.payGoExplorerSearch -->
-    </test> <!-- PayGo_Test -->
-    <test name="Contractor_Standard_Test" duration-ms="319" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
+    <test name="Contractor_Standard_Test" duration-ms="106074" started-at="2019-06-20T16:31:45Z" finished-at="2019-06-20T16:33:31Z">
       <class name="main.java.tests.loadCHMainPage">
-        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.loadCHMainPage@7dc304]" name="setUpDirectory" is-config="true" duration-ms="314" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
+        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.loadCHMainPage@729b1e]" name="setUpDirectory" is-config="true" duration-ms="164" started-at="2019-06-20T16:31:45Z" finished-at="2019-06-20T16:31:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDirectory -->
       </class> <!-- main.java.tests.loadCHMainPage -->
-    </test> <!-- Contractor_Standard_Test -->
-    <test name="Admin_Management_Test" duration-ms="159140" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T19:01:37Z">
-      <class name="main.java.tests.adminTests.assignMidlandMapsCounty">
-        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.adminTests.assignMidlandMapsCounty@1921e20]" name="setUpDirectory" is-config="true" duration-ms="314" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T18:58:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDirectory -->
-      </class> <!-- main.java.tests.adminTests.assignMidlandMapsCounty -->
-      <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany">
-        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="setUp" is-config="true" duration-ms="77680" started-at="2019-06-19T18:58:58Z" finished-at="2019-06-19T19:00:16Z">
+      <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="setUp" is-config="true" duration-ms="43349" started-at="2019-06-20T16:31:45Z" finished-at="2019-06-20T16:32:29Z">
           <params>
             <param index="0">
               <value>
@@ -67,7 +43,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="bulksActionsCancelChangeCompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="bulksActionsCancelChangeCompany" duration-ms="79319" started-at="2019-06-19T19:00:16Z" finished-at="2019-06-19T19:01:35Z">
+        <test-method status="PASS" signature="contractorExplorerSearchValidatesFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="contractorExplorerSearchValidatesFields" duration-ms="60752" started-at="2019-06-20T16:32:29Z" finished-at="2019-06-20T16:33:29Z">
           <params>
             <param index="0">
               <value>
@@ -76,40 +52,72 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[diplus2]]>
+                <![CDATA[adrojascontract]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[drillin6]]>
+                <![CDATA[DSCI7lsc1]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[DI Internal Acct]]>
+                <![CDATA[Andrews Abstract Plant]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[12691]]>
+                <![CDATA[Angelina]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bulksActionsCancelChangeCompany -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08]" name="tearDown" is-config="true" duration-ms="1798" started-at="2019-06-19T19:01:35Z" finished-at="2019-06-19T19:01:37Z">
+        </test-method> <!-- contractorExplorerSearchValidatesFields -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163]" name="tearDown" is-config="true" duration-ms="1777" started-at="2019-06-20T16:33:29Z" finished-at="2019-06-20T16:33:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=bulksActionsCancelChangeCompany status=SUCCESS method=bulksActionsCancelChangeCompany.bulksActionsCancelChangeCompany(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.bulksActionsCancelChangeCompany@1d6a08] output={null}]]]>
+                <![CDATA[[TestResult name=contractorExplorerSearchValidatesFields status=SUCCESS method=contractorExplorerSearchValidatesFields.contractorExplorerSearchValidatesFields(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorExplorerSearchValidatesFields@aac163] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- main.java.tests.adminTests.bulksActionsCancelChangeCompany -->
+      </class> <!-- main.java.tests.contractorTests.contractorExplorerSearchValidatesFields -->
+    </test> <!-- Contractor_Standard_Test -->
+    <test name="FreeTrial_Test" duration-ms="0" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+      <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch">
+        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.freeTrialTests.freeTrialExplorerSearch@8931cf]" name="setUpDirectory" is-config="true" duration-ms="0" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDirectory -->
+      </class> <!-- main.java.tests.freeTrialTests.freeTrialExplorerSearch -->
+    </test> <!-- FreeTrial_Test -->
+    <test name="PayGo_Test" duration-ms="1" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+      <class name="main.java.tests.payGoTests.payGoExplorerSearch">
+        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.payGoTests.payGoExplorerSearch@80503]" name="setUpDirectory" is-config="true" duration-ms="1" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDirectory -->
+      </class> <!-- main.java.tests.payGoTests.payGoExplorerSearch -->
+    </test> <!-- PayGo_Test -->
+    <test name="Admin_Management_Test" duration-ms="1" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+      <class name="main.java.tests.adminTests.validateCountyOnDemoMode">
+        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.adminTests.validateCountyOnDemoMode@31330c]" name="setUpDirectory" is-config="true" duration-ms="1" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDirectory -->
+      </class> <!-- main.java.tests.adminTests.validateCountyOnDemoMode -->
     </test> <!-- Admin_Management_Test -->
+    <test name="Midland_Maps_Test" duration-ms="0" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+      <class name="main.java.tests.adminTests.assignMidlandMapsCounty">
+        <test-method status="PASS" signature="setUpDirectory()[pri:0, instance:main.java.tests.adminTests.assignMidlandMapsCounty@1a7504c]" name="setUpDirectory" is-config="true" duration-ms="0" started-at="2019-06-20T16:33:31Z" finished-at="2019-06-20T16:33:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDirectory -->
+      </class> <!-- main.java.tests.adminTests.assignMidlandMapsCounty -->
+    </test> <!-- Midland_Maps_Test -->
   </suite> <!-- Regression test -->
 </testng-results>

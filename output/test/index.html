@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Regression_test">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">5 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Regression_test">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_test" title="main.java.tests.adminTests.bulksActionsCancelChangeCompany" hash-for-method="bulksActionsCancelChangeCompany(dev., diplus2, drillin6, DI Internal Acct, 12691)">bulksActionsCancelChangeCompany(dev., diplus2, drillin6, DI Internal Acct, 12691)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_test" title="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields" hash-for-method="contractorExplorerSearchValidatesFields(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina)">contractorExplorerSearchValidatesFields(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Regression_test -->
@@ -120,15 +120,15 @@
           <div class="suite-Regression_test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">main.java.tests.adminTests.bulksActionsCancelChangeCompany</span>
+              <span class="class-name">main.java.tests.contractorTests.contractorExplorerSearchValidatesFields</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="bulksActionsCancelChangeCompany(dev., diplus2, drillin6, DI Internal Acct, 12691)">
-                  </a> <!-- bulksActionsCancelChangeCompany(dev., diplus2, drillin6, DI Internal Acct, 12691) -->
-                  <span class="method-name">bulksActionsCancelChangeCompany</span>
-                  <span class="parameters">(dev., diplus2, drillin6, DI Internal Acct, 12691)</span>
+                  <a name="contractorExplorerSearchValidatesFields(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina)">
+                  </a> <!-- contractorExplorerSearchValidatesFields(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina) -->
+                  <span class="method-name">contractorExplorerSearchValidatesFields</span>
+                  <span class="parameters">(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,13 +142,13 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;4&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression test&quot; parallel=&quot;tests&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression test&quot; parallel=&quot;tests&quot;&gt;
   &lt;groups&gt;
     &lt;run&gt;
-      &lt;include name=&quot;CH_Admin_BulksAction_Cancel_ChangeCompany&quot;/&gt;
+      &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
     &lt;/run&gt;
   &lt;/groups&gt;
-  &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;Contractor_Standard_Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Contractor_Standard_Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;myCompany&quot; value=&quot;Gap_Tester&quot;/&gt;
     &lt;parameter name=&quot;runsheetName&quot; value=&quot;New_Runsheet&quot;/&gt;
     &lt;parameter name=&quot;emailUserName&quot; value=&quot;test_%d@wearegap.com&quot;/&gt;
@@ -180,6 +180,7 @@
     &lt;parameter name=&quot;standardUserRecordNumber&quot; value=&quot;00253448&quot;/&gt;
     &lt;parameter name=&quot;standardUserName&quot; value=&quot;diplus8&quot;/&gt;
     &lt;parameter name=&quot;totalSearchesByTypeBBVolumePage&quot; value=&quot;1.00&quot;/&gt;
+    &lt;parameter name=&quot;contractorEnhancedClerkCounty&quot; value=&quot;Angelina&quot;/&gt;
     &lt;parameter name=&quot;contractorCounty&quot; value=&quot;Andrews Abstract Plant&quot;/&gt;
     &lt;parameter name=&quot;passwordToLogIn&quot; value=&quot;drillin6&quot;/&gt;
     &lt;parameter name=&quot;standardUserPage&quot; value=&quot;390&quot;/&gt;
@@ -198,7 +199,7 @@
     &lt;parameter name=&quot;brokerBoxIndexBook&quot; value=&quot;0001&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;CH_Admin_BulksAction_Cancel_ChangeCompany&quot;/&gt;
+        &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -217,9 +218,10 @@
       &lt;class name=&quot;main.java.tests.adminTests.validateMetricsByStandard&quot;/&gt;
       &lt;class name=&quot;main.java.tests.contractorTests.contractorBrokerBoxSearch&quot;/&gt;
       &lt;class name=&quot;main.java.tests.adminTests.validateMetricsByContractorByBrokerBox&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorExplorerSearchValidatesFields&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Contractor_Standard_Test --&gt;
-  &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;FreeTrial_Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;FreeTrial_Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;organizationFreeTrial&quot; value=&quot;Organization FreeTrial&quot;/&gt;
     &lt;parameter name=&quot;emailUserNameFreeTrial&quot; value=&quot;rojasadrian06@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;county&quot; value=&quot;Andrews Abstract Plant&quot;/&gt;
@@ -253,7 +255,7 @@
     &lt;parameter name=&quot;numberOfUserFreeTrialToCreate&quot; value=&quot;1&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;CH_Admin_BulksAction_Cancel_ChangeCompany&quot;/&gt;
+        &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -267,7 +269,7 @@
       &lt;class name=&quot;main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FreeTrial_Test --&gt;
-  &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;PayGo_Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;PayGo_Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;zipCode&quot; value=&quot;33463&quot;/&gt;
     &lt;parameter name=&quot;payGoPassword&quot; value=&quot;As123456789&quot;/&gt;
     &lt;parameter name=&quot;city&quot; value=&quot;WPB&quot;/&gt;
@@ -310,7 +312,7 @@
     &lt;parameter name=&quot;runsheetNamePayGo&quot; value=&quot;New_Runsheet_PG&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;CH_Admin_BulksAction_Cancel_ChangeCompany&quot;/&gt;
+        &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
@@ -325,14 +327,12 @@
       &lt;class name=&quot;main.java.tests.payGoTests.payGoMidlandMapsSearch&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- PayGo_Test --&gt;
-  &lt;test thread-count=&quot;4&quot; verbose=&quot;0&quot; name=&quot;Admin_Management_Test&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Admin_Management_Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;parameter name=&quot;zipCode&quot; value=&quot;33463&quot;/&gt;
     &lt;parameter name=&quot;superUserCounty&quot; value=&quot;Bandera&quot;/&gt;
     &lt;parameter name=&quot;myCompanyName&quot; value=&quot;Gap&quot;/&gt;
-    &lt;parameter name=&quot;searchMidlandMapsCountyName&quot; value=&quot;Irion Midland Maps&quot;/&gt;
     &lt;parameter name=&quot;county&quot; value=&quot;Andrews Abstract Plant&quot;/&gt;
     &lt;parameter name=&quot;totalAddedToRunsheet&quot; value=&quot;3.00&quot;/&gt;
-    &lt;parameter name=&quot;countyType&quot; value=&quot;Midland maps&quot;/&gt;
     &lt;parameter name=&quot;emailUserNamePayGo&quot; value=&quot;adrojas@wearegap.com&quot;/&gt;
     &lt;parameter name=&quot;totalDocumentsViewed&quot; value=&quot;1.00&quot;/&gt;
     &lt;parameter name=&quot;totalRemovedFromRunsheet&quot; value=&quot;2.00&quot;/&gt;
@@ -360,7 +360,6 @@
     &lt;parameter name=&quot;superUserPassword&quot; value=&quot;diplus1&quot;/&gt;
     &lt;parameter name=&quot;emailUserName&quot; value=&quot;test_%d@wearegap.com&quot;/&gt;
     &lt;parameter name=&quot;numberOfUserToCreate&quot; value=&quot;1&quot;/&gt;
-    &lt;parameter name=&quot;totalSearchesByCountyMidlandMaps&quot; value=&quot;2.00&quot;/&gt;
     &lt;parameter name=&quot;city&quot; value=&quot;WPB&quot;/&gt;
     &lt;parameter name=&quot;yearExpirationDate&quot; value=&quot;2020&quot;/&gt;
     &lt;parameter name=&quot;payGoURL&quot; value=&quot;https://app.%sdrillinginfo.com/courthouse/subscription/#/&quot;/&gt;
@@ -368,19 +367,15 @@
     &lt;parameter name=&quot;countyOnDemoMode&quot; value=&quot;Burleson&quot;/&gt;
     &lt;parameter name=&quot;legalNameCC&quot; value=&quot;New PayGo Automated Test User&quot;/&gt;
     &lt;parameter name=&quot;myCompanyRunsheetName&quot; value=&quot;New_Company_Runsheet&quot;/&gt;
-    &lt;parameter name=&quot;countyMidlandMaps&quot; value=&quot;Andrews Midland Maps&quot;/&gt;
     &lt;parameter name=&quot;demoRunsheetName&quot; value=&quot;Demo_Runsheet&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;parameter name=&quot;organizationPayGo&quot; value=&quot;Organization PayGo&quot;/&gt;
-    &lt;parameter name=&quot;searchMidlandMapsCountyYear&quot; value=&quot;1959&quot;/&gt;
     &lt;parameter name=&quot;cvv&quot; value=&quot;1234&quot;/&gt;
     &lt;parameter name=&quot;totalSearchesByCounty&quot; value=&quot;4.00&quot;/&gt;
     &lt;parameter name=&quot;address1&quot; value=&quot;New Address&quot;/&gt;
     &lt;parameter name=&quot;limitReachedCounty&quot; value=&quot;Burleson Abstract Plant&quot;/&gt;
-    &lt;parameter name=&quot;multipleCountySearchMidlandMapsCountyName&quot; value=&quot;Andrews Midland Maps,Crane Midland Maps,Eddy E. Midland Maps,Eddy W. Midland Maps,Glasscock Midland Maps,Howard Midland Maps,Irion Midland Maps,Loving Reeves N. Midland Maps,Midland Midland Maps,Reagan Midland Maps,Reeves C. Midland Maps,Reeves S. Midland Maps,Ward Midland Maps&quot;/&gt;
     &lt;parameter name=&quot;userName&quot; value=&quot;newtester_%d&quot;/&gt;
     &lt;parameter name=&quot;url&quot; value=&quot;https://app.%sdrillinginfo.com/courthouse/&quot;/&gt;
-    &lt;parameter name=&quot;totalDownloadMidlandMaps&quot; value=&quot;2.00&quot;/&gt;
     &lt;parameter name=&quot;numberOfUserPayGoToCreate&quot; value=&quot;1&quot;/&gt;
     &lt;parameter name=&quot;environment&quot; value=&quot;dev.&quot;/&gt;
     &lt;parameter name=&quot;monthExpirationDate&quot; value=&quot;10&quot;/&gt;
@@ -389,18 +384,10 @@
     &lt;parameter name=&quot;standAloneApp&quot; value=&quot;false&quot;/&gt;
     &lt;groups&gt;
       &lt;run&gt;
-        &lt;include name=&quot;CH_Admin_BulksAction_Cancel_ChangeCompany&quot;/&gt;
+        &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
       &lt;/run&gt;
     &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;main.java.tests.adminTests.assignMidlandMapsCounty&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsAssign&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsSearch&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsUnassign&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.adminTests.unassignMidlandMapsCounty&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.contractorTests.contractorCancelDownloadMidlandMap&quot;/&gt;
-      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapShowCoverage&quot;/&gt;
       &lt;class name=&quot;main.java.tests.adminTests.validateCountyOnDemoMode&quot;/&gt;
       &lt;class name=&quot;main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode&quot;/&gt;
       &lt;class name=&quot;main.java.tests.adminTests.validateCountyDemoModeExpiresToday&quot;/&gt;
@@ -417,6 +404,43 @@
       &lt;class name=&quot;main.java.tests.contractorTests.contractorRunsheetSharingFullAccess&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Admin_Management_Test --&gt;
+  &lt;test thread-count=&quot;1&quot; verbose=&quot;0&quot; name=&quot;Midland_Maps_Test&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;superUserPassword&quot; value=&quot;diplus1&quot;/&gt;
+    &lt;parameter name=&quot;contractorUserName&quot; value=&quot;adrojascontract&quot;/&gt;
+    &lt;parameter name=&quot;totalSearchesByCountyMidlandMaps&quot; value=&quot;2.00&quot;/&gt;
+    &lt;parameter name=&quot;searchMidlandMapsCountyName&quot; value=&quot;Irion Midland Maps&quot;/&gt;
+    &lt;parameter name=&quot;myCompanyName&quot; value=&quot;Gap&quot;/&gt;
+    &lt;parameter name=&quot;contractorName&quot; value=&quot;Test Contract&quot;/&gt;
+    &lt;parameter name=&quot;countyType&quot; value=&quot;Midland maps&quot;/&gt;
+    &lt;parameter name=&quot;multipleCountySearchMidlandMapsCountyName&quot; value=&quot;Andrews Midland Maps,Crane Midland Maps,Eddy E. Midland Maps,Eddy W. Midland Maps,Glasscock Midland Maps,Howard Midland Maps,Irion Midland Maps,Loving Reeves N. Midland Maps,Midland Midland Maps,Reagan Midland Maps,Reeves C. Midland Maps,Reeves S. Midland Maps,Ward Midland Maps&quot;/&gt;
+    &lt;parameter name=&quot;passwordToLogIn&quot; value=&quot;drillin6&quot;/&gt;
+    &lt;parameter name=&quot;contractorPassword&quot; value=&quot;DSCI7lsc1&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://app.%sdrillinginfo.com/courthouse/&quot;/&gt;
+    &lt;parameter name=&quot;totalDownloadMidlandMaps&quot; value=&quot;2.00&quot;/&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;dev.&quot;/&gt;
+    &lt;parameter name=&quot;superUserName&quot; value=&quot;diplus1&quot;/&gt;
+    &lt;parameter name=&quot;companyID&quot; value=&quot;12691&quot;/&gt;
+    &lt;parameter name=&quot;countyMidlandMaps&quot; value=&quot;Andrews Midland Maps&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;usernameToLogIn&quot; value=&quot;diplus2&quot;/&gt;
+    &lt;parameter name=&quot;companyAcct&quot; value=&quot;DI Internal Acct&quot;/&gt;
+    &lt;parameter name=&quot;searchMidlandMapsCountyYear&quot; value=&quot;1959&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;include name=&quot;CH_Contractor_Explorer_Search_Validates_Fields&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;main.java.tests.adminTests.assignMidlandMapsCounty&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsAssign&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsSearch&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapsUnassign&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.adminTests.unassignMidlandMapsCounty&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorCancelDownloadMidlandMap&quot;/&gt;
+      &lt;class name=&quot;main.java.tests.contractorTests.contractorMidlandMapShowCoverage&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Midland_Maps_Test --&gt;
 &lt;/suite&gt; &lt;!-- Regression test --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -428,7 +452,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Contractor_Standard_Test (15 classes)</span>
+                <span class="test-name">Contractor_Standard_Test (16 classes)</span>
               </li>
               <li>
                 <span class="test-name">FreeTrial_Test (8 classes)</span>
@@ -437,7 +461,10 @@
                 <span class="test-name">PayGo_Test (9 classes)</span>
               </li>
               <li>
-                <span class="test-name">Admin_Management_Test (22 classes)</span>
+                <span class="test-name">Admin_Management_Test (14 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Midland_Maps_Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -448,18 +475,18 @@
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="test-group">
-              <span class="test-group-name">CH_Admin_BulksAction_Cancel_ChangeCompany</span>
+              <span class="test-group-name">CH_Contractor_Explorer_Search_Validates_Fields</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">bulksActionsCancelChangeCompany</span>
+                <span class="method-in-group-name">contractorExplorerSearchValidatesFields</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
             <div class="test-group">
-              <span class="test-group-name">Company_Management</span>
+              <span class="test-group-name">Contractor_Test</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">bulksActionsCancelChangeCompany</span>
+                <span class="method-in-group-name">contractorExplorerSearchValidatesFields</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -467,7 +494,7 @@
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">bulksActionsCancelChangeCompany</span>
+                <span class="method-in-group-name">contractorExplorerSearchValidatesFields</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -489,9 +516,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'bulksActionsCancelChangeCompany')
-data.setCell(0, 2, 'main.java.tests.adminTests.bulksActionsCancelChangeCompany')
-data.setCell(0, 3, 79319);
+data.setCell(0, 1, 'contractorExplorerSearchValidatesFields')
+data.setCell(0, 2, 'main.java.tests.contractorTests.contractorExplorerSearchValidatesFields')
+data.setCell(0, 3, 60752);
 window.suiteTableData['Regression_test']= { tableData: data, tableDiv: 'times-div-Regression_test'}
 return data;
 }
@@ -511,153 +538,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Regression_test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">103 ignored methods</span>
+            <span class="header-content">104 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">main.java.tests.contractorTests.contractorDownloadRunsheet</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">contractorDownloadRunsheet</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByFreeTrial</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">validateMetricsByFreeTrial</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorPDFViewer</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorPDFViewer</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialAddNewRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">freeTrialAddNewRunsheet</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.assignMidlandMapsCounty</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">assignMidlandMapsCounty</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoMidlandMapsSearch</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">payGoMidlandMapsSearch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.bulksActionsCancelChangeCompany</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingFullAccess</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">contractorRunsheetSharingFullAccess</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorBrokerBoxSearch</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">contractorBrokerBoxSearch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByPayGo</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">validateMetricsByPayGo</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapsSearch</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorMidlandMapsSearch</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.superUserApproveRequestCopyRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">superUserApproveRequestCopyRunsheet</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorAddNewRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">contractorAddNewRunsheet</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyOnDemoMode</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateCountyOnDemoMode</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyDemoModeExpiresToday</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateCountyDemoModeExpiresToday</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialDownloadRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">freeTrialDownloadRunsheet</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoCH1089</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">payGoCH1089</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -673,41 +560,36 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.superUserAddSecondRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoCH1089</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">superUserAddSecondRunsheet</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialExplorerSearch</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">freeTrialExplorerSearch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.loadCHMainPage</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">loadCHMainPage</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyDemoModeExpired</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateCountyDemoModeExpired</span>
+                <span class="ignored-method-name">payGoCH1089</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorExplorerSearch</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorPDFViewer</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorExplorerSearch</span>
+                <span class="ignored-method-name">contractorPDFViewer</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoDownloadRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">payGoDownloadRunsheet</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.superUserDenyRequestCopyRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">superUserDenyRequestCopyRunsheet</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -723,6 +605,146 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorBrokerBoxSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">contractorBrokerBoxSearch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">payGoRemoveDocsFromRunsheet</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorAddNewRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">contractorAddNewRunsheet</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validateLimitReached</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">validateLimitReached</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapsAssign</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">contractorMidlandMapsAssign</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.superUserAddNewRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">superUserAddNewRunsheet</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialExplorerSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">freeTrialExplorerSearch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoRenameRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">payGoRenameRunsheet</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">contractorRunsheetSharingNewRequestCopy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapsSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">contractorMidlandMapsSearch</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapShowCoverage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">contractorMidlandMapShowCoverage</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.loadCHMainPage</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">loadCHMainPage</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.superUserAddSecondRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">superUserAddSecondRunsheet</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorExplorerSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">contractorExplorerSearch</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialRenameRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">freeTrialRenameRunsheet</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">validateMetricsByContractorByMidlandMaps</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">main.java.tests.standardTests.priorReferenceSearch</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpDirectory</span>
@@ -732,18 +754,18 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoAddNewRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingFullAccess</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">payGoAddNewRunsheet</span>
-                <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">contractorRunsheetSharingFullAccess</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.superUserDenyRequestCopyRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.adminTests.unassignMidlandMapsCounty</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">superUserDenyRequestCopyRunsheet</span>
+                <span class="ignored-method-name">unassignMidlandMapsCounty</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -768,18 +790,30 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingNoAccess</span>
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoExplorerSearch</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">contractorRunsheetSharingNoAccess</span>
+                <span class="ignored-method-name">payGoExplorerSearch</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoDownloadRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyOnDemoMode</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">payGoDownloadRunsheet</span>
+                <span class="ignored-method-name">validateCountyOnDemoMode</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.assignMidlandMapsCounty</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">assignMidlandMapsCounty</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyDemoModeExpired</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateCountyDemoModeExpired</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -795,18 +829,27 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapShowCoverage</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorPrintRunsheet</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorMidlandMapShowCoverage</span>
+                <span class="ignored-method-name">contractorPrintRunsheet</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorPrintRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByFreeTrial</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorPrintRunsheet</span>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">validateMetricsByFreeTrial</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoPrintRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">payGoPrintRunsheet</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -822,9 +865,9 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.unassignMidlandMapsCounty</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">unassignMidlandMapsCounty</span>
+                <span class="ignored-method-name">contractorNotDownloadsPrintsCountyOnDemoMode</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -840,9 +883,9 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorCancelDownloadMidlandMap</span>
+              <span class="ignored-class-name">main.java.tests.adminTests.validateCountyDemoModeExpiresToday</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorCancelDownloadMidlandMap</span>
+                <span class="ignored-method-name">validateCountyDemoModeExpiresToday</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -858,99 +901,18 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorExplorerSearchValidatesFields</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">payGoRemoveDocsFromRunsheet</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.superUserAddNewRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">superUserAddNewRunsheet</span>
-                <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorMidlandMapsAssign</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorMidlandMapsAssign</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy</span>
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingNoAccess</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
-                <span class="ignored-method-name">contractorRunsheetSharingNewRequestCopy</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validatePrintsAndDownloads</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">validatePrintsAndDownloads</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">validateMetricsByContractorByMidlandMaps</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">contractorNotDownloadsPrintsCountyOnDemoMode</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByStandard</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">validateMetricsByStandard</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialRenameRunsheet</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">freeTrialRenameRunsheet</span>
-                <br/>
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoExplorerSearch</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">payGoExplorerSearch</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.adminTests.validateLimitReached</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">setUpDirectory</span>
-                <br/>
-                <span class="ignored-method-name">validateLimitReached</span>
+                <span class="ignored-method-name">contractorRunsheetSharingNoAccess</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -964,6 +926,60 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validatePrintsAndDownloads</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">validatePrintsAndDownloads</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialDownloadRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">freeTrialDownloadRunsheet</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoMidlandMapsSearch</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">payGoMidlandMapsSearch</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.bulksActionsCancelChangeCompany</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">bulksActionsCancelChangeCompany</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByStandard</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validateMetricsByStandard</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.adminTests.validateMetricsByPayGo</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+                <span class="ignored-method-name">validateMetricsByPayGo</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpDirectory</span>
@@ -973,18 +989,36 @@ return data;
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoRenameRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.freeTrialTests.freeTrialAddNewRunsheet</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
-                <span class="ignored-method-name">payGoRenameRunsheet</span>
+                <span class="ignored-method-name">freeTrialAddNewRunsheet</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">main.java.tests.payGoTests.payGoPrintRunsheet</span>
+              <span class="ignored-class-name">main.java.tests.adminTests.superUserApproveRequestCopyRunsheet</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">payGoPrintRunsheet</span>
+                <span class="ignored-method-name">superUserApproveRequestCopyRunsheet</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.contractorTests.contractorCancelDownloadMidlandMap</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">contractorCancelDownloadMidlandMap</span>
+                <br/>
+                <span class="ignored-method-name">setUpDirectory</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">main.java.tests.payGoTests.payGoAddNewRunsheet</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">payGoAddNewRunsheet</span>
                 <br/>
                 <span class="ignored-method-name">setUpDirectory</span>
                 <br/>
@@ -1005,40 +1039,47 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">main.java.tests.adminTests.assignMidlandMapsCounty</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUpDirectory</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              <div class="chronological-class-name">main.java.tests.contractorTests.contractorExplorerSearchValidatesFields</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(Chrome, https://app.%sdrillinginfo.com/courthouse/, dev.)</span>
+                <span class="method-start">190 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">contractorExplorerSearchValidatesFields(dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, Angelina)</span>
+                <span class="method-start">43540 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=contractorExplorerSearchValidatesFields status=SUCCESS method=contractorExplorerSea...)</span>
+                <span class="method-start">104294 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">main.java.tests.freeTrialTests.freeTrialExplorerSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpDirectory</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">106328 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">main.java.tests.payGoTests.payGoExplorerSearch</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setUpDirectory</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">106337 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">main.java.tests.adminTests.bulksActionsCancelChangeCompany</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(Chrome, https://app.%sdrillinginfo.com/courthouse/, dev.)</span>
-                <span class="method-start">340 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">bulksActionsCancelChangeCompany(dev., diplus2, drillin6, DI Internal Acct, 12691)</span>
-                <span class="method-start">78020 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=bulksActionsCancelChangeCompany status=SUCCESS method=bulksActionsCancelChangeCompa...)</span>
-                <span class="method-start">157340 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">main.java.tests.adminTests.validateCountyOnDemoMode</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDirectory</span>
+                <span class="method-start">106347 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">main.java.tests.adminTests.assignMidlandMapsCounty</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpDirectory</span>
+                <span class="method-start">106393 ms</span>
+              </div> <!-- configuration-test before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

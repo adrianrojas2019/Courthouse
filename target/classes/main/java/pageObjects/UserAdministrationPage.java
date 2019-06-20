@@ -316,7 +316,7 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.type(SEARCH_USER_FIELD,searchUser);
         //wait until spinner is gone
-        webDriverCommands.waitForElementInVisible(SPINNER);
+        webDriverCommands.waitForElementInVisible(SPINNER,90);
     }
 
     public String getTotalItems(){

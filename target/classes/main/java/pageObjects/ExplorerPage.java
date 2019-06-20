@@ -33,9 +33,27 @@ public class ExplorerPage extends PageObjects {
     private final By PRIOR_REFERENCE_TITLE = By.xpath("//h4[text()='PRIOR REFERENCE']");
     private final By GRANTOR_LABEL = By.cssSelector("label[for='grantor']");
     private final By GRANTOR = By.cssSelector("input[name='grantor']");
+    private final By GRANTEE = By.cssSelector("input[name='grantee']");
+    private final By GRANTOR_GRANTEE = By.cssSelector("input[name='granteeorgrantor']");
     private final By VOLUME = By.cssSelector("input[name='volume']");
     private final By PAGE = By.cssSelector("input[name='page']");
+    private final By INSTRUMENT_NUMBER = By.cssSelector("input[name='instNumber']");
+    private final By BOOK_TYPE = By.cssSelector("select[name='bookType']");
+    private final By ABSTRACT = By.cssSelector("input[name='abstract']");
+    private final By SURVEY = By.cssSelector("input[name='survey']");
+    private final By SECTION = By.cssSelector("input[name='section']");
+    private final By TOWNSHIP = By.cssSelector("input[name='township']");
+    private final By RANGE_BLOCK = By.cssSelector("input[name='range']");
+    private final By QUARTER_CALL = By.cssSelector("input[name='quarterCall']");
+    private final By SUBDIVISION = By.cssSelector("input[name='subdivision']");
+    private final By LOT = By.cssSelector("input[name='lot']");
+    private final By BLOCK = By.cssSelector("input[name='block']");
+    private final By SLIDER = By.cssSelector("div.ngrs-runner");
+    private final By ACRES_MIN = By.cssSelector("input[ng-model='modelTypeMin']");
+    private final By ACRES_MAX = By.cssSelector("input[ng-model='modelTypeMax']");
+    private final By INST_TYPE = By.cssSelector("input[name='instType']");
     private final By RECORD_NUMBER = By.cssSelector("input[name='instNumber']");
+    private final By PROPERTY_DESCRIPTION = By.cssSelector("input[name='propertyDescription']");
     private final By APPLY_BUTTON = By.cssSelector("aside[ui-view='filters'] button[class='btn btn-primary']");
     private final By PRIOR_REFERENCE_APPLY_BUTTON = By.cssSelector("div[class='form-group pull-right filter-buttons'] button[class='btn btn-primary'][ng-disabled='isRequired || disabledButton']");
     private final By FIRST_CHECKBOX = By.cssSelector("div.ngCell.col0.colt0");
@@ -105,6 +123,7 @@ public class ExplorerPage extends PageObjects {
 
     private final By ACTIVITY_ROW = By.xpath("//th[@class='metrics-date-range-section col-md-12']//div[@class='diDateRangePickerContainer']");
     private final By FROM_DATE = By.cssSelector("input[ng-model='diDateRangePicker.dateFrom']");
+    private final By FROM_TO = By.cssSelector("input[ng-model='diDateRangePicker.dateTo']");
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
     private final By DOCUMENTS_DOWNLOADED = By.cssSelector("tr:nth-child(1) > td.col-md-2.ng-binding");
     private final By DOCUMENTS_PRINTED = By.cssSelector("tr:nth-child(2) > td.col-md-2.ng-binding");
@@ -332,7 +351,192 @@ public class ExplorerPage extends PageObjects {
     public boolean isSearchResultsWithDocuments(){
         return webDriverCommands.waitForElementPresent(FIRST_CHECKBOX,30);
     }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isGrantorFieldVisible(){
+        return webDriverCommands.waitForElementPresent(GRANTOR,30);
+    }
 
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isGranteeFieldVisible(){
+        return webDriverCommands.waitForElementPresent(GRANTEE,30);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isGrantorOrGranteeFieldVisible(){
+        return webDriverCommands.waitForElementPresent(GRANTOR_GRANTEE,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isVolumeFieldVisible(){
+        return webDriverCommands.waitForElementPresent(VOLUME,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isPageFieldVisible(){
+        return webDriverCommands.waitForElementPresent(PAGE,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isInstrumentNumberFieldVisible(){
+        return webDriverCommands.waitForElementPresent(INSTRUMENT_NUMBER,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isBookTypeFieldVisible(){
+        return webDriverCommands.waitForElementPresent(BOOK_TYPE,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isInstrumentTypeFieldVisible(){
+        return webDriverCommands.waitForElementPresent(INST_TYPE,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isDateFromFieldVisible(){
+        return webDriverCommands.waitForElementPresent(FROM_DATE,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isDateToFieldVisible(){
+        return webDriverCommands.waitForElementPresent(FROM_TO,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isPropertyDescriptionFieldVisible(){
+        return webDriverCommands.waitForElementPresent(PROPERTY_DESCRIPTION,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isAbstractFieldVisible(){
+        return webDriverCommands.waitForElementPresent(ABSTRACT,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isSurveyFieldVisible(){
+        return webDriverCommands.waitForElementPresent(SURVEY,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isSectionFieldVisible(){
+        return webDriverCommands.waitForElementPresent(SECTION,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isTownshipFieldVisible(){
+        return webDriverCommands.waitForElementPresent(TOWNSHIP,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isRangeBlockFieldVisible(){
+        return webDriverCommands.waitForElementPresent(RANGE_BLOCK,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isQuarterCallFieldVisible(){
+        return webDriverCommands.waitForElementPresent(QUARTER_CALL,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isSubdivisionFieldVisible(){
+        return webDriverCommands.waitForElementPresent(SUBDIVISION,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isLotFieldVisible(){
+        return webDriverCommands.waitForElementPresent(LOT,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isBlockFieldVisible(){
+        return webDriverCommands.waitForElementPresent(BLOCK,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isSliderFieldVisible(){
+        return webDriverCommands.waitForElementPresent(SLIDER,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isAcresMinFieldVisible(){
+        return webDriverCommands.waitForElementPresent(ACRES_MIN,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isAcresMaxFieldVisible(){
+        return webDriverCommands.waitForElementPresent(ACRES_MAX,30);
+    }
     /**
     *this method calls the waitForElementPresent method in webDriverCommands class.
     *
