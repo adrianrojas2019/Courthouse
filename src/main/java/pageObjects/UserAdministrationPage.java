@@ -315,6 +315,7 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnSearchUser(String searchUser){
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.type(SEARCH_USER_FIELD,searchUser);
+        webDriverCommands.waitSomeSeconds(3);
         //wait until spinner is gone
         webDriverCommands.waitForElementInVisible(SPINNER,90);
     }

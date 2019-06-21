@@ -19,6 +19,7 @@ public class loadCHMainPage extends SeleniumInitializer {
      */
     public void loadCHMainPage(String environment, String usernameToLogIn, String passwordToLogIn) throws InterruptedException {
 
+        test = extent.createTest("CH_Login_Load_CH_Main_Page","Test loading Main Page");
         //Login into Gallery
         loginTest loginIntoCHMainPageTest = new loginTest();
         CHMainPage newCHMainPage = loginIntoCHMainPageTest.loginSuccessfullyGalleryTest(environment,usernameToLogIn, passwordToLogIn, getDriverInstance());

@@ -47,7 +47,7 @@ public class ExtentReportsClass
         // General information releated to application
         extent.setSystemInfo("Application Name", "DI Test");
         extent.setSystemInfo("User Name", "Adrian R");
-        extent.setSystemInfo("Envirnoment", "Dev");
+        extent.setSystemInfo("Environment", "Dev");
     }
 
     @AfterTest
@@ -57,10 +57,10 @@ public class ExtentReportsClass
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.chrome.driver","C://AutomationFramework//Drivers//chromedriver.exe");
+       /* System.setProperty("webdriver.chrome.driver","C://AutomationFramework//Drivers//chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("http://www.google.com/");
+        driver.get("http://www.google.com/");*/
     }
 
     @Test
