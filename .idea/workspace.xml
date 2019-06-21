@@ -10,130 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/assignMidlandMapsCounty.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/assignMidlandMapsCounty.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/bulksActionsCancelChangeCompany.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/bulksActionsCancelChangeCompany.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorAddNewRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorAddNewRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorBrokerBoxSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorBrokerBoxSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorCancelDownloadMidlandMap.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorCancelDownloadMidlandMap.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorDownloadRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorDownloadRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorExplorerSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorExplorerSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorExplorerSearchValidatesFields.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorExplorerSearchValidatesFields.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapShowCoverage.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapShowCoverage.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsAssign.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsAssign.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsUnassign.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorMidlandMapsUnassign.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorNotDownloadsPrintsCountyOnDemoMode.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorNotDownloadsPrintsCountyOnDemoMode.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPrintRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPrintRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRemoveDocsFromRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRemoveDocsFromRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRenameRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRenameRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingFullAccess.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingFullAccess.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingNewRequestCopy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingNewRequestCopy.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingNoAccess.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingNoAccess.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingRequestCopy.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorRunsheetSharingRequestCopy.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorValidatePrintsAndDownloads.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorValidatePrintsAndDownloads.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialAddNewRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialAddNewRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialDownloadRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialDownloadRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialExplorerSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialExplorerSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialMidlandMapsSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialPrintRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialPrintRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialRemoveDocsFromRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialRemoveDocsFromRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialRenameRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialRenameRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoAddNewRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoAddNewRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoCH1089.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoCH1089.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoDownloadRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoDownloadRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoExplorerSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoExplorerSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoMidlandMapsSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoPrintRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoPrintRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoRemoveDocsFromRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoRemoveDocsFromRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoRenameRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/payGoRenameRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/priorReferenceSearch.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/priorReferenceSearch.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserAddNewRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserAddNewRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserAddSecondRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserAddSecondRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserApproveRequestCopyRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserApproveRequestCopyRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserDenyRequestCopyRunsheet.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/superUserDenyRequestCopyRunsheet.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/unassignMidlandMapsCounty.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/unassignMidlandMapsCounty.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpired.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpired.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpiresToday.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyDemoModeExpiresToday.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyOnDemoMode.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateCountyOnDemoMode.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateLimitReached.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateLimitReached.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractor.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractor.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractorByBrokerBox.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractorByBrokerBox.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractorByMidlandMaps.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByContractorByMidlandMaps.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByFreeTrial.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByFreeTrial.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByPayGo.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByPayGo.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByStandard.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByStandard.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validatePrintsAndDownloads.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validatePrintsAndDownloads.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" afterPath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.class" afterPath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/UserAdministrationPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/UserAdministrationPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.log" afterPath="$PROJECT_DIR$/logs/loadCHMainPage.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/extendReports/ExtentReportsClass.java" afterPath="$PROJECT_DIR$/src/main/java/extendReports/ExtentReportsClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.java" afterPath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/UserAdministrationPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/UserAdministrationPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -160,8 +37,8 @@
       <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+            <state relative-caret-position="2312">
+              <caret line="451" column="12" lean-forward="false" selection-start-line="451" selection-start-column="12" selection-end-line="451" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -192,12 +69,10 @@
       <file leaf-file-name="SeleniumInitializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
+            <state relative-caret-position="-260">
+              <caret line="45" column="61" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="45" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1904#1905#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -305,8 +180,8 @@
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/extendReports/ExtentReportsClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
         <option value="$PROJECT_DIR$/testNG.xml" />
       </list>
     </option>
@@ -787,7 +662,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java</url>
-          <line>63</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="304" />
         </line-breakpoint>
@@ -796,12 +671,6 @@
           <line>23</line>
           <properties />
           <option name="timeStamp" value="309" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="311" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1212,18 +1081,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="91" column="23" lean-forward="false" selection-start-line="91" selection-start-column="23" selection-end-line="91" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1904#1905#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -1232,10 +1089,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="45" column="61" lean-forward="false" selection-start-line="33" selection-start-column="7" selection-end-line="45" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="45" lean-forward="false" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        <state relative-caret-position="2312">
+          <caret line="451" column="12" lean-forward="false" selection-start-line="451" selection-start-column="12" selection-end-line="451" selection-end-column="12" />
           <folding />
         </state>
       </provider>

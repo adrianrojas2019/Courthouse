@@ -31,7 +31,7 @@ public class SeleniumInitializer extends SeleniumSetUp {
     @BeforeTest(alwaysRun = true)
     public void setUpDirectory() throws IOException {
         super.setUpDirectory();
-        //location of the extent report
+       /* //location of the extent report
         htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
         extent = new ExtentReports();  //create object of ExtentReports
         extent.attachReporter(htmlReporter);
@@ -43,12 +43,7 @@ public class SeleniumInitializer extends SeleniumSetUp {
         // General information releated to application
         extent.setSystemInfo("Application Name", "DI Courthouse");
         extent.setSystemInfo("User Name", "Adrian Rojas");
-        extent.setSystemInfo("Envirnoment", "Development");
-    }
-
-    @AfterTest
-    public void endReport() {
-        extent.flush();
+        extent.setSystemInfo("Envirnoment", "Development");*/
     }
 
     @BeforeMethod(alwaysRun = true)
@@ -61,7 +56,7 @@ public class SeleniumInitializer extends SeleniumSetUp {
     @AfterMethod(alwaysRun = true)
     public void tearDown(ITestResult result) throws Throwable {
 
-        if(result.getStatus() == ITestResult.FAILURE)
+       /* if(result.getStatus() == ITestResult.FAILURE)
         {
             //MarkupHelper is used to display the output in different colors
             test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
@@ -87,10 +82,9 @@ public class SeleniumInitializer extends SeleniumSetUp {
             test.log(Status.PASS, MarkupHelper.createLabel(result.getName()+" Test Case PASSED", ExtentColor.GREEN));
             //String screenshotPath = TakeScreenshot(driver, result.getName());
             //test.pass("Test Case Passed Snapshot is below " + test.addScreenCaptureFromPath(screenshotPath));
-        }
+        }*/
         super.tearDown(result);
-        extent.flush();
-        //driver.quit();
+        //extent.flush();
     }
 
     /*public static String TakeScreenshot(WebDriver driver, String screenshotName) throws IOException {
