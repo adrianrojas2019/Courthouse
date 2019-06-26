@@ -27,6 +27,7 @@ public class validateMetricsByFreeTrial extends SeleniumInitializer {
     */
     public void validateMetricsByFreeTrial(String firstNameFreeTrial, String lastNameFreeTrial, String userNameFreeTrial, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel, String totalRenamedFromRunsheet) throws InterruptedException {
 
+        test = extent.createTest("CH_Admin_Metrics_By_FreeTrial","Validate Metrics by FreeTrial");
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
 

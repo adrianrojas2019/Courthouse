@@ -1,11 +1,9 @@
 package main.java.tests.adminTests;
 
 import main.java.pageObjects.CHMainPage;
-import main.java.pageObjects.LoginPage;
 import main.java.pageObjects.UserAdministrationPage;
 import main.java.selenium.SeleniumInitializer;
 import main.java.tests.commonTests.loginTest;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;

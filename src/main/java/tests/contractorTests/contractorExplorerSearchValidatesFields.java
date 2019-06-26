@@ -3,9 +3,9 @@ package main.java.tests.contractorTests;
 import main.java.pageObjects.ExplorerPage;
 import main.java.selenium.SeleniumInitializer;
 import main.java.tests.commonTests.loginTest;
-import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+import org.testng.Assert;
 
 /**
  * Created by Adrian on 12/10/2018.
@@ -21,7 +21,7 @@ public class contractorExplorerSearchValidatesFields extends SeleniumInitializer
      */
     public void contractorExplorerSearchValidatesFields(String environment, String contractorUserName, String contractorPassword, String contractorCounty, String contractorEnhancedClerkCounty) throws InterruptedException {
 
-
+        //test = extent.createTest("CH_Contractor_Explorer_Search_Validates_Fields","Make sure that all fields are visibles for Abstract Plant/Enhanced Clerk County.");
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
         //Create page object
@@ -84,5 +84,9 @@ public class contractorExplorerSearchValidatesFields extends SeleniumInitializer
 
         Assert.assertTrue(newExplorerPage.isPropertyDescriptionFieldVisible(), "Explorer Search: Property Description Field is not present.");
         //missing validate the acress min/max fields and the slider
+        Assert.assertTrue(newExplorerPage.isSliderFieldVisible(), "Explorer Search: Slider Field is not present.");
+        Assert.assertTrue(newExplorerPage.isAcresMinFieldVisible(), "Explorer Search: Acres Min Field is not present.");
+        Assert.assertTrue(newExplorerPage.isAcresMaxFieldVisible(), "Explorer Search: Acres Max is not present.");
+
     }
 }

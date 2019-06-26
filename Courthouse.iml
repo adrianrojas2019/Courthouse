@@ -65,11 +65,11 @@
     <orderEntry type="library" name="Maven: xerces:xercesImpl:2.11.0" level="project" />
     <orderEntry type="library" name="Maven: xml-apis:xml-apis:1.4.01" level="project" />
     <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.19" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: com.aventstack:extentreports:4.0.5" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.freemarker:freemarker:2.3.23" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:mongodb-driver:3.3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:mongodb-driver-core:3.3.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.mongodb:bson:3.3.0" level="project" />
+    <orderEntry type="library" name="Maven: com.aventstack:extentreports:4.0.5" level="project" />
+    <orderEntry type="library" name="Maven: org.freemarker:freemarker:2.3.23" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver:3.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-core:3.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mongodb:bson:3.3.0" level="project" />
     <orderEntry type="library" name="Maven: io.github.bonigarcia:webdrivermanager:3.3.0" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.rauschig:jarchivelib:1.0.0" level="project" />

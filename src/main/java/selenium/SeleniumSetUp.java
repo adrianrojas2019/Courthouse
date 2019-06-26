@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestContext;
+import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import java.io.IOException;
@@ -21,7 +23,7 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 /**
  * Created by Adrian on 4/13/2018.
  */
-public class SeleniumSetUp {
+public abstract class SeleniumSetUp {
     protected WebDriver driver;
     protected String browserName = "";
 
@@ -48,8 +50,8 @@ public class SeleniumSetUp {
         name = nameList[(nameList.length-1)];
         Files.copy(Paths.get("chromedriver.log"), Paths.get("logs/"+name+".log"),REPLACE_EXISTING);
         Files.copy(((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE).toPath(), Paths.get("logs/"+name+".jpg"), REPLACE_EXISTING);
-        driver.quit();
-        super.finalize();
+//        driver.quit();
+//        super.finalize();
     }
 
     public void setUpDirectory() throws IOException {

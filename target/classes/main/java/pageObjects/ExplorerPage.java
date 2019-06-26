@@ -1,6 +1,5 @@
 package main.java.pageObjects;
 
-import net.sourceforge.htmlunit.corejs.javascript.regexp.SubString;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -366,7 +365,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isGranteeFieldVisible(){
-        return webDriverCommands.waitForElementPresent(GRANTEE,30);
+        return webDriverCommands.waitForElementPresent(GRANTEE,5);
     }
 
     /**
@@ -375,7 +374,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isGrantorOrGranteeFieldVisible(){
-        return webDriverCommands.waitForElementPresent(GRANTOR_GRANTEE,30);
+        return webDriverCommands.waitForElementPresent(GRANTOR_GRANTEE,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -383,7 +382,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isVolumeFieldVisible(){
-        return webDriverCommands.waitForElementPresent(VOLUME,30);
+        return webDriverCommands.waitForElementPresent(VOLUME,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -391,7 +390,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isPageFieldVisible(){
-        return webDriverCommands.waitForElementPresent(PAGE,30);
+        return webDriverCommands.waitForElementPresent(PAGE,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -399,7 +398,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isInstrumentNumberFieldVisible(){
-        return webDriverCommands.waitForElementPresent(INSTRUMENT_NUMBER,30);
+        return webDriverCommands.waitForElementPresent(INSTRUMENT_NUMBER,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -407,7 +406,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isBookTypeFieldVisible(){
-        return webDriverCommands.waitForElementPresent(BOOK_TYPE,30);
+        return webDriverCommands.waitForElementPresent(BOOK_TYPE,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -415,7 +414,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isInstrumentTypeFieldVisible(){
-        return webDriverCommands.waitForElementPresent(INST_TYPE,30);
+        return webDriverCommands.waitForElementPresent(INST_TYPE,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -423,7 +422,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isDateFromFieldVisible(){
-        return webDriverCommands.waitForElementPresent(FROM_DATE,30);
+        return webDriverCommands.waitForElementPresent(FROM_DATE,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -431,7 +430,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isDateToFieldVisible(){
-        return webDriverCommands.waitForElementPresent(FROM_TO,30);
+        return webDriverCommands.waitForElementPresent(FROM_TO,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -439,7 +438,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isPropertyDescriptionFieldVisible(){
-        return webDriverCommands.waitForElementPresent(PROPERTY_DESCRIPTION,30);
+        return webDriverCommands.waitForElementPresent(PROPERTY_DESCRIPTION,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -447,7 +446,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isAbstractFieldVisible(){
-        return webDriverCommands.waitForElementPresent(ABSTRACT,30);
+        return webDriverCommands.waitForElementPresent(ABSTRACT,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -455,7 +454,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSurveyFieldVisible(){
-        return webDriverCommands.waitForElementPresent(SURVEY,30);
+        return webDriverCommands.waitForElementPresent(SURVEY,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -463,7 +462,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSectionFieldVisible(){
-        return webDriverCommands.waitForElementPresent(SECTION,30);
+        return webDriverCommands.waitForElementPresent(SECTION,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -471,7 +470,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isTownshipFieldVisible(){
-        return webDriverCommands.waitForElementPresent(TOWNSHIP,30);
+        return webDriverCommands.waitForElementPresent(TOWNSHIP,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -479,7 +478,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isRangeBlockFieldVisible(){
-        return webDriverCommands.waitForElementPresent(RANGE_BLOCK,30);
+        return webDriverCommands.waitForElementPresent(RANGE_BLOCK,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -487,7 +486,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isQuarterCallFieldVisible(){
-        return webDriverCommands.waitForElementPresent(QUARTER_CALL,30);
+        return webDriverCommands.waitForElementPresent(QUARTER_CALL,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -495,7 +494,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSubdivisionFieldVisible(){
-        return webDriverCommands.waitForElementPresent(SUBDIVISION,30);
+        return webDriverCommands.waitForElementPresent(SUBDIVISION,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -503,7 +502,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isLotFieldVisible(){
-        return webDriverCommands.waitForElementPresent(LOT,30);
+        return webDriverCommands.waitForElementPresent(LOT,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -511,7 +510,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isBlockFieldVisible(){
-        return webDriverCommands.waitForElementPresent(BLOCK,30);
+        return webDriverCommands.waitForElementPresent(BLOCK,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -519,7 +518,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSliderFieldVisible(){
-        return webDriverCommands.waitForElementPresent(SLIDER,30);
+        return webDriverCommands.waitForElementPresent(SLIDER,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -527,7 +526,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isAcresMinFieldVisible(){
-        return webDriverCommands.waitForElementPresent(ACRES_MIN,30);
+        return webDriverCommands.waitForElementPresent(ACRES_MIN,5);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -535,7 +534,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isAcresMaxFieldVisible(){
-        return webDriverCommands.waitForElementPresent(ACRES_MAX,30);
+        return webDriverCommands.waitForElementPresent(ACRES_MAX,5);
     }
     /**
     *this method calls the waitForElementPresent method in webDriverCommands class.
