@@ -10,90 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_11_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-06-19T10-29-30_681-jvmRun1.dump" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-06-19T10-29-30_681-jvmRun1.dumpstream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-06-19T10-31-25_024-jvmRun1.dump" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-06-19T10-31-25_024-jvmRun1.dumpstream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Admin_Management_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Admin_Management_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Contractor_Standard_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Contractor_Standard_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/FreeTrial_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/FreeTrial_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Midland_Maps_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Midland_Maps_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/PayGo_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/PayGo_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/testng-failed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/TEST-TestSuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/TestSuite.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/bullet_point.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/collapseall.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/emailable-report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/failed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.adminTests.bulksActionsCancelChangeCompany.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.contractorTests.contractorExplorerSearchValidatesFields.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.contractorTests.contractorMidlandMapShowCoverage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/navigator-bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/Admin_Management_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/Contractor_Standard_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/FreeTrial_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/Midland_Maps_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/PayGo_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/passed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/skipped.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-failed.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-reports.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-reports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-results.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/extendReports/ExtentReportsClass.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/main/java/extendReports/ExtentReportsClass.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.jpg" afterPath="$PROJECT_DIR$/logs/loadCHMainPage.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addContractor.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addContractor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Courthouse.iml" afterPath="$PROJECT_DIR$/Courthouse.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.log" afterPath="$PROJECT_DIR$/logs/loadCHMainPage.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/addContractor.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/addContractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" afterPath="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.java" afterPath="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addContractor.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addContractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/loadCHMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -119,8 +38,8 @@
       <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="895">
-              <caret line="412" column="12" lean-forward="false" selection-start-line="412" selection-start-column="12" selection-end-line="412" selection-end-column="12" />
+            <state relative-caret-position="3054">
+              <caret line="350" column="57" lean-forward="true" selection-start-line="350" selection-start-column="57" selection-end-line="350" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -408,11 +327,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28778467" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/META-INF" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -682,9 +601,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.25 at 19h 20m 31s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.25 at 19h 32m 57s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -712,10 +628,13 @@
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.26 at 07h 42m 06s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.06.26 at 09h 03m 03s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -727,7 +646,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40851736" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33911672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38328075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1220,14 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/TestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -1266,10 +1177,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="412" column="12" lean-forward="false" selection-start-line="412" selection-start-column="12" selection-end-line="412" selection-end-column="12" />
+        <state relative-caret-position="3054">
+          <caret line="350" column="57" lean-forward="true" selection-start-line="350" selection-start-column="57" selection-end-line="350" selection-end-column="57" />
           <folding />
         </state>
       </provider>
@@ -1284,7 +1203,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.48390806" />
+                <option value="0.28778467" />
                 <option value="0.5" />
               </list>
             </option>
