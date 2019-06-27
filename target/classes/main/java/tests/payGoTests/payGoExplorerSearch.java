@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Created by Adrian on 12/10/2018.
  */
 public class payGoExplorerSearch extends SeleniumInitializer {
-    @Parameters({"environment","userNamePayGo","payGoPassword","payGoCounty","payGoGrantor","totalSearches"})
+    @Parameters({"environment","userNamePayGo","payGoPassword","payGoCounty","multiplePayGoGrantor","totalSearches"})
     @Test(groups = {"CH_PayGo_Explorer_Search", "Regression", "PayGo"})
     /**
      * This method called payGoExplorerSearch: basically visit the explorer search section
@@ -19,9 +19,9 @@ public class payGoExplorerSearch extends SeleniumInitializer {
      * verify that explorer search was able to get documents
      *@params PayGo username/password, county and grantor values for the specified Pay Go user. TotalSearches is the amount of searches.
      */
-    public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String payGoGrantor,int totalSearches) throws InterruptedException {
+    public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String multiplePayGoGrantor,int totalSearches) throws InterruptedException {
 
-
+        String[] multiplePayGoGrantors = multiplePayGoGrantor.split(",");
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
         //Create page object
@@ -38,7 +38,7 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             //Click on County Combo
             newExplorerPage.clickOnCountyCombo(payGoCounty);
             newExplorerPage.isGrantorEnabled();
-            newExplorerPage.insertGrantor(payGoGrantor);
+            newExplorerPage.insertGrantor(multiplePayGoGrantors[number-1]);
             newExplorerPage.clickOnApplyButton();
             //Purchase Confirmation Pop Up
             Assert.assertTrue(newExplorerPage.isPurchaseConfirmationDialogDisplayed(), "Purchase Confirmation Dialog has not been displayed.");

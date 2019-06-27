@@ -32,31 +32,8 @@ public class SeleniumInitializer extends SeleniumSetUp  {
     public static ExtentReports extent;
     public ExtentTest test;
 
-
-/*    @Override
-    public void onFinish(ITestContext iTestContext) {
-        System.out.println("I am in onFinish method " + iTestContext.getName());
-        //Do tier down operations for extentreports reporting!
-        //ExtentTestManager.endTest();
-        //ExtentManager.getReporter().flush();
-    }*/
-
     @BeforeSuite(alwaysRun = true)
     public void extentReportSetup() {
-
-/*        if (extent == null) {
-            extent = new ExtentReports();
-            htmlReporter = new ExtentHtmlReporter
-            htmlReporter.config().setReportName("Pre release Smoke test");
-            htmlReporter.config().setTheme(Theme.STANDARD);
-            extent.attachReporter(htmlReporter);
-        }
-        else {
-            htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
-            //htmlReporter.setAppendExisting(true);
-            extent.attachReporter(htmlReporter);
-        }*/
-
         //location of the extent report
         if (null == null) {
             htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir") + "/test-output/ExtentReport.html");
@@ -73,9 +50,9 @@ public class SeleniumInitializer extends SeleniumSetUp  {
             extent.setSystemInfo("Envirnoment", "Development");
         }
     }
-   /* public void setUpDirectory() throws IOException {
+    public void setUpDirectory() throws IOException {
         super.setUpDirectory();
-    }*/
+    }
 
     @BeforeMethod(alwaysRun = true)
     @Parameters({"browser","url","environment"})

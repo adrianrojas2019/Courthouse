@@ -28,7 +28,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="New_Runsheet"/>
+        <parameter name="runsheetName" value="New_RunsheetA"/>
         <parameter name="contractorName" value="Test Contract"/>
         <parameter name="myCompanyName" value="Gap"/>
 
@@ -146,7 +146,9 @@
         <parameter name="freeTrialCounty" value="Atascosa"/>
         <parameter name="freeTrialGrantor" value="James"/>
         <parameter name="totalSearches" value="3"/>
-        <parameter name="runsheetNameFreeTrial" value="New_Runsheet_FT"/>
+        <parameter name="runsheetNameFreeTrial" value="New_Runsheet_FTA"/>
+
+        <parameter name="multipleFreeTrialGrantor" value="James,Andrews,Smith"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -232,7 +234,9 @@
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
         <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="New_Runsheet_PG"/>
+        <parameter name="runsheetNamePayGo" value="New_Runsheet_PGA"/>
+
+        <parameter name="multiplePayGoGrantor" value="Smith,Andrews,James"/>
 
         <!-- Validate Metrics: Prints and Downloads -->
         <parameter name="companyID" value="12691"/>
@@ -324,7 +328,7 @@
         <parameter name="contractorPassword" value="DSCI7lsc1"/>
         <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
         <parameter name="contractorGrantor" value="James"/>
-        <parameter name="runsheetName" value="New_Runsheet"/>
+        <parameter name="runsheetName" value="New_RunsheetA"/>
         <parameter name="contractorName" value="Test Contract"/>
         <!-- Company Info -->
         <parameter name="myCompanyName" value="Gap"/>
@@ -332,9 +336,9 @@
         <parameter name="companyID" value="12691"/>
         <parameter name="county" value="Andrews Abstract Plant"/>
 		<!-- New runsheet will be created during testing Demo County test script -->
-        <parameter name="demoRunsheetName" value="Demo_Runsheet"/>
+        <parameter name="demoRunsheetName" value="Demo_RunsheetA"/>
         <!-- New runsheet will be created during testing CH_Admin_Max_Usage_Reached test script-->
-        <parameter name="LimitNewRunsheetName" value="Limit_Runsheet"/>
+        <parameter name="LimitNewRunsheetName" value="Limit_RunsheetA"/>
         <!-- Metrics -->
         <parameter name="totalDownloads" value="1.00"/>
         <parameter name="totalPrints" value="1.00"/>
@@ -350,7 +354,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="New_Company_Runsheet"/>
+        <parameter name="myCompanyRunsheetName" value="New_Company_RunsheetA"/>
         <parameter name="superUserCounty" value="Bandera"/>
 
         <!-- Validate County on Demo Mode -->

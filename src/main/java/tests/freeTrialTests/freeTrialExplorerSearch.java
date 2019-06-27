@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Created by Adrian on 12/10/2018.
  */
 public class freeTrialExplorerSearch extends SeleniumInitializer {
-    @Parameters({"environment","userNameFreeTrial","freeTrialPassword","freeTrialCounty","freeTrialGrantor","totalSearches"})
+    @Parameters({"environment","userNameFreeTrial","freeTrialPassword","freeTrialCounty","multipleFreeTrialGrantor","totalSearches"})
     @Test(groups = {"CH_FreeTrial_Explorer_Search", "Regression","FreeTrial"})
 
     /**
@@ -20,9 +20,9 @@ public class freeTrialExplorerSearch extends SeleniumInitializer {
      * verify that explorer search was able to get documents
      *@params freeTrial username/password, county and grantor values for the specified Free Trial user. TotalSearches is the amount of searches.
      */
-    public void freeTrialExplorerSearch(String environment, String userNameFreeTrial, String freeTrialPassword, String freeTrialCounty, String freeTrialGrantor,int totalSearches) throws InterruptedException {
+    public void freeTrialExplorerSearch(String environment, String userNameFreeTrial, String freeTrialPassword, String freeTrialCounty, String multipleFreeTrialGrantor,int totalSearches) throws InterruptedException {
 
-
+        String[] multipleFreeTrialGrantors = multipleFreeTrialGrantor.split(",");
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
         //Create page object
@@ -39,7 +39,7 @@ public class freeTrialExplorerSearch extends SeleniumInitializer {
             //Click on County Combo
             newExplorerPage.clickOnCountyCombo(freeTrialCounty);
             newExplorerPage.isGrantorEnabled();
-            newExplorerPage.insertGrantor(freeTrialGrantor);
+            newExplorerPage.insertGrantor(multipleFreeTrialGrantors[number-1]);
             newExplorerPage.clickOnApplyButton();
             //Purchase Confirmation Pop Up
             Assert.assertTrue(newExplorerPage.isPurchaseConfirmationDialogDisplayed(), "Purchase Confirmation Dialog has not been displayed.");

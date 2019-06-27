@@ -859,7 +859,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_PURCHASE_CONFIRMATION_BUTTON);
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.waitForElementInVisible(SPINNER,20);
+        webDriverCommands.waitForElementInVisible(SPINNER);
     }
     /**
      * this method calls the click method in webDriverCommands class.
