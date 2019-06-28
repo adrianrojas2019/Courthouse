@@ -26,6 +26,25 @@ public class contractorPrintRunsheet extends SeleniumInitializer {
         loginTest loginIntoCHMainPageTest = new loginTest();
         //Create page object
         ExplorerPage newExplorerPage = loginIntoCHMainPageTest.loginSuccessfullyTest(environment, contractorUserName, contractorPassword, getDriverInstance());
+        //Be sure that current contractor account PDF Viewer is the default Embedded
+        newExplorerPage.clickOnUserMenu();
+        //Validate if the user menu has been selected/displayed
+        Assert.assertTrue(newExplorerPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
+        //Click on My Account item
+        newExplorerPage.clickOnMyAccountItem();
+        //Validate that Test Contract Page has been loaded
+        Assert.assertTrue(newExplorerPage.isMyAccountDisplayed(10), "Cannot display My Account Page");
+        //Go to My Account and change current PDF Viewer option
+        String pdfViewer = newExplorerPage.changePDFViewer();
+        //click on Update info button
+        if (pdfViewer.equals("Standalone")) {
+            newExplorerPage.clickOnUpdateInfoButton();
+            //Assert on success msg
+            Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("User has been successfully edited."), "The change PDF Viewer could not be modified.");
+        }
+        //click on Home menu
+        newExplorerPage.clickOnHomeButton();
+
         //Find-Select previous created runsheet
         Calendar now = Calendar.getInstance();
         newExplorerPage.clickOnRunsheetList(runsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR))+"Renamed");

@@ -227,7 +227,8 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnSearchFieldAsSuperUser(String searchContractUserName){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.type(SEARCH_USER_FIELD_CONTRACT,searchContractUserName);
-        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitForElementInVisible(SPINNER,90);
     }
     /**
      *this method calls the click method in webDriverCommands class.
