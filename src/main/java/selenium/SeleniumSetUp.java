@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -40,6 +41,7 @@ public abstract class SeleniumSetUp {
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
         //driver = new ChromeDriver(capabilities);
         driver = new ChromeDriver(options);
+        //driver = new RemoteWebDriver(new URL(""));  ???
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
     }
