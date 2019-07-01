@@ -77,9 +77,9 @@
                 <include name="CH_Contractor_Explorer_Search"/>
                 <include name="CH_Contractor_Add_New_Runsheet"/>
                 <include name="CH_Contractor_Del_Docs_From_Runsheet"/>
-                <include name="CH_Contractor_Rename_Runsheet"/>
                 <include name="CH_Contractor_Download_Runsheet"/>
                 <include name="CH_Contractor_Print_Runsheet"/>
+                <include name="CH_Contractor_Rename_Runsheet"/>
                 <include name="CH_Contractor_Validate_Prints_Downloads"/>
                 <include name="CH_Admin_Validate_Prints_Downloads"/>
                 <include name="CH_Admin_Metrics_By_Contractor"/>
@@ -96,9 +96,9 @@
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
