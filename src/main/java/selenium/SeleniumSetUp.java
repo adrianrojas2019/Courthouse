@@ -13,6 +13,8 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import java.io.IOException;
+import java.net.URL;
+import java.net.MalformedURLException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -35,13 +37,20 @@ public abstract class SeleniumSetUp {
 
         ChromeDriverManager.chromedriver().setup();
         //create chrome instance
-        ChromeOptions options = new ChromeOptions();
+        //ChromeOptions options = new ChromeOptions();
         //DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        options.setCapability(ChromeOptions.CAPABILITY, options);
+        //options.setCapability(ChromeOptions.CAPABILITY, options);
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
         //driver = new ChromeDriver(capabilities);
-        driver = new ChromeDriver(options);
-        //driver = new RemoteWebDriver(new URL(""));  ???
+        //driver = new ChromeDriver(options);
+
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setBrowserName("UNKNOWN");
+        capabilities.setVersion("");
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", false);
+
+        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://172.16.0.35:4444/wd/hub"),capabilities);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
     }
