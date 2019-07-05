@@ -27,7 +27,8 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
  * Created by Adrian on 4/13/2018.
  */
 public abstract class SeleniumSetUp {
-    protected WebDriver driver;
+    //protected WebDriver driver;
+    protected RemoteWebDriver driver;
     protected String browserName = "";
 
 
@@ -35,22 +36,21 @@ public abstract class SeleniumSetUp {
 
         this.browserName = browser;
 
-        ChromeDriverManager.chromedriver().setup();
+        /*ChromeDriverManager.chromedriver().setup();
         //create chrome instance
-        //ChromeOptions options = new ChromeOptions();
-        //DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-        //options.setCapability(ChromeOptions.CAPABILITY, options);
+        ChromeOptions options = new ChromeOptions();
+        options.setCapability(ChromeOptions.CAPABILITY, options);
+        driver = new ChromeDriver(options);*/
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
-        //driver = new ChromeDriver(capabilities);
-        //driver = new ChromeDriver(options);
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("UNKNOWN");
-        capabilities.setVersion("");
+        capabilities.setBrowserName("chrome");
+        capabilities.setVersion("75");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", false);
 
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://172.16.0.35:4444/wd/hub"),capabilities);
+        driver = new RemoteWebDriver(new URL("http://172.16.0.35:4444/wd/hub"),capabilities);
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
     }

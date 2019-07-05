@@ -762,7 +762,7 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the click() method in webDriverCommands class.
      *
      *  @return String
-     */
+    */
     public void clickOnUsageMetricsTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(USAGE_METRICS_TAB);
@@ -771,10 +771,12 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the click() method in webDriverCommands class.
      *
      *  @return String
-     */
+    */
     public void clickOnDemoManagementTab(){
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DEMO_MANAGEMENT_TAB);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitForElementInVisible(SPINNER,30);
     }
     /**
      *this method calls the click() method in webDriverCommands class.
