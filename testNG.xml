@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="4" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
@@ -92,7 +92,7 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.loadCHMainPage"/>
+            <!--<class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -101,7 +101,7 @@
             <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>-->
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>

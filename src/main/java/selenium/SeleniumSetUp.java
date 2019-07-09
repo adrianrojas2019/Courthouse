@@ -37,8 +37,7 @@ public abstract class SeleniumSetUp {
         this.browserName = browser;
 
         ChromeDriverManager.chromedriver().setup();
-        //create chrome instance
-        /*ChromeOptions options = new ChromeOptions();
+       /* ChromeOptions options = new ChromeOptions();
         options.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(options);*/
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
@@ -48,7 +47,6 @@ public abstract class SeleniumSetUp {
         capabilities.setVersion("75");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", false);
-
         driver = new RemoteWebDriver(new URL("http://172.16.0.35:4444/wd/hub"),capabilities);
 
         driver.manage().window().maximize();

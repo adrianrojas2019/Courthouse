@@ -38,7 +38,7 @@ public abstract class SeleniumSetUp {
 
         ChromeDriverManager.chromedriver().setup();
         //create chrome instance
-        /*ChromeOptions options = new ChromeOptions();
+       /* ChromeOptions options = new ChromeOptions();
         options.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(options);*/
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
