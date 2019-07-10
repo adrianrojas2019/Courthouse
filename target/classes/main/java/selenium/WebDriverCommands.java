@@ -48,11 +48,28 @@ public class WebDriverCommands extends  SeleniumSetUp {
 
     }
 
-    /**
-     * wait until the element is displayed.
-     * @param expectedCondition expected condition to apply in the webdriver
-     * @return boolean if the element was found
-     */
+    public void doubleClick(final By element){
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(element);
+        actions.doubleClick(elementLocator).perform();
+    }
+
+    public void doubleClickCell(final By element, String data){
+        Actions actions = new Actions(driver);
+        WebElement elementLocator = driver.findElement(element);
+        actions.doubleClick(elementLocator).perform();
+    }
+    public void editCell(final By element) {
+        //Actions actions = new Actions(driver);
+        driver.findElement(element).sendKeys(Keys.ENTER);
+        //actions.doubleClick(elementLocator).sendKeys(data);
+        //actions.doubleClick(elementLocator).sendKeys(Keys.ENTER);
+    }
+        /**
+         * wait until the element is displayed.
+         * @param expectedCondition expected condition to apply in the webdriver
+         * @return boolean if the element was found
+         */
     public WebElement waitUntilElement(ExpectedCondition<WebElement> expectedCondition, By element) {
         try {
             return getWaitDriver().until(expectedCondition);

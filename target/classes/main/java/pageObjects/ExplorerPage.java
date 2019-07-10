@@ -56,7 +56,11 @@ public class ExplorerPage extends PageObjects {
     private final By APPLY_BUTTON = By.cssSelector("aside[ui-view='filters'] button[class='btn btn-primary']");
     private final By PRIOR_REFERENCE_APPLY_BUTTON = By.cssSelector("div[class='form-group pull-right filter-buttons'] button[class='btn btn-primary'][ng-disabled='isRequired || disabledButton']");
     private final By FIRST_CHECKBOX = By.cssSelector("div.ngCell.col0.colt0");
+    private final By ROW_DETAIL_DIALOG = By.xpath("//h3[text()='Row Detail']");
     private final By NEW_RUNSHEET_BUTTON = By.cssSelector("button[ng-click='newRunsheetBtn()']");
+    private final By CANCEL_BUTTON = By.cssSelector("button[ng-click='cancel()']");
+    private final By ROW_DETAIL_ADD_TO_RUNSHEET_BUTTON = By.cssSelector("button[ng-click='ok()']");
+    private final By REPORT_CHARGES_BUTTON =  By.cssSelector("button[class='btn btn-warning btn-sm inline-block']");
     private final By OLD_RUNSHEET = By.cssSelector("select[class='form-control input-sm inline-block runsheet-select ng-pristine ng-untouched ng-valid']");
     private final By NEW_RUNSHEET = By.cssSelector("select[class='form-control input-sm inline-block runsheet-select ng-valid ng-dirty ng-valid-parse ng-touched']");
     private final By SAVE_RUNSHEET_BUTTON = By.cssSelector("button[ng-bind='runsheetCreateEditBtnTxt']");
@@ -88,6 +92,9 @@ public class ExplorerPage extends PageObjects {
     //private final By PDF_SPINNER = By.cssSelector("spinner[class='medium-spinner']");
     private final By CLOSE_EMBEDDED_PDF = By.cssSelector("section[di-pdf-viewer='pdfViewerOptions'] button[class='toolbarButton closePdf']");
     private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
+    private final By DELETE_RUNSHEET_BUTTON = By.cssSelector("button[class='btn btn-danger btn-sm inline-block']");
+    private final By DELETE_RUNSHEET = By.cssSelector("button[ng-bind='modalDeleteOptions.deleteButtonText']");
+    private final By DELETE_RUNSHEET_DIALOG = By.cssSelector("div[ng-bind-html='modalDeleteOptions.deleteText | toTrustedHtml']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//div[text()='Document not available']");
     private final By CHECK_BOX_DO_NOT_SHOW_AGAIN = By.cssSelector("div[class='modal-header warningModalHeader ng-scope']");
     private final By PDF_VIEWER_PREFERENCE = By.xpath("//div[text()='PDF Viewer Preference']");
@@ -126,6 +133,8 @@ public class ExplorerPage extends PageObjects {
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
     private final By DOCUMENTS_DOWNLOADED = By.cssSelector("tr:nth-child(1) > td.col-md-2.ng-binding");
     private final By DOCUMENTS_PRINTED = By.cssSelector("tr:nth-child(2) > td.col-md-2.ng-binding");
+    private final By EDIT_CELL = By.xpath("//div[@ng-edit-cell-if='isFocused && true']/input");
+    //private final By EDIT_CELL = By.cssSelector("div.ngCell.col2.colt2");
 
     //Pending Runsheet Request
     private final By PENDING_RUNSHEET_REQUEST = By.cssSelector("span[class='requestCounter ng-binding']");
@@ -144,6 +153,8 @@ public class ExplorerPage extends PageObjects {
 
     String county_Not_Displayed = "//div[@class='filter-input-container col-xs-8']//select//option[text()='%s']";
     String find_Runsheet = "option[label='%s']";
+    String grid_Title_Runsheet_Name = "h5[name='%s']";
+    String first_Cell = "//span[text()='%s']";
 
     public ExplorerPage(WebDriver driver) {
         super(driver);
@@ -349,6 +360,15 @@ public class ExplorerPage extends PageObjects {
      */
     public boolean isSearchResultsWithDocuments(){
         return webDriverCommands.waitForElementPresent(FIRST_CHECKBOX,30);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isRowDetailDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(ROW_DETAIL_DIALOG,30);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -557,6 +577,22 @@ public class ExplorerPage extends PageObjects {
      *
      *  @return boolean
      */
+    public boolean isDeleteRunsheetDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(DELETE_RUNSHEET_DIALOG,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isRunsheetNameDisplayed(String runsheet_Name){
+        return webDriverCommands.waitForElementPresent(By.cssSelector(String.format(grid_Title_Runsheet_Name,runsheet_Name)),30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isDocumentNotAvailable(){
         return webDriverCommands.waitForElementPresent(DOCUMENT_NOT_AVAILABLE,3);
     }
@@ -696,6 +732,67 @@ public class ExplorerPage extends PageObjects {
     /**
      * this method calls the click method in webDriverCommands class.
      */
+    public void clickOnReportChargesButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(REPORT_CHARGES_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the double click method in webDriverCommands class.
+     */
+    public void doubleClickOnFirstRow(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.doubleClick(By.cssSelector(String.format(checkbox,1)));
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the double click method in webDriverCommands class.
+     */
+    public void doubleClickOnFirstCell(String adminCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.doubleClick(By.xpath(String.format(first_Cell,adminCounty)));
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the type method in webDriverCommands class.
+     */
+    public String retrievesCellValue(String adminCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        return webDriverCommands.getText(By.xpath(String.format(first_Cell,adminCounty)));
+    }
+    /**
+     * this method calls the type method in webDriverCommands class.
+     */
+    public void editCell(String newCellValue, String adminCounty){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.doubleClickCell(By.xpath(String.format(first_Cell,adminCounty)),newCellValue);
+        //webDriverCommands.waitForElementPresent(EDIT_CELL);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(EDIT_CELL,newCellValue);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.editCell(EDIT_CELL);
+    }
+
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnRowDetailAddToRunsheetButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(ROW_DETAIL_ADD_TO_RUNSHEET_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnCancelButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(CANCEL_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
     public void clickOnNewRunsheetButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(NEW_RUNSHEET_BUTTON);
@@ -767,6 +864,22 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
     }
     /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnDeleteRunsheetButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(DELETE_RUNSHEET_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnDeleteRunsheet(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(DELETE_RUNSHEET);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
      * This method calls some methods in webDriverCommands class in order to change the current window.
      */
     public void changeTab(){
@@ -803,6 +916,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.click(By.cssSelector(String.format(find_Runsheet, oldRunsheet)));
         webDriverCommands.waitSomeSeconds(1);
     }
+
     /**
      * this method calls the type method in webDriverCommands class.
      */

@@ -1,0 +1,138 @@
+[1562781169.472][INFO]: Starting ChromeDriver 75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003})
+[1562781169.473][INFO]: Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
+[1562781169.925][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1562781169.936][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1562781169.938][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1562781169.953][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\Adrian\AppData\Local\Temp\scoped_dir17452_6958\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Adrian\AppData\Local\Temp\scoped_dir17452_7205" data:,
+[1562781171.174][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1562781172.205][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "75.0.3770.100",
+      "chrome": {
+         "chromedriverVersion": "75.0.3770.90 (a6dcaf7e3ec6f70a194cc25e8149475c6590e025-refs/branch-heads/3770@{#1003})",
+         "userDataDir": "C:\\Users\\Adrian\\AppData\\Local\\Temp\\scoped_dir17452_7205"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:62396"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows nt",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify"
+   },
+   "sessionId": "f7c9f2601d3a2e1ce1564381400ed489"
+}
+[1562781172.213][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] COMMAND MaximizeWindow {
+
+}
+[1562781172.213][INFO]: Waiting for pending navigations...
+[1562781172.265][INFO]: Done waiting for pending navigations. Status: ok
+[1562781172.267][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1562781173.420][INFO]: Waiting for pending navigations...
+[1562781173.421][INFO]: Done waiting for pending navigations. Status: ok
+[1562781173.421][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] RESPONSE MaximizeWindow {
+   "height": 744,
+   "width": 1382,
+   "x": -8,
+   "y": -8
+}
+[1562781173.425][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] COMMAND SetTimeouts {
+   "implicit": 5000
+}
+[1562781173.425][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] RESPONSE SetTimeouts
+[1562781173.428][INFO]: [f7c9f2601d3a2e1ce1564381400ed489] COMMAND Navigate {
+   "url": "https://app.dev.drillinginfo.com/courthouse/"
+}
+[1562781173.428][INFO]: Waiting for pending navigations...
+[1562781173.429][INFO]: Done waiting for pending navigations. Status: ok
+[1562781173.878][INFO]: Waiting for pending navigations...

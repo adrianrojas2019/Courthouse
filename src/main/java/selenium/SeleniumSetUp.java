@@ -37,7 +37,7 @@ public abstract class SeleniumSetUp {
         this.browserName = browser;
 
         ChromeDriverManager.chromedriver().setup();
-       /* ChromeOptions options = new ChromeOptions();
+        /*ChromeOptions options = new ChromeOptions();
         options.setCapability(ChromeOptions.CAPABILITY, options);
         driver = new ChromeDriver(options);*/
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");

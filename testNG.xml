@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="2" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
@@ -92,7 +92,7 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.loadCHMainPage"/>
+            <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -101,7 +101,7 @@
             <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>-->
+            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
@@ -372,12 +372,21 @@
         <parameter name="totalDownloadMidlandMaps" value="2.00"/>
         <parameter name="totalSearchesByCountyMidlandMaps" value="2.00"/>
 
+        <!-- Add new runsheet as admin -->
+        <parameter name="adminCounty" value="Andrews Abstract Plant"/>
+        <parameter name="adminGrantor" value="James"/>
+        <parameter name="adminRunsheetName" value="Temp_Runsheet"/>
+
         <groups>
             <run>
                 <!--Adding Users -->
                 <include name="CH_Add_Contractor"/>
                 <include name="CH_Add_FreeTrial"/>
                 <include name="CH_Add_PayGo"/>
+                <!-- Admin Add New Runsheet -->
+                <include name="CH_Admin_New_Runsheet"/>
+                <include name="CH_Admin_Report_Changes"/>
+                <include name="CH_Admin_Delete_Runsheet"/>
                 <!-- Midland Maps Feature -->
                 <include name="CH_Admin_Assign_Midland_Maps_County"/>
                 <include name="CH_Contractor_Midland_Maps_Assign"/>
@@ -410,6 +419,9 @@
             <!--<class name="main.java.tests.adminTests.addContractor"/>
             <class name="main.java.tests.adminTests.addFreeTrial"/>
             <class name="main.java.tests.adminTests.addPayGo"/>-->
+            <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+            <class name="main.java.tests.adminTests.adminReportChanges"/>
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>

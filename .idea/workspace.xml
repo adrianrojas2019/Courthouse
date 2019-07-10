@@ -10,19 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_0_5.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" afterPath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/contractorPDFViewer20190708024443.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/CHMainPage.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$1.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$2.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$3.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addFreeTrial.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addFreeTrial.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addPayGo.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addPayGo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Courthouse.iml" afterPath="$PROJECT_DIR$/Courthouse.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/debug.log" afterPath="$PROJECT_DIR$/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/CHMainPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/CHMainPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" afterPath="$PROJECT_DIR$/target/classes/main/java/pageObjects/ExplorerPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/WebDriverCommands.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,31 +58,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="99" column="11" lean-forward="false" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+            <state relative-caret-position="524">
+              <caret line="448" column="11" lean-forward="true" selection-start-line="448" selection-start-column="11" selection-end-line="448" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contractorPDFViewer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java">
+      <file leaf-file-name="adminReportChanges.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="adminDeleteRunsheet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="66" column="21" lean-forward="false" selection-start-line="66" selection-start-column="21" selection-end-line="66" selection-end-column="21" />
+            <state relative-caret-position="226">
+              <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -79,87 +91,29 @@
       <file leaf-file-name="ExplorerPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3162">
-              <caret line="200" column="18" lean-forward="false" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#12391#12392#0" expanded="false" />
-                <element signature="e#12420#12421#0" expanded="false" />
-                <element signature="e#13121#13122#0" expanded="false" />
-                <element signature="e#13180#13181#0" expanded="false" />
-                <element signature="e#13309#13310#0" expanded="false" />
-                <element signature="e#13376#13377#0" expanded="false" />
-                <element signature="e#17329#17330#0" expanded="false" />
-                <element signature="e#17409#17410#0" expanded="false" />
-                <element signature="e#18716#18717#0" expanded="false" />
-                <element signature="e#18796#18797#0" expanded="false" />
-                <element signature="e#19293#19294#0" expanded="false" />
-                <element signature="e#19374#19375#0" expanded="false" />
-                <element signature="e#19550#19551#0" expanded="false" />
-                <element signature="e#19624#19625#0" expanded="false" />
-                <element signature="e#19801#19802#0" expanded="false" />
-                <element signature="e#19874#19875#0" expanded="false" />
-                <element signature="e#20316#20317#0" expanded="false" />
-                <element signature="e#20388#20389#0" expanded="false" />
-                <element signature="e#20561#20562#0" expanded="false" />
-                <element signature="e#20631#20632#0" expanded="false" />
-                <element signature="e#21076#21077#0" expanded="false" />
-                <element signature="e#21151#21152#0" expanded="false" />
-                <element signature="e#21334#21335#0" expanded="false" />
-                <element signature="e#21409#21410#0" expanded="false" />
-                <element signature="e#21586#21587#0" expanded="false" />
-                <element signature="e#21661#21662#0" expanded="false" />
-                <element signature="e#21836#21837#0" expanded="false" />
-                <element signature="e#21909#21910#0" expanded="false" />
-                <element signature="e#22360#22361#0" expanded="false" />
-                <element signature="e#22434#22435#0" expanded="false" />
-                <element signature="e#22609#22610#0" expanded="false" />
-                <element signature="e#22681#22682#0" expanded="false" />
-                <element signature="e#22857#22858#0" expanded="false" />
-                <element signature="e#22930#22931#0" expanded="false" />
-                <element signature="e#23107#23108#0" expanded="false" />
-                <element signature="e#23181#23182#0" expanded="false" />
-                <element signature="e#23360#23361#0" expanded="false" />
-                <element signature="e#23437#23438#0" expanded="false" />
-                <element signature="e#23617#23618#0" expanded="false" />
-                <element signature="e#23695#23696#0" expanded="false" />
-                <element signature="e#23875#23876#0" expanded="false" />
-                <element signature="e#23952#23953#0" expanded="false" />
-                <element signature="e#24124#24125#0" expanded="false" />
-                <element signature="e#24193#24194#0" expanded="false" />
-                <element signature="e#24367#24368#0" expanded="false" />
-                <element signature="e#24438#24439#0" expanded="false" />
-                <element signature="e#24613#24614#0" expanded="false" />
-                <element signature="e#24685#24686#0" expanded="false" />
-                <element signature="e#24862#24863#0" expanded="false" />
-                <element signature="e#24937#24938#0" expanded="false" />
-                <element signature="e#25114#25115#0" expanded="false" />
-                <element signature="e#25189#25190#0" expanded="false" />
-                <element signature="e#25654#25655#0" expanded="false" />
-                <element signature="e#25735#25736#0" expanded="false" />
-                <element signature="e#29404#29405#0" expanded="false" />
-                <element signature="e#29479#29480#0" expanded="false" />
-                <element signature="e#43807#43808#0" expanded="false" />
-                <element signature="e#43867#43868#0" expanded="false" />
-                <element signature="e#43994#43995#0" expanded="false" />
-                <element signature="e#44046#44047#0" expanded="false" />
-                <element signature="e#44182#44183#0" expanded="false" />
-                <element signature="e#44263#44264#0" expanded="false" />
-                <element signature="e#46037#46038#0" expanded="false" />
-                <element signature="e#46111#46112#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="231">
+              <caret line="772" column="30" lean-forward="false" selection-start-line="772" selection-start-column="30" selection-end-line="772" selection-end-column="30" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebDriverCommands.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,10 +141,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>companyAcct</find>
-      <find>demorun</find>
-      <find>STMExtentReport</find>
-      <find>CH_PayGo_Midland_Maps_Search</find>
       <find>demoRunsheetName</find>
       <find>input[name='grantor']</find>
       <find>totalSearchesByCountyMidlandMaps</find>
@@ -204,7 +154,6 @@
       <find>endrep</find>
       <find>driver</find>
       <find>write</find>
-      <find>type</find>
       <find>tearDown</find>
       <find>runsheetn</find>
       <find>adrojasc</find>
@@ -217,6 +166,11 @@
       <find>URL</find>
       <find>spi</find>
       <find>SPINNER</find>
+      <find>addto</find>
+      <find>type</find>
+      <find>repor</find>
+      <find>sendKeys</find>
+      <find>delete</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,11 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingFullAccess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsAssign.java" />
-        <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByContractorByMidlandMaps.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorMidlandMapsUnassign.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoMidlandMapsSearch.java" />
@@ -275,12 +224,17 @@
         <option value="$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialExplorerSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/UserAdministrationPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java" />
-        <option value="$PROJECT_DIR$/testNG.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/adminAddNewRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
+        <option value="$PROJECT_DIR$/testNG.xml" />
       </list>
     </option>
   </component>
@@ -312,8 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -358,9 +310,59 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Courthouse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adminTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -375,8 +377,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="main.java.tests.contractorTests" />
       <recent name="main.java.tests.adminTests" />
+      <recent name="main.java.tests.contractorTests" />
       <recent name="main.java.tests.freeTrialTests" />
       <recent name="main.java.tests.payGoTests" />
       <recent name="main.java.pageObjects" />
@@ -638,40 +640,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 08h 28m 25s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 09m 20s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 08h 45m 23s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 13m 51s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 08h 49m 21s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 16m 51s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 14m 49s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 19m 26s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 23m 19s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 22m 51s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 29m 14s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 24m 50s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 31m 31s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 29m 04s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 33m 01s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 48m 29s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.03 at 14h 36m 46s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 52m 56s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.04 at 11h 33m 15s.xml">
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.10 at 11h 57m 22s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -688,13 +690,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25036603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15080526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3548896" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3911672" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -776,12 +778,6 @@
           <line>29</line>
           <properties />
           <option name="timeStamp" value="293" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java</url>
-          <line>39</line>
-          <properties />
-          <option name="timeStamp" value="294" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddSecondRunsheet.java</url>
@@ -867,11 +863,23 @@
           <properties />
           <option name="timeStamp" value="382" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminAddNewRunsheet.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="388" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="401" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="383" />
+      <option name="time" value="403" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -885,84 +893,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.6/extentreports-4.0.6.jar!/com/aventstack/extentreports/ExtentObservable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="237" column="0" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/aventstack/extentreports/4.0.6/extentreports-4.0.6.jar!/com/aventstack/extentreports/ExtentReports.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/TestMethodWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/ITestListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/Listener_Demo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExtentReports/ExtentTestManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/ExtentReports/ExtentManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/standardTests/priorReferenceSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Listeners/TestListener.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Listeners/ListenerTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/freeTrialTests/freeTrialPrintRunsheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/MethodInvocationHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/addContractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearchValidatesFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="88" column="57" lean-forward="true" selection-start-line="88" selection-start-column="57" selection-end-line="88" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/TestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="508" column="0" lean-forward="false" selection-start-line="508" selection-start-column="0" selection-end-line="508" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0-sources.jar!/org/openqa/selenium/support/ui/FluentWait.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -974,14 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1013,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="18" column="62" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoPrintRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
@@ -1031,13 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/commonTests/loginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="51" column="57" lean-forward="true" selection-start-line="51" selection-start-column="57" selection-end-line="51" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1069,25 +977,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="149" column="18" lean-forward="false" selection-start-line="149" selection-start-column="18" selection-end-line="149" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/payGoTests/payGoExplorerSearch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="36" column="18" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="39" column="45" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="39" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -1112,13 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="508">
           <caret line="135" column="19" lean-forward="false" selection-start-line="135" selection-start-column="19" selection-end-line="135" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="460" column="0" lean-forward="false" selection-start-line="460" selection-start-column="0" selection-end-line="460" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1162,6 +1048,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1189,88 +1076,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="11" lean-forward="false" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3162">
-          <caret line="200" column="18" lean-forward="false" selection-start-line="200" selection-start-column="18" selection-end-line="200" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#12391#12392#0" expanded="false" />
-            <element signature="e#12420#12421#0" expanded="false" />
-            <element signature="e#13121#13122#0" expanded="false" />
-            <element signature="e#13180#13181#0" expanded="false" />
-            <element signature="e#13309#13310#0" expanded="false" />
-            <element signature="e#13376#13377#0" expanded="false" />
-            <element signature="e#17329#17330#0" expanded="false" />
-            <element signature="e#17409#17410#0" expanded="false" />
-            <element signature="e#18716#18717#0" expanded="false" />
-            <element signature="e#18796#18797#0" expanded="false" />
-            <element signature="e#19293#19294#0" expanded="false" />
-            <element signature="e#19374#19375#0" expanded="false" />
-            <element signature="e#19550#19551#0" expanded="false" />
-            <element signature="e#19624#19625#0" expanded="false" />
-            <element signature="e#19801#19802#0" expanded="false" />
-            <element signature="e#19874#19875#0" expanded="false" />
-            <element signature="e#20316#20317#0" expanded="false" />
-            <element signature="e#20388#20389#0" expanded="false" />
-            <element signature="e#20561#20562#0" expanded="false" />
-            <element signature="e#20631#20632#0" expanded="false" />
-            <element signature="e#21076#21077#0" expanded="false" />
-            <element signature="e#21151#21152#0" expanded="false" />
-            <element signature="e#21334#21335#0" expanded="false" />
-            <element signature="e#21409#21410#0" expanded="false" />
-            <element signature="e#21586#21587#0" expanded="false" />
-            <element signature="e#21661#21662#0" expanded="false" />
-            <element signature="e#21836#21837#0" expanded="false" />
-            <element signature="e#21909#21910#0" expanded="false" />
-            <element signature="e#22360#22361#0" expanded="false" />
-            <element signature="e#22434#22435#0" expanded="false" />
-            <element signature="e#22609#22610#0" expanded="false" />
-            <element signature="e#22681#22682#0" expanded="false" />
-            <element signature="e#22857#22858#0" expanded="false" />
-            <element signature="e#22930#22931#0" expanded="false" />
-            <element signature="e#23107#23108#0" expanded="false" />
-            <element signature="e#23181#23182#0" expanded="false" />
-            <element signature="e#23360#23361#0" expanded="false" />
-            <element signature="e#23437#23438#0" expanded="false" />
-            <element signature="e#23617#23618#0" expanded="false" />
-            <element signature="e#23695#23696#0" expanded="false" />
-            <element signature="e#23875#23876#0" expanded="false" />
-            <element signature="e#23952#23953#0" expanded="false" />
-            <element signature="e#24124#24125#0" expanded="false" />
-            <element signature="e#24193#24194#0" expanded="false" />
-            <element signature="e#24367#24368#0" expanded="false" />
-            <element signature="e#24438#24439#0" expanded="false" />
-            <element signature="e#24613#24614#0" expanded="false" />
-            <element signature="e#24685#24686#0" expanded="false" />
-            <element signature="e#24862#24863#0" expanded="false" />
-            <element signature="e#24937#24938#0" expanded="false" />
-            <element signature="e#25114#25115#0" expanded="false" />
-            <element signature="e#25189#25190#0" expanded="false" />
-            <element signature="e#25654#25655#0" expanded="false" />
-            <element signature="e#25735#25736#0" expanded="false" />
-            <element signature="e#29404#29405#0" expanded="false" />
-            <element signature="e#29479#29480#0" expanded="false" />
-            <element signature="e#43807#43808#0" expanded="false" />
-            <element signature="e#43867#43868#0" expanded="false" />
-            <element signature="e#43994#43995#0" expanded="false" />
-            <element signature="e#44046#44047#0" expanded="false" />
-            <element signature="e#44182#44183#0" expanded="false" />
-            <element signature="e#44263#44264#0" expanded="false" />
-            <element signature="e#46037#46038#0" expanded="false" />
-            <element signature="e#46111#46112#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPDFViewer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1287,13 +1092,194 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/assignMidlandMapsCounty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/addContractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/bulksActionsCancelChangeCompany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/commonTests/loginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/WebElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserAddNewRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/superUserApproveRequestCopyRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="41" column="85" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingNoAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="42" column="55" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRunsheetSharingRequestCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="60" column="30" lean-forward="false" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorPrintRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="39" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorRenameRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="35" column="46" lean-forward="true" selection-start-line="32" selection-start-column="8" selection-end-line="35" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminAddNewRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/contractorTests/contractorExplorerSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="37" column="30" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="381" column="29" lean-forward="false" selection-start-line="381" selection-start-column="29" selection-end-line="381" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/interactions/Actions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="515" column="17" lean-forward="false" selection-start-line="515" selection-start-column="17" selection-end-line="515" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3-sources.jar!/org/testng/internal/Invoker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="592" column="0" lean-forward="false" selection-start-line="592" selection-start-column="0" selection-end-line="592" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0-sources.jar!/org/openqa/selenium/By.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding>
+            <element signature="e#3221#3222#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="43" column="41" lean-forward="true" selection-start-line="43" selection-start-column="41" selection-end-line="43" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="49" column="27" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="772" column="30" lean-forward="false" selection-start-line="772" selection-start-column="30" selection-end-line="772" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="61" column="16" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="38" column="51" lean-forward="false" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="448" column="11" lean-forward="true" selection-start-line="448" selection-start-column="11" selection-end-line="448" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>

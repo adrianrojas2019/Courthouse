@@ -1,3 +1,4 @@
 [1221/135329.839:ERROR:exception_handler_server.cc(526)] ConnectNamedPipe: The pipe is being closed. (0xE8)
 [0604/211929.829:ERROR:exception_handler_server.cc(527)] ConnectNamedPipe: The pipe is being closed. (0xE8)
 [0615/080010.235:ERROR:file_io.cc(89)] ReadExactly: expected 36, observed 0
+[0709/143844.797:ERROR:exception_handler_server.cc(527)] ConnectNamedPipe: The pipe is being closed. (0xE8)

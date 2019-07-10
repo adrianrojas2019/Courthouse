@@ -15,7 +15,8 @@ public class CHMainPage extends PageObjects {
 
     private final By USER_ADMIN_GRID = By.xpath("//section[@class='row user-container ng-scope']");
     private final By USER_MENU = By.xpath("//span[@class='caret']");
-    private final By HOME_BUTTON = By.xpath("//a[@class='home-btn active-item']");
+    //private final By HOME_BUTTON = By.xpath("//a[@class='home-btn active-item']");
+    private final By HOME_BUTTON = By.cssSelector("a[ui-sref-active='active-item']");
 
     public CHMainPage(WebDriver driver) {
         super(driver);
