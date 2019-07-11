@@ -27,28 +27,31 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
  * Created by Adrian on 4/13/2018.
  */
 public abstract class SeleniumSetUp {
-    //protected WebDriver driver;
-    protected RemoteWebDriver driver;
+    protected WebDriver driver;
+    //protected RemoteWebDriver driver;
     protected String browserName = "";
 
 
-    public void setUp(String browser) throws IOException {
+    public void setUp(String browser, String remoteDriver, String serverIPAddress) throws IOException {
 
         this.browserName = browser;
-
         ChromeDriverManager.chromedriver().setup();
-        /*ChromeOptions options = new ChromeOptions();
-        options.setCapability(ChromeOptions.CAPABILITY, options);
-        driver = new ChromeDriver(options);*/
+
+        if (remoteDriver.equals("LocalDriver")){
+            ChromeOptions options = new ChromeOptions();
+            options.setCapability(ChromeOptions.CAPABILITY, options);
+            driver = new ChromeDriver(options);
+        }
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setBrowserName("chrome");
-        capabilities.setVersion("75");
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", false);
-        driver = new RemoteWebDriver(new URL("http://172.16.0.35:4444/wd/hub"),capabilities);
-
+        if (remoteDriver.equals("RemoteDriver")){
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName("chrome");
+            capabilities.setVersion("75");
+            capabilities.setCapability("enableVNC", true);
+            capabilities.setCapability("enableVideo", false);
+            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"),capabilities);
+        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
     }

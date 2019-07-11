@@ -5,7 +5,9 @@
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
-
+        <!--RemoteWebDriver: LocalDriver/RemoteDriver -->
+        <parameter name="remoteDriver" value="LocalDriver"/>
+        <parameter name="serverIPAddress" value="172.16.0.35:4444"/>
         <!--Environment /Dev/Preprod/Prod -->
         <parameter name="environment" value="dev."/>
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -93,7 +95,7 @@
         </groups>
         <classes>
             <class name="main.java.tests.loadCHMainPage"/>
-            <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
+             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
