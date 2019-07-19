@@ -3,6 +3,7 @@ C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorMidlandMapsMultipleCountySearch.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\selenium\SeleniumInitializer.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorRunsheetSharingFullAccess.java
+C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\adminAddNewRunsheet.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorPrintRunsheet.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\selenium\WebDriverCommands.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\payGoTests\payGoRemoveDocsFromRunsheet.java
@@ -25,6 +26,7 @@ C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\validateCountyDemoModeExpired.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\freeTrialTests\freeTrialMidlandMapsSearch.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\freeTrialTests\freeTrialRemoveDocsFromRunsheet.java
+C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\adminReportChanges.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\validateCountyDemoModeExpiresToday.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorBrokerBoxSearch.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\utils\Main.java
@@ -50,6 +52,7 @@ C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorRenameRunsheet.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorMidlandMapShowCoverage.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\pageObjects\RunsheetManagementPage.java
+C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\adminDeleteRunsheet.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\unassignMidlandMapsCounty.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\contractorTests\contractorMidlandMapsSearch.java
 C:\Users\Adrian\Desktop\Drilling Info\CH_Project\Courthouse\src\main\java\tests\adminTests\superUserDenyRequestCopyRunsheet.java

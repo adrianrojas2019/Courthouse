@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="10" total="13" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression test" duration-ms="310996" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:52:37Z">
+    <groups>
+      <group name="CH_Admin_New_Runsheet">
+        <method signature="adminAddNewRunsheet.adminAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="adminAddNewRunsheet" class="main.java.tests.adminTests.adminAddNewRunsheet"/>
+      </group> <!-- CH_Admin_New_Runsheet -->
+      <group name="Admin_Management">
+        <method signature="adminAddNewRunsheet.adminAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="adminAddNewRunsheet" class="main.java.tests.adminTests.adminAddNewRunsheet"/>
+        <method signature="adminDeleteRunsheet.adminDeleteRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="adminDeleteRunsheet" class="main.java.tests.adminTests.adminDeleteRunsheet"/>
+        <method signature="adminReportChanges.adminReportChanges(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="adminReportChanges" class="main.java.tests.adminTests.adminReportChanges"/>
+      </group> <!-- Admin_Management -->
+      <group name="Regression">
+        <method signature="adminAddNewRunsheet.adminAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="adminAddNewRunsheet" class="main.java.tests.adminTests.adminAddNewRunsheet"/>
+        <method signature="adminDeleteRunsheet.adminDeleteRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="adminDeleteRunsheet" class="main.java.tests.adminTests.adminDeleteRunsheet"/>
+        <method signature="adminReportChanges.adminReportChanges(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="adminReportChanges" class="main.java.tests.adminTests.adminReportChanges"/>
+      </group> <!-- Regression -->
+      <group name="CH_Admin_Report_Changes">
+        <method signature="adminReportChanges.adminReportChanges(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="adminReportChanges" class="main.java.tests.adminTests.adminReportChanges"/>
+      </group> <!-- CH_Admin_Report_Changes -->
+      <group name="CH_Admin_Delete_Runsheet">
+        <method signature="adminDeleteRunsheet.adminDeleteRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="adminDeleteRunsheet" class="main.java.tests.adminTests.adminDeleteRunsheet"/>
+      </group> <!-- CH_Admin_Delete_Runsheet -->
+    </groups>
+    <test name="Contractor_Standard_Test" duration-ms="17" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:47:26Z">
+    </test> <!-- Contractor_Standard_Test -->
+    <test name="FreeTrial_Test" duration-ms="0" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:47:26Z">
+    </test> <!-- FreeTrial_Test -->
+    <test name="PayGo_Test" duration-ms="0" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:47:26Z">
+    </test> <!-- PayGo_Test -->
+    <test name="Admin_Management_Test" duration-ms="310863" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:52:37Z">
+      <class name="main.java.tests.adminTests.adminReportChanges">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="setUp" is-config="true" duration-ms="15082" started-at="2019-07-12T18:49:57Z" finished-at="2019-07-12T18:50:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.%sdrillinginfo.com/courthouse/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LocalDriver]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[172.16.0.35:4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminReportChanges(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="adminReportChanges" duration-ms="66217" started-at="2019-07-12T18:50:12Z" finished-at="2019-07-12T18:51:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[diplus2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[drillin6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Temp_Runsheet]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Andrews Abstract Plant]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminReportChanges -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239]" name="tearDown" is-config="true" duration-ms="2792" started-at="2019-07-12T18:51:18Z" finished-at="2019-07-12T18:51:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminReportChanges status=SUCCESS method=adminReportChanges.adminReportChanges(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminReportChanges@34e239] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.java.tests.adminTests.adminReportChanges -->
+      <class name="main.java.tests.adminTests.adminAddNewRunsheet">
+        <test-method status="PASS" signature="extentReportSetup()[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="extentReportSetup" is-config="true" duration-ms="971" started-at="2019-07-12T18:47:25Z" finished-at="2019-07-12T18:47:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- extentReportSetup -->
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="setUp" is-config="true" duration-ms="52155" started-at="2019-07-12T18:47:26Z" finished-at="2019-07-12T18:48:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.%sdrillinginfo.com/courthouse/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LocalDriver]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[172.16.0.35:4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="adminAddNewRunsheet" duration-ms="94104" started-at="2019-07-12T18:48:18Z" finished-at="2019-07-12T18:49:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[diplus2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[drillin6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Andrews Abstract Plant]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[James]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Temp_Runsheet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAddNewRunsheet -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4]" name="tearDown" is-config="true" duration-ms="4570" started-at="2019-07-12T18:49:53Z" finished-at="2019-07-12T18:49:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminAddNewRunsheet status=SUCCESS method=adminAddNewRunsheet.adminAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminAddNewRunsheet@46bcd4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.java.tests.adminTests.adminAddNewRunsheet -->
+      <class name="main.java.tests.adminTests.adminDeleteRunsheet">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="setUp" is-config="true" duration-ms="13485" started-at="2019-07-12T18:51:21Z" finished-at="2019-07-12T18:51:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://app.%sdrillinginfo.com/courthouse/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LocalDriver]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[172.16.0.35:4444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="adminDeleteRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="adminDeleteRunsheet" duration-ms="59932" started-at="2019-07-12T18:51:35Z" finished-at="2019-07-12T18:52:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dev.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[diplus2]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[drillin6]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Temp_Runsheet]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Andrews Abstract Plant]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminDeleteRunsheet -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20]" name="tearDown" is-config="true" duration-ms="2492" started-at="2019-07-12T18:52:35Z" finished-at="2019-07-12T18:52:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=adminDeleteRunsheet status=SUCCESS method=adminDeleteRunsheet.adminDeleteRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.adminTests.adminDeleteRunsheet@1921e20] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.java.tests.adminTests.adminDeleteRunsheet -->
+    </test> <!-- Admin_Management_Test -->
+  </suite> <!-- Regression test -->
+</testng-results>

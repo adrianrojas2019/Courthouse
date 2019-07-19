@@ -27,30 +27,31 @@ import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
  * Created by Adrian on 4/13/2018.
  */
 public abstract class SeleniumSetUp {
-    protected WebDriver driver;
-    //protected RemoteWebDriver driver;
+    //protected WebDriver driver;
+    protected RemoteWebDriver driver;
     protected String browserName = "";
 
 
-    public void setUp(String browser, String remoteDriver, String serverIPAddress) throws IOException {
+    public void setUp(String browser,String remoteDriver, String serverIPAddress) throws IOException {
 
         this.browserName = browser;
         ChromeDriverManager.chromedriver().setup();
-
-        if (remoteDriver.equals("LocalDriver")){
+        //Comment/uncomment if testing is local
+        if (remoteDriver.equals("LocalDriver")) {
             ChromeOptions options = new ChromeOptions();
             options.setCapability(ChromeOptions.CAPABILITY, options);
             driver = new ChromeDriver(options);
         }
         System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 
-        if (remoteDriver.equals("RemoteDriver")){
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setBrowserName("chrome");
-            capabilities.setVersion("75");
+        //Comment/Uncomment if testing is using srv selenoid container
+        if (remoteDriver.equals("RemoteDriver")) {
+/*            DesiredCapabilities capabilities = new DesiredCapabilities();
+            *//*capabilities.setBrowserName("chrome");
+            capabilities.setVersion("75");*//*
             capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", false);
-            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"),capabilities);
+            capabilities.setCapability("enableVideo", false);*/
+            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), DesiredCapabilities.chrome());
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
