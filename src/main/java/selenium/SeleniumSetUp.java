@@ -40,18 +40,19 @@ public abstract class SeleniumSetUp {
         if (remoteDriver.equals("LocalDriver")) {
             ChromeOptions options = new ChromeOptions();
             options.setCapability(ChromeOptions.CAPABILITY, options);
+            System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
             driver = new ChromeDriver(options);
         }
-        System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
 
         //Comment/Uncomment if testing is using srv selenoid container
         if (remoteDriver.equals("RemoteDriver")) {
-/*            DesiredCapabilities capabilities = new DesiredCapabilities();
-            *//*capabilities.setBrowserName("chrome");
-            capabilities.setVersion("75");*//*
+            DesiredCapabilities capabilities = new DesiredCapabilities();
+            capabilities.setBrowserName("chrome");
+            capabilities.setVersion("75");
             capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", false);*/
-            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), DesiredCapabilities.chrome());
+            capabilities.setCapability("enableVideo", false);
+            System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), capabilities);
         }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
@@ -70,7 +71,7 @@ public abstract class SeleniumSetUp {
     public void setUpDirectory() throws IOException {
         if(Files.exists(Paths.get("logs"))){
             //delete content in log directory
-            /*DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get("logs"));
+          /*  DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get("logs"));
             for (Path path : directoryStream) {
                 Files.delete(path);
             }*/

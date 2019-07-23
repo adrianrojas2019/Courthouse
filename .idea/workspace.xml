@@ -12,25 +12,50 @@
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_aventstack_extentreports_4_0_9.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/adminAddNewRunsheet.jpg" afterPath="$PROJECT_DIR$/logs/adminAddNewRunsheet.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/adminReportChanges.jpg" afterPath="$PROJECT_DIR$/logs/adminReportChanges.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.jpg" afterPath="$PROJECT_DIR$/logs/loadCHMainPage.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190709023539.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190710072102.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190710075924.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190710093726.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190710111923.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190710114827.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/TestCaseFailed20190711010211.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminAddNewRunsheet20190709023840.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminAddNewRunsheet20190710072325.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminAddNewRunsheet20190710114708.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminAddNewRunsheet20190710115505.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminAddNewRunsheet20190712124953.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminDeleteRunsheet20190710115247.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminDeleteRunsheet20190710115720.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminDeleteRunsheet20190712125235.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminReportChanges20190710111640.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminReportChanges20190710115139.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminReportChanges20190710115612.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/adminReportChanges20190712125119.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/contractorPDFViewer20190711071559.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/loadCHMainPage20190711010147.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/loadCHMainPage20190711110559.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminAddNewRunsheet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminAddNewRunsheet.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminDeleteRunsheet.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminDeleteRunsheet.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminReportChanges.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/adminReportChanges.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/contractorPDFViewer.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/freeTrialExplorerSearch.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByFreeTrial.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validateMetricsByFreeTrial.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" afterPath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addFreeTrial.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addFreeTrial.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addPayGo.class" afterPath="$PROJECT_DIR$/target/classes/main/java/tests/adminTests/addPayGo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Courthouse.iml" afterPath="$PROJECT_DIR$/Courthouse.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/adminAddNewRunsheet.log" afterPath="$PROJECT_DIR$/logs/adminAddNewRunsheet.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/adminDeleteRunsheet.log" afterPath="$PROJECT_DIR$/logs/adminDeleteRunsheet.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/adminReportChanges.log" afterPath="$PROJECT_DIR$/logs/adminReportChanges.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/loadCHMainPage.log" afterPath="$PROJECT_DIR$/logs/loadCHMainPage.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" afterPath="$PROJECT_DIR$/test-output/ExtentReport.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
@@ -55,55 +80,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adminDeleteRunsheet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="78" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="78" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminAddNewRunsheet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminAddNewRunsheet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminReportChanges.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="77" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+            <state relative-caret-position="-272">
+              <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#3239#3240#0" expanded="false" />
-                <element signature="e#3268#3269#0" expanded="false" />
+                <element signature="e#3295#3296#0" expanded="true" />
+                <element signature="e#3324#3325#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,8 +106,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
+            <state relative-caret-position="291">
+              <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -122,8 +116,8 @@
       <file leaf-file-name="SeleniumInitializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="88" column="58" lean-forward="false" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="58" />
+            <state relative-caret-position="-23">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,11 +134,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>input[name='grantor']</find>
-      <find>totalSearchesByCountyMidlandMaps</find>
-      <find>@AfterT</find>
-      <find>@AfterTest</find>
-      <find>extent</find>
       <find>@A</find>
       <find>a</find>
       <find>AfterTest</find>
@@ -170,6 +159,11 @@
       <find>sendKeys</find>
       <find>delete</find>
       <find>remoteDriver</find>
+      <find>adminRunsheetName</find>
+      <find>LocalDriver</find>
+      <find>org.slf4j</find>
+      <find>btn btn-danger btn-sm inline-block</find>
+      <find>RemoteDriver</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,10 +224,10 @@
         <option value="$PROJECT_DIR$/src/main/java/pageObjects/ExplorerPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/WebDriverCommands.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/testNG.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
       </list>
     </option>
   </component>
@@ -559,24 +553,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 11h 02m 42s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 11h 03m 12s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 11h 06m 07s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 11h 16m 06s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 12h 33m 18s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 12h 41m 52s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.11 at 12h 59m 15s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -589,10 +565,28 @@
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.19 at 08h 59m 58s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 14m 47s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 19m 33s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 21m 03s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 24m 46s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 31m 27s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 45m 58s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -604,7 +598,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40851736" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4148265" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29022083" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -615,7 +609,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3911672" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21608832" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -676,7 +670,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java</url>
-          <line>74</line>
+          <line>75</line>
           <properties />
           <option name="timeStamp" value="282" />
         </line-breakpoint>
@@ -794,11 +788,17 @@
           <properties />
           <option name="timeStamp" value="401" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="405" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="405" />
+      <option name="time" value="406" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -837,13 +837,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="498">
           <caret line="39" column="34" lean-forward="true" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="106" column="24" lean-forward="false" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -927,13 +920,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="53" column="37" lean-forward="false" selection-start-line="53" selection-start-column="37" selection-end-line="53" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateMetricsByFreeTrial.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -967,20 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="37" column="59" lean-forward="false" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/commonTests/loginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1119,41 +1091,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="26" lean-forward="false" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="88" column="58" lean-forward="false" selection-start-line="88" selection-start-column="47" selection-end-line="88" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminReportChanges.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="17" column="77" lean-forward="false" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/validateCountyOnDemoMode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-544">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminAddNewRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="17">
           <caret line="18" column="75" lean-forward="false" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="75" />
           <folding />
         </state>
@@ -1161,29 +1119,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/tests/adminTests/adminDeleteRunsheet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="78" lean-forward="false" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="78" />
+        <state relative-caret-position="476">
+          <caret line="36" column="61" lean-forward="false" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/CHMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="29" column="19" lean-forward="false" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#902#903#0" expanded="false" />
+            <element signature="e#984#985#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pageObjects/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/commonTests/loginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="22" lean-forward="false" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="47" column="50" lean-forward="false" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
+        <state relative-caret-position="-272">
+          <caret line="53" column="79" lean-forward="false" selection-start-line="53" selection-start-column="79" selection-end-line="53" selection-end-column="79" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3239#3240#0" expanded="false" />
-            <element signature="e#3268#3269#0" expanded="false" />
+            <element signature="e#3295#3296#0" expanded="true" />
+            <element signature="e#3324#3325#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
