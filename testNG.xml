@@ -7,8 +7,11 @@
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
 
         <!--Local testing vs Selenoid Container -->
-        <parameter name="remoteDriver" value="LocalDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.35:4444"/>
+        <parameter name="remoteDriver" value="RemoteDriver"/>
+        <parameter name="serverIPAddress" value="192.168.10.106:4444"/>
+        <parameter name="enableVNC" value="true"/>
+        <parameter name="enableServerLog" value="false"/>
+        <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
         <parameter name="environment" value="dev."/>
@@ -96,8 +99,8 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.loadCHMainPage"/>
-            <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
+            <class name="main.java.tests.loadCHMainPage"/>
+            <!--<class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
@@ -122,6 +125,10 @@
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
         <parameter name="serverIPAddress" value="172.16.0.35:4444"/>
+        <parameter name="enableVNC" value="true"/>
+        <parameter name="enableServerLog" value="false"/>
+        <parameter name="enableVideo" value="false"/>
+
 
         <!--Free Trial Subscription Page:-->
         <parameter name="freeTrialURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/freetrial"/>
@@ -201,6 +208,10 @@
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
         <parameter name="serverIPAddress" value="172.16.0.35:4444"/>
+        <parameter name="enableVNC" value="true"/>
+        <parameter name="enableServerLog" value="false"/>
+        <parameter name="enableVideo" value="false"/>
+
 
         <!--Free Trial Subscription Page:-->
         <parameter name="freeTrialURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/freetrial"/>
@@ -295,6 +306,9 @@
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
         <parameter name="serverIPAddress" value="172.16.0.35:4444"/>
+        <parameter name="enableVNC" value="true"/>
+        <parameter name="enableServerLog" value="false"/>
+        <parameter name="enableVideo" value="false"/>
 
         <!--Free Trial Subscription Page:-->
         <parameter name="freeTrialURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/freetrial"/>

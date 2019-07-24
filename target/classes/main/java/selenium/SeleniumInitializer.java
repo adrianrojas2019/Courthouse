@@ -56,8 +56,8 @@ public class SeleniumInitializer extends SeleniumSetUp  {
 
     @BeforeMethod(alwaysRun = true)
     @Parameters({"browser","url","environment","remoteDriver","serverIPAddress"})
-    public void setUp(String browserName, String url, String environment,String remoteDriver, String serverIPAddress) throws IOException {
-        super.setUp(browserName,remoteDriver,serverIPAddress);
+    public void setUp(String browserName, String url, String environment,String remoteDriver, String serverIPAddress, String enableVNC, String enableServerLog, String enableVideo) throws IOException {
+        super.setUp(browserName,remoteDriver,serverIPAddress,enableVNC,enableServerLog,enableVideo);
         driver.get(String.format(url,environment));
     }
 

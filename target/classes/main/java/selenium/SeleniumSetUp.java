@@ -32,7 +32,7 @@ public abstract class SeleniumSetUp {
     protected String browserName = "";
 
 
-    public void setUp(String browser,String remoteDriver, String serverIPAddress) throws IOException {
+    public void setUp(String browser,String remoteDriver, String serverIPAddress, String enableVNC, String enableServerLog, String enableVideo) throws IOException {
 
         this.browserName = browser;
         ChromeDriverManager.chromedriver().setup();
@@ -49,9 +49,10 @@ public abstract class SeleniumSetUp {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("chrome");
             capabilities.setVersion("75");
-            capabilities.setCapability("enableVNC", true);
-            capabilities.setCapability("enableVideo", false);
-            System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+            capabilities.setCapability("enableVNC", enableVNC);
+            capabilities.setCapability("enableLog", enableServerLog);
+            capabilities.setCapability("enableVideo", enableVideo);
+            //System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
             driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), capabilities);
         }
         driver.manage().window().maximize();
