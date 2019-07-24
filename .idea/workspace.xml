@@ -10,66 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="203e8463-63cd-4026-8966-14363a053f21" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/Courthouse_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/validatePrintsAndDownloads20190723012442.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/validatePrintsAndDownloads20190723013124.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Screenshots/validatePrintsAndDownloads20190723014555.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validatePrintsAndDownloads.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logs/validatePrintsAndDownloads.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-07-12T09-47-31_590-jvmRun1.dump" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/2019-07-12T09-47-31_590-jvmRun1.dumpstream" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Admin_Management_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Admin_Management_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Contractor_Standard_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/Contractor_Standard_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/FreeTrial_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/FreeTrial_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/PayGo_Test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/Regression test/PayGo_Test.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/TEST-TestSuite.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/TestSuite.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/bullet_point.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/collapseall.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/emailable-report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/failed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/jquery-1.7.1.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.adminTests.adminAddNewRunsheet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.adminTests.adminDeleteRunsheet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/junitreports/TEST-main.java.tests.adminTests.adminReportChanges.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/navigator-bullet.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/Admin_Management_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/Contractor_Standard_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/FreeTrial_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/PayGo_Test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/classes.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/groups.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods-alphabetical.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods-not-run.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/methods.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/reporter-output.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/testng.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/Regression test/toc.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/old/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/passed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/skipped.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-reports.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-reports.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng-results.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/output/test/testng.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test-output/ExtentReport.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" afterPath="$PROJECT_DIR$/out/artifacts/Courthouse_jar/Courthouse.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chromedriver.log" afterPath="$PROJECT_DIR$/chromedriver.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumInitializer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" afterPath="$PROJECT_DIR$/target/classes/main/java/selenium/SeleniumSetUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testNG.xml" afterPath="$PROJECT_DIR$/testNG.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,21 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="testNG.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="53" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="53" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SeleniumSetUp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="34" column="142" lean-forward="false" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="142" />
+            <state relative-caret-position="204">
+              <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -125,8 +66,8 @@
       <file leaf-file-name="SeleniumInitializer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="106">
+              <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -562,15 +503,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.19 at 08h 58m 58s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.19 at 08h 59m 58s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 14m 47s.xml">
-      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.23 at 13h 19m 33s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -592,6 +524,15 @@
     <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.24 at 06h 43m 31s.xml">
       <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.24 at 13h 30m 14s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.24 at 13h 37m 58s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Adrian_Desktop_Drilling_Info_CH_Project_Courthouse_testNG_xml - 2019.07.24 at 13h 38m 56s.xml">
+      <configuration name="C:/Users/Adrian/Desktop/Drilling Info/CH_Project/Courthouse/testNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -607,7 +548,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40851736" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6151419" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44164038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -618,7 +559,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21608832" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21608832" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -803,11 +744,17 @@
           <properties />
           <option name="timeStamp" value="405" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="406" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="406" />
+      <option name="time" value="407" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="TestNG">
@@ -1153,14 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1037">
@@ -1169,26 +1108,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/tests/loadCHMainPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="34" column="142" lean-forward="false" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="142" />
+        <state relative-caret-position="132">
+          <caret line="14" column="60" lean-forward="true" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="106">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/selenium/SeleniumSetUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="57" column="44" lean-forward="true" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
           <folding />
         </state>
       </provider>
