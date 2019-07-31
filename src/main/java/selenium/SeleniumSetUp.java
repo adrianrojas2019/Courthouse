@@ -41,6 +41,7 @@ public abstract class SeleniumSetUp {
             ChromeOptions options = new ChromeOptions();
             options.setCapability(ChromeOptions.CAPABILITY, options);
             System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+            System.setProperty("webdriver.chrome.verboseLogging", "true");
             driver = new ChromeDriver(options);
         }
 
