@@ -1004,7 +1004,6 @@ public class ExplorerPage extends PageObjects {
     public void clickOnSaveRunsheetButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(SAVE_RUNSHEET_BUTTON);
-        webDriverCommands.waitSomeSeconds(1);
     }
 
     /**
@@ -1013,7 +1012,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSuccessMessageDisplayed(String successMessage){
-        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),15);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),45);
     }
     /**
      *this method calls the waitForElementVisible method in webn.DriverCommands class.
@@ -1028,7 +1027,6 @@ public class ExplorerPage extends PageObjects {
     public void clickOnAddToRunsheetButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ADD_TO_RUNSHEET_BUTTON);
-        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      * this method calls the click method in webDriverCommands class.

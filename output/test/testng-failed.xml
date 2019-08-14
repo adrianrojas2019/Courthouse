@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression test]" parallel="tests">
+  <test thread-count="1" verbose="0" name="Contractor_Standard_Test(failed)" parallel="tests">
+    <parameter name="myCompanyName" value="Gap"/>
+    <parameter name="serverIPAddress" value="192.168.10.106:4444"/>
+    <parameter name="brokerBoxCounty" value="Cooke"/>
+    <parameter name="county" value="Andrews Abstract Plant"/>
+    <parameter name="totalAddedToRunsheet" value="3.00"/>
+    <parameter name="brokerBoxPage" value="265"/>
+    <parameter name="totalDocumentsViewed" value="1.00"/>
+    <parameter name="totalRemovedFromRunsheet" value="2.00"/>
+    <parameter name="companyID" value="12691"/>
+    <parameter name="totalSearchesByTypePriorReference" value="3.00"/>
+    <parameter name="enableServerLog" value="false"/>
+    <parameter name="companyAcct" value="DI Internal Acct"/>
+    <parameter name="totalSearchesByTypeExplorerPanel" value="4.00"/>
+    <parameter name="totalPrints" value="1.00"/>
+    <parameter name="totalRenamedFromRunsheet" value="1.00"/>
+    <parameter name="contractorUserName" value="adrojascontract"/>
+    <parameter name="totalDownloads" value="1.00"/>
+    <parameter name="remoteDriver" value="LocalDriver"/>
+    <parameter name="standardUserPassword" value="diplus8"/>
+    <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
+    <parameter name="contractorCounty" value="Andrews Abstract Plant"/>
+    <parameter name="passwordToLogIn" value="drillin6"/>
+    <parameter name="contractorPassword" value="DSCI7lsc1"/>
+    <parameter name="standardUserVolume" value="1438"/>
+    <parameter name="usernameToLogIn" value="diplus2"/>
+    <parameter name="Total_Runsheets" value="5000"/>
+    <parameter name="setPreference" value="false"/>
+    <parameter name="contractorGrantor" value="James"/>
+    <parameter name="brokerBoxIndexBook" value="0001"/>
+    <parameter name="myCompany" value="Gap_Tester"/>
+    <parameter name="runsheetName" value="Auto_RunsheetB"/>
+    <parameter name="emailUserName" value="test_%d@wearegap.com"/>
+    <parameter name="numberOfUserToCreate" value="1"/>
+    <parameter name="contractorName" value="Test Contract"/>
+    <parameter name="brokerBoxBookType" value="abstract of judgment"/>
+    <parameter name="lastNameStandard" value="Test User Eight"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="totalSearchesByCounty" value="4.00"/>
+    <parameter name="firstNameStandard" value="Di Plus"/>
+    <parameter name="totalDownloadBrokerBox" value="2.00"/>
+    <parameter name="brokerBoxBookmarks" value="A"/>
+    <parameter name="standardUserRecordNumber" value="00253448"/>
+    <parameter name="enableVideo" value="false"/>
+    <parameter name="standardUserName" value="diplus8"/>
+    <parameter name="contractorEnhancedClerkCounty" value="Angelina"/>
+    <parameter name="standardUserPage" value="390"/>
+    <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
+    <parameter name="brokerBoxVolume" value="1"/>
+    <parameter name="enableVNC" value="true"/>
+    <parameter name="environment" value="dev."/>
+    <parameter name="runsheetSharingAccess" value="Full Access"/>
+    <parameter name="standAloneApp" value="false"/>
+    <parameter name="totalSearchesByTypeBBIndexBook" value="1.00"/>
+    <parameter name="standardUserCounty" value="Grimes Abstract Plant"/>
+    <groups>
+      <run>
+        <include name="CH_Contractor_Add_New_Runsheet"/>
+        <include name="CH_Contractor_Add_New_Runsheet"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="main.java.tests.contractorTests.contractorAddNewRunsheet">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="contractorAddNewRunsheet" invocation-numbers="0"/>
+          <include name="extentReportSetup"/>
+        </methods>
+      </class> <!-- main.java.tests.contractorTests.contractorAddNewRunsheet -->
+    </classes>
+  </test> <!-- Contractor_Standard_Test(failed) -->
+</suite> <!-- Failed suite [Regression test] -->

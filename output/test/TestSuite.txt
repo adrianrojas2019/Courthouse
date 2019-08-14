@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10,860.293 s <<< FAILURE! - in TestSuite
+contractorAddNewRunsheet(main.java.tests.contractorTests.contractorAddNewRunsheet)  Time elapsed: 10,821.853 s  <<< FAILURE!
+java.lang.AssertionError: The new runsheet could not be added expected [true] but found [false]
+	at main.java.tests.contractorTests.contractorAddNewRunsheet.contractorAddNewRunsheet(contractorAddNewRunsheet.java:52)
+
