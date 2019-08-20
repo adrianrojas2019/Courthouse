@@ -1025,7 +1025,8 @@ public class ExplorerPage extends PageObjects {
      * this method calls the click method in webDriverCommands class.
      */
     public void clickOnAddToRunsheetButton(){
-        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitForElementInVisible(SPINNER_PROGRESS);
+        //webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ADD_TO_RUNSHEET_BUTTON);
     }
     /**
