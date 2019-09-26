@@ -15,15 +15,19 @@ public class LoginPage extends PageObjects {
      */
     private final By MAIN_SIGN_IN = By.xpath("//p[@class='signInText-login']");
     //Courthouse 2.0 Thumbnail
-    private final By COURTHOUSE_THUMBNAIL = By.xpath("//img[@class='di_county_scans_20']");
-    private final By COURTHOUSE_NAME_APP= By.xpath("//span[@title='DI Courthouse 2.0']");
+    //private final By COURTHOUSE_THUMBNAIL = By.xpath("//img[@class='di_county_scans_20']");
+    //private final By COURTHOUSE_NAME_APP= By.xpath("//span[@title='DI Courthouse 2.0']");
+    //Courthouse 3.0 Thumbnail
+    private final By COURTHOUSE_THUMBNAIL = By.xpath("//img[@class='di-carousel-item-img di_county_scans_20']");
+    private final By COURTHOUSE_NAME_APP= By.xpath("//span[@class='item-title-text'][text()='Courthouse 2.0']");
     private final By SPINNER_POPUP = By.xpath("//div[@class='di-app-loading-message']");
-    private final By LOGGING_OUT = By.xpath("//p[text()='Logging out from COURTHOUSE...']");
+    private final By LOGGING_OUT = By.xpath("//h2[text()='Logging out from COURTHOUSE...']");
     private final By USER_FIELD = By.id("username");
     private final By PASSWORD_FIELD = By.id("password");
     private final By LOGIN_BUTTON = By.id("login");
-    private final By STANDALONE_TITLE = By.xpath("//p[text()='DI Courthouse Contractor/PayGo/Free Trial']");
-    private final By STANDARD_TITLE = By.xpath("//p[text()='Sign In']");
+    private final By STANDALONE_TITLE = By.xpath("//p[text()='Courthouse Contractor/PayGo/Free Trial']");
+    //private final By STANDARD_TITLE = By.xpath("//p[text()='Sign In']");
+    private final By STANDARD_TITLE = By.xpath("//span[text()='SIGN IN']");
     private final By HOME_BUTTON = By.cssSelector(".home-btn.active-item");
 
     //private final By SIGN_STANDALONE_LINK = By.xpath("//a[@href='https://app.%sdrillinginfo.com/courthouse/login']");

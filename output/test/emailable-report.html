@@ -9,23 +9,65 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Regression test</th></tr>
-<tr><td><a href="#t0">Contractor_Standard_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,858,476</td><td>CH_Contractor_Add_New_Runsheet</td><td></td></tr>
+<tr><td><a href="#t0">Contractor_Standard_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,947,776</td><td>CH_Contractor_Add_New_Runsheet</td><td></td></tr>
 <tr class="stripe"><td><a href="#t1">FreeTrial_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>CH_Contractor_Add_New_Runsheet</td><td></td></tr>
 <tr><td><a href="#t2">PayGo_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>CH_Contractor_Add_New_Runsheet</td><td></td></tr>
 <tr class="stripe"><td><a href="#t3">Admin_Management_Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td>CH_Contractor_Add_New_Runsheet</td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">10,858,476</th><th colspan="2"></th></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">9,947,776</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Contractor_Standard_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">main.java.tests.contractorTests.contractorAddNewRunsheet</td><td><a href="#m0">contractorAddNewRunsheet</a></td><td rowspan="1">1565500945029</td><td rowspan="1">10821831</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Regression test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Contractor_Standard_Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">main.java.tests.contractorTests.contractorAddNewRunsheet</td><td><a href="#m0">tearDown</a></td><td rowspan="1">1568058217575</td><td rowspan="1">31063</td></tr><tr><th colspan="4">Contractor_Standard_Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">main.java.tests.contractorTests.contractorAddNewRunsheet</td><td><a href="#m1">contractorAddNewRunsheet</a></td><td rowspan="1">1568048343353</td><td rowspan="1">9872076</td></tr></tbody>
 <tbody id="t1"><tr><th colspan="4" class="invisible"/></tr></tbody>
 <tbody id="t2"><tr><th colspan="4" class="invisible"/></tr></tbody>
 <tbody id="t3"><tr><th colspan="4" class="invisible"/></tr></tbody>
 </table>
-<h2>Contractor_Standard_Test</h2><h3 id="m0">main.java.tests.contractorTests.contractorAddNewRunsheet#contractorAddNewRunsheet</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Auto_RunsheetB</td><td>dev.</td><td>adrojascontract</td><td>DSCI7lsc1</td><td>Andrews Abstract Plant</td><td>James</td><td>5000</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">java.lang.AssertionError: The new runsheet could not be added expected [true] but found [false]
-	at main.java.tests.contractorTests.contractorAddNewRunsheet.contractorAddNewRunsheet(contractorAddNewRunsheet.java:52)
+<h2>Contractor_Standard_Test</h2><h3 id="m0">main.java.tests.contractorTests.contractorAddNewRunsheet#tearDown</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>[TestResult name=contractorAddNewRunsheet status=FAILURE method=contractorAddNewRunsheet.contractorAddNewRunsheet(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:main.java.tests.contractorTests.contractorAddNewRunsheet@320068] output={null}]</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-2ENHKD3&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Adrian\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71e6cdfed85b0c80cb9f614bc6e63081
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:448)
+	at main.java.selenium.SeleniumInitializer.tearDown(SeleniumInitializer.java:98)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: java.util.concurrent.TimeoutException
+	at org.openqa.selenium.net.UrlChecker.waitUntilUnavailable(UrlChecker.java:145)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:95)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	... 26 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilUnavailable(UrlChecker.java:115)
+	... 29 more
 ... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">main.java.tests.contractorTests.contractorAddNewRunsheet#contractorAddNewRunsheet</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th></tr><tr class="param stripe"><td>Auto_RunsheetF</td><td>dev.</td><td>adrojascontract</td><td>DSCI7lsc1</td><td>Andrews Abstract Plant</td><td>James</td><td>1000</td></tr><tr><th colspan="7">Exception</th></tr><tr><td colspan="7"><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; ng-disabled=&quot;isRequired || !validDateRanges || disabledButton&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (362, 596). Other element would receive the click: &lt;div class=&quot;form-group pull-right filter-buttons&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-2ENHKD3&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Adrian\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71e6cdfed85b0c80cb9f614bc6e63081
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at main.java.selenium.WebDriverCommands.click(WebDriverCommands.java:47)
+	at main.java.pageObjects.ExplorerPage.clickOnApplyButton(ExplorerPage.java:690)
+	at main.java.tests.contractorTests.contractorAddNewRunsheet.contractorAddNewRunsheet(contractorAddNewRunsheet.java:38)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>FreeTrial_Test</h2><h2>PayGo_Test</h2><h2>Admin_Management_Test</h2></body>
 </html>

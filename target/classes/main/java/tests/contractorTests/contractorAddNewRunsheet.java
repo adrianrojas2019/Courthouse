@@ -46,14 +46,15 @@ public class contractorAddNewRunsheet extends SeleniumInitializer {
             newExplorerPage.clickOnNewRunsheetButton();
             //Create Runsheet Name
             Calendar now = Calendar.getInstance();
-            newExplorerPage.insertNewRunsheetName(runsheetName + numberOfRunsheets + " " + (now.get(Calendar.MONTH) + 1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+            //newExplorerPage.insertNewRunsheetName(runsheetName + numberOfRunsheets + " " + (now.get(Calendar.MONTH) + 1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+            newExplorerPage.insertNewRunsheetName(runsheetName+(now.get(Calendar.MONTH) + 1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
             newExplorerPage.clickOnSaveRunsheetButton();
             //Success Message
-        //    Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Runsheet has been successfully saved."), "The new runsheet could not be added");
+            Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Runsheet has been successfully saved."), "The new runsheet could not be added");
             //Proceed to add the previous selected documents into new runsheet
             newExplorerPage.clickOnAddToRunsheetButton();
             //Success Message
-         //   Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Document(s) have been successfully added."), "The new document(s) could not be added into new runsheet");
+            Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Document(s) have been successfully added."), "The new document(s) could not be added into new runsheet");
             //Click on the Magnifying Glass icon on the left side of the Homepage.
             newExplorerPage.clickOnExplorerSearch();
         }

@@ -27,12 +27,12 @@
     <parameter name="contractorPassword" value="DSCI7lsc1"/>
     <parameter name="standardUserVolume" value="1438"/>
     <parameter name="usernameToLogIn" value="diplus2"/>
-    <parameter name="Total_Runsheets" value="5000"/>
+    <parameter name="Total_Runsheets" value="1000"/>
     <parameter name="setPreference" value="false"/>
     <parameter name="contractorGrantor" value="James"/>
     <parameter name="brokerBoxIndexBook" value="0001"/>
     <parameter name="myCompany" value="Gap_Tester"/>
-    <parameter name="runsheetName" value="Auto_RunsheetB"/>
+    <parameter name="runsheetName" value="Auto_RunsheetF"/>
     <parameter name="emailUserName" value="test_%d@wearegap.com"/>
     <parameter name="numberOfUserToCreate" value="1"/>
     <parameter name="contractorName" value="Test Contract"/>

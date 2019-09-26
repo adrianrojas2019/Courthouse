@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Regression_test">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Regression_test" title="main.java.tests.contractorTests.contractorAddNewRunsheet" hash-for-method="contractorAddNewRunsheet(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000)">contractorAddNewRunsheet(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_test" title="main.java.tests.contractorTests.contractorAddNewRunsheet" hash-for-method="contractorAddNewRunsheet(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000)">contractorAddNewRunsheet(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Regression_test -->
@@ -125,17 +125,33 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="contractorAddNewRunsheet(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000)">
-                  </a> <!-- contractorAddNewRunsheet(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000) -->
+                  <a name="contractorAddNewRunsheet(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000)">
+                  </a> <!-- contractorAddNewRunsheet(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000) -->
                   <span class="method-name">contractorAddNewRunsheet</span>
-                  <span class="parameters">(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000)</span>
-                  <div class="stack-trace">java.lang.AssertionError: The new runsheet could not be added expected [true] but found [false]
-	at main.java.tests.contractorTests.contractorAddNewRunsheet.contractorAddNewRunsheet(contractorAddNewRunsheet.java:52)
+                  <span class="parameters">(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot; ng-disabled=&quot;isRequired || !validDateRanges || disabledButton&quot; disabled=&quot;disabled&quot;&gt;...&lt;/button&gt; is not clickable at point (362, 596). Other element would receive the click: &lt;div class=&quot;form-group pull-right filter-buttons&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=76.0.3809.132)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-2ENHKD3&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;x86&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 76.0.3809.132, chrome: {chromedriverVersion: 76.0.3809.126 (d80a294506b4..., userDataDir: C:\Users\Adrian\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:57139}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 71e6cdfed85b0c80cb9f614bc6e63081
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at main.java.selenium.WebDriverCommands.click(WebDriverCommands.java:47)
+	at main.java.pageObjects.ExplorerPage.clickOnApplyButton(ExplorerPage.java:690)
+	at main.java.tests.contractorTests.contractorAddNewRunsheet.contractorAddNewRunsheet(contractorAddNewRunsheet.java:38)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 19 stack frames
+... Removed 20 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -182,12 +198,12 @@
     &lt;parameter name=&quot;contractorPassword&quot; value=&quot;DSCI7lsc1&quot;/&gt;
     &lt;parameter name=&quot;standardUserVolume&quot; value=&quot;1438&quot;/&gt;
     &lt;parameter name=&quot;usernameToLogIn&quot; value=&quot;diplus2&quot;/&gt;
-    &lt;parameter name=&quot;Total_Runsheets&quot; value=&quot;5000&quot;/&gt;
+    &lt;parameter name=&quot;Total_Runsheets&quot; value=&quot;1000&quot;/&gt;
     &lt;parameter name=&quot;setPreference&quot; value=&quot;false&quot;/&gt;
     &lt;parameter name=&quot;contractorGrantor&quot; value=&quot;James&quot;/&gt;
     &lt;parameter name=&quot;brokerBoxIndexBook&quot; value=&quot;0001&quot;/&gt;
     &lt;parameter name=&quot;myCompany&quot; value=&quot;Gap_Tester&quot;/&gt;
-    &lt;parameter name=&quot;runsheetName&quot; value=&quot;Auto_RunsheetB&quot;/&gt;
+    &lt;parameter name=&quot;runsheetName&quot; value=&quot;Auto_RunsheetF&quot;/&gt;
     &lt;parameter name=&quot;emailUserName&quot; value=&quot;test_%d@wearegap.com&quot;/&gt;
     &lt;parameter name=&quot;numberOfUserToCreate&quot; value=&quot;1&quot;/&gt;
     &lt;parameter name=&quot;contractorName&quot; value=&quot;Test Contract&quot;/&gt;
@@ -354,7 +370,7 @@
     &lt;parameter name=&quot;freeTrialURL&quot; value=&quot;https://app.%sdrillinginfo.com/courthouse/subscription/#/freetrial&quot;/&gt;
     &lt;parameter name=&quot;contractorGrantor&quot; value=&quot;James&quot;/&gt;
     &lt;parameter name=&quot;lastName&quot; value=&quot;Last Name Tester&quot;/&gt;
-    &lt;parameter name=&quot;runsheetName&quot; value=&quot;New_RunsheetA&quot;/&gt;
+    &lt;parameter name=&quot;runsheetName&quot; value=&quot;New_Runsheet&quot;/&gt;
     &lt;parameter name=&quot;superUserPassword&quot; value=&quot;diplus1&quot;/&gt;
     &lt;parameter name=&quot;emailUserName&quot; value=&quot;test_%d@wearegap.com&quot;/&gt;
     &lt;parameter name=&quot;numberOfUserToCreate&quot; value=&quot;1&quot;/&gt;
@@ -467,12 +483,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'contractorAddNewRunsheet')
 data.setCell(0, 2, 'main.java.tests.contractorTests.contractorAddNewRunsheet')
-data.setCell(0, 3, 10821831);
+data.setCell(0, 3, 9872076);
 window.suiteTableData['Regression_test']= { tableData: data, tableDiv: 'times-div-Regression_test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 hours</span>
+              <span class="suite-total-time">Total running time: 2 hours</span>
               <div id="times-div-Regression_test">
               </div> <!-- times-div-Regression_test -->
             </div> <!-- times-div -->
@@ -505,17 +521,19 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome, https://app.%sdrillinginfo.com/courthouse/, dev., LocalDriver, 192.168.10.106:4444, true, fa...)</span>
-                <span class="method-start">341 ms</span>
+                <span class="method-start">352 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">contractorAddNewRunsheet(Auto_RunsheetB, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 5000)</span>
-                <span class="method-start">34018 ms</span>
+                <span class="method-name">contractorAddNewRunsheet(Auto_RunsheetF, dev., adrojascontract, DSCI7lsc1, Andrews Abstract Plant, James, 1000)</span>
+                <span class="method-start">42820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">tearDown([TestResult name=contractorAddNewRunsheet status=FAILURE method=contractorAddNewRunsheet.contractorA...)</span>
-                <span class="method-start">10855870 ms</span>
+                <span class="method-start">9917042 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
