@@ -449,17 +449,17 @@
             <class name="main.java.tests.adminTests.addFreeTrial"/>
             <class name="main.java.tests.adminTests.addPayGo"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-           <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+            <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
-           <!-- <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
+            <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-           <!-- <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>-->
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
-           <!-- <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>
+            <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>-->
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
@@ -472,8 +472,8 @@
             <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>-->
+            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>-->
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
         </classes>
     </test>
 </suite>

@@ -27,7 +27,8 @@ public class LoginPage extends PageObjects {
     private final By LOGIN_BUTTON = By.id("login");
     private final By STANDALONE_TITLE = By.xpath("//p[text()='Courthouse Contractor/PayGo/Free Trial']");
     //private final By STANDARD_TITLE = By.xpath("//p[text()='Sign In']");
-    private final By STANDARD_TITLE = By.xpath("//span[text()='SIGN IN']");
+    //private final By STANDARD_TITLE = By.xpath("//span[text()='SIGN IN']");
+    private final By STANDARD_TITLE = By.cssSelector("button[class='signin']");
     private final By HOME_BUTTON = By.cssSelector(".home-btn.active-item");
 
     //private final By SIGN_STANDALONE_LINK = By.xpath("//a[@href='https://app.%sdrillinginfo.com/courthouse/login']");
