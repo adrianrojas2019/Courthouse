@@ -191,6 +191,7 @@ public class ExplorerPage extends PageObjects {
      * this method calls the click method in webDriverCommands class.
      */
     public void clickOnUpdateInfoButton(){
+        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(UPDATE_INFO_BUTTON);
     }
     /**

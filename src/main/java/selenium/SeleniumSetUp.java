@@ -49,10 +49,10 @@ public abstract class SeleniumSetUp {
         if (remoteDriver.equals("RemoteDriver")) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities.setBrowserName("chrome");
-            capabilities.setVersion("75");
+            /*capabilities.setVersion("78");
             capabilities.setCapability("enableVNC", Boolean.parseBoolean(enableVNC));
             capabilities.setCapability("enableLog", Boolean.parseBoolean(enableServerLog));
-            capabilities.setCapability("enableVideo", Boolean.parseBoolean(enableVideo));
+            capabilities.setCapability("enableVideo", Boolean.parseBoolean(enableVideo));*/
             //System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
             driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), capabilities);
         }
