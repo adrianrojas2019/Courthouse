@@ -13,7 +13,8 @@ public class LoginPage extends PageObjects {
     /**
      *Web elements for LoginPage
      */
-    private final By MAIN_SIGN_IN = By.xpath("//p[@class='signInText-login']");
+    //private final By MAIN_SIGN_IN = By.xpath("//p[@class='signInText-login']");
+    private final By MAIN_SIGN_IN = By.xpath("//button[@class='signin']");
     //Courthouse 2.0 Thumbnail
     //private final By COURTHOUSE_THUMBNAIL = By.xpath("//img[@class='di_county_scans_20']");
     //private final By COURTHOUSE_NAME_APP= By.xpath("//span[@title='DI Courthouse 2.0']");
