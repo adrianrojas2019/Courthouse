@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="6" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
@@ -8,7 +8,7 @@
 
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
-        <parameter name="serverIPAddress" value="192.168.10.105:4444"/>
+        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
         <!--<parameter name="serverIPAddress" value="172.16.0.186:4444"/>-->
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
@@ -49,7 +49,7 @@
 
         <!-- Validate Metrics: By User (Contract/Free Trial/PayGo -->
         <parameter name="totalAddedToRunsheet" value="4.00"/>
-        <parameter name="totalDocumentsViewed" value="1.00"/>
+        <parameter name="totalDocumentsViewed" value="2.00"/>
         <parameter name="totalRemovedFromRunsheet" value="2.00"/>
         <parameter name="totalRenamedFromRunsheet" value="1.00"/>
         <parameter name="totalSearchesByCounty" value="4.00"/>
@@ -98,10 +98,11 @@
                 <include name="CH_Contractor_Broker_Box_Search"/>
                 <include name="CH_Admin_Metrics_By_Contractor_By_Broker_Box"/>
                 <include name="CH_Contractor_Explorer_Search_Validates_Fields"/>
+
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.loadCHMainPage"/>
+            <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -110,7 +111,7 @@
             <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>-->
+            <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
@@ -306,8 +307,8 @@
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
-        <parameter name="remoteDriver" value="RemoteDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.73:4444"/>
+        <parameter name="remoteDriver" value="LocalDriver"/>
+        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
         <parameter name="enableVideo" value="false"/>
@@ -394,7 +395,7 @@
         <!-- Add new runsheet as admin -->
         <parameter name="adminCounty" value="Andrews Abstract Plant"/>
         <parameter name="adminGrantor" value="James"/>
-        <parameter name="adminRunsheetName" value="Temp"/>
+        <parameter name="adminRunsheetName" value="TempA"/>
 
         <groups>
             <run>
@@ -417,21 +418,19 @@
             </run>
         </groups>
         <classes>
-             <class name="main.java.tests.adminTests.addContractor"/>
+             <!--<class name="main.java.tests.adminTests.addContractor"/>
              <class name="main.java.tests.adminTests.addFreeTrial"/>
              <class name="main.java.tests.adminTests.addPayGo"/>
-             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
+             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
             <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
-
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
-
         </classes>
     </test>
     <test name="Midland_Management_Test">
@@ -439,8 +438,8 @@
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
-        <parameter name="remoteDriver" value="RemoteDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.73:4444"/>
+        <parameter name="remoteDriver" value="LocalDriver"/>
+        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
         <parameter name="enableVideo" value="false"/>
@@ -511,8 +510,8 @@
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
-        <parameter name="remoteDriver" value="RemoteDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.73:4444"/>
+        <parameter name="remoteDriver" value="LocalDriver"/>
+        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
         <parameter name="enableVideo" value="false"/>
@@ -560,6 +559,8 @@
         <parameter name="superUserPassword" value="diplus1"/>
         <parameter name="myCompanyRunsheetName" value="CompanyB"/>
         <parameter name="superUserCounty" value="Bandera"/>
+        <!--Runsheet to be unassgined -->
+        <parameter name="runsheetUnAssigned" value="test_one_county"/>
 
         <groups>
             <run>
@@ -572,6 +573,8 @@
                 <include name="CH_Contractor_Request_Runsheet_No_Access"/>
                 <include name="CH_Super_User_Approve_Request_Copy_Runsheet"/>
                 <include name="CH_Contractor_Request_Runsheet_Full_Access"/>
+                <include name="CH_Contractor_Unassign_Runsheet"/>
+                <include name="CH_Super_User_Assign_Runsheet"/>
             </run>
         </groups>
         <classes>
@@ -583,6 +586,8 @@
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
+            <class name="main.java.tests.contractorTests.contractorUnassignRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>
         </classes>
     </test>
 </suite>

@@ -27,6 +27,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By COMPANY_ACCT_POP_UP = By.cssSelector("div[class='modal-dialog']");
     private final By EDIT_EXPIRATION_DATE_DIALOG = By.cssSelector(".headerTitle");
     private final By SEARCH_USER_FIELD_CONTRACT = By.cssSelector("input[ng-model='gridOptionsMirror.filterOptions.filterText']");
+    private final By SEARCH_UNASSIGN_RUNSHEET = By.xpath("//div[@di-left-title='Unassigned Runsheets']//input[@type='text'][@ng-model='searchItem.name']");
     private final By SEARCH_USER_FIELD = By.cssSelector("input[ng-model='gridOptions.filterOptions.filterText']");
     private final By USAGE_METRICS_TAB = By.cssSelector("div[class='diTabNav'] li:nth-child(2) > a");
     private final By DEMO_MANAGEMENT_TAB = By.xpath("//div[@class='diTabNav']//li//a[text()='Demo Management']");
@@ -105,6 +106,7 @@ public class UserAdministrationPage extends PageObjects {
     String find_County = "//span[text()='%s']";
     String find_County_Name = "//b[text()='%s']";
     String find_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
+    String find_Unassigned_Runsheet = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String find_Assigned_County = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
     String find_County_Type = "//option[text()='%s']";
     String contractor_Name = "//span[text()='%s']";
@@ -230,6 +232,19 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.waitForElementInVisible(SPINNER,90);
     }
+
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
+    public void clickOnUnassignedRunsheetsField(String searchUnassignRunsheetName){
+        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.type(SEARCH_UNASSIGN_RUNSHEET,searchUnassignRunsheetName);
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitForElementInVisible(SPINNER,10);
+    }
+
+
+
     /**
      *this method calls the click method in webDriverCommands class.
      */
@@ -424,6 +439,24 @@ public class UserAdministrationPage extends PageObjects {
      */
     public boolean isUnassignedCountyDisplayed(String county){
         return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_County, county)),5);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public boolean isUnassignedRunsheetDisplayed(String unassignedRunsheet){
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(find_Unassigned_Runsheet, unassignedRunsheet)),5);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
+    public void clickOnUnassignedRunsheets(String unassignedRunsheet){
+        webDriverCommands.click(By.xpath(String.format(find_Unassigned_Runsheet, unassignedRunsheet)));
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.

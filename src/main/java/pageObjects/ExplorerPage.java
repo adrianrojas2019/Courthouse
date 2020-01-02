@@ -88,13 +88,14 @@ public class ExplorerPage extends PageObjects {
     private final By PRINT_BUTTON_ENABLED = By.cssSelector("button[class='toolbarButton printPdf'][disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
     private final By CLOSE_STANDALONE_PDF = By.cssSelector("button[class='toolbarButton closePdf']");
+    private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
+    private final By DELETE_RUNSHEET_BUTTON = By.cssSelector("button[class='btn btn-danger btn-sm inline-block']");
     private final By CANVAS_LOADED = By.cssSelector("canvas[class=rotate0][height]");
     //private final By PDF_SPINNER = By.cssSelector("spinner[class='medium-spinner']");
     private final By CLOSE_EMBEDDED_PDF = By.cssSelector("section[di-pdf-viewer='pdfViewerOptions'] button[class='toolbarButton closePdf']");
-    private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
-    private final By DELETE_RUNSHEET_BUTTON = By.cssSelector("button[class='btn btn-danger btn-sm inline-block']");
     private final By DELETE_RUNSHEET = By.cssSelector("button[ng-bind='modalDeleteOptions.deleteButtonText']");
     private final By DELETE_RUNSHEET_DIALOG = By.cssSelector("div[ng-bind-html='modalDeleteOptions.deleteText | toTrustedHtml']");
+    private final By UNASSIGN_RUNSHEET_DIALOG = By.xpath("//div[contains(text(),'You are unassigning a runsheet (test_one_county) from your account and will need a Super User to add it back. Do you want to proceed?')]");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//div[text()='Document not available']");
     private final By CHECK_BOX_DO_NOT_SHOW_AGAIN = By.cssSelector("div[class='modal-header warningModalHeader ng-scope']");
     private final By PDF_VIEWER_PREFERENCE = By.xpath("//div[text()='PDF Viewer Preference']");
@@ -586,6 +587,14 @@ public class ExplorerPage extends PageObjects {
      *
      *  @return boolean
      */
+    public boolean isUnassignRunsheetDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(UNASSIGN_RUNSHEET_DIALOG ,30);
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isRunsheetNameDisplayed(String runsheet_Name){
         return webDriverCommands.waitForElementPresent(By.cssSelector(String.format(grid_Title_Runsheet_Name,runsheet_Name)),30);
     }
@@ -921,6 +930,12 @@ public class ExplorerPage extends PageObjects {
     /**
      * this method calls the type method in webDriverCommands class.
      */
+    public boolean isUnassignRunsheetDisplayed(String runsheetName){
+        return webDriverCommands.waitForElementPresent(By.cssSelector(String.format(find_Runsheet, runsheetName)),30);
+    }
+    /**
+     * this method calls the type method in webDriverCommands class.
+     */
     public void changeToIndicesWithImages(String indicesWithImages){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(INDEX_WITH_IMAGES,indicesWithImages);
@@ -976,6 +991,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.waitForElementInVisible(SPINNER, 60);
     }
+
     /**
      * this method calls the click method in webDriverCommands class.
      */
