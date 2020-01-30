@@ -34,7 +34,9 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             newExplorerPage.isExploreTitleDisplayed();
 
             //Get current Available Balance
-            Double currentAvailableBalance = newExplorerPage.getCurrentAvailableBalance();
+            //Double currentAvailableBalance = newExplorerPage.getCurrentAvailableBalance();
+            String y = newExplorerPage.getCurrentAvailableBalance().replace(",", "");
+            Double currentAvailableBalance = Double.parseDouble(y);
             //Click on County Combo
             newExplorerPage.clickOnCountyCombo(payGoCounty);
             newExplorerPage.isGrantorEnabled();
@@ -45,7 +47,7 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             //click on Ok button
             newExplorerPage.clickOnPurchaseConfirmationButton();
             //Wait until Available Balance has been updated
-            Assert.assertEquals(newExplorerPage.getCurrentAvailableBalance(), currentAvailableBalance - 0.25, "Available Balance has not been updated!.");
+            Assert.assertEquals(Double.parseDouble(newExplorerPage.getCurrentAvailableBalance().replace(",", "")), currentAvailableBalance - 0.25, "Available Balance has not been updated!.");
             //Wait until Search Results retrieves documents
             Assert.assertTrue(newExplorerPage.isSearchResultsWithDocuments(), "Explorer Search Filter didn't get documents. (Search Results is empty)");
             newExplorerPage.clickOnFirstCheckBox();

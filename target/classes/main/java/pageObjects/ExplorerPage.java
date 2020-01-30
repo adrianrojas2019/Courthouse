@@ -81,6 +81,17 @@ public class ExplorerPage extends PageObjects {
     private final By TOTAL_DOWNLOADS = By.cssSelector("span[ng-bind='diMeterGraphOptions.county.downloadsUsed | number']");
     private final By TOTAL_PRINTS = By.cssSelector("span[ng-bind='diMeterGraphOptions.county.printsUsed | number']");
     private final By OK_BUTTON = By.cssSelector("button[ng-bind='modalAlertOptions.okButtonText']");
+    private final By REPORT_ISSUE_BUTTON = By.cssSelector("button[class='btn btn-warning btn-sm remove_border']");
+    private final By REPORT_ISSUE_DIALOG = By.cssSelector("div[ng-bind='modalAlertOptions.headerText']");
+    private final By FIRST_COUNTY = By.xpath("//select[@name='countyIdIR']//option[@value=\"0\"]");
+    private final By SELECT_COUNTY = By.xpath("//select[@name='countyIdIR']");
+    private final By RI_VOLUME= By.cssSelector("input[name='volumeIR']");
+    private final By RI_PAGE= By.cssSelector("input[name='pageIR']");
+    private final By RI_INST_NUMBER= By.cssSelector("input[name='instNumberIR']");
+    private final By RI_BOOK_TYPE= By.cssSelector("input[name='bookTypeIR']");
+    private final By RI_INST_TYPE= By.cssSelector("input[name='instrumentTypeIR']");
+    private final By RI_ISSUE_TYPE= By.cssSelector("select[name='issueTypeIR']");
+    private final By RI_NOTES= By.cssSelector("textarea[name='notesIR']");
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.cssSelector("button[class='btn btn-success ng-binding']");
     private final By SPINNER = By.xpath("//div[@class='spinner']");
     private final By SPINNER_PROGRESS = By.cssSelector("div[class='spinner'][role='progressbar']");
@@ -316,6 +327,15 @@ public class ExplorerPage extends PageObjects {
      *
      *  @return boolean
      */
+    public boolean isReportIssueDialogDisplayed(){
+        return webDriverCommands.waitForElementPresent(REPORT_ISSUE_DIALOG,30);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isUsageProgressBarDisplayed(){
         return webDriverCommands.waitForElementPresent(USAGE_PROGRESS_BAR,30);
     }
@@ -350,9 +370,14 @@ public class ExplorerPage extends PageObjects {
      *
      *  @return Double
      */
-    public Double getCurrentAvailableBalance(){
+/*    public Double getCurrentAvailableBalance(){
         webDriverCommands.waitSomeSeconds(5);
         return Double.parseDouble(webDriverCommands.getText(AVAILABLE_BALANCE).substring(1));
+    }*/
+
+    public String getCurrentAvailableBalance(){
+        webDriverCommands.waitSomeSeconds(5);
+        return webDriverCommands.getText(AVAILABLE_BALANCE).substring(1);
     }
 
     /**
@@ -973,6 +998,82 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_BUTTON);
         webDriverCommands.waitSomeSeconds(5);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnReportIssueButton(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(REPORT_ISSUE_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void selectFirstCounty(){
+        webDriverCommands.waitSomeSeconds(1);
+        String countyName = webDriverCommands.getText(FIRST_COUNTY);
+        webDriverCommands.type(SELECT_COUNTY, countyName);
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addVolume(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_VOLUME, "1");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addPage(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_PAGE, "2");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addInstrumentNumber(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_INST_NUMBER, "11");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addBookType(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_BOOK_TYPE, "QCD");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addInstrumentType(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_INST_TYPE, "deed");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void selectIssueType(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_ISSUE_TYPE, "Other");
+        webDriverCommands.waitSomeSeconds(1);
+    }
+
+    /**
+     * this method calls the click method in webDriverCommands class.
+     */
+    public void addNotes(){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(RI_NOTES, "This is for testing purposes");
+        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      * this method calls the click method in webDriverCommands class.

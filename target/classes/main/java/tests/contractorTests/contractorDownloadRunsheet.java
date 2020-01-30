@@ -8,7 +8,9 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.NumberFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 /**
  * Created by Adrian on 12/10/2018.
@@ -40,13 +42,17 @@ public class contractorDownloadRunsheet extends SeleniumInitializer {
         //"Dont' show me this message again."
         Assert.assertTrue(newExplorerPage.isDownloadsPrintsDialogDisplayed(), "Downloads & Prints Pop Up Dialog has not been displayed. (Pop Up Dialog)");
         //Get Total of Downloads
-        int ntotalDownloads = NumberUtils.toInt(newExplorerPage.getTotalDownloads()) + 1;
+        //int ntotalDownloads = NumberUtils.toInt(newExplorerPage.getTotalDownloads()) + 1;
+        //int ntotalDownloads = number;
+        String y = newExplorerPage.getTotalDownloads().replace(",", "");
+        int ntotalDownloads  = Integer.parseInt(y);
+        ntotalDownloads++;
         //Click on OK button proceed to download the documents
         newExplorerPage.clickOnOKButton();
         //Click again on DownloadAllButton
         newExplorerPage.clickOnDownloadAllButton();
         //Assert.assertEquals in order to verify that download has been increased
-        Assert.assertEquals(ntotalDownloads , NumberUtils.toInt(newExplorerPage.getTotalDownloads()),"Total of Downloads have not been increased.");
+        Assert.assertEquals(ntotalDownloads ,  Integer.parseInt(newExplorerPage.getTotalDownloads().replace(",", "")),"Total of Downloads have not been increased.");
 
     }
 }
