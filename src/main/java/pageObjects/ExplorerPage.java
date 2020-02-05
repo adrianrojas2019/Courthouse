@@ -294,6 +294,20 @@ public class ExplorerPage extends PageObjects {
 
         return PageFactory.initElements(getDriver(), BookSearchPage.class);
     }
+
+    /**
+     *this method calls the click method in webDriverCommands class.
+     *
+     *  @return EmailAccountPage
+     */
+
+    public EmailAccountPage clickOnEmailAccount(){
+
+        /*webDriverCommands.click(BOOK_SEARCH_BUTTON);
+        webDriverCommands.waitSomeSeconds(7);
+*/
+        return PageFactory.initElements(getDriver(), EmailAccountPage.class);
+    }
     /**
      *this method calls the click method in webDriverCommands class.
      *
