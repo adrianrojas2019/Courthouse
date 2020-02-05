@@ -567,6 +567,7 @@
         <groups>
             <run>
                 <!-- Runsheet Management Section -->
+                <include name="CH_Super_User_Report_Issue"/>
                 <include name="CH_Super_User_Create_New_Runsheet"/>
                 <include name="CH_Super_User_Create_Second_Runsheet"/>
                 <include name="CH_Contractor_Request_Runsheet_Request_Copy"/>
@@ -577,7 +578,6 @@
                 <include name="CH_Contractor_Request_Runsheet_Full_Access"/>
                 <include name="CH_Contractor_Unassign_Runsheet"/>
                 <include name="CH_Super_User_Assign_Runsheet"/>
-                <include name="CH_Super_User_Report_Issue"/>
             </run>
         </groups>
         <classes>
