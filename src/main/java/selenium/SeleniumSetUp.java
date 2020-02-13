@@ -1,11 +1,14 @@
 package main.java.selenium;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestContext;
@@ -35,29 +38,41 @@ public abstract class SeleniumSetUp {
     public void setUp(String browser,String remoteDriver, String serverIPAddress, String enableVNC, String enableServerLog, String enableVideo) throws IOException {
 
         this.browserName = browser;
-        ChromeDriverManager.chromedriver().setup();
-        //Comment/uncomment if testing is local
-        if (remoteDriver.equals("LocalDriver")) {
-            ChromeOptions options = new ChromeOptions();
-            options.setCapability(ChromeOptions.CAPABILITY, options);
-            System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
-            System.setProperty("webdriver.chrome.verboseLogging", "true");
-            driver = new ChromeDriver(options);
-        }
+        if (browser.equals("Chrome")) {
+            ChromeDriverManager.chromedriver().setup();
+            //Comment/uncomment if testing is local
+            if (remoteDriver.equals("LocalDriver")) {
+                ChromeOptions options = new ChromeOptions();
+                options.setCapability(ChromeOptions.CAPABILITY, options);
+                System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+                System.setProperty("webdriver.chrome.verboseLogging", "true");
+                driver = new ChromeDriver(options);
+            }
 
-        //Comment/Uncomment if testing is using srv selenoid container
-        if (remoteDriver.equals("RemoteDriver")) {
-            DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.setBrowserName("chrome");
-            /*capabilities.setVersion("78");
-            capabilities.setCapability("enableVNC", Boolean.parseBoolean(enableVNC));
-            capabilities.setCapability("enableLog", Boolean.parseBoolean(enableServerLog));
-            capabilities.setCapability("enableVideo", Boolean.parseBoolean(enableVideo));*/
-            //System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
-            driver = new RemoteWebDriver(new URL("http://"+serverIPAddress+"/wd/hub"), capabilities);
+            //Comment/Uncomment if testing is using srv selenoid container
+            if (remoteDriver.equals("RemoteDriver")) {
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+                capabilities.setBrowserName("chrome");
+                /*capabilities.setVersion("78");
+                capabilities.setCapability("enableVNC", Boolean.parseBoolean(enableVNC));
+                capabilities.setCapability("enableLog", Boolean.parseBoolean(enableServerLog));
+                capabilities.setCapability("enableVideo", Boolean.parseBoolean(enableVideo));*/
+                //System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+                driver = new RemoteWebDriver(new URL("http://" + serverIPAddress + "/wd/hub"), capabilities);
+            }
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
         }
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
+        else {
+            FirefoxDriverManager.firefoxdriver().setup();
+            if (remoteDriver.equals("LocalDriver")) {
+                FirefoxOptions options = new FirefoxOptions();
+                options.setCapability(FirefoxOptions.FIREFOX_OPTIONS, options);
+                System.setProperty("webdriver.firefox.logfile", "firefox.log");
+                System.setProperty("webdriver.firefox.verboseLogging", "true");
+                driver = new FirefoxDriver(options);
+            }
+        }
     }
 
     public void tearDown(ITestResult result) throws Throwable {

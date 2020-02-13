@@ -29,7 +29,9 @@ public class superUserReportIssue extends SeleniumInitializer {
     public void ValidateEmail(EmailAccountPage newEmailAccountPage,String emailURL,String emailAddress, String emailPassword){
 
         newEmailAccountPage.LoadNewURL(emailURL);
-
+        Assert.assertTrue(newEmailAccountPage.isMailPageDisplayed(), "Outlook Main Page  has not been displayed.");
+        //Click on Sign in button
+        newEmailAccountPage.clickOnSignInButton();
         //Add email address
         //Make sure that pop up has been displayed
         Assert.assertTrue(newEmailAccountPage.isEmailAddressDialogDisplayed(),"Email Address Dialog was not displayed.");
@@ -44,6 +46,13 @@ public class superUserReportIssue extends SeleniumInitializer {
         newEmailAccountPage.clickOnNextButton();
         //Make sure outlook inbox has been loaded and then find the new email with new report issue has been generated as expected
         Assert.assertTrue(newEmailAccountPage.isNewReportIssueEmailReceived(),"Courthouse User is reporting an issue with a document has not been received");
+        //Delete email
+        newEmailAccountPage.clickOnReceivedReportIssueEmail();
+        Assert.assertTrue(newEmailAccountPage.isEmailSelected("A Courthouse user is reporting an issue with a document."),"Email has not been selected.");
+        //click on delete button
+        newEmailAccountPage.clickOnDeleteButton();
+        //Assert email has been deleted
+        Assert.assertFalse(newEmailAccountPage.isNewReportIssueEmailReceived(),"Email has not been deleted.");
     }
 
     public EmailAccountPage ReportIssue(ExplorerPage newExplorerPage){
@@ -66,7 +75,6 @@ public class superUserReportIssue extends SeleniumInitializer {
         newExplorerPage.clickOnOKButton();
         //Success Message
         Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Document issue has been successfully reported.") ,"The report issue could not be send.");
-
         return newExplorerPage.clickOnEmailAccount();
 
     }

@@ -1144,7 +1144,7 @@ public class ExplorerPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSuccessMessageDisplayed(String successMessage){
-        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),45);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(successAlertMessage,successMessage)),30);
     }
     /**
      *this method calls the waitForElementVisible method in webn.DriverCommands class.
