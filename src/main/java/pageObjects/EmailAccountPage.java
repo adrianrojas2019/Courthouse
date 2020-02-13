@@ -98,9 +98,9 @@ public class EmailAccountPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(15);
         //webDriverCommands.click(DELETE_BUTTON);
         webDriverCommands.click(CHECK_BOX);
-        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(EMPTY_FOLDER);
-        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitSomeSeconds(3);
 
     }
     /**
