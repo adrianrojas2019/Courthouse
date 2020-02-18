@@ -75,7 +75,7 @@ public abstract class SeleniumSetUp {
             //Comment/Uncomment if testing is using srv selenoid container
             if (remoteDriver.equals("RemoteDriver")) {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setBrowserName("Firefox");
+                capabilities.setBrowserName("firefox");
                 /*capabilities.setVersion("78");
                 capabilities.setCapability("enableVNC", Boolean.parseBoolean(enableVNC));
                 capabilities.setCapability("enableLog", Boolean.parseBoolean(enableServerLog));
