@@ -72,6 +72,19 @@ public abstract class SeleniumSetUp {
                 System.setProperty("webdriver.firefox.verboseLogging", "true");
                 driver = new FirefoxDriver(options);
             }
+            //Comment/Uncomment if testing is using srv selenoid container
+            if (remoteDriver.equals("RemoteDriver")) {
+                DesiredCapabilities capabilities = new DesiredCapabilities();
+                capabilities.setBrowserName("Firefox");
+                /*capabilities.setVersion("78");
+                capabilities.setCapability("enableVNC", Boolean.parseBoolean(enableVNC));
+                capabilities.setCapability("enableLog", Boolean.parseBoolean(enableServerLog));
+                capabilities.setCapability("enableVideo", Boolean.parseBoolean(enableVideo));*/
+                //System.setProperty("webdriver.chrome.logfile", "chromedriver.log");
+                driver = new RemoteWebDriver(new URL("http://" + serverIPAddress + "/wd/hub"), capabilities);
+            }
+            driver.manage().window().maximize();
+            driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS.SECONDS);
         }
     }
 
