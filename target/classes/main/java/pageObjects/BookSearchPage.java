@@ -3,6 +3,7 @@ package main.java.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -85,8 +86,19 @@ public class BookSearchPage extends PageObjects {
      */
     public void clickOnCountyCombo(String brokerBoxCounty){
         webDriverCommands.waitSomeSeconds(3);
-        webDriverCommands.type(COUNTY_COMBO,brokerBoxCounty);
+        //webDriverCommands.type(COUNTY_COMBO,brokerBoxCounty);
+        selectDropDownOptionByValue(COUNTY_COMBO,brokerBoxCounty);
         webDriverCommands.waitSomeSeconds(3);
+    }
+    /**
+     * This method selects a dropdown option depending on the value.
+     *
+     * @param webElement dropdown to select the option
+     * @param value      value to select in the dropdown
+     */
+    public void selectDropDownOptionByValue(final By webElement, String value) {
+        Select dropdown = new Select(webDriverCommands.findElement(webElement));
+        dropdown.selectByVisibleText(value);
     }
     /**
      *this method calls the type method in webDriverCommands class.
@@ -95,7 +107,8 @@ public class BookSearchPage extends PageObjects {
      */
     public void clickOnBookType(String brokerBoxBookType){
         webDriverCommands.waitSomeSeconds(3);
-        webDriverCommands.type(BOOK_TYPE_COMBO,brokerBoxBookType);
+        //webDriverCommands.type(BOOK_TYPE_COMBO,brokerBoxBookType);
+        selectDropDownOptionByValue(BOOK_TYPE_COMBO,brokerBoxBookType);
         webDriverCommands.waitSomeSeconds(3);
     }
     /**
@@ -105,7 +118,8 @@ public class BookSearchPage extends PageObjects {
      */
     public void clickOnIndexBook(String brokerBoxIndexBook){
         webDriverCommands.waitSomeSeconds(3);
-        webDriverCommands.type(INDEX_BOOK_COMBO,brokerBoxIndexBook);
+        //webDriverCommands.type(INDEX_BOOK_COMBO,brokerBoxIndexBook);
+        selectDropDownOptionByValue(INDEX_BOOK_COMBO,brokerBoxIndexBook);
         webDriverCommands.waitSomeSeconds(3);
     }
     /**
@@ -115,7 +129,8 @@ public class BookSearchPage extends PageObjects {
      */
     public void clickOnBookmarks(String brokerBoxBookmarks){
         webDriverCommands.waitSomeSeconds(3);
-        webDriverCommands.type(BOOKMARKS_COMBO,brokerBoxBookmarks);
+        //webDriverCommands.type(BOOKMARKS_COMBO,brokerBoxBookmarks);
+        selectDropDownOptionByValue(BOOKMARKS_COMBO,brokerBoxBookmarks);
         webDriverCommands.waitSomeSeconds(3);
     }
 

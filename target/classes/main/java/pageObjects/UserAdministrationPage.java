@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.Select;
 
 import java.text.DecimalFormat;
 
@@ -279,7 +280,9 @@ public class UserAdministrationPage extends PageObjects {
     public void addMidlandMapsCounty(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(SEARCH_MIDLAND_MAP_COUNTY,midlandMapCounty);
+        //selectDropDownOptionByValue(SEARCH_MIDLAND_MAP_COUNTY,midlandMapCounty);
     }
+
     /**
      *this method calls the type method in webDriverCommands class.
      */
@@ -293,6 +296,7 @@ public class UserAdministrationPage extends PageObjects {
     public void removeMidlandMapsCounty(String midlandMapCounty){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(REMOVE_MIDLAND_MAP_COUNTY,midlandMapCounty);
+        //selectDropDownOptionByValue(REMOVE_MIDLAND_MAP_COUNTY,midlandMapCounty);
     }
 
     /**
@@ -827,8 +831,19 @@ public class UserAdministrationPage extends PageObjects {
      */
     public void clickOnCountyTypeCombo(String countyType){
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.type(COUNTY_TYPE, countyType);
+        //webDriverCommands.type(COUNTY_TYPE, countyType);
+        selectDropDownOptionByValue(COUNTY_TYPE,countyType);
         webDriverCommands.waitSomeSeconds(3);
+    }
+    /**
+     * This method selects a dropdown option depending on the value.
+     *
+     * @param webElement dropdown to select the option
+     * @param value      value to select in the dropdown
+     */
+    public void selectDropDownOptionByValue(final By webElement, String value) {
+        Select dropdown = new Select(webDriverCommands.findElement(webElement));
+        dropdown.selectByVisibleText(value);
     }
     /**
      *this method calls the click() method in webDriverCommands class.

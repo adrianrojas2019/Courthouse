@@ -2,6 +2,7 @@ package main.java.pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
 
 /**
  * Created by Adrian on 5/10/2019.
@@ -38,15 +39,37 @@ public class MidlandMapsPage extends PageObjects  {
      */
     public void clickOnCountyCombo(String contractorCounty){
         webDriverCommands.waitSomeSeconds(5);
-        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        //webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        selectDropDownOptionByValue(COUNTY_COMBO,contractorCounty);
         webDriverCommands.waitSomeSeconds(5);
+    }
+
+    /**
+     *this method calls the type method in webDriverCommands class.
+     */
+    public void clickOnCountyComboNotAssigned(String contractorCounty){
+        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        //selectDropDownOptionByValue(COUNTY_COMBO,contractorCounty);
+        webDriverCommands.waitSomeSeconds(5);
+    }
+    /**
+     * This method selects a dropdown option depending on the value.
+     *
+     * @param webElement dropdown to select the option
+     * @param value      value to select in the dropdown
+     */
+    public void selectDropDownOptionByValue(final By webElement, String value) {
+        Select dropdown = new Select(webDriverCommands.findElement(webElement));
+        dropdown.selectByVisibleText(value);
     }
     /**
      *this method calls the type method in webDriverCommands class.
      */
     public void clickOnYearCombo(String contractorCountyYear){
         webDriverCommands.waitSomeSeconds(5);
-        webDriverCommands.type(COUNTY_YEAR_COMBO,contractorCountyYear);
+        //webDriverCommands.type(COUNTY_YEAR_COMBO,contractorCountyYear);
+        selectDropDownOptionByValue(COUNTY_YEAR_COMBO,contractorCountyYear);
         webDriverCommands.waitSomeSeconds(5);
     }
     /**

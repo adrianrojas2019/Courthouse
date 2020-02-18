@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="6" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
 
         <!--Local testing vs Selenoid Container -->
@@ -559,7 +559,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="CompanyB"/>
+        <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Runsheet to be unassgined -->
         <parameter name="runsheetUnAssigned" value="test_one_county"/>

@@ -3,6 +3,7 @@ package main.java.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -246,7 +247,8 @@ public class ExplorerPage extends PageObjects {
      */
     public void clickOnCountyCombo(String contractorCounty){
         webDriverCommands.waitSomeSeconds(5);
-        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        //webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        selectDropDownOptionByValue(COUNTY_COMBO,contractorCounty);
         webDriverCommands.waitSomeSeconds(5);
     }
     /**
@@ -254,9 +256,22 @@ public class ExplorerPage extends PageObjects {
      */
     public void clickOnCountyComboPriorReference(String contractorCounty){
         webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.type(PR_COUNTY_COMBO,contractorCounty);
+        //webDriverCommands.type(PR_COUNTY_COMBO,contractorCounty);
+        selectDropDownOptionByValue(PR_COUNTY_COMBO,contractorCounty);
         webDriverCommands.waitSomeSeconds(2);
     }
+
+    /**
+     * This method selects a dropdown option depending on the value.
+     *
+     * @param webElement dropdown to select the option
+     * @param value      value to select in the dropdown
+     */
+    public void selectDropDownOptionByValue(final By webElement, String value) {
+        Select dropdown = new Select(webDriverCommands.findElement(webElement));
+        dropdown.selectByVisibleText(value);
+    }
+
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *
@@ -1272,7 +1287,8 @@ public class ExplorerPage extends PageObjects {
      */
     public void clickOnMyCompanyRunsheetsCombo(String myCompanyRunsheet){
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.type(MY_COMPANY_RUNSHEET_COMBO,myCompanyRunsheet);
+        //webDriverCommands.type(MY_COMPANY_RUNSHEET_COMBO,myCompanyRunsheet);
+        selectDropDownOptionByValue(MY_COMPANY_RUNSHEET_COMBO,myCompanyRunsheet);
         webDriverCommands.waitSomeSeconds(1);
     }
     /**

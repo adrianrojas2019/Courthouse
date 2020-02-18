@@ -33,6 +33,7 @@ public class priorReferenceSearch extends SeleniumInitializer {
 
         //Click on County Combo
         newExplorerPage.clickOnCountyComboPriorReference(standardUserCounty);
+
         newExplorerPage.clickOnPRApplyButton();
         //Error Message
         Assert.assertTrue(newExplorerPage.isSuccessMessageDisplayed("Please type a value for volume and page or a record #."), "The new document(s) could not be added into new runsheet");

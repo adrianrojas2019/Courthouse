@@ -1,81 +1,22 @@
-1582035816677	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Adrian\\AppData\\Local\\Temp\\rust_mozprofileVrceaY"
-1582035821937	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
-1582035823681	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1582035823681	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1582035823682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1582035823682	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1582053824043	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\Adrian\\AppData\\Local\\Temp\\rust_mozprofile3RiTQr"
+1582053825191	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1582053827060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1582053827060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1582053827060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1582053827060	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
-1582035846755	Marionette	INFO	Listening on port 64531
-1582035846856	Marionette	WARN	TLS certificate errors will be ignored for this session
+1582053832477	Marionette	INFO	Listening on port 55011
+1582053832800	Marionette	WARN	TLS certificate errors will be ignored for this session
+1582053984341	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://marionette/content/sync.js:244:13
+TimedPromise@chrome://marionette/content/sync.js:229:10
+interaction.flushEventLoop@chrome://marionette/content/interaction.js:416:10
+webdriverClickElement@chrome://marionette/content/interaction.js:182:31
+1582054172200	Marionette	INFO	Stopped listening on port 55011
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x600015,name=PLayerTransaction::Msg_ClearCachedResources) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x9F0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 
-###!!! [Child][MessageChannel] Error: (msgtype=0x9F0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600006,name=PLayerTransaction::Msg_ReleaseCompositable) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x9F0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600005,name=PLayerTransaction::Msg_ReleaseLayer) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x60001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0xD,name=PAPZ::Msg_Destroy) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x9F0003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x34001A,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x600015,name=PLayerTransaction::Msg_ClearCachedResources) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel] Error: (msgtype=0x60001E,name=PLayerTransaction::Msg_Shutdown) Channel error: cannot send/recv
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: (msgtype=0x34001A,name=PCompositorBridge::Msg_WillClose) Channel error: cannot send/recv
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 

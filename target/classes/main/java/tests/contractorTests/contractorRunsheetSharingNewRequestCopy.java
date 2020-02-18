@@ -36,7 +36,7 @@ public class contractorRunsheetSharingNewRequestCopy extends SeleniumInitializer
         //Validate that User Grid has been displayed
         Assert.assertTrue(newUserAdminPage.isUserAdminGridDisplayed(), "Cannot access the User Administration Grid.");
 
-        //Find contractor user
+        //Find contractor userc
         newUserAdminPage.clickOnSearchFieldAsContractor(contractorUserName);
         //Validate that user has been found
         Assert.assertEquals(1, NumberUtils.toInt(newUserAdminPage.isUserFound()), "Cannot find the Contract User.");

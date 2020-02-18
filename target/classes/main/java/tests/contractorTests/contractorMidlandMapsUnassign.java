@@ -61,7 +61,7 @@ public class contractorMidlandMapsUnassign extends SeleniumInitializer {
         MidlandMapsPage newMidlandMapsPage = ValidateContractAccess(environment,contractorUserName, contractorPassword, newLoginPage);
 
         //Make sure that current contract user is able to see the previous assigned midland maps county
-        newMidlandMapsPage.clickOnCountyCombo(countyMidlandMaps);
+        newMidlandMapsPage.clickOnCountyComboNotAssigned(countyMidlandMaps);
         Assert.assertFalse(newMidlandMapsPage.isMidlandMapCountyDisplayed(countyMidlandMaps),"Midland Map County has not been displayed." + countyMidlandMaps);
 
     }
