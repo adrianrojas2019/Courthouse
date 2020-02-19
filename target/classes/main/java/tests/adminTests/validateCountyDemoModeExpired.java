@@ -72,7 +72,7 @@ public class validateCountyDemoModeExpired extends SeleniumInitializer {
         newExplorerPage1.clickOnExplorerSearch();
         newExplorerPage1.isExploreTitleDisplayed();
         // Click on County Combo
-        newExplorerPage1.clickOnCountyCombo(countyOnDemoMode);
+        newExplorerPage1.clickOnCountyComboByType(countyOnDemoMode);
         // Validate county demo message"[CountyOnDemoMode] expires today."
         Assert.assertFalse(newExplorerPage1.isNotCountyDisplayed(countyOnDemoMode), "Your County: " + countyOnDemoMode + " should not be displayed.");
     }

@@ -34,6 +34,12 @@ public class WebDriverCommands extends  SeleniumSetUp {
         }
     }
 
+    public void typeJS(By element, String data) {
+        WebElement wb = driver.findElement(element);
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].value='"+data+"';", wb);
+        //jse.executeScript("document.getElementById('ssn').value='555-55-5555';");
+    }
     public void clear(By element){
         if(waitForElementPresent(element)) {
             driver.findElement(element).clear();

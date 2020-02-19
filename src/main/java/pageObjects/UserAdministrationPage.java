@@ -72,6 +72,7 @@ public class UserAdministrationPage extends PageObjects {
 
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
     private final By NEW_EXPIRATION_DATE = By.cssSelector("input[name='datePicker']");
+    private final By OPEN_CALENDAR_ICON = By.cssSelector("button[class='btn btn-default'][ng-click='open($event)']");
 
     private final By FIRST_NAME = By.cssSelector("input[name='firstName']");
     private final By LAST_NAME = By.cssSelector("input[name='lastName']");
@@ -943,6 +944,9 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.clear(NEW_EXPIRATION_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(NEW_EXPIRATION_DATE, currentDate);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.typeJS(NEW_EXPIRATION_DATE, currentDate);
+        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      *this method calls the type method in webDriverCommands class.

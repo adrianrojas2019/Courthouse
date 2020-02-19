@@ -1,14 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="6" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
 
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
+        <parameter name="serverIPAddress" value="172.16.1.12:4444"/>
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
         <parameter name="enableVideo" value="false"/>
@@ -101,7 +101,7 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.loadCHMainPage"/>
+           <!-- <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -116,7 +116,7 @@
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
-            <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>
+            <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>-->
         </classes>
     </test>
 
@@ -193,14 +193,14 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
+           <!-- <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
             <class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRenameRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialDownloadRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByFreeTrial"/>
-            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialMidlandMapsSearch"/>-->
         </classes>
     </test>
     <test name="PayGo_Test">
@@ -289,7 +289,7 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
+           <!-- <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
             <class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
@@ -297,7 +297,7 @@
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>-->
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -424,15 +424,15 @@
              <class name="main.java.tests.adminTests.addFreeTrial"/>
              <class name="main.java.tests.adminTests.addPayGo"/>
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-            <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+           <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
-            <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
+            <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>-->
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
-            <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+           <!-- <class name="main.java.tests.adminTests.validateLimitReached"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">

@@ -254,6 +254,14 @@ public class ExplorerPage extends PageObjects {
     /**
      * this method calls the type method in webDriverCommands class.
      */
+    public void clickOnCountyComboByType(String contractorCounty){
+        webDriverCommands.waitSomeSeconds(5);
+        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        webDriverCommands.waitSomeSeconds(5);
+    }
+    /**
+     * this method calls the type method in webDriverCommands class.
+     */
     public void clickOnCountyComboPriorReference(String contractorCounty){
         webDriverCommands.waitSomeSeconds(2);
         //webDriverCommands.type(PR_COUNTY_COMBO,contractorCounty);
