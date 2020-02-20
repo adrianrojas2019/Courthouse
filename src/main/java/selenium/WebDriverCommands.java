@@ -38,8 +38,15 @@ public class WebDriverCommands extends  SeleniumSetUp {
         WebElement wb = driver.findElement(element);
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].value='"+data+"';", wb);
-        //jse.executeScript("document.getElementById('ssn').value='555-55-5555';");
     }
+
+    public void enableButton(By element) {
+        WebElement yourButton= driver.findElement(element);
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].removeAttribute('disabled','')",yourButton);
+    }
+
+
     public void clear(By element){
         if(waitForElementPresent(element)) {
             driver.findElement(element).clear();
