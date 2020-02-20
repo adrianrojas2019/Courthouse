@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression test"  thread-count="6" verbose="10"  parallel="tests">
+<suite name="Regression test"  thread-count="1" verbose="10"  parallel="tests">
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
@@ -101,7 +101,7 @@
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.loadCHMainPage"/>
+         <!--  &lt;!&ndash; <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
@@ -116,13 +116,13 @@
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
-            <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>-->
+            <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>&ndash;&gt;-->
         </classes>
     </test>
 
     <test name="FreeTrial_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -205,7 +205,7 @@
     </test>
     <test name="PayGo_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -303,7 +303,7 @@
     <test name="Admin_Management_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -426,9 +426,9 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
            <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <!--<class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
@@ -437,7 +437,7 @@
     </test>
     <test name="Midland_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -499,9 +499,9 @@
         <classes>
            <!-- <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
             <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>-->
@@ -509,7 +509,7 @@
     </test>
     <test name="Runsheet_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>

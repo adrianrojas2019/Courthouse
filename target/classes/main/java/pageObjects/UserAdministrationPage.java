@@ -54,7 +54,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By DOCUMENTS_DOWNLOADED = By.xpath("//td[text()='Documents Downloaded']/following-sibling::td");
     private final By DOCUMENTS_PRINTED = By.xpath("//td[text()='Documents Printed']/following-sibling::td");
 
-    private final By DOCUMENTS_DOWNLOADED_BY_METRICS = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Documents Downloaded']/following-sibling::td");
+    private final By DOCUMENTS_DOWNLOADED_BY_METRICS = By.xpath("//article[@ui-view='user-metrics']//td[text()='Documents Downloaded']/following-sibling::td");
     private final By DOCUMENTS_PRINTED_BY_METRICS = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Prints']/following-sibling::td");
     private final By DOCUMENTS_ADDED_TO_RUNSHEET = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Added To Runsheet']/following-sibling::td");
     private final By DOCUMENTS_VIEWED = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Documents Viewed']/following-sibling::td");
@@ -71,8 +71,9 @@ public class UserAdministrationPage extends PageObjects {
     private final By DURATION = By.xpath("//article[@ui-view='user-metrics']//div[@class='row metrics-table']//td[text()='Duration']/following-sibling::td");
 
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
-    private final By NEW_EXPIRATION_DATE = By.xpath("//input[@name='datePicker']");
+    //private final By NEW_EXPIRATION_DATE = By.xpath("//input[@name='datePicker']");
     private final By OPEN_CALENDAR_ICON = By.cssSelector("button[class='btn btn-default'][ng-click='open($event)']");
+    private final By OPEN_CALENDAR = By.cssSelector("button[class='btn btn-default'][ng-click='openFrom($event)']");
 
     private final By FIRST_NAME = By.cssSelector("input[name='firstName']");
     private final By LAST_NAME = By.cssSelector("input[name='lastName']");
@@ -927,15 +928,27 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the type method in webDriverCommands class.
      */
     public void addFromDate(String currentDate){
-        webDriverCommands.waitSomeSeconds(1);
+       /* webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(FROM_DATE, currentDate);
         webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);*/
+        webDriverCommands.clear(FROM_DATE);
+        webDriverCommands.waitSomeSeconds(1);
+        //webDriverCommands.type(FROM_DATE, currentDate);
+        webDriverCommands.click(OPEN_CALENDAR);
+        webDriverCommands.waitSomeSeconds(1);
+        String[] arrayDate = currentDate.split("\\.");
+
+        // Provide the day of the month to select the date.
+        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
+
     /**
      *this method calls the type method in webDriverCommands class.
      */
@@ -972,12 +985,23 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the type method in webDriverCommands class.
      */
     public void addFromDateByMetric(String currentDate){
-        webDriverCommands.waitSomeSeconds(1);
+/*        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(FROM_DATE, currentDate);
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(DURATION);*/
+        webDriverCommands.clear(FROM_DATE);
+        webDriverCommands.waitSomeSeconds(1);
+        //webDriverCommands.type(FROM_DATE, currentDate);
+        webDriverCommands.click(OPEN_CALENDAR);
+        webDriverCommands.waitSomeSeconds(1);
+        String[] arrayDate = currentDate.split("\\.");
+
+        // Provide the day of the month to select the date.
+        SelectDayFromMultiDateCalendar(arrayDate[1]);
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DURATION);
     }

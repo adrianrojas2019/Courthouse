@@ -141,6 +141,7 @@ public class ExplorerPage extends PageObjects {
     private final By PURCHASE_CONFIRMATION_DIALOG = By.cssSelector("div[class='modal-dialog']");
 
     private final By ACTIVITY_ROW = By.xpath("//th[@class='metrics-date-range-section col-md-12']//div[@class='diDateRangePickerContainer']");
+    private final By OPEN_CALENDAR_ICON = By.cssSelector("button[class='btn btn-default'][ng-click='openFrom($event)']");
     private final By FROM_DATE = By.cssSelector("input[ng-model='diDateRangePicker.dateFrom']");
     private final By FROM_TO = By.cssSelector("input[ng-model='diDateRangePicker.dateTo']");
     private final By TOTAL_DOCUMENTS_DOWNLOADED_PRINTED = By.xpath("//td[text()='Total Documents Downloaded/Printed']");
@@ -1236,16 +1237,35 @@ public class ExplorerPage extends PageObjects {
     }
 
     public void addFromDate(String currentDate){
-        webDriverCommands.waitSomeSeconds(1);
+        /*webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
-        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitSomeSeconds(1);*/
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.type(FROM_DATE, currentDate);
+        //webDriverCommands.type(FROM_DATE, currentDate);
+        webDriverCommands.click(OPEN_CALENDAR_ICON);
+        webDriverCommands.waitSomeSeconds(1);
+        String[] arrayDate = currentDate.split("\\.");
+
+        // Provide the day of the month to select the date.
+        SelectDayFromMultiDateCalendar(arrayDate[1]);
+
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
+    // Function to select the day of month in the date picker.
+    public void SelectDayFromMultiDateCalendar(String day)
+    {
+        // We are using a special XPath style to select the day of current
+        // month.
+        // It will ignore the previous or next month day and pick the correct
+        // one.
+        By calendarXpath = By
+                .xpath("//td[not(contains(@class,'datePicker'))]//span[text()='"+ day +"']");
+        driver.findElement(calendarXpath).click();
 
+        webDriverCommands.waitSomeSeconds(1);
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *  @return boolean
