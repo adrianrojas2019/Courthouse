@@ -15,7 +15,7 @@ public class MidlandMapsPage extends PageObjects  {
     private final By CANCEL_DOWNLOAD_BUTTON = By.cssSelector("button[ng-if='isLoadingDocument']");
     private final By CLEAR_ALL_BUTTON = By.cssSelector("button[ng-click='cleanFilterMidlandSearch()']");
     private final By NEXT_MAP = By.cssSelector("button[class='toolbarButton nextDocument']");
-    private final By SPINNER_POPUP = By.xpath("//section[@ng-show='searchFilterMidlandSearchOpen']//article[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
+    private final By SPINNER_POPUP = By.xpath("//section[@ng-show='searchFilterMidlandSearchOpen']//div[@class='spinner']");
     private final By DOCUMENT_NOT_AVAILABLE = By.xpath("//canvas[@width=856][@height=1108]");
     private final By LATEST_ONE_MAP = By.xpath("//button[@class='toolbarButton nextDocument'][@disabled='disabled']");
     private final By NEW_WARNING_MESSAGE = By.xpath("//span[text()='Due to the large file size please expect longer wait times when loading an ownership map.']");
@@ -117,6 +117,7 @@ public class MidlandMapsPage extends PageObjects  {
      *this method calls the waitForElementInVisible method in webDriverCommands class.
      */
     public void isProgressBarDone() {
+        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.waitForElementInVisible(SPINNER_POPUP, 260);
     }
     /**

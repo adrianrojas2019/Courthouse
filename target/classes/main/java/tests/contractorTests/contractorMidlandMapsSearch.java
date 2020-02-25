@@ -45,7 +45,7 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
         //Make sure that warning message is being displayed
         Assert.assertTrue(newMidlandMapsPage.isNewWarningDisplayed(), "Add warning message for Midland Map viewing is not being displayed.");
 
-        //Make sure that image (pdf file) has beed loaded/displayed successfully
+        //Make sure that image (pdf file) has been loaded/displayed successfully
         //Wait until Progress Bar is gone
         newMidlandMapsPage.isProgressBarDone();
         //Wait until Search Results retrieves documents
