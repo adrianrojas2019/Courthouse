@@ -437,7 +437,7 @@
     </test>
     <test name="Midland_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>

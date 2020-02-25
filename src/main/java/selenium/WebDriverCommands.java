@@ -428,6 +428,7 @@ public class WebDriverCommands extends  SeleniumSetUp {
         }
     }
 
+
     /**
      * This method calls the isSelected method of selenium to know if a checkbox is selected
      * @param element the WebElement to check
