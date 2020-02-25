@@ -3,6 +3,7 @@ package main.java.pageObjects;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 /**
  * Created by Adrian on 11/28/2018.
@@ -75,8 +76,11 @@ public class RunsheetManagementPage extends PageObjects {
      */
     public void clickOnStatusCombo(String status){
         webDriverCommands.waitSomeSeconds(3);
-        webDriverCommands.type(STATUS_COMBO,status);
+        //webDriverCommands.type(STATUS_COMBO,status);
+        Select dropdown = new Select(webDriverCommands.findElement(STATUS_COMBO));
+        dropdown.selectByValue(status);
     }
+
     /**
      *this method calls the click method in webDriverCommands class.
      */

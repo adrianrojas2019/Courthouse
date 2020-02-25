@@ -31,7 +31,7 @@ public class superUserDenyRequestCopyRunsheet extends SeleniumInitializer {
     public void DenyRequestCopyRunsheet(ExplorerPage newExplorerPage, String myCompanyRunsheetName){
 
         //Make sure that 1 runsheet is pending to approve/deny
-        Assert.assertEquals(1, NumberUtils.toInt(newExplorerPage.isPendingRunsheetRequest()), "Pending Runsheet Request value is not correct.");
+        Assert.assertNotEquals(0, NumberUtils.toInt(newExplorerPage.isPendingRunsheetRequest()), "Pending Runsheet Request value is not correct.");
         //call Runsheet Management item. Go to User Administration Page
         UserAdministrationPage newUserAdminPage = newExplorerPage.clickOnUserAdministrationPage();
         //Validate if the user menu has been selected/displayed
@@ -41,7 +41,7 @@ public class superUserDenyRequestCopyRunsheet extends SeleniumInitializer {
         //Validate that User Grid has been displayed
         Assert.assertTrue(newRunsheetManagementPage.isRunsheetManagementGridDisplayed(), "Cannot access the Runsheet Management Grid.");
         //Filter by Pending
-        newRunsheetManagementPage.clickOnStatusCombo("Pending");
+        newRunsheetManagementPage.clickOnStatusCombo("0");
         //Find my Company Runsheet //select[@class='form-control ng-pristine ng-untouched ng-valid']
         Calendar now = Calendar.getInstance();
         newRunsheetManagementPage.findPendingRequest(myCompanyRunsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));

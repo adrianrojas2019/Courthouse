@@ -927,7 +927,7 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addFromDate(String currentDate){
+    public void addFromDate(String currentDate,String extraFilter){
        /* webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
@@ -944,7 +944,7 @@ public class UserAdministrationPage extends PageObjects {
         String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(arrayDate[1],extraFilter);
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
@@ -952,7 +952,7 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addNewExpirationDate(String currentDate){
+    public void addNewExpirationDate(String currentDate,String extraFilter){
         /*webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(NEW_EXPIRATION_DATE);
         webDriverCommands.waitSomeSeconds(1);
@@ -965,18 +965,17 @@ public class UserAdministrationPage extends PageObjects {
         String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(arrayDate[1],extraFilter);
     }
 
     // Function to select the day of month in the date picker.
-    public void SelectDayFromMultiDateCalendar(String day)
+    public void SelectDayFromMultiDateCalendar(String day,String extraFilter)
     {
         // We are using a special XPath style to select the day of current
         // month.
         // It will ignore the previous or next month day and pick the correct
         // one.
-        By calendarXpath = By
-                .xpath("//td[not(contains(@class,'datePicker'))]//span[text()='"+ day +"']");
+        By calendarXpath = By.xpath("//td[not(contains(@class,'datePicker'))]//span[text()='"+ day + "']"+ extraFilter+"");
         driver.findElement(calendarXpath).click();
 
         webDriverCommands.waitSomeSeconds(1);
@@ -984,7 +983,7 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addFromDateByMetric(String currentDate){
+    public void addFromDateByMetric(String currentDate, String extraFilter){
 /*        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
@@ -1001,7 +1000,7 @@ public class UserAdministrationPage extends PageObjects {
         String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(arrayDate[1],extraFilter);
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DURATION);
     }

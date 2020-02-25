@@ -14,7 +14,7 @@
         <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
 
@@ -139,7 +139,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -222,7 +222,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
 
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -319,7 +319,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -437,7 +437,7 @@
     </test>
     <test name="Midland_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -457,7 +457,7 @@
         <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
         <!-- Company Info -->
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
@@ -525,7 +525,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -559,7 +559,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="Company"/>
+        <parameter name="myCompanyRunsheetName" value="CompanyB"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Runsheet to be unassgined -->
         <parameter name="runsheetUnAssigned" value="test_one_county"/>
