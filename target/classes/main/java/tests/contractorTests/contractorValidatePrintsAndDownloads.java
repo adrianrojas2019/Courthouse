@@ -43,7 +43,7 @@ public class contractorValidatePrintsAndDownloads extends SeleniumInitializer {
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
         //workaround to format mm dd yyyy when month or day is 1 digit
-        newExplorerPage.addFromDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        newExplorerPage.addFromDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"[@class='ng-binding text-info']");
         //Make sure that at least 1 document has been updated under Documents Downloaded
         Assert.assertEquals(totalDownloads,newExplorerPage.isDocumentDownloaded(), "Cannot match Documents Downloaded.");
         //Make sure that at least 1 document has been updated under Documents Printed
