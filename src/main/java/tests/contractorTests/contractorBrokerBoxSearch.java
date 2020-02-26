@@ -13,12 +13,12 @@ import java.util.Calendar;
  * Created by Adrian on 12/10/2018.
  */
 public class contractorBrokerBoxSearch extends SeleniumInitializer {
-    @Parameters({"environment","contractorUserName","contractorPassword","brokerBoxCounty","brokerBoxBookType","brokerBoxIndexBook","brokerBoxBookmarks","brokerBoxVolume","brokerBoxPage","runsheetName"})
+    @Parameters({"environment","contractorUserName","contractorPassword","brokerBoxCounty","brokerBoxBookType","brokerBoxIndexBook","brokerBoxBookmarks","brokerBoxVolume","brokerBoxPage","runsheetName","browser"})
     @Test(groups = {"CH_Contractor_Broker_Box_Search", "Regression","Broker_Box"})
 /**
  * This test script performs a simple search for broker box Feature
  * */
-    public void contractorBrokerBoxSearch(String environment, String contractorUserName, String contractorPassword, String brokerBoxCounty, String brokerBoxBookType, String brokerBoxIndexBook, String brokerBoxBookmarks, String brokerBoxVolume, String brokerBoxPage, String runsheetName) throws InterruptedException {
+    public void contractorBrokerBoxSearch(String environment, String contractorUserName, String contractorPassword, String brokerBoxCounty, String brokerBoxBookType, String brokerBoxIndexBook, String brokerBoxBookmarks, String brokerBoxVolume, String brokerBoxPage, String runsheetName, String browser) throws InterruptedException {
 
 
         //Already logged in as DI Admin
@@ -55,18 +55,20 @@ public class contractorBrokerBoxSearch extends SeleniumInitializer {
         //Click on Go button
         newBookSearchPage.clickOnGoButton();
 
-        //Wait until Progress Bar is gone
-        newBookSearchPage.isProgressBarDone();
+        if (browser == "Chrome") {
+            //Wait until Progress Bar is gone
+            newBookSearchPage.isProgressBarDone();
 
-        //Proceed to add the previous selected documents into new runsheet
-        newBookSearchPage.clickOnAddToRunsheetButton();
+            //Proceed to add the previous selected documents into new runsheet
+            newBookSearchPage.clickOnAddToRunsheetButton();
 
-        //Click on Add runsheet?
-        Calendar now = Calendar.getInstance();
-        newBookSearchPage.selectRunsheetName(runsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
-        //Click on Ok button
-        newBookSearchPage.clickOnOKButton();
-        //Success Message
-        Assert.assertTrue(newBookSearchPage.isSuccessMessageDisplayed("Document(s) have been successfully added."), "The new document(s) could not be added into new runsheet");
+            //Click on Add runsheet?
+            Calendar now = Calendar.getInstance();
+            newBookSearchPage.selectRunsheetName(runsheetName + (now.get(Calendar.MONTH) + 1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
+            //Click on Ok button
+            newBookSearchPage.clickOnOKButton();
+            //Success Message
+            Assert.assertTrue(newBookSearchPage.isSuccessMessageDisplayed("Document(s) have been successfully added."), "The new document(s) could not be added into new runsheet");
+        }
     }
 }
