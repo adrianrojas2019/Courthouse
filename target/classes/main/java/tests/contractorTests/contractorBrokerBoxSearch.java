@@ -55,7 +55,8 @@ public class contractorBrokerBoxSearch extends SeleniumInitializer {
         //Click on Go button
         newBookSearchPage.clickOnGoButton();
 
-        if (browser == "Chrome") {
+        if (browser.equals("Chrome"))
+        {
             //Wait until Progress Bar is gone
             newBookSearchPage.isProgressBarDone();
 

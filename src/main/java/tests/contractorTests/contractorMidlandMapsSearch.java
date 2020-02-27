@@ -46,7 +46,7 @@ public class contractorMidlandMapsSearch extends SeleniumInitializer {
         Assert.assertTrue(newMidlandMapsPage.isNewWarningDisplayed(), "Add warning message for Midland Map viewing is not being displayed.");
 
         //workaround: Feb 25 2020 below functin does nto work using FF driver
-        if (browser== "Chrome")
+        if (browser.equals("Chrome"))
         {
             //Make sure that image (pdf file) has been loaded/displayed successfully
             //Wait until Progress Bar is gone

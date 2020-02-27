@@ -105,17 +105,17 @@
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>-->
+            <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>
-            <!--<class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
-            <class name="main.java.tests.adminTests.validateMetricsByStandard"/>-->
+            <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
-            <!--<class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>-->
         </classes>
     </test>
@@ -437,7 +437,7 @@
     </test>
     <test name="Midland_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Chrome"/>
+        <parameter name="browser" value="Firefox"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -559,7 +559,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="CompanyB"/>
+        <parameter name="myCompanyRunsheetName" value="CompanyC"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Runsheet to be unassgined -->
         <parameter name="runsheetUnAssigned" value="test_one_county"/>
@@ -586,10 +586,10 @@
         <classes>
    <!--         <class name="main.java.tests.adminTests.superUserReportIssue"/>
             <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>-->
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
+            <!--<class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>

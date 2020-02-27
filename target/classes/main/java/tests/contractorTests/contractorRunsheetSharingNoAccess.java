@@ -46,7 +46,7 @@ public class contractorRunsheetSharingNoAccess extends SeleniumInitializer {
         //Click on Contractor User Name
         newUserAdminPage.clickOnContractorName(contractorName);
         //click on Runsheet Sharing Access Combo
-        newUserAdminPage.clickOnRunsheetSharingAccess("No Access");
+        newUserAdminPage.clickOnRunsheetSharingAccess("0");
         //click on Save button
         newUserAdminPage.clickOnSaveButton();
         //Success Message

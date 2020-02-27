@@ -45,7 +45,7 @@ public class contractorRunsheetSharingFullAccess extends SeleniumInitializer {
         //Click on Contractor User Name
         newUserAdminPage.clickOnContractorName(contractorName);
         //click on Runsheet Sharing Access Combo
-        newUserAdminPage.clickOnRunsheetSharingAccess("Full Access");
+        newUserAdminPage.clickOnRunsheetSharingAccess("2");
         //click on Save button
         newUserAdminPage.clickOnSaveButton();
         //Success Message

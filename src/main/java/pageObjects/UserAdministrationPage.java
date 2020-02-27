@@ -314,7 +314,9 @@ public class UserAdministrationPage extends PageObjects {
      */
     public void clickOnRunsheetSharingAccess(String option){
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.type(RUN_SHEET_SHARING_ACCESS,option);
+        //webDriverCommands.type(RUN_SHEET_SHARING_ACCESS,option);
+        Select dropdown = new Select(webDriverCommands.findElement(RUN_SHEET_SHARING_ACCESS));
+        dropdown.selectByValue(option);
     }
     /**
      *this method calls the click method in webDriverCommands class.

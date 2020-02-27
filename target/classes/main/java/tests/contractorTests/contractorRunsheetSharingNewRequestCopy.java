@@ -43,7 +43,7 @@ public class contractorRunsheetSharingNewRequestCopy extends SeleniumInitializer
         //Click on Contractor User Name
         newUserAdminPage.clickOnContractorName(contractorName);
         //click on Runsheet Sharing Access Combo
-        newUserAdminPage.clickOnRunsheetSharingAccess("Request Copy");
+        newUserAdminPage.clickOnRunsheetSharingAccess("1");
         //click on Save button
         newUserAdminPage.clickOnSaveButton();
         //Success Message
