@@ -51,7 +51,7 @@ public class validateMetricsByContractorByMidlandMaps extends SeleniumInitialize
         Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
-        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"[@class='ng-binding text-info']");
+        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
 
         if (browser.equals("Firefox")){
             totalDownloadMidlandMaps = Double.toString(Double.parseDouble(totalDownloadMidlandMaps) - 1);
