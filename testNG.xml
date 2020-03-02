@@ -112,9 +112,9 @@
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
             <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
-            <class name="main.java.tests.standardTests.priorReferenceSearch"/>-->
+            <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
-            <!--<class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
+            <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>-->
         </classes>
@@ -426,13 +426,13 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
            <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">
@@ -499,9 +499,9 @@
         <classes>
            <!-- <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>-->
             <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>-->
