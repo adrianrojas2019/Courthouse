@@ -1,6 +1,7 @@
 package main.java.selenium;
 
 import com.google.common.base.Function;
+import javafx.scene.control.Tab;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -32,6 +33,10 @@ public class WebDriverCommands extends  SeleniumSetUp {
             //driver.findElement(element).clear();
             driver.findElement(element).sendKeys(data);
         }
+    }
+
+    public void tab(By element) {
+        driver.findElement(element).sendKeys(Keys.TAB);
     }
 
     public void typeJS(By element, String data) {

@@ -60,11 +60,11 @@ public class validateCountyOnDemoMode extends SeleniumInitializer {
         //Click on calendar icon
         //Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.DATE,0);
+        cal.add(Calendar.DATE,2);
         //cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
         //workaround to format mm dd yyyy when month or day is 1 digit
-        newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
-        cal.add(Calendar.DATE,2);
+        //newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        //cal.add(Calendar.DATE,2);
         newAdministrationPage.addNewExpirationDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
         //click on Save button
         newAdministrationPage.clickOnExpirationDateSaveButton();

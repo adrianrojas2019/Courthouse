@@ -57,7 +57,7 @@ public class validateCountyDemoModeExpired extends SeleniumInitializer {
         //Click on calendar icon
         //Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
-        newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        //newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
         //cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
         //workaround to format mm dd yyyy when month or day is 1 digit
         cal.add(Calendar.DATE,-1);

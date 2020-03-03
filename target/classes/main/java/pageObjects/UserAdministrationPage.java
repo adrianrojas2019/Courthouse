@@ -969,7 +969,11 @@ public class UserAdministrationPage extends PageObjects {
      */
     public void addNewExpirationDate(String currentDate){
         webDriverCommands.waitSomeSeconds(1);
-        webDriverCommands.typeJS(NEW_EXPIRATION_DATE, currentDate);
+        webDriverCommands.clear(NEW_EXPIRATION_DATE);
+        //webDriverCommands.typeJS(NEW_EXPIRATION_DATE, currentDate);
+        webDriverCommands.type(NEW_EXPIRATION_DATE, currentDate);
+        webDriverCommands.waitSomeSeconds(1);
+        //webDriverCommands.tab(NEW_EXPIRATION_DATE);
     }
 
     // Function to select the day of month in the date picker.
