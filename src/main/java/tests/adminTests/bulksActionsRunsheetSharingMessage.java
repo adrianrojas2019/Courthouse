@@ -48,6 +48,6 @@ public class bulksActionsRunsheetSharingMessage extends SeleniumInitializer {
             newAdministrationPage.clickOnRow(numberOfRows);
         }
         //Make sure new msg is displayed
-        Assert.assertTrue(newAdministrationPage.isRunsheetSharingMessageDisplayed(),"Wrong Runsheet Sharing Message Displayed.");
+        Assert.assertFalse(newAdministrationPage.isRunsheetSharingMessageDisplayed(),"Wrong Runsheet Sharing Message Displayed.");
     }
 }
