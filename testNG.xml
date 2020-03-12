@@ -193,8 +193,8 @@
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
-            <class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
+            <!--<class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRenameRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialDownloadRunsheet"/>
@@ -290,14 +290,14 @@
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
+            <!--<class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
             <class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>
-            <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
+            <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>-->
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
-            <class name="main.java.tests.payGoTests.payGoCH1089"/>
+            <!--<class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
             <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>
@@ -432,9 +432,9 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
             <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <!--<class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>

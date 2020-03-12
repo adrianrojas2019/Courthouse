@@ -1056,7 +1056,8 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addFromDateByMetric(String currentDate, String extraFilter) throws ParseException{
+    //public void addFromDateByMetric(String currentDate, String extraFilter) throws ParseException{
+    public void addFromDateByMetric(String currentDate) throws ParseException{
 /*        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
@@ -1067,13 +1068,13 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(DURATION);*/
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.type(FROM_DATE, currentDate);
-        webDriverCommands.click(OPEN_CALENDAR);
+        webDriverCommands.type(FROM_DATE, currentDate);
+        //webDriverCommands.click(OPEN_CALENDAR);
         webDriverCommands.waitSomeSeconds(1);
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(currentDate,extraFilter);
-        webDriverCommands.waitSomeSeconds(2);
+        //SelectDayFromMultiDateCalendar(currentDate,extraFilter);
+        //webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DURATION);
     }
     /**
