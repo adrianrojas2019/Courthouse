@@ -8,6 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
@@ -22,7 +23,7 @@ public class validatePrintsAndDownloads extends SeleniumInitializer {
     /* This method validates the total of prints and downloads for the specified contractor/companyID matching with the totalDownloads/Prints params from the admin perspective.
      *@params Admin credentials.
     */
-    public void validatePrintsAndDownloads(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String county,String totalDownloads, String totalPrints) throws InterruptedException {
+    public void validatePrintsAndDownloads(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String county,String totalDownloads, String totalPrints) throws InterruptedException, ParseException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
@@ -32,7 +33,7 @@ public class validatePrintsAndDownloads extends SeleniumInitializer {
         ValidatePrintsAndDownloads(newCHMainPage.LoginMenu(),companyAcct,companyID,county,totalDownloads,totalPrints);
     }
 
-    public void ValidatePrintsAndDownloads(UserAdministrationPage newAdministrationPage, String companyAcct, String companyID,String county, String totalDownloads, String totalPrints){
+    public void ValidatePrintsAndDownloads(UserAdministrationPage newAdministrationPage, String companyAcct, String companyID,String county, String totalDownloads, String totalPrints) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");

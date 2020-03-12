@@ -11,6 +11,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -18,22 +19,22 @@ import java.util.Date;
  * Created by Adrian on 11/28/2018.
  */
 public class validateCountyOnDemoMode extends SeleniumInitializer {
-    @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","countyOnDemoMode","contractorUserName","contractorPassword","contractorName"})
+    @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyAcct","companyID","countyOnDemoMode","contractorUserName","contractorPassword","contractorName","browser"})
     @Test(groups = {"CH_Admin_County_On_Demo_Mode", "Regression","Company_Management"})
     /**
      * This test script validates the correct info message for one specified county on demo mode
      * */
 
-    public void validateCountyOnDemoMode(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorName) throws InterruptedException {
+    public void validateCountyOnDemoMode(String environment, String usernameToLogIn, String passwordToLogIn, String companyAcct, String companyID, String countyOnDemoMode, String contractorUserName, String contractorPassword, String contractorName, String browser) throws InterruptedException, ParseException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
 
         CHMainPage newCHMainPage = loginIntoCHMainPageTest.loginSuccessfullyGalleryTest(environment,usernameToLogIn, passwordToLogIn, getDriverInstance());
-        ValidateCountyOnDemoMode(newCHMainPage.LoginMenu(),environment,companyAcct,companyID,countyOnDemoMode,contractorUserName,contractorPassword,contractorName);
+        ValidateCountyOnDemoMode(newCHMainPage.LoginMenu(),environment,companyAcct,companyID,countyOnDemoMode,contractorUserName,contractorPassword,contractorName,browser);
     }
 
-    public void ValidateCountyOnDemoMode(UserAdministrationPage newAdministrationPage, String environment, String companyAcct, String companyID,String countyOnDemoMode, String contractorUserName, String contractorPassword,String contractorName){
+    public void ValidateCountyOnDemoMode(UserAdministrationPage newAdministrationPage, String environment, String companyAcct, String companyID,String countyOnDemoMode, String contractorUserName, String contractorPassword,String contractorName,String browser) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -63,26 +64,29 @@ public class validateCountyOnDemoMode extends SeleniumInitializer {
         cal.add(Calendar.DATE,2);
         //cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
         //workaround to format mm dd yyyy when month or day is 1 digit
-        //newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
-        //cal.add(Calendar.DATE,2);
-        newAdministrationPage.addNewExpirationDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
-        //click on Save button
-        newAdministrationPage.clickOnExpirationDateSaveButton();
+        if (browser.equals("Firefox")) {
+            //newAdministrationPage.selectCurrentDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"tomorrow");
+            //cal.add(Calendar.DATE,2);
+            //newAdministrationPage.addNewExpirationDate((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        }else {
+            newAdministrationPage.addNewExpirationDate((String.format("%02d", cal.get(Calendar.MONTH) + 1)) + "." + String.format("%02d", cal.get(Calendar.DAY_OF_MONTH)) + "." + String.format("%02d", cal.get(Calendar.YEAR)));
+            //click on Save button
+            newAdministrationPage.clickOnExpirationDateSaveButton();
 
-        //Select the contractor and make sure that county on demo mode has been assigned to the contractor account
-        AssignDemoCountyToContractor(newAdministrationPage, contractorUserName, countyOnDemoMode,contractorName);
+            //Select the contractor and make sure that county on demo mode has been assigned to the contractor account
+            AssignDemoCountyToContractor(newAdministrationPage, contractorUserName, countyOnDemoMode, contractorName);
 
-        //Logout and log in using contractor and validate that current county message will be on demo only for the following 2 days
-        LoginPage newLoginPage = Logout(newAdministrationPage.clickOnUserAdministrationPage());
-        ExplorerPage newExplorerPage1 = ValidateCountyDemoMessage(environment,contractorUserName, contractorPassword, newLoginPage);
-        // Click on the Magnifying Glass icon on the left side of the Homepage.
-        newExplorerPage1.clickOnExplorerSearch();
-        newExplorerPage1.isExploreTitleDisplayed();
-        // Click on County Combo
-        newExplorerPage1.clickOnCountyCombo(countyOnDemoMode);
-        // Validate county demo message"[CountyOnDemoMode] is in Demo mode for the next 3 days."
-        Assert.assertTrue(newExplorerPage1.isDemoMessageDisplayed(countyOnDemoMode), "Demo message for County is not being displayed successfully." + countyOnDemoMode + " is in Demo mode for the next 3 days.");
-
+            //Logout and log in using contractor and validate that current county message will be on demo only for the following 2 days
+            LoginPage newLoginPage = Logout(newAdministrationPage.clickOnUserAdministrationPage());
+            ExplorerPage newExplorerPage1 = ValidateCountyDemoMessage(environment, contractorUserName, contractorPassword, newLoginPage);
+            // Click on the Magnifying Glass icon on the left side of the Homepage.
+            newExplorerPage1.clickOnExplorerSearch();
+            newExplorerPage1.isExploreTitleDisplayed();
+            // Click on County Combo
+            newExplorerPage1.clickOnCountyCombo(countyOnDemoMode);
+            // Validate county demo message"[CountyOnDemoMode] is in Demo mode for the next 3 days."
+            Assert.assertTrue(newExplorerPage1.isDemoMessageDisplayed(countyOnDemoMode), "Demo message for County is not being displayed successfully." + countyOnDemoMode + " is in Demo mode for the next 3 days.");
+        }
     }
     public void AssignDemoCountyToContractor(UserAdministrationPage newAdministrationPage, String contractorUserName, String countyOnDemoMode,String contractorName){
 

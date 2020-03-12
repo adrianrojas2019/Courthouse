@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,7 +26,7 @@ public class validateMetricsByFreeTrial extends SeleniumInitializer {
      * All the following params: totalDownloads,totalPrints,totalAddedToRunsheet,totalDocumentsViewed,totalRemovedFromRunsheet,totalRenamedFromRunsheet
      * are used in order to match and verify that metric/piwik service is working as expected
     */
-    public void validateMetricsByFreeTrial(String firstNameFreeTrial, String lastNameFreeTrial, String userNameFreeTrial, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel, String totalRenamedFromRunsheet) throws InterruptedException {
+    public void validateMetricsByFreeTrial(String firstNameFreeTrial, String lastNameFreeTrial, String userNameFreeTrial, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel, String totalRenamedFromRunsheet) throws InterruptedException, ParseException {
 
         //test = extent.createTest("CH_Admin_Metrics_By_FreeTrial","Validate Metrics by FreeTrial");
         //Already logged in as DI Admin
@@ -35,7 +36,7 @@ public class validateMetricsByFreeTrial extends SeleniumInitializer {
         ValidateMetrics(newCHMainPage.LoginMenu(),firstNameFreeTrial,lastNameFreeTrial,userNameFreeTrial,county,totalDownloads,totalPrints,totalAddedToRunsheet,totalDocumentsViewed,totalRemovedFromRunsheet,totalSearchesByCounty,totalSearchesByTypeExplorerPanel,totalRenamedFromRunsheet);
     }
 
-    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String firstNameFreeTrial,String lastNameFreeTrial,String userNameFreeTrial, String county, String totalDownloads, String totalPrints,String totalAddedToRunsheet,String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel,String totalRenamedFromRunsheet){
+    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String firstNameFreeTrial,String lastNameFreeTrial,String userNameFreeTrial, String county, String totalDownloads, String totalPrints,String totalAddedToRunsheet,String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypeExplorerPanel,String totalRenamedFromRunsheet) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -56,7 +57,7 @@ public class validateMetricsByFreeTrial extends SeleniumInitializer {
         Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
-        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"today");
 
         //Proceed to validate some metrics
         // Added To Runsheet - Documents Viewed - Documents Downloaded - Removed from Runsheet

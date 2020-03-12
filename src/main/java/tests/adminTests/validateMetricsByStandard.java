@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -21,7 +22,7 @@ public class validateMetricsByStandard extends SeleniumInitializer {
 /**
  * This test script validates the correct metrics as standard user
  * */
-    public void validateMetricsByStandard(String firstNameStandard, String lastNameStandard, String standardUserName, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypePriorReference) throws InterruptedException {
+    public void validateMetricsByStandard(String firstNameStandard, String lastNameStandard, String standardUserName, String environment, String usernameToLogIn, String passwordToLogIn, String county,String totalDownloads, String totalPrints, String totalAddedToRunsheet, String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypePriorReference) throws InterruptedException, ParseException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
@@ -30,7 +31,7 @@ public class validateMetricsByStandard extends SeleniumInitializer {
         ValidateMetrics(newCHMainPage.LoginMenu(),firstNameStandard,lastNameStandard,standardUserName,county,totalDownloads,totalPrints,totalAddedToRunsheet,totalDocumentsViewed,totalRemovedFromRunsheet,totalSearchesByCounty,totalSearchesByTypePriorReference);
     }
 
-    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String firstNameStandard,String lastNameStandard,String standardUserName, String county, String totalDownloads, String totalPrints,String totalAddedToRunsheet,String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypePriorReference){
+    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String firstNameStandard,String lastNameStandard,String standardUserName, String county, String totalDownloads, String totalPrints,String totalAddedToRunsheet,String totalDocumentsViewed, String totalRemovedFromRunsheet, String totalSearchesByCounty, String totalSearchesByTypePriorReference) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -51,7 +52,7 @@ public class validateMetricsByStandard extends SeleniumInitializer {
         Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
-        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"today");
 
         //Proceed to validate some metrics
         // Added To Runsheet - Documents Viewed - Documents Downloaded - Removed from Runsheet

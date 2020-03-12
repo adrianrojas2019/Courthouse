@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -21,7 +22,7 @@ public class validateMetricsByContractorByMidlandMaps extends SeleniumInitialize
 /**
  * This test script validates that metric are being generated for the new Midland Map Feature for specified contractor
  * */
-    public void validateMetricsByContractorByMidlandMaps(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String searchMidlandMapsCountyName,String totalDownloadMidlandMaps, String totalSearchesByCountyMidlandMaps, String browser) throws InterruptedException {
+    public void validateMetricsByContractorByMidlandMaps(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String searchMidlandMapsCountyName,String totalDownloadMidlandMaps, String totalSearchesByCountyMidlandMaps, String browser) throws InterruptedException,ParseException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
@@ -30,7 +31,7 @@ public class validateMetricsByContractorByMidlandMaps extends SeleniumInitialize
         ValidateMetrics(newCHMainPage.LoginMenu(),contractorUserName,contractorName,searchMidlandMapsCountyName,totalDownloadMidlandMaps,totalSearchesByCountyMidlandMaps,browser);
     }
 
-    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String contractorUserName, String contractorName,String searchMidlandMapsCountyName, String totalDownloadMidlandMaps, String totalSearchesByCountyMidlandMaps, String browser){
+    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String contractorUserName, String contractorName,String searchMidlandMapsCountyName, String totalDownloadMidlandMaps, String totalSearchesByCountyMidlandMaps, String browser) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -51,7 +52,7 @@ public class validateMetricsByContractorByMidlandMaps extends SeleniumInitialize
         Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
-        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"today");
 
         if (browser.equals("Firefox")){
             //totalDownloadMidlandMaps = Double.toString(Double.parseDouble(totalDownloadMidlandMaps) - 1);

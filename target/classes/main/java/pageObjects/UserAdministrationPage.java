@@ -1,13 +1,16 @@
 package main.java.pageObjects;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.ui.Select;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import java.text.DecimalFormat;
+
 
 /**
  * Created by Adrian on 11/28/2018.
@@ -20,6 +23,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By USER_MENU = By.cssSelector(".caret");
     private final By USER_ADMIN_ITEM = By.cssSelector("a[href='/users']");
     private final By RUNSHEET_MANAGEMENT_ITEM = By.cssSelector("a[href='/runsheet'][role='menuitem']");
+    private final By RUNSHET_SHARING_ACCESS_MESSAGE = By.cssSelector("span[ng-show='isRunsheetSharingDisabled']");
     private final By LOGOUT_ADMIN_ITEM = By.xpath("//a[@href='#']");
     private final By COMPANY_MANAGEMENT_ADMIN_ITEM = By.cssSelector("a[href*='users/management']");
     private final By USER_ADMIN_GRID = By.cssSelector("section[class='row user-container ng-scope']");
@@ -117,6 +121,10 @@ public class UserAdministrationPage extends PageObjects {
     String find_Broker_Box_County = "//div[text()='%s']//following-sibling::div";
     String find_Midland_Map_County = "//div[text()='%s']//following-sibling::div";
 
+    String tomorrow_Date = "//td[not(contains(@class,'datePicker'))]//span[text()='%s'][@class='ng-binding']";
+    String today_Date = "//td[not(contains(@class,'datePicker'))]//span[text()='%s'][@class='ng-binding text-info']";
+    String tomorrow_Disabled_Date = "//td[not(contains(@class,'datePicker'))]//span[text()='%s'][@class='ng-binding text-muted']";
+
     private final By DOWNLOADS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col3 colt3 centerCellHeader']");
     private final By PRINTS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col4 colt4 centerCellHeader']");
     private final By EDIT_LIMIT_BUTTON = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText text-center edit-btn ng-scope']");
@@ -126,6 +134,10 @@ public class UserAdministrationPage extends PageObjects {
     String my_Unassigned_County = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
     String my_Assigned_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diDataAssigned | filter:searchItemAssign | orderBy:'name'\"][text()='%s']";
     String successAlertMessage= "//div[contains(text(),'%s')]";
+
+    //String clickCheckBox = "//div[@di-grid='gridOptionsMirror']//div[@style='top: %spx; height: 30px;']//div[@class='ngCell  col0 colt0']";
+    String clickCheckBox = "div.row.alignGrid.di-arrow-row-grid.users-grid-bulk.ng-scope > div:nth-child(3) > div > div.ngViewport.ng-scope > div > div:nth-child(%s) > div.ngCell.col0.colt0";
+    String runsheetSharingAccessMessage = "puper users have full access to runsheet sharing. To update runsheet sharing permissions for Contractor or Standard users please unselect all Super users.";
 
     /**
      * This method uses the PageFactory desing pattern, to direct to another pageObject.
@@ -378,6 +390,16 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(FIND_COMPANY_ACCT);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(OK_BUTTON);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnRow(Integer firstColumn){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(By.cssSelector(String.format(clickCheckBox, Integer.toString(firstColumn))));
+        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -527,9 +549,24 @@ public class UserAdministrationPage extends PageObjects {
      *
      *  @return boolean
      */
+    public boolean isRunsheetSharingMessageDisplayed(){
+        String label_Text = webDriverCommands.getText(RUNSHET_SHARING_ACCESS_MESSAGE);
+        webDriverCommands.waitSomeSeconds(1);
+
+        if (label_Text.equals(runsheetSharingAccessMessage)) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return boolean
+     */
     public boolean isEditExpirationDateDialogDisplayed(){
         webDriverCommands.waitSomeSeconds(1);
-        return webDriverCommands.waitForElementPresent(EDIT_EXPIRATION_DATE_DIALOG,10);
+        return webDriverCommands.waitForElementPresent(RUNSHET_SHARING_ACCESS_MESSAGE,10);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
@@ -929,7 +966,7 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addFromDate(String currentDate){
+    public void addFromDate(String currentDate) throws ParseException{
        /* webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
@@ -943,10 +980,9 @@ public class UserAdministrationPage extends PageObjects {
         //webDriverCommands.type(FROM_DATE, currentDate);
         webDriverCommands.click(OPEN_CALENDAR);
         webDriverCommands.waitSomeSeconds(1);
-        String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(currentDate,"today");
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
@@ -954,14 +990,13 @@ public class UserAdministrationPage extends PageObjects {
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void selectCurrentDate(String currentDate){
+    public void selectCurrentDateOLD(String currentDate,String extraFilter) throws ParseException{
 
         webDriverCommands.click(OPEN_CALENDAR_ICON);
         webDriverCommands.waitSomeSeconds(1);
-        String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(currentDate,extraFilter);
 
     }
     /**
@@ -973,25 +1008,55 @@ public class UserAdministrationPage extends PageObjects {
         //webDriverCommands.typeJS(NEW_EXPIRATION_DATE, currentDate);
         webDriverCommands.type(NEW_EXPIRATION_DATE, currentDate);
         webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.tab(NEW_EXPIRATION_DATE);
+        //webDriverCommands.tab(NEW_EXPIRATION_DATE);*/
+       /* webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.clear(NEW_EXPIRATION_DATE);
+        webDriverCommands.type(NEW_EXPIRATION_DATE, currentMonth);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(NEW_EXPIRATION_DATE, currentDay);
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.type(NEW_EXPIRATION_DATE, currentYear);
+        webDriverCommands.waitSomeSeconds(1);*/
     }
 
     // Function to select the day of month in the date picker.
-    public void SelectDayFromMultiDateCalendar(String day)
-    {
+    public void SelectDayFromMultiDateCalendar(String currentDate,String extraFilter) throws ParseException {
         // We are using a special XPath style to select the day of current
         // month.
         // It will ignore the previous or next month day and pick the correct
         // one.
-        By calendarXpath = By.xpath("//td[not(contains(@class,'datePicker'))]//span[text()='"+ day + "'][@class='ng-binding text-info']");
-        driver.findElement(calendarXpath).click();
+        String[] arrayDate = currentDate.split("\\.");
 
-        webDriverCommands.waitSomeSeconds(1);
+        if (extraFilter.equals("today")){
+            By calendarXpath = By.xpath(String.format(today_Date, arrayDate[1]));
+            driver.findElement(calendarXpath).click();
+            webDriverCommands.waitSomeSeconds(1);
+        }else{
+            if (extraFilter.equals("tomorrow")) {
+                By calendarXpath = By.xpath(String.format(tomorrow_Date, arrayDate[1]));
+                driver.findElement(calendarXpath).click();
+                webDriverCommands.waitSomeSeconds(1);
+                driver.findElement(NEW_EXPIRATION_DATE).click();
+                webDriverCommands.waitSomeSeconds(1);
+                String newDate = webDriverCommands.getText(NEW_EXPIRATION_DATE);
+                //Parsing the given String to Date object
+                Date date1 = new SimpleDateFormat("dd.mm.yyyy").parse(newDate);
+                Date date2 = new SimpleDateFormat("dd.mm.yyyy").parse(currentDate);
+                //Compare two dates
+
+                if (date1.compareTo(date2) < 0) {
+                    webDriverCommands.click(OPEN_CALENDAR_ICON);
+                    calendarXpath = By.xpath(String.format(tomorrow_Disabled_Date, arrayDate[1]));
+                    driver.findElement(calendarXpath).click();
+                    webDriverCommands.waitSomeSeconds(1);                }
+            }
+        }
     }
+
     /**
      *this method calls the type method in webDriverCommands class.
      */
-    public void addFromDateByMetric(String currentDate){
+    public void addFromDateByMetric(String currentDate, String extraFilter) throws ParseException{
 /*        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
@@ -1005,10 +1070,9 @@ public class UserAdministrationPage extends PageObjects {
         //webDriverCommands.type(FROM_DATE, currentDate);
         webDriverCommands.click(OPEN_CALENDAR);
         webDriverCommands.waitSomeSeconds(1);
-        String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1]);
+        SelectDayFromMultiDateCalendar(currentDate,extraFilter);
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DURATION);
     }

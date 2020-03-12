@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -21,7 +22,7 @@ public class validateMetricsByContractorByBrokerBox extends SeleniumInitializer 
 /**
  * This test script validates that the correct metrics are being generated as expected for any specified county and contractor. (Broker Box)
  * */
-    public void validateMetricsByContractorByBrokerBox(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String brokerBoxCounty,String totalDownloadBrokerBox, String totalSearchesByTypeBBIndexBook, String totalSearchesByTypeBBVolumePage) throws InterruptedException {
+    public void validateMetricsByContractorByBrokerBox(String contractorName, String contractorUserName, String environment, String usernameToLogIn, String passwordToLogIn, String brokerBoxCounty,String totalDownloadBrokerBox, String totalSearchesByTypeBBIndexBook, String totalSearchesByTypeBBVolumePage) throws InterruptedException, ParseException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
@@ -30,7 +31,7 @@ public class validateMetricsByContractorByBrokerBox extends SeleniumInitializer 
         ValidateMetrics(newCHMainPage.LoginMenu(),contractorUserName,contractorName,brokerBoxCounty,totalDownloadBrokerBox,totalSearchesByTypeBBIndexBook,totalSearchesByTypeBBVolumePage);
     }
 
-    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String contractorUserName, String contractorName,String brokerBoxCounty, String totalDownloadBrokerBox, String totalSearchesByTypeBBIndexBook,String totalSearchesByTypeBBVolumePage){
+    public void ValidateMetrics(UserAdministrationPage newAdministrationPage, String contractorUserName, String contractorName,String brokerBoxCounty, String totalDownloadBrokerBox, String totalSearchesByTypeBBIndexBook,String totalSearchesByTypeBBVolumePage) throws ParseException {
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -51,7 +52,7 @@ public class validateMetricsByContractorByBrokerBox extends SeleniumInitializer 
         Date today = new Date(); // Fri Jun 17 14:54:28 PDT 2016
         Calendar cal = Calendar.getInstance();
         cal.setTime(today); // don't forget this if date is arbitrary e.g. 01-01-2014
-        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR));
+        newAdministrationPage.addFromDateByMetric((String.format("%02d",cal.get(Calendar.MONTH)+1)) + "." + String.format("%02d",cal.get(Calendar.DAY_OF_MONTH)) + "." + cal.get(Calendar.YEAR),"today");
 
         //Proceed to validate some metrics
         //Make sure that at least 2 searches have been executed by Broker Box County

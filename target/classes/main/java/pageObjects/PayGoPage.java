@@ -32,10 +32,15 @@ public class PayGoPage extends PageObjects {
     private final By CONTINUE_BUTTON = By.cssSelector("button[ng-show='modalAlertOptions.showOkButton']");
     private final By LOGIN_BUTTON = By.cssSelector("a[class='btn btn-success big-link-btn']");
     private final By SUCCESS= By.cssSelector("div[class='success-confirm']");
+    private final By MONTLY_PURCHASE_LIMIT_LABEL = By.xpath("//label[@class='note-sm']");
+
+    String monthly_Purchase_Limit_Label_Name = "Set a maximum monthly purchase limit. You will be invoiced at the end of each month for charges incurred during the billing period. No invoices will be sent for months where there are no charges.";
+    /* OLD Msg: Set a *maximum* monthly purchase limit. You will be invoiced at the end of each month for documents actually purchased.
+    NEW Msg: Set a *maximum* monthly purchase limit. You will be invoiced at the end of each month for charges incurred during the billing period. No invoices will be sent for months where there are no charges.
+     */
 
     //Name conditions
     private final By CHECK_CONDITIONS = By.name("customDiCheck");
-
     public PayGoPage(WebDriver driver) {
         super(driver);
     }
@@ -73,6 +78,22 @@ public class PayGoPage extends PageObjects {
      */
     public boolean waitForSuccessMessageDisplayed(int timeToWait){
         return webDriverCommands.waitForElementVisible(SUCCESS, timeToWait);
+    }
+
+    /**
+     *this method calls the waitForElementVisible method in webn.DriverCommands class.
+     *@param timeToWait amount of maximum seconds to wait
+     *  @return boolean
+     */
+    public boolean waitForMonthlyPurchaseLimitMessageDisplayed(int timeToWait){
+        String label_Text = webDriverCommands.getText(MONTLY_PURCHASE_LIMIT_LABEL);
+        webDriverCommands.waitSomeSeconds(1);
+
+        if (label_Text.equals(monthly_Purchase_Limit_Label_Name)) {
+            return true;
+        }else {
+            return false;
+        }
     }
 
 

@@ -3,7 +3,7 @@
     <test name="Contractor_Standard_Test">
 
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
 
         <!--Local testing vs Selenoid Container -->
@@ -14,7 +14,7 @@
         <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value=""/>
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
 
@@ -205,7 +205,7 @@
     </test>
     <test name="PayGo_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -222,7 +222,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value="dev."/>
 
 
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -286,6 +286,7 @@
                 <include name="CH_Admin_Metrics_By_PayGo"/>
                 <include name="CH_PayGo_CH1089"/>
                 <include name="CH_PayGo_Midland_Maps_Search"/>
+                <include name="CH_PayGo_Subscription_Page"/>
             </run>
         </groups>
         <classes>
@@ -297,7 +298,8 @@
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>-->
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -307,7 +309,7 @@
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
-        <parameter name="serverIPAddress" value="172.16.0.98:4444"/>
+        <parameter name="serverIPAddress" value="192.168.10.102:4444"/>
         <parameter name="enableVNC" value="true"/>
         <parameter name="enableServerLog" value="false"/>
         <parameter name="enableVideo" value="false"/>
@@ -319,7 +321,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value=""/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -363,6 +365,9 @@
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
         <parameter name="companyID" value="12691"/>
+        <parameter name="companyAcctPayGo" value="Drillinginfo - DI Paygo Account"/> <!--15614-->
+        <parameter name="companyIDPayGo" value="15614"/>
+
         <parameter name="county" value="Andrews Abstract Plant"/>
         <!-- New runsheet will be created during testing Demo County test script -->
         <parameter name="demoRunsheetName" value="001Demo"/>
@@ -417,6 +422,7 @@
                 <include name="CH_Admin_County_Mode_Has_Expired"/>
                 <include name="CH_Admin_Max_Usage_Reached"/>
                 <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
+                <include name="CH_Admin_BulksAction_Runsheet_Sharing_Message"/>
             </run>
         </groups>
         <classes>
@@ -426,13 +432,14 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
            <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
-            <!--<class name="main.java.tests.adminTests.validateLimitReached"/>
+            <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
+            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
         </classes>
     </test>
     <test name="Midland_Management_Test">
