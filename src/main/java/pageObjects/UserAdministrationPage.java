@@ -566,7 +566,7 @@ public class UserAdministrationPage extends PageObjects {
      */
     public boolean isEditExpirationDateDialogDisplayed(){
         webDriverCommands.waitSomeSeconds(1);
-        return webDriverCommands.waitForElementPresent(RUNSHET_SHARING_ACCESS_MESSAGE,10);
+        return webDriverCommands.waitForElementPresent(EDIT_EXPIRATION_DATE_DIALOG,10);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.

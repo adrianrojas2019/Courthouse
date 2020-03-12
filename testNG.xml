@@ -14,7 +14,7 @@
         <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value=""/>
+        <parameter name="environment" value="dev."/>
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
 
@@ -139,7 +139,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value="dev."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -222,7 +222,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value=""/>
+        <parameter name="environment" value="dev."/>
 
 
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -298,8 +298,8 @@
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>-->
-            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -321,7 +321,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value=""/>
+        <parameter name="environment" value="dev."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -429,22 +429,22 @@
              <!--<class name="main.java.tests.adminTests.addContractor"/>
              <class name="main.java.tests.adminTests.addFreeTrial"/>
              <class name="main.java.tests.adminTests.addPayGo"/>
-             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-           <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
+            <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <!--<class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
-            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -464,7 +464,7 @@
         <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value="dev."/>
         <!-- Company Info -->
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
@@ -516,7 +516,7 @@
     </test>
     <test name="Runsheet_Management_Test">
         <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
-        <parameter name="browser" value="Firefox"/>
+        <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
         <parameter name="remoteDriver" value="LocalDriver"/>
@@ -532,7 +532,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value="dev."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
