@@ -977,13 +977,13 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);*/
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.type(FROM_DATE, currentDate);
-        webDriverCommands.click(OPEN_CALENDAR);
+        webDriverCommands.type(FROM_DATE, currentDate);
+        //webDriverCommands.click(OPEN_CALENDAR);
         webDriverCommands.waitSomeSeconds(1);
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(currentDate,"today");
-        webDriverCommands.waitSomeSeconds(2);
+        //SelectDayFromMultiDateCalendar(currentDate,"today");
+        //webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
 
@@ -996,7 +996,7 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(currentDate,extraFilter);
+        //SelectDayFromMultiDateCalendar(currentDate,extraFilter);
 
     }
     /**
@@ -1020,7 +1020,7 @@ public class UserAdministrationPage extends PageObjects {
     }
 
     // Function to select the day of month in the date picker.
-    public void SelectDayFromMultiDateCalendar(String currentDate,String extraFilter) throws ParseException {
+    public void SelectDayFromMultiDateCalendar_OLD(String currentDate,String extraFilter) throws ParseException {
         // We are using a special XPath style to select the day of current
         // month.
         // It will ignore the previous or next month day and pick the correct
