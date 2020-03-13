@@ -967,15 +967,15 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the type method in webDriverCommands class.
      */
     public void addFromDate(String currentDate) throws ParseException{
-       /* webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(ACTIVITY_ROW);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(FROM_DATE, currentDate);
         webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);*/
-        webDriverCommands.clear(FROM_DATE);
+        webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
+      /*  webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(FROM_DATE, currentDate);
         //webDriverCommands.click(OPEN_CALENDAR);
@@ -984,7 +984,7 @@ public class UserAdministrationPage extends PageObjects {
         // Provide the day of the month to select the date.
         //SelectDayFromMultiDateCalendar(currentDate,"today");
         //webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
+        webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);*/
     }
 
     /**

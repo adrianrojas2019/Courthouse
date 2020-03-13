@@ -111,7 +111,7 @@
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
-            <!--<class name="main.java.tests.contractorTests.contractorPDFViewer"/>
+            <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
@@ -298,8 +298,8 @@
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
-            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>-->
+            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>
         </classes>
     </test>
     <test name="Admin_Management_Test">
