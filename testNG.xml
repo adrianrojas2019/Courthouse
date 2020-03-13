@@ -107,11 +107,11 @@
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
+            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>-->
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
-            <class name="main.java.tests.contractorTests.contractorPDFViewer"/>
+            <!--<class name="main.java.tests.contractorTests.contractorPDFViewer"/>
             <class name="main.java.tests.standardTests.priorReferenceSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByStandard"/>
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
@@ -193,8 +193,8 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
-            <!--<class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
+            <!--<class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
+            <class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRenameRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialDownloadRunsheet"/>
@@ -295,9 +295,9 @@
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>
-            <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>-->
+            <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
-            <!--<class name="main.java.tests.payGoTests.payGoCH1089"/>
+            <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
             <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>

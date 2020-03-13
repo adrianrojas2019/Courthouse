@@ -1242,19 +1242,19 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);*/
         webDriverCommands.clear(FROM_DATE);
         webDriverCommands.waitSomeSeconds(1);
-        //webDriverCommands.type(FROM_DATE, currentDate);
-        webDriverCommands.click(OPEN_CALENDAR_ICON);
+        webDriverCommands.type(FROM_DATE, currentDate);
+        //webDriverCommands.click(OPEN_CALENDAR_ICON);
         webDriverCommands.waitSomeSeconds(1);
-        String[] arrayDate = currentDate.split("\\.");
+        //String[] arrayDate = currentDate.split("\\.");
 
         // Provide the day of the month to select the date.
-        SelectDayFromMultiDateCalendar(arrayDate[1],extraFilter);
+        //SelectDayFromMultiDateCalendar(arrayDate[1],extraFilter);
 
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(TOTAL_DOCUMENTS_DOWNLOADED_PRINTED);
     }
     // Function to select the day of month in the date picker.
-    public void SelectDayFromMultiDateCalendar(String day, String extraFilter)
+    public void SelectDayFromMultiDateCalendar_OLD(String day, String extraFilter)
     {
         // We are using a special XPath style to select the day of current
         // month.
