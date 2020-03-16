@@ -107,7 +107,7 @@
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorPrintRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>-->
+            <class name="main.java.tests.contractorTests.contractorRenameRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorValidatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validatePrintsAndDownloads"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractor"/>
@@ -298,8 +298,8 @@
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>-->
-            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>
+            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -432,9 +432,9 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
             <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <!--<class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
@@ -504,7 +504,7 @@
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
+            <!--<class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>

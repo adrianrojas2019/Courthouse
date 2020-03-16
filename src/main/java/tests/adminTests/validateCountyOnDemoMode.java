@@ -72,7 +72,7 @@ public class validateCountyOnDemoMode extends SeleniumInitializer {
             newAdministrationPage.addNewExpirationDate((String.format("%02d", cal.get(Calendar.MONTH) + 1)) + "." + String.format("%02d", cal.get(Calendar.DAY_OF_MONTH)) + "." + String.format("%02d", cal.get(Calendar.YEAR)));
             //click on Save button
             newAdministrationPage.clickOnExpirationDateSaveButton();
-
+            //Add new assert in order to make sure that the expiration Data has been updated
             //Select the contractor and make sure that county on demo mode has been assigned to the contractor account
             AssignDemoCountyToContractor(newAdministrationPage, contractorUserName, countyOnDemoMode, contractorName);
 

@@ -278,6 +278,7 @@ public class ExplorerPage extends PageObjects {
      */
     public void selectDropDownOptionByValue(final By webElement, String value) {
         Select dropdown = new Select(webDriverCommands.findElement(webElement));
+        webDriverCommands.waitSomeSeconds(1);
         dropdown.selectByVisibleText(value);
     }
 

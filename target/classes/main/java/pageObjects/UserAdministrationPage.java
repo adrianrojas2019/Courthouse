@@ -824,7 +824,7 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public void selectUnassignedCounty(String county){
-        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitSomeSeconds(4);
         webDriverCommands.click(By.xpath(String.format(find_Unassigned_County, county)));
     }
     /**
