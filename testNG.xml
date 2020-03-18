@@ -432,14 +432,14 @@
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>
             <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
-            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>-->
+            <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
-            <!--<class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
+            <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
-            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>-->
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
+            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
         </classes>
     </test>
     <test name="Midland_Management_Test">

@@ -137,7 +137,7 @@ public class UserAdministrationPage extends PageObjects {
 
     //String clickCheckBox = "//div[@di-grid='gridOptionsMirror']//div[@style='top: %spx; height: 30px;']//div[@class='ngCell  col0 colt0']";
     String clickCheckBox = "div.row.alignGrid.di-arrow-row-grid.users-grid-bulk.ng-scope > div:nth-child(3) > div > div.ngViewport.ng-scope > div > div:nth-child(%s) > div.ngCell.col0.colt0";
-    String runsheetSharingAccessMessage = "Super users have full access to runsheet sharing. To update runsheet sharing permissions for Contractor or Standard users please unselect all Super users.";
+    String runsheetSharingAccessMessage = "PayGo and Free trial users do not have access to the runsheet sharing functionality. Please select only Standard or Contractor users to enable this feature.";
 
     /**
      * This method uses the PageFactory desing pattern, to direct to another pageObject.
