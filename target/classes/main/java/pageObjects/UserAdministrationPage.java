@@ -44,6 +44,7 @@ public class UserAdministrationPage extends PageObjects {
     private final By USER_METRICS_GRID = By.cssSelector("article[ui-view='user-metrics']");
     private final By USER_METRICS_GRID_TITLE = By.cssSelector("article[ui-view='user-metrics'] h5[name='Select County for details']");
     private final By USER_METRICS_TAB_TITLE = By.xpath("//article[@ui-view='user-metrics']//label[text()='Usage & Activity']");
+    private final By METRIC_TYPE_DEFAULT = By.xpath("//di-high-chart[@data-chart-selector='singleUserChart']//select[@ng-model='chartMetrics.selectedMetric']");
 
     private final By EDIT_DOWNLOADS_PRINTS_DIALOG = By.cssSelector("div[class='modal-content']");
     private final By EDIT_DOWNLOADS_PRINTS_TITLE = By.xpath("//div[text()='EDIT DOWNLOADS/PRINTS']");
@@ -453,6 +454,16 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(USER_METRICS_TAB_TITLE);
         return webDriverCommands.waitForElementPresent(USER_METRICS_TAB_TITLE,30);
+    }
+
+    /**
+     *this method calls the GetText() method in webDriverCommands class.
+     *
+     *  @return String
+     */
+    public boolean isMetricTypeSelected(String metricTypeDefault){
+        webDriverCommands.waitSomeSeconds(2);
+        return webDriverCommands.isValueSelected(METRIC_TYPE_DEFAULT,metricTypeDefault);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.

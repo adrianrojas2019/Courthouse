@@ -79,6 +79,9 @@
         <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
         <!-- Enhanced Clerk County assigned to the contractorUserName -->
         <parameter name="contractorEnhancedClerkCounty" value="Angelina"/>
+
+        <parameter name="metricTypeDefault" value="No. of logins"/>
+
         <groups>
             <run>
                 <include name="CH_Login_Load_CH_Main_Page"/>
@@ -97,6 +100,7 @@
                 <include name="CH_Contractor_Broker_Box_Search"/>
                 <include name="CH_Admin_Metrics_By_Contractor_By_Broker_Box"/>
                 <include name="CH_Contractor_Explorer_Search_Validates_Fields"/>
+                <include name="CH_Admin_Metrics_Type_Default"/>
 
             </run>
         </groups>
@@ -117,6 +121,7 @@
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>-->
+            <class name="main.java.tests.adminTests.validateMetricTypeDefault"/>
         </classes>
     </test>
 
@@ -438,8 +443,8 @@
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
-            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>-->
-            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
+            <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
+            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">
