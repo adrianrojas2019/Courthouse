@@ -625,10 +625,12 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public String isDocumentDownloaded(){
-        //workaround in the meantime CH-1077 is fixed
+        //CH-1077 has been fixed
+        return webDriverCommands.getText(DOCUMENTS_DOWNLOADED);
+        /*//workaround in the meantime CH-1077 is fixed
         int value = Integer.parseInt(webDriverCommands.getText(DOCUMENTS_DOWNLOADED));
         DecimalFormat format = new DecimalFormat("0.00");
-        return format.format(value);
+        return format.format(value);*/
     }
     /**
      *this method calls the getText() method in webDriverCommands class.
@@ -652,11 +654,12 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public String isDocumentPrinted(){
-        //return webDriverCommands.getText(DOCUMENTS_PRINTED);
+        //CH-1077 has been fixed
+        return webDriverCommands.getText(DOCUMENTS_PRINTED);
         //workaround in the meantime CH-1077 is fixed
-        int value = Integer.parseInt(webDriverCommands.getText(DOCUMENTS_PRINTED));
+        /*int value = Integer.parseInt(webDriverCommands.getText(DOCUMENTS_PRINTED));
         DecimalFormat format = new DecimalFormat("0.00");
-        return format.format(value);
+        return format.format(value);*/
     }
     /**
      *this method calls the getText() method in webDriverCommands class.
