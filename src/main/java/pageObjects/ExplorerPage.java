@@ -248,8 +248,8 @@ public class ExplorerPage extends PageObjects {
      */
     public void clickOnCountyCombo(String contractorCounty){
         webDriverCommands.waitSomeSeconds(5);
-        //webDriverCommands.type(COUNTY_COMBO,contractorCounty);
-        selectDropDownOptionByValue(COUNTY_COMBO,contractorCounty);
+        webDriverCommands.type(COUNTY_COMBO,contractorCounty);
+        //selectDropDownOptionByValue(COUNTY_COMBO,contractorCounty);
         webDriverCommands.waitSomeSeconds(5);
     }
     /**
