@@ -96,6 +96,7 @@ public class ExplorerPage extends PageObjects {
     private final By OK_PURCHASE_CONFIRMATION_BUTTON= By.cssSelector("button[class='btn btn-success ng-binding']");
     private final By SPINNER = By.xpath("//div[@class='spinner']");
     private final By SPINNER_PROGRESS = By.cssSelector("div[class='spinner'][role='progressbar']");
+    private final By SPINNER_RUNSHEET_PROGRESS = By.xpath("//span[@us-spinner='spinnerConf'][@spinner-key='runsheet-spinner']//div[@role='progressbar']");
     private final By PRINT_SPINNER= By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By PRINT_BUTTON_ENABLED = By.cssSelector("button[class='toolbarButton printPdf'][disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
@@ -764,7 +765,12 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.click(APPLY_BUTTON);
         webDriverCommands.waitSomeSeconds(3);
     }
-
+    /**
+     * this method calls the waitForElementInVisible method in webDriverCommands class.
+     */
+    public void WaitUntilRunsheetSpinnerEnds(){
+        webDriverCommands.waitForElementInVisible(SPINNER_RUNSHEET_PROGRESS);
+    }
     /**
      * this method calls the waitForElementInVisible method in webDriverCommands class.
      */
@@ -1329,7 +1335,9 @@ public class ExplorerPage extends PageObjects {
     public void clickOnRunsheetNameField(String myCompanyRunsheet){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(MY_COMPANY_RUNSHEETS_NAME,myCompanyRunsheet);
-        webDriverCommands.waitSomeSeconds(5);
+        //webDriverCommands.waitSomeSeconds(10);
+        WaitUntilRunsheetSpinnerEnds();
+        //until spinner is gone
         webDriverCommands.click(By.xpath(String.format(myCompanyRunsheetNameFound,myCompanyRunsheet)));
     }
     /**
