@@ -769,6 +769,7 @@ public class ExplorerPage extends PageObjects {
      * this method calls the waitForElementInVisible method in webDriverCommands class.
      */
     public void WaitUntilRunsheetSpinnerEnds(){
+        webDriverCommands.waitForElementVisible(SPINNER_RUNSHEET_PROGRESS,1);
         webDriverCommands.waitForElementInVisible(SPINNER_RUNSHEET_PROGRESS);
     }
     /**
