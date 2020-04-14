@@ -20,6 +20,7 @@ public class EmailAccountPage extends PageObjects {
     private final By EMPTY_FOLDER = By.xpath("//span[text()='Empty folder']");
     private final By SIGN_IN_BUTTON = By.xpath("//nav[@class='auxiliary-actions']//li//a[text()='Sign in']");
     private final By MAIL_PAGE = By.xpath("//mark[@class='corp-name']//a[@title='Microsoft']");
+    private final By OK_BUTTON = By.xpath("//span[text()='OK']");
 
     String successEmailBody = "//div[h1='%s']//h1";
 
@@ -101,7 +102,7 @@ public class EmailAccountPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(EMPTY_FOLDER);
         webDriverCommands.waitSomeSeconds(3);
-
+        webDriverCommands.click(OK_BUTTON);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
