@@ -404,7 +404,7 @@
         <!-- Add new runsheet as admin -->
         <parameter name="adminCounty" value="Andrews Abstract Plant"/>
         <parameter name="adminGrantor" value="James"/>
-        <parameter name="adminRunsheetName" value="TempA"/>
+        <parameter name="adminRunsheetName" value="TempC"/>
         <parameter name="emailURL" value="https://outlook.live.com/mail/0/inbox"/>
         <parameter name="emailAddress" value="CHRptIssuesChanges@outlook.com"/>
         <parameter name="emailPassword" value="@nv!r*s2020"/>
@@ -435,10 +435,10 @@
              <class name="main.java.tests.adminTests.addFreeTrial"/>
              <class name="main.java.tests.adminTests.addPayGo"/>
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-            <!--<class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+            <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
-            <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
+            <!--<class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>

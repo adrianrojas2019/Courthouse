@@ -99,10 +99,11 @@ public class EmailAccountPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(15);
         //webDriverCommands.click(DELETE_BUTTON);
         webDriverCommands.click(CHECK_BOX);
-        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(EMPTY_FOLDER);
-        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(OK_BUTTON);
+        webDriverCommands.waitSomeSeconds(2);
     }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
