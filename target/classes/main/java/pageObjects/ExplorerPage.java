@@ -1336,8 +1336,10 @@ public class ExplorerPage extends PageObjects {
     public void clickOnRunsheetNameField(String myCompanyRunsheet){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.type(MY_COMPANY_RUNSHEETS_NAME,myCompanyRunsheet);
+        //webDriverCommands.waitSomeSeconds(1);
         //webDriverCommands.waitSomeSeconds(10);
         WaitUntilRunsheetSpinnerEnds();
+        webDriverCommands.waitSomeSeconds(3);
         //until spinner is gone
         webDriverCommands.click(By.xpath(String.format(myCompanyRunsheetNameFound,myCompanyRunsheet)));
     }

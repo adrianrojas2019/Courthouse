@@ -435,10 +435,10 @@
              <class name="main.java.tests.adminTests.addFreeTrial"/>
              <class name="main.java.tests.adminTests.addPayGo"/>
              <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-            <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+            <!--<class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
-            <!--<class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
+            <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
             <class name="main.java.tests.contractorTests.contractorNotDownloadsPrintsCountyOnDemoMode"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpiresToday"/>
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
@@ -596,14 +596,14 @@
             </run>
         </groups>
         <classes>
-            <class name="main.java.tests.adminTests.superUserReportIssue"/>
-            <!--<class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
+            <!--<class name="main.java.tests.adminTests.superUserReportIssue"/>
+            <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>-->
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
+            <!--<class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
             <class name="main.java.tests.contractorTests.contractorUnassignRunsheet"/>
             <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>-->
