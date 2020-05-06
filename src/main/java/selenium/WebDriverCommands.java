@@ -209,6 +209,14 @@ public class WebDriverCommands extends  SeleniumSetUp {
         return infoInTextField;
     }
 
+    public WebElement getButtonBy(String buttonText) {
+        return driver.findElements(By.cssSelector("button[role='menuitem']"))
+                .stream()
+                .filter(element -> element.getText().contains(buttonText))
+                .findAny()
+                .get();
+    }
+
     /**
      * This method wait for the element in order to perform the following action
      * @param element element to wait

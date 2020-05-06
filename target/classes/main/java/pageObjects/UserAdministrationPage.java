@@ -49,8 +49,10 @@ public class UserAdministrationPage extends PageObjects {
     private final By EDIT_DOWNLOADS_PRINTS_DIALOG = By.cssSelector("div[class='modal-content']");
     private final By EDIT_DOWNLOADS_PRINTS_TITLE = By.xpath("//div[text()='EDIT DOWNLOADS/PRINTS']");
     private final By NEW_LIMIT_NUMBER = By.cssSelector("input[name='newLimit']");
+    private final By NEW_LIMIT_NUM = By.cssSelector("div.modal-body.ng-scope > div > form > div > div > div > div > div:nth-child(3) > div > div:nth-child(2) > input");
     private final By BURGER_MENU = By.cssSelector("article[ui-view='user-metrics'] div[class='ngHeaderButtonBurgerMenu']");
     private final By DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX = By.xpath("//span[text()='Downloads/Prints Available']//..//label");
+    private final By FIXED_NUMBER = By.xpath("input[ng-model='modalAlertOptions.limitType'][value='1']");
 
     private final By USER_DEMO_MANAGEMENT_GRID_TITLE = By.cssSelector("article[ui-view='user-metrics-bulk'] h5[name='Select County for details']");
 
@@ -127,6 +129,7 @@ public class UserAdministrationPage extends PageObjects {
     String tomorrow_Disabled_Date = "//td[not(contains(@class,'datePicker'))]//span[text()='%s'][@class='ng-binding text-muted']";
 
     private final By DOWNLOADS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col3 colt3 centerCellHeader']");
+    private final By USAGE_LIMIT = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col2 colt2 centerCellHeader']");
     private final By PRINTS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col4 colt4 centerCellHeader']");
     private final By EDIT_LIMIT_BUTTON = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText text-center edit-btn ng-scope']");
     private final By LIMIT_REACHED_MESSAGE = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col5 colt5 centerCellHeader']");
@@ -368,6 +371,14 @@ public class UserAdministrationPage extends PageObjects {
      */
     public String getTotalDownloadsUsed(){
         return webDriverCommands.getText(DOWNLOADS_USED);
+    }
+
+    /**
+     *this method calls the getText method in webDriverCommands class.
+     * return String with the total of downloads used
+     */
+    public String getUsageLimit(){
+        return webDriverCommands.getText(USAGE_LIMIT);
     }
     /**
      *this method calls the getText method in webDriverCommands class.
@@ -819,6 +830,30 @@ public class UserAdministrationPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(2);
         webDriverCommands.click(DOWNLOAD_PRINTS_AVAILABLE_CHECK_BOX);
     }
+
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
+    public void clickOnFixedNumber(){
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(FIXED_NUMBER);
+    }
+
+    /**
+     *this method calls the click() method in webDriverCommands class.
+     *
+     *  @return String
+     */
+    public void increaseLimitNumber(String newValue){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.clear(NEW_LIMIT_NUMBER);
+        webDriverCommands.type(NEW_LIMIT_NUMBER, Integer.toString(Integer.parseInt(newValue.replace(",",""))+1));
+        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.click(OK_BUTTON);
+    }
+
     /**
      *this method calls the click() method in webDriverCommands class.
      *

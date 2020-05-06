@@ -14,7 +14,7 @@
         <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value="dev."/>
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
 
@@ -326,7 +326,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -375,9 +375,9 @@
 
         <parameter name="county" value="Andrews Abstract Plant"/>
         <!-- New runsheet will be created during testing Demo County test script -->
-        <parameter name="demoRunsheetName" value="001Demo"/>
+        <parameter name="demoRunsheetName" value="005Demo"/>
         <!-- New runsheet will be created during testing CH_Admin_Max_Usage_Reached test script-->
-        <parameter name="LimitNewRunsheetName" value="001Limit"/>
+        <parameter name="LimitNewRunsheetName" value="002Limit"/>
         <!-- Metrics -->
         <parameter name="totalDownloads" value="1.00"/>
         <parameter name="totalPrints" value="1.00"/>
@@ -404,10 +404,13 @@
         <!-- Add new runsheet as admin -->
         <parameter name="adminCounty" value="Andrews Abstract Plant"/>
         <parameter name="adminGrantor" value="James"/>
-        <parameter name="adminRunsheetName" value="TempC"/>
+        <parameter name="adminRunsheetName" value="Temp"/>
         <parameter name="emailURL" value="https://outlook.live.com/mail/0/inbox"/>
         <parameter name="emailAddress" value="CHRptIssuesChanges@outlook.com"/>
         <parameter name="emailPassword" value="@nv!r*s2020"/>
+
+        <!-- Validate Usage Metrics -->
+        <parameter name="usageMetricsCounty" value="Howard Abstract Plant"/>
 
         <groups>
             <run>
@@ -428,6 +431,8 @@
                 <include name="CH_Admin_Max_Usage_Reached"/>
                 <include name="CH_Admin_BulksAction_Cancel_ChangeCompany"/>
                 <include name="CH_Admin_BulksAction_Runsheet_Sharing_Message"/>
+                <include name="CH_Admin_Doc_Into_Company_Runsheet"/>
+                <include name="CH_Admin_Modify_Usage_Metrics"/>
             </run>
         </groups>
         <classes>
@@ -444,11 +449,13 @@
             <class name="main.java.tests.adminTests.validateCountyDemoModeExpired"/>
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
-            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>-->
-        </classes>
-    </test>
-    <test name="Midland_Management_Test">
-        <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
+            <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
+            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>-->
+            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>
+    </classes>
+</test>
+<test name="Midland_Management_Test">
+    <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
@@ -601,9 +608,9 @@
             <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
-            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>-->
+            <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
-            <!--<class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
             <class name="main.java.tests.contractorTests.contractorUnassignRunsheet"/>
             <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>-->
