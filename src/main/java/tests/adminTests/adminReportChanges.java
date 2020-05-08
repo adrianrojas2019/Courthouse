@@ -46,7 +46,7 @@ public class adminReportChanges extends SeleniumInitializer {
 
         //Get the value and edit it
         String cellValue = newExplorerPage.retrievesCellValue(adminCounty);
-        cellValue = cellValue + "Edited";
+        cellValue = cellValue + "Gap Testing";
 
         newExplorerPage.editCell(cellValue,adminCounty);
 

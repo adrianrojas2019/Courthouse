@@ -14,7 +14,7 @@
         <parameter name="enableVideo" value="false"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value=""/>
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
 
@@ -144,7 +144,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value=""/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -198,7 +198,7 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
+<!--            <class name="main.java.tests.freeTrialTests.freeTrialExplorerSearch"/>
             <class name="main.java.tests.freeTrialTests.freeTrialAddNewRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.freeTrialTests.freeTrialRenameRunsheet"/>
@@ -227,7 +227,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value=""/>
 
 
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -262,7 +262,7 @@
         <parameter name="payGoPassword" value="As123456789"/>
         <parameter name="payGoCounty" value="Liberty"/>
         <parameter name="payGoGrantor" value="Smith"/>
-        <parameter name="runsheetNamePayGo" value="PGA"/>
+        <parameter name="runsheetNamePayGo" value="PGA1"/>
 
         <parameter name="multiplePayGoGrantor" value="Smith,Andrews,James"/>
 
@@ -295,15 +295,15 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
+           <!-- <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
             <class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
-            <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>
+            <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>-->
             <class name="main.java.tests.payGoTests.payGoPrintRunsheet"/>
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
-            <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
+           <!-- <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
             <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
         </classes>
     </test>
@@ -326,7 +326,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="preprod."/>
+        <parameter name="environment" value=""/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
@@ -339,9 +339,12 @@
         <parameter name="userName" value="newtester_%d"/>
 
         <!-- PayGo Info -->
+        <parameter name="firstNamePayGo" value="Pay"/>
+        <parameter name="lastNamePayGo" value="Go"/>
         <parameter name="emailUserNamePayGo" value="adrojas@wearegap.com"/>
         <parameter name="phoneNumberPayGo" value="111-222-3333"/>
         <parameter name="organizationPayGo" value="Organization PayGo"/>
+        <parameter name="userNamePayGo" value="newpaygo_%d"/>
         <parameter name="address1" value="New Address"/>
         <parameter name="city" value="WPB"/>
         <parameter name="state" value="Florida"/>
@@ -412,6 +415,15 @@
         <!-- Validate Usage Metrics -->
         <parameter name="usageMetricsCounty" value="Howard Abstract Plant"/>
 
+        <!-- Add Free Trial -->
+        <parameter name="firstNameFreeTrial" value="Free"/>
+        <parameter name="lastNameFreeTrial" value="Trial"/>
+        <parameter name="emailUserNameFreeTrial" value="rojasadrian06@gmail.com"/>
+        <parameter name="phoneNumberFreeTrial" value="111-222-3333"/>
+        <parameter name="organizationFreeTrial" value="Organization FreeTrial"/>
+        <parameter name="userNameFreeTrial" value="newfreetrial_%d"/>
+        <parameter name="numberOfUserFreeTrialToCreate" value="1"/>
+
         <groups>
             <run>
                 <!--Adding Users -->
@@ -436,10 +448,10 @@
             </run>
         </groups>
         <classes>
-             <!--<class name="main.java.tests.adminTests.addContractor"/>
-             <class name="main.java.tests.adminTests.addFreeTrial"/>
-             <class name="main.java.tests.adminTests.addPayGo"/>
-             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
+            <!--<class name="main.java.tests.adminTests.addContractor"/>
+            <class name="main.java.tests.adminTests.addFreeTrial"/>
+            <class name="main.java.tests.adminTests.addPayGo"/>
+            <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
             <!--<class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
@@ -450,12 +462,12 @@
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
             <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
-            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>-->
-            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>
-    </classes>
-</test>
-<test name="Midland_Management_Test">
-    <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
+            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>
+            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>-->
+        </classes>
+    </test>
+    <test name="Midland_Management_Test">
+        <!-- Login's parameters: possible values: 'dev','preprod' and ''-->
         <parameter name="browser" value="Chrome"/>
         <parameter name="url" value="https://app.%sdrillinginfo.com/courthouse/"/>
         <!--Local testing vs Selenoid Container -->
@@ -476,7 +488,7 @@
         <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value=""/>
         <!-- Company Info -->
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
@@ -544,7 +556,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value=""/>
 
         <parameter name="usernameToLogIn" value="diplus2"/>
         <parameter name="passwordToLogIn" value="drillin6"/>
