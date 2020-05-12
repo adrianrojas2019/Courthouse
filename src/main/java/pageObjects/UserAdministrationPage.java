@@ -340,6 +340,7 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnSaveButton(){
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.click(SAVE_BUTTON);
+        webDriverCommands.waitSomeSeconds(1);
     }
     /**
      *this method calls the click method in webDriverCommands class.
@@ -982,7 +983,7 @@ public class UserAdministrationPage extends PageObjects {
      *  @return boolean
      */
     public boolean isSuccessUserUpdatedDisplayed(){
-        return webDriverCommands.waitForElementPresent(SUCCESS_USER_UPDATE_MESSAGE,30);
+        return webDriverCommands.waitForElementPresent(SUCCESS_USER_UPDATE_MESSAGE,45);
     }
 
     /**

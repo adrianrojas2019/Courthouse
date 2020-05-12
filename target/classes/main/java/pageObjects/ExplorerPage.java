@@ -1197,7 +1197,7 @@ public class ExplorerPage extends PageObjects {
      * this method calls the click method in webDriverCommands class.
      */
     public UserAdministrationPage clickOnUserAdministrationPage(){
-
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.waitForElementClickable(USER_MENU, 300);
         webDriverCommands.click(USER_MENU);
 

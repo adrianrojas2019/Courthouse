@@ -69,7 +69,6 @@ public class contractorMidlandMapsAssign extends SeleniumInitializer {
     }
 
     public LoginPage Logout(UserAdministrationPage newUserAdminPage){
-
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newUserAdminPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
         //Click on User Administration item

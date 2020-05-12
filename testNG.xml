@@ -488,7 +488,7 @@
         <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
         <!-- Company Info -->
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
@@ -528,13 +528,13 @@
             </run>
         </groups>
         <classes>
-           <!-- <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
+            <class name="main.java.tests.adminTests.assignMidlandMapsCounty"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsAssign"/>
-            <class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
-            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>
+            <!--<class name="main.java.tests.contractorTests.contractorMidlandMapsSearch"/>
+            <class name="main.java.tests.adminTests.validateMetricsByContractorByMidlandMaps"/>-->
             <class name="main.java.tests.contractorTests.contractorMidlandMapsUnassign"/>
             <class name="main.java.tests.adminTests.unassignMidlandMapsCounty"/>
-            <class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
+            <!--<class name="main.java.tests.contractorTests.contractorCancelDownloadMidlandMap"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapShowCoverage"/>-->
         </classes>
     </test>
@@ -617,9 +617,9 @@
         <classes>
            <!-- <class name="main.java.tests.adminTests.superUserReportIssue"/>
             <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>-->
+            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
-            <!--<class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
