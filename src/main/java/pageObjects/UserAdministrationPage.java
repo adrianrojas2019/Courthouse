@@ -248,8 +248,8 @@ public class UserAdministrationPage extends PageObjects {
     public void clickOnSearchFieldAsSuperUser(String searchContractUserName){
         webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.type(SEARCH_USER_FIELD_CONTRACT,searchContractUserName);
-        webDriverCommands.waitSomeSeconds(2);
-        webDriverCommands.waitForElementInVisible(SPINNER,90);
+        webDriverCommands.waitForElementInVisible(SPINNER,20);
+        webDriverCommands.waitSomeSeconds(10);
     }
 
     /**
@@ -1171,7 +1171,7 @@ public class UserAdministrationPage extends PageObjects {
      * return the total of items for the specified user
      */
     public String isUserFound(){
-        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitSomeSeconds(10);
         String [] array = webDriverCommands.getText(TOTAL_ITEMS).split(":");
 
         return array[1].trim();
