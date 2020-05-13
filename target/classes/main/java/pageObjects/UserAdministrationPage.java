@@ -132,6 +132,8 @@ public class UserAdministrationPage extends PageObjects {
     private final By USAGE_LIMIT = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col2 colt2 centerCellHeader']");
     private final By PRINTS_USED = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col4 colt4 centerCellHeader']");
     private final By EDIT_LIMIT_BUTTON = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText text-center edit-btn ng-scope']");
+
+    private final By RADIO_BUTTON_FIXED_NUMBER = By.cssSelector("body > div.modal.fade.ng-isolate-scope.center-modal-alert.modalAlertContent.in > div > div > div.modal-body.ng-scope > div > form > div > div > div > div > div:nth-child(3) > div > label:nth-child(1) > input");
     private final By LIMIT_REACHED_MESSAGE = By.cssSelector("div.ng-scope.ngRow.odd.selected div[class='ngCellText ng-scope col5 colt5 centerCellHeader']");
 
     String my_County_Midland_Maps_Name = "//li[@ng-repeat=\"item in diData | filter:searchItem | orderBy:'name'\"][text()='%s']";
@@ -354,6 +356,7 @@ public class UserAdministrationPage extends PageObjects {
      *this method calls the type method in webDriverCommands class.
      */
     public void clickOnSearchUser(String searchUser){
+        webDriverCommands.clear(SEARCH_USER_FIELD);
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.type(SEARCH_USER_FIELD,searchUser);
         webDriverCommands.waitSomeSeconds(3);
@@ -848,6 +851,8 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public void increaseLimitNumber(String newValue){
+        webDriverCommands.waitSomeSeconds(1);
+        webDriverCommands.click(RADIO_BUTTON_FIXED_NUMBER);
         webDriverCommands.waitSomeSeconds(1);
         webDriverCommands.clear(NEW_LIMIT_NUMBER);
         webDriverCommands.type(NEW_LIMIT_NUMBER, Integer.toString(Integer.parseInt(newValue.replace(",",""))+1));

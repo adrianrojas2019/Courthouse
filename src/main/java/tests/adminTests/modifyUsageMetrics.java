@@ -16,22 +16,22 @@ import java.util.Calendar;
  * Created by Adrian on 11/28/2018.
  */
 public class modifyUsageMetrics extends SeleniumInitializer {
-    @Parameters({"environment","usernameToLogIn","passwordToLogIn","companyID","usageMetricsCounty"})
+    @Parameters({"environment","usernameToLogIn","passwordToLogIn","multipleCompany","usageMetricsCounty"})
     @Test(groups = {"CH_Admin_Modify_Usage_Metrics", "Regression","Company_Management"})
 /**
  * This test script validates the correct info message (usage max reach progress bar) for one specified county. Abstract Plants.
  * */
-    public void modifyUsageMetrics(String environment, String usernameToLogIn, String passwordToLogIn, String companyID, String usageMetricsCounty) throws InterruptedException {
+    public void modifyUsageMetrics(String environment, String usernameToLogIn, String passwordToLogIn, String multipleCompany, String usageMetricsCounty) throws InterruptedException {
 
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
 
         CHMainPage newCHMainPage = loginIntoCHMainPageTest.loginSuccessfullyGalleryTest(environment,usernameToLogIn, passwordToLogIn, getDriverInstance());
         //UserAdministrationPage newAdministrationPage =
-        ModifyUsageMetrics(newCHMainPage.LoginMenu(),environment,companyID,usageMetricsCounty);
+        ModifyUsageMetrics(newCHMainPage.LoginMenu(),environment,multipleCompany,usageMetricsCounty);
     }
 
-    public void ModifyUsageMetrics(UserAdministrationPage newAdministrationPage, String environment, String companyID,String usageMetricsCounty){
+    public void ModifyUsageMetrics(UserAdministrationPage newAdministrationPage, String environment, String multipleCompany,String usageMetricsCounty){
 
         //Validate if the user menu has been selected/displayed
         Assert.assertTrue(newAdministrationPage.isMenuUserDisplayed(10), "Cannot display the User Menu");
@@ -39,39 +39,45 @@ public class modifyUsageMetrics extends SeleniumInitializer {
         newAdministrationPage.clickOnCompanyManagement();
         //Validate that User Grid Company has been displayed
         Assert.assertTrue(newAdministrationPage.isUserGridCompanyDisplayed(), "Cannot access the User Grid Company.");
-        //Click on Search Filter
-        newAdministrationPage.clickOnSearchUser(companyID);
-        //Validate that Company has been found
-        Assert.assertEquals(companyID,newAdministrationPage.isCompanyDisplayed(), "Cannot find Company ID.");
-        //Select row
-        newAdministrationPage.clickOnCompanyRow();
-        //Click on Usage Metrics tab
-        newAdministrationPage.clickOnUsageMetricsTab();
-        Assert.assertTrue(newAdministrationPage.isUserMetricsGridDisplayed(), "Cannot display user metrics View. (Select County for Details).");
 
-        //Select County Abstract Plant
-        newAdministrationPage.selectCounty(usageMetricsCounty);
-        Assert.assertTrue(newAdministrationPage.isCountyDisplayed(usageMetricsCounty), "Cannot find County: " + usageMetricsCounty);
 
-        //get total Usage Limit
-        String totalUsageLimit = newAdministrationPage.getUsageLimit();
+        String[] multipleCompanies = multipleCompany.split(",");
+        for(int number =0; number <= multipleCompanies.length-1; number++) {
 
-        newAdministrationPage.clickOnBurgerMenu();
-        newAdministrationPage.clickOnDownloadsAndPrintsAvailableCheckBox();
-        newAdministrationPage.clickOnBurgerMenu();
-        //Proceed to click on edit button in order to change or increase the current limit one more
-        newAdministrationPage.clickOnChangeLimitButton();
-        Assert.assertTrue(newAdministrationPage.isDownloadsPrintsDialogDisplayed(usageMetricsCounty), "Edit Downloads/Prints Dialog has not been displayed.");
+            //Click on Search Filter
+            newAdministrationPage.clickOnSearchUser(multipleCompanies[number]);
+            //Validate that Company has been found
+            Assert.assertEquals(multipleCompanies[number], newAdministrationPage.isCompanyDisplayed(), "Cannot find Company ID.");
+            //Select row
+            newAdministrationPage.clickOnCompanyRow();
+            //Click on Usage Metrics tab
+            newAdministrationPage.clickOnUsageMetricsTab();
+            Assert.assertTrue(newAdministrationPage.isUserMetricsGridDisplayed(), "Cannot display user metrics View. (Select County for Details).");
 
-        //Click on Fixed Number check box
-        //newAdministrationPage.clickOnFixedNumber();
-        //Proceed to change the current limit. Increase fixed number with more one
-        newAdministrationPage.increaseLimitNumber(totalUsageLimit);
-        //Toast Success Message
-        Assert.assertTrue(newAdministrationPage.isSuccessMessageDisplayed("New usage limit has been successfully saved."), "The new limit has not been saved. For the County: " + usageMetricsCounty);
-        newAdministrationPage.clickOnBurgerMenu();
-        newAdministrationPage.clickOnDownloadsAndPrintsAvailableCheckBox();
-        newAdministrationPage.clickOnBurgerMenu();
+            //Select County Abstract Plant
+            newAdministrationPage.selectCounty(usageMetricsCounty);
+            Assert.assertTrue(newAdministrationPage.isCountyDisplayed(usageMetricsCounty), "Cannot find County: " + usageMetricsCounty);
+
+            //get total Usage Limit
+            String totalUsageLimit = newAdministrationPage.getUsageLimit();
+
+            newAdministrationPage.clickOnBurgerMenu();
+            newAdministrationPage.clickOnDownloadsAndPrintsAvailableCheckBox();
+            newAdministrationPage.clickOnBurgerMenu();
+            //Proceed to click on edit button in order to change or increase the current limit one more
+            newAdministrationPage.clickOnChangeLimitButton();
+            Assert.assertTrue(newAdministrationPage.isDownloadsPrintsDialogDisplayed(usageMetricsCounty), "Edit Downloads/Prints Dialog has not been displayed.");
+
+            //Click on Fixed Number check box
+            //newAdministrationPage.clickOnFixedNumber();
+            //Proceed to change the current limit. Increase fixed number with more one
+            newAdministrationPage.increaseLimitNumber(totalUsageLimit);
+            //Toast Success Message
+            Assert.assertTrue(newAdministrationPage.isSuccessMessageDisplayed("New usage limit has been successfully saved."), "The new limit has not been saved. For the County: " + usageMetricsCounty);
+            newAdministrationPage.clickOnBurgerMenu();
+            newAdministrationPage.clickOnDownloadsAndPrintsAvailableCheckBox();
+            newAdministrationPage.clickOnBurgerMenu();
+        }
     }
 
 }
