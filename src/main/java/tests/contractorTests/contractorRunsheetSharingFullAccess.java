@@ -61,8 +61,9 @@ public class contractorRunsheetSharingFullAccess extends SeleniumInitializer {
         Calendar now = Calendar.getInstance();
         newExplorerPage.clickOnRunsheetNameField(myCompanyRunsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
         //wait until new runsheet come up
-        Assert.assertTrue(newExplorerPage.runsheetShowUp(myCompanyRunsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR))+"(1)"),"Runsheet has not been displayed.");
-
+        Assert.assertTrue(newExplorerPage.runsheetShowUp(myCompanyRunsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR))),"Runsheet has not been displayed.");
+        //Click on found runsheet
+        newExplorerPage1.clickOnFoundRunsheet(myCompanyRunsheetName+(now.get(Calendar.MONTH)+1) + " " + (now.get(Calendar.DAY_OF_MONTH) + " " + now.get(Calendar.YEAR)));
         //Runsheet is present and proceed to Request Copy
         //Assert.assertFalse(newExplorerPage.runsheetIsNotAvailable(),"Runsheet should not be available. Contractor does not have access to Runsheet Sharing Access");
         newExplorerPage.clickOnMakeACopyButton();

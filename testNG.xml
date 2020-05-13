@@ -463,8 +463,8 @@
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
             <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
-            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>-->
-            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>
+            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>
+            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">
@@ -591,7 +591,7 @@
         <!-- Super User Credentials -->
         <parameter name="superUserName" value="diplus1"/>
         <parameter name="superUserPassword" value="diplus1"/>
-        <parameter name="myCompanyRunsheetName" value="CompanyA"/>
+        <parameter name="myCompanyRunsheetName" value="Company"/>
         <parameter name="superUserCounty" value="Bandera"/>
         <!--Runsheet to be unassgined -->
         <parameter name="runsheetUnAssigned" value="test_one_county"/>
@@ -618,15 +618,15 @@
         <classes>
             <!--<class name="main.java.tests.adminTests.superUserReportIssue"/>
             <class name="main.java.tests.adminTests.superUserAddNewRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>-->
+            <class name="main.java.tests.adminTests.superUserAddSecondRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>-->
+            <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
             <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>-->
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
             <class name="main.java.tests.contractorTests.contractorUnassignRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>-->
+            <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>
         </classes>
     </test>
 </suite>

@@ -1356,7 +1356,7 @@ public class ExplorerPage extends PageObjects {
      *this method calls the type and click method in webDriverCommands class.
      */
     public boolean runsheetShowUp(String myCompanyRunsheet){
-            return webDriverCommands.waitForElementPresent(By.xpath(String.format(myCompanyRunsheetNameFound,myCompanyRunsheet)),30);
+        return webDriverCommands.waitForElementPresent(By.xpath(String.format(myCompanyRunsheetNameFound,myCompanyRunsheet)),30);
     }
 
     /**
