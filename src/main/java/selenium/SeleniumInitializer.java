@@ -50,6 +50,8 @@ public class SeleniumInitializer extends SeleniumSetUp  {
             extent.setSystemInfo("Envirnoment", "Development");
         }
     }
+
+    @BeforeSuite(alwaysRun = true)
     public void setUpDirectory() throws IOException {
         super.setUpDirectory();
     }

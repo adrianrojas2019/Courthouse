@@ -101,13 +101,23 @@ public abstract class SeleniumSetUp {
     public void setUpDirectory() throws IOException {
         if(Files.exists(Paths.get("logs"))){
             //delete content in log directory
-          /*  DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get("logs"));
+            DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get("logs"));
             for (Path path : directoryStream) {
                 Files.delete(path);
-            }*/
+            }
         }
         else {
             Files.createDirectories(Paths.get("logs"));
+        }
+        if(Files.exists(Paths.get("Screenshots"))){
+            //delete content in log directory
+            DirectoryStream<Path> directoryStream = Files.newDirectoryStream(Paths.get("Screenshots"));
+            for (Path path : directoryStream) {
+                Files.delete(path);
+            }
+        }
+        else {
+            Files.createDirectories(Paths.get("Screenshots"));
         }
     }
 

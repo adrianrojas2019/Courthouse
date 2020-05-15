@@ -804,7 +804,7 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public void clickOnChangeLimitButton(){
-        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(EDIT_LIMIT_BUTTON);
     }
     /**
@@ -822,7 +822,7 @@ public class UserAdministrationPage extends PageObjects {
      *  @return String
      */
     public void clickOnBurgerMenu(){
-        webDriverCommands.waitSomeSeconds(2);
+        webDriverCommands.waitSomeSeconds(5);
         webDriverCommands.click(BURGER_MENU);
     }
     /**

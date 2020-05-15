@@ -373,7 +373,7 @@
         <parameter name="myCompanyName" value="Gap"/>
         <parameter name="companyAcct" value="DI Internal Acct"/> <!--12691-->
         <parameter name="companyID" value="12691"/>
-        <parameter name="multipleCompany" value="12691,15916,15917"/>
+        <parameter name="multipleCompany" value="12691,15916"/>
         <parameter name="companyAcctPayGo" value="Drillinginfo - DI Paygo Account"/> <!--15614-->
         <parameter name="companyIDPayGo" value="15614"/>
 
@@ -463,8 +463,8 @@
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
             <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
-            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>
-            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>-->
+            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>-->
+            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>
         </classes>
     </test>
     <test name="Midland_Management_Test">
@@ -623,10 +623,10 @@
             <class name="main.java.tests.adminTests.superUserDenyRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNoAccess"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingNewRequestCopy"/>
-            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>-->
+            <class name="main.java.tests.adminTests.superUserApproveRequestCopyRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRunsheetSharingFullAccess"/>
             <class name="main.java.tests.contractorTests.contractorUnassignRunsheet"/>
-            <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>
+            <class name="main.java.tests.adminTests.superUserAssignRunsheet"/>-->
         </classes>
     </test>
 </suite>
