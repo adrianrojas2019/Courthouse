@@ -5,9 +5,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import java.text.DecimalFormat;
+import java.io.File;
 import java.util.ArrayList;
-import java.util.Calendar;
+
+import com.codeborne.pdftest.PDF;
+import static com.codeborne.pdftest.PDF.*;
+import static org.junit.Assert.assertThat;
 
 /**
  * Created by Adrian on 11/30/2018.
@@ -100,6 +103,7 @@ public class ExplorerPage extends PageObjects {
     private final By PRINT_SPINNER= By.xpath("//section[@di-pdf-viewer='pdfViewerOptions']//div[@class='spinner']");
     private final By PRINT_BUTTON_ENABLED = By.cssSelector("button[class='toolbarButton printPdf'][disabled='disabled']");
     private final By VIEWER_LINK = By.cssSelector("div.ngCell.col1.colt1");
+    private final By VIEWER_LINK_COLOR = By.cssSelector("div.ngCell.col1.colt1 > div > span > a");
     private final By CLOSE_STANDALONE_PDF = By.cssSelector("button[class='toolbarButton closePdf']");
     private final By SET_PREFERENCE = By.xpath("//button[text()='Set preference']");
     private final By DELETE_RUNSHEET_BUTTON = By.cssSelector("button[class='btn btn-danger btn-sm inline-block']");
@@ -119,7 +123,11 @@ public class ExplorerPage extends PageObjects {
     private final By AVAILABLE_BALANCE = By.cssSelector("span[class='positiveBalance ng-binding']");
 
     private final By USER_MENU = By.cssSelector(".caret");
+    private final By USER_LOGOUT = By.cssSelector("a[ng-click='logOut($event)']");
     private final By MY_ACCOUNT_PAGE = By.cssSelector("h3[ng-bind='userSelected.personalInformation.fullName']");
+    private final By DROP_DOWN_CALENDAR = By.cssSelector("ul[class='dropdown-menu ng-pristine ng-untouched ng-valid ng-scope ng-valid-date-disabled']");
+    private final By DOWNLOAD_DATE_PICKER = By.xpath("//div[@class='diDatePickerContainer']//i[@class='glyphicon glyphicon-calendar']");
+    private final By DOWNLOAD_INVOICE_BUTTON = By.cssSelector("form[id='invoiceReport'] button[class='btn btn-success pull-right']");
     private final By USER_CONTRACT_MY_ACCOUNT_ITEM = By.xpath("//a[@href='/users/myaccount']");
     private final By DROP_DOWN_MENU_DISPLAYED = By.xpath("//ul[@class='dropdown-menu show']");
     private final By COUNTY_GRID_LIST = By.cssSelector("h5[name='Select County for details']");
@@ -170,6 +178,7 @@ public class ExplorerPage extends PageObjects {
     String find_Runsheet = "option[label='%s']";
     String grid_Title_Runsheet_Name = "h5[name='%s']";
     String first_Cell = "//span[text()='%s']";
+    String download_Invoice_Month = "//span[contains(text(),'%s')]";
 
     public ExplorerPage(WebDriver driver) {
         super(driver);
@@ -427,6 +436,15 @@ public class ExplorerPage extends PageObjects {
      */
     public boolean isSearchResultsWithDocuments(){
         return webDriverCommands.waitForElementPresent(FIRST_CHECKBOX,30);
+    }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *
+     *  @return string
+     */
+    public String getViewerColorAttribute(){
+        return webDriverCommands.getCssValue(VIEWER_LINK_COLOR,"color");
     }
 
     /**
@@ -794,6 +812,7 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.click(FIRST_CHECKBOX);
         webDriverCommands.waitSomeSeconds(3);
     }
+
     /**
      * this method calls the click method in webDriverCommands class.
      */
@@ -1291,6 +1310,14 @@ public class ExplorerPage extends PageObjects {
     public boolean isMyAccountDisplayed(int secondsToWait){
         return webDriverCommands.waitForElementPresent(MY_ACCOUNT_PAGE, secondsToWait);
     }
+
+    /**
+     *this method calls the waitForElementPresent method in webDriverCommands class.
+     *  @return boolean
+     */
+    public boolean iDropDownCalendarDisplayed(int secondsToWait){
+        return webDriverCommands.waitForElementPresent(DROP_DOWN_CALENDAR, secondsToWait);
+    }
     /**
      *this method calls the waitForElementPresent method in webDriverCommands class.
      *  @return boolean
@@ -1304,7 +1331,22 @@ public class ExplorerPage extends PageObjects {
     public void clickOnUserMenu(){
         webDriverCommands.waitForElementClickable(USER_MENU, 300);
         webDriverCommands.click(USER_MENU);
+        webDriverCommands.waitSomeSeconds(2);
     }
+
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnLogout(){
+        webDriverCommands.click(USER_LOGOUT);
+        webDriverCommands.waitSomeSeconds(3);
+    }
+
+    public void getStartURL(){
+        driver.get("https://app.dev.drillinginfo.com/courthouse/");
+        webDriverCommands.waitSomeSeconds(2);
+    }
+
 
     /**
      *this method calls the click method in webDriverCommands class.
@@ -1321,6 +1363,36 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
         webDriverCommands.click(USER_CONTRACT_MY_ACCOUNT_ITEM);
     }
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnDownloadDatePicker(){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.click(DOWNLOAD_DATE_PICKER);
+    }
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnDownloadInvoiceButton(){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.click(DOWNLOAD_INVOICE_BUTTON);
+    }
+    /**
+     *this method calls the click method in webDriverCommands class.
+     */
+    public void clickOnPreviousMonth(String date){
+        webDriverCommands.waitSomeSeconds(3);
+        webDriverCommands.click(By.xpath(String.format(download_Invoice_Month,date)));
+
+    }
+
+    public void readPDF(String invoiceName) {
+        String home = System.getProperty("user.home");
+        home = home + "\\Downloads\\";
+        PDF pdf = new PDF(new File(home+invoiceName+".pdf"));
+        assertThat(pdf, containsText("Total Billing Amount:"));
+    }
+
     /**
      *this method calls the type method in webDriverCommands class.
      */

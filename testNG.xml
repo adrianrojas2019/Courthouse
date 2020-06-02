@@ -79,13 +79,14 @@
         <parameter name="totalSearchesByTypeBBVolumePage" value="1.00"/>
         <!-- Enhanced Clerk County assigned to the contractorUserName -->
         <parameter name="contractorEnhancedClerkCounty" value="Angelina"/>
-
+        <parameter name="cssColor" value="rgba(0, 128, 0, 1)"/>
         <parameter name="metricTypeDefault" value="No. of logins"/>
 
         <groups>
             <run>
                 <include name="CH_Login_Load_CH_Main_Page"/>
                 <include name="CH_Contractor_Explorer_Search"/>
+                <include name="CH_Contractor_Viewer_Link_Change_Color"/>
                 <include name="CH_Contractor_Add_New_Runsheet"/>
                 <include name="CH_Contractor_Del_Docs_From_Runsheet"/>
                 <include name="CH_Contractor_Download_Runsheet"/>
@@ -107,6 +108,7 @@
         <classes>
           <!--  <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
+            <class name="main.java.tests.contractorTests.contractorViewerLinkChangeColor"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.contractorTests.contractorDownloadRunsheet"/>
@@ -245,7 +247,7 @@
         <parameter name="emailUserNamePayGo" value="adrojas@wearegap.com"/>
         <parameter name="phoneNumberPayGo" value="111-222-3333"/>
         <parameter name="organizationPayGo" value="Organization PayGo"/>
-        <parameter name="userNamePayGo" value="newpaygo_%d"/>
+        <parameter name="userNamePayGo" value="newpaygobp_%d"/>
         <parameter name="address1" value="New Address"/>
         <parameter name="city" value="WPB"/>
         <parameter name="state" value="Florida"/>
@@ -292,6 +294,7 @@
                 <include name="CH_PayGo_CH1089"/>
                 <include name="CH_PayGo_Midland_Maps_Search"/>
                 <include name="CH_PayGo_Subscription_Page"/>
+                <include name="CH_PayGo_Download_Invoice"/>
             </run>
         </groups>
         <classes>
@@ -305,6 +308,7 @@
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
             <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
+            <class name="main.java.tests.payGoTests.payGoDownloadInvoice"/>
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -453,7 +457,8 @@
             <class name="main.java.tests.adminTests.addFreeTrial"/>
             <class name="main.java.tests.adminTests.addPayGo"/>
             <class name="main.java.tests.contractorTests.contractorMidlandMapsMultipleCountySearch"/>-->
-           <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
+
+            <!-- <class name="main.java.tests.adminTests.adminAddNewRunsheet"/>
             <class name="main.java.tests.adminTests.adminReportChanges"/>
             <class name="main.java.tests.adminTests.adminDeleteRunsheet"/>
             <class name="main.java.tests.adminTests.validateCountyOnDemoMode"/>
@@ -463,8 +468,8 @@
             <class name="main.java.tests.adminTests.validateLimitReached"/>
             <class name="main.java.tests.adminTests.bulksActionsCancelChangeCompany"/>
             <class name="main.java.tests.adminTests.bulksActionsRunsheetSharingMessage"/>
-            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>-->
-            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>
+            <class name="main.java.tests.adminTests.adminAddDocIntoMyCompanyRunsheets"/>
+            <class name="main.java.tests.adminTests.modifyUsageMetrics"/>-->
         </classes>
     </test>
     <test name="Midland_Management_Test">

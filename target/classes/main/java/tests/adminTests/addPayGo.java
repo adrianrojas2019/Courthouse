@@ -18,11 +18,11 @@ public class addPayGo extends SeleniumInitializer {
     public void addPayGo(String environment, String payGoURL, String firstNamePayGo, String lastNamePayGo, String emailUserNamePayGo, String phoneNumberPayGo, String organizationPayGo,String userNamePayGo, int numberOfUserPayGoToCreate,
                          String address1, String city, String state, String zipCode, String legalNameCC, String creditCardNumber, String cvv, String monthExpirationDate, String yearExpirationDate) throws InterruptedException {
 
-        for(int numberOfUser=1; numberOfUser <= numberOfUserPayGoToCreate; numberOfUser++) {
+        for(int numberOfUser=98; numberOfUser <= numberOfUserPayGoToCreate; numberOfUser++) {
             //Create page object
             PayGoPage newPayGoPage = new PayGoPage(driver);
             newPayGoPage.LoadNewURL(String.format(payGoURL,environment));
-            Assert.assertTrue(newPayGoPage.waitForElementVisible(300), "Cannot login the FreeTrial Subscription Page");
+            Assert.assertTrue(newPayGoPage.waitForElementVisible(300), "Cannot login the PayGo Subscription Page");
             //Fill all information accordingly
 
             //Add First&Last Name
@@ -42,12 +42,13 @@ public class addPayGo extends SeleniumInitializer {
             newPayGoPage.checkConditions();
             //Click on Get Instant Access button
             newPayGoPage.clickOnGetAccessButton();
-            Assert.assertTrue(newPayGoPage.waitForFreeTrialSubscriptionPopUpDisplayed(30), "Confirm Free trial Subscription Pop Up");
+            Assert.assertTrue(newPayGoPage.waitForFreeTrialSubscriptionPopUpDisplayed(30), "Confirm Pay Go Subscription Pop Up");
             newPayGoPage.clickOnContinueButton();
             //Success Message
-            Assert.assertTrue(newPayGoPage.waitForSuccessMessageDisplayed(30), "Free Trial User has not been created");
+            Assert.assertTrue(newPayGoPage.waitForSuccessMessageDisplayed(30), "Pay Go User has not been created");
             //Click on Login button
             newPayGoPage.clickOnLoginButton();
+
         }
         //Assert.assertTrue(usersPage.isAllUserTitleDisplayed(), "The new users could not be added");
     }

@@ -209,6 +209,19 @@ public class WebDriverCommands extends  SeleniumSetUp {
         return infoInTextField;
     }
 
+    /**
+     * This method calls the text from the element
+     * @param element to get the text
+     *  @param attribute, is the attribute to find out in the html
+     * @return String info of the textfield
+     */
+    public String getCssValue(By element, String attribute){
+        String infoInTextField = "";
+        if(waitForElementPresent(element))
+            infoInTextField =  driver.findElement(element).getCssValue(attribute);
+        return infoInTextField;
+    }
+
     public WebElement getButtonBy(String buttonText) {
         return driver.findElements(By.cssSelector("button[role='menuitem']"))
                 .stream()

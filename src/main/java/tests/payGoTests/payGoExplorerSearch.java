@@ -25,9 +25,9 @@ public class payGoExplorerSearch extends SeleniumInitializer {
         //Already logged in as DI Admin
         loginTest loginIntoCHMainPageTest = new loginTest();
         //Create page object
-        ExplorerPage newExplorerPage = loginIntoCHMainPageTest.loginSuccessfullyTest(environment,String.format(userNamePayGo,1), payGoPassword, getDriverInstance());
+        ExplorerPage newExplorerPage = loginIntoCHMainPageTest.loginSuccessfullyTest(environment, String.format(userNamePayGo, 1), payGoPassword, getDriverInstance());
 
-        for(int number =1; number <= totalSearches; number++) {
+        for (int number = 1; number <= totalSearches; number++) {
 
             //Click on the Magnifying Glass icon on the left side of the Homepage.
             newExplorerPage.clickOnExplorerSearch();
@@ -40,7 +40,7 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             //Click on County Combo
             newExplorerPage.clickOnCountyCombo(payGoCounty);
             newExplorerPage.isGrantorEnabled();
-            newExplorerPage.insertGrantor(multiplePayGoGrantors[number-1]);
+            newExplorerPage.insertGrantor(multiplePayGoGrantors[number - 1]);
             newExplorerPage.clickOnApplyButton();
             //Purchase Confirmation Pop Up
             Assert.assertTrue(newExplorerPage.isPurchaseConfirmationDialogDisplayed(), "Purchase Confirmation Dialog has not been displayed.");
@@ -55,4 +55,52 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             newExplorerPage.clickOnExplorerSearch();
         }
     }
+    /*
+  public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String multiplePayGoGrantor,int totalSearches) throws InterruptedException {
+
+        String[] multiplePayGoGrantors = multiplePayGoGrantor.split(",");
+
+        for(int number2 =7; number2 <= 120; number2++) {
+            //Already logged in as DI Admin
+            loginTest loginIntoCHMainPageTest = new loginTest();
+
+            //Create page object
+            ExplorerPage newExplorerPage = loginIntoCHMainPageTest.loginSuccessfullyTest(environment,String.format(userNamePayGo,number2), payGoPassword, getDriverInstance());
+
+            for(int number =1; number <= 1; number++) {
+
+                //Click on the Magnifying Glass icon on the left side of the Homepage.
+                newExplorerPage.clickOnExplorerSearch();
+                newExplorerPage.isExploreTitleDisplayed();
+
+                //Get current Available Balance
+                //Double currentAvailableBalance = newExplorerPage.getCurrentAvailableBalance();
+                String y = newExplorerPage.getCurrentAvailableBalance().replace(",", "");
+                Double currentAvailableBalance = Double.parseDouble(y);
+                //Click on County Combo
+                newExplorerPage.clickOnCountyCombo(payGoCounty);
+                newExplorerPage.isGrantorEnabled();
+                newExplorerPage.insertGrantor(multiplePayGoGrantors[number-1]);
+                newExplorerPage.clickOnApplyButton();
+                //Purchase Confirmation Pop Up
+                Assert.assertTrue(newExplorerPage.isPurchaseConfirmationDialogDisplayed(), "Purchase Confirmation Dialog has not been displayed.");
+                //click on Ok button
+                newExplorerPage.clickOnPurchaseConfirmationButton();
+                //Wait until Available Balance has been updated
+                Assert.assertEquals(Double.parseDouble(newExplorerPage.getCurrentAvailableBalance().replace(",", "")), currentAvailableBalance - 0.25, "Available Balance has not been updated!.");
+                //Wait until Search Results retrieves documents
+                Assert.assertTrue(newExplorerPage.isSearchResultsWithDocuments(), "Explorer Search Filter didn't get documents. (Search Results is empty)");
+                newExplorerPage.clickOnFirstCheckBox();
+                //Click on the Magnifying Glass icon on the left side of the Homepage.
+                newExplorerPage.clickOnExplorerSearch();
+                //Logout
+                //Logout and log in using contract account
+                newExplorerPage.clickOnUserMenu();
+                newExplorerPage.clickOnLogout();
+                newExplorerPage.getStartURL();
+            }
+        }
+    }
+
+     */
 }

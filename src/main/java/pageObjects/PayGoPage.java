@@ -222,5 +222,6 @@ public class PayGoPage extends PageObjects {
      */
     public void clickOnLoginButton(){
         webDriverCommands.click(LOGIN_BUTTON);
+        webDriverCommands.waitSomeSeconds(3);
     }
 }
