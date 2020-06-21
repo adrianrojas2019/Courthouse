@@ -106,7 +106,7 @@
             </run>
         </groups>
         <classes>
-          <!--  <class name="main.java.tests.loadCHMainPage"/>
+            <class name="main.java.tests.loadCHMainPage"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearch"/>
             <class name="main.java.tests.contractorTests.contractorViewerLinkChangeColor"/>
             <class name="main.java.tests.contractorTests.contractorAddNewRunsheet"/>
@@ -123,7 +123,7 @@
             <class name="main.java.tests.contractorTests.contractorBrokerBoxSearch"/>
             <class name="main.java.tests.adminTests.validateMetricsByContractorByBrokerBox"/>
             <class name="main.java.tests.contractorTests.contractorExplorerSearchValidatesFields"/>
-            <class name="main.java.tests.adminTests.validateMetricTypeDefault"/>-->
+            <class name="main.java.tests.adminTests.validateMetricTypeDefault"/>
         </classes>
     </test>
 
@@ -229,7 +229,7 @@
         <parameter name="payGoURL" value="https://app.%sdrillinginfo.com/courthouse/subscription/#/"/>
 
         <!--Environment /Dev/Preprod/Prod -->
-        <parameter name="environment" value="dev."/>
+        <parameter name="environment" value="preprod."/>
 
 
         <parameter name="usernameToLogIn" value="diplus2"/>
@@ -298,8 +298,8 @@
             </run>
         </groups>
         <classes>
-            <!--<class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
-            <class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
+            <class name="main.java.tests.payGoTests.payGoExplorerSearch"/>
+            <!--<class name="main.java.tests.payGoTests.payGoAddNewRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRemoveDocsFromRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoRenameRunsheet"/>
             <class name="main.java.tests.payGoTests.payGoDownloadRunsheet"/>
@@ -307,8 +307,8 @@
             <class name="main.java.tests.adminTests.validateMetricsByPayGo"/>
             <class name="main.java.tests.payGoTests.payGoCH1089"/>
             <class name="main.java.tests.payGoTests.payGoMidlandMapsSearch"/>
-            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>-->
-            <class name="main.java.tests.payGoTests.payGoDownloadInvoice"/>
+            <class name="main.java.tests.payGoTests.payGoSubscriptionPage"/>
+            <class name="main.java.tests.payGoTests.payGoDownloadInvoice"/>-->
         </classes>
     </test>
     <test name="Admin_Management_Test">
@@ -348,7 +348,7 @@
         <parameter name="emailUserNamePayGo" value="adrojas@wearegap.com"/>
         <parameter name="phoneNumberPayGo" value="111-222-3333"/>
         <parameter name="organizationPayGo" value="Organization PayGo"/>
-        <parameter name="userNamePayGo" value="newpaygo_%d"/>
+        <parameter name="userNamePayGo" value="newpaygobp_%d"/>
         <parameter name="address1" value="New Address"/>
         <parameter name="city" value="WPB"/>
         <parameter name="state" value="Florida"/>

@@ -18,7 +18,7 @@ public class addPayGo extends SeleniumInitializer {
     public void addPayGo(String environment, String payGoURL, String firstNamePayGo, String lastNamePayGo, String emailUserNamePayGo, String phoneNumberPayGo, String organizationPayGo,String userNamePayGo, int numberOfUserPayGoToCreate,
                          String address1, String city, String state, String zipCode, String legalNameCC, String creditCardNumber, String cvv, String monthExpirationDate, String yearExpirationDate) throws InterruptedException {
 
-        for(int numberOfUser=98; numberOfUser <= numberOfUserPayGoToCreate; numberOfUser++) {
+        for(int numberOfUser=1; numberOfUser <= numberOfUserPayGoToCreate; numberOfUser++) {
             //Create page object
             PayGoPage newPayGoPage = new PayGoPage(driver);
             newPayGoPage.LoadNewURL(String.format(payGoURL,environment));

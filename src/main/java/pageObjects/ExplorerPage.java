@@ -1342,8 +1342,8 @@ public class ExplorerPage extends PageObjects {
         webDriverCommands.waitSomeSeconds(3);
     }
 
-    public void getStartURL(){
-        driver.get("https://app.dev.drillinginfo.com/courthouse/");
+    public void getStartURL(String env){
+        driver.get("https://app."+env+"drillinginfo.com/courthouse/");
         webDriverCommands.waitSomeSeconds(2);
     }
 

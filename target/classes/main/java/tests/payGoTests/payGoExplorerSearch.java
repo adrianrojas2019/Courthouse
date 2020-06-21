@@ -19,7 +19,7 @@ public class payGoExplorerSearch extends SeleniumInitializer {
      * verify that explorer search was able to get documents
      *@params PayGo username/password, county and grantor values for the specified Pay Go user. TotalSearches is the amount of searches.
      */
-    public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String multiplePayGoGrantor,int totalSearches) throws InterruptedException {
+   /* public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String multiplePayGoGrantor,int totalSearches) throws InterruptedException {
 
         String[] multiplePayGoGrantors = multiplePayGoGrantor.split(",");
         //Already logged in as DI Admin
@@ -54,13 +54,13 @@ public class payGoExplorerSearch extends SeleniumInitializer {
             //Click on the Magnifying Glass icon on the left side of the Homepage.
             newExplorerPage.clickOnExplorerSearch();
         }
-    }
-    /*
+    }*/
+
   public void payGoExplorerSearch(String environment, String userNamePayGo, String payGoPassword, String payGoCounty, String multiplePayGoGrantor,int totalSearches) throws InterruptedException {
 
         String[] multiplePayGoGrantors = multiplePayGoGrantor.split(",");
 
-        for(int number2 =7; number2 <= 120; number2++) {
+        for(int number2 =52; number2 <= 119; number2++) {
             //Already logged in as DI Admin
             loginTest loginIntoCHMainPageTest = new loginTest();
 
@@ -97,10 +97,8 @@ public class payGoExplorerSearch extends SeleniumInitializer {
                 //Logout and log in using contract account
                 newExplorerPage.clickOnUserMenu();
                 newExplorerPage.clickOnLogout();
-                newExplorerPage.getStartURL();
+                newExplorerPage.getStartURL(environment);
             }
         }
     }
-
-     */
 }
